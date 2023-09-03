@@ -87,7 +87,7 @@ function Accueil({ GetImageToApp }) {
             <AccueilSlider />
             <section className='archviz_presantation' >
                 <h2 className='qui_somme_nous' >
-                    Qui sommes-nous ???
+                    Qui sommes-nous ?
                 </h2>
 
                 <p>
