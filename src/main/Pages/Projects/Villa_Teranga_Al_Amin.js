@@ -75,9 +75,9 @@ function SmallHouse1({ }) {
                         <img onClick={displayImage} src={ImageProjectC2} width='47%' />
                         <img onClick={displayImage} src={ImageProjectC3} width='47%' />
                     </div>
-                    <h1 className='project_title'>
+                    <h2 className='project_title'>
                         Création
-                    </h1>
+                    </h2>
                     <div className='the_video'>
                         <iframe width="100%"
                             height="100%"
@@ -92,11 +92,11 @@ function SmallHouse1({ }) {
                         </iframe>
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC5} width='47%' />
-                        <img onClick={displayImage} src={ImageProjectC6} width='47%' />
+                        <img onClick={displayImage} src={ImageProjectC4} width='100%' />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC4} width='100%' />
+                        <img onClick={displayImage} src={ImageProjectC5} width='47%' />
+                        <img onClick={displayImage} src={ImageProjectC6} width='47%' />
                     </div>
                 </div>
             </div>

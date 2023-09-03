@@ -80,9 +80,9 @@ function Pharmacie1({ }) {
                         <img onClick={displayImage} src={ImageProjectC4} width='47%' alt='  Pharmacie Design - 5' />
                         <img onClick={displayImage} src={ImageProjectC6} width='47%' alt='  Pharmacie Design - 6' />
                     </div>
-                    <h1 className='project_title'>
+                    <h3 className='project_title'>
                         Clay Renders
-                    </h1>
+                    </h3>
                     <div className='TheImageContainer'>
                     </div>
                     <div className='TheImageContainer'>

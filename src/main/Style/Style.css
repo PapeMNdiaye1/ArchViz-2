@@ -3295,6 +3295,10 @@
     width: 90vw;
     height: 65vw;
     margin-bottom: 3em;
+    display: none;
+  }
+  .Interior_1_container .project_display h2 {
+    display: none;
   }
   .Interior_1_container .project_display .TheImageContainer {
     width: 90vw;
@@ -3709,6 +3713,10 @@
   .Touba_1_container .project_display .the_video {
     width: 90vw;
     height: 57vw;
+    display: none;
+  }
+  .Touba_1_container .project_display h2 {
+    display: none;
   }
   .Touba_1_container .project_display .project_description {
     font-size: .7em;
@@ -4188,6 +4196,10 @@
     width: 90vw;
     height: 65vw;
     margin-bottom: 3em;
+    display: none;
+  }
+  .Immeuble_1_container .project_display h2 {
+    display: none;
   }
   .Immeuble_1_container .project_display .TheImageContainer {
     width: 90vw;
@@ -4484,6 +4496,7 @@
     width: 90vw;
     height: 65vw;
     margin-bottom: 3em;
+    display: none;
   }
   .Villa_A_container .project_display .project_title {
     font-size: 1.5em;
@@ -4771,6 +4784,10 @@
     width: 90vw;
     height: 65vw;
     margin-bottom: 3em;
+    display: none;
+  }
+  .Villa_Teranga_Al_Amin_container .project_display h2 {
+    display: none;
   }
   .Villa_Teranga_Al_Amin_container .project_display .TheImageContainer {
     width: 90vw;

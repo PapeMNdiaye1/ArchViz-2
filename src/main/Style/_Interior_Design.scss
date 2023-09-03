@@ -39,7 +39,6 @@
 
             ion-icon {
                 font-size: 1.2em;
-                // bottom: -.1em;
             }
 
         }
@@ -91,7 +90,6 @@
                 border-radius: 1em;
 
                 &:hover {
-                    // box-shadow: #86c5e5 0 0 5px, inset #86c5e5 0 0 5px;
                     transform: scale(1.03);
                 }
 
@@ -141,6 +139,11 @@
                 width: 90vw;
                 height: 65vw;
                 margin-bottom: 3em;
+                display: none;
+            }
+
+            h2 {
+                display: none;
             }
 
             .TheImageContainer {

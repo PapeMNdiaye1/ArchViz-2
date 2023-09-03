@@ -86,8 +86,9 @@ function SmallHouse1({ }) {
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC7} width='100%' />
                     </div>
-                    <h1 className='project_title'>
-                        Animation                    </h1>
+                    <h2 className='project_title'>
+                        Animation
+                    </h2>
                     <div className='the_video'>
                         <iframe width="100%"
                             height="100%"
