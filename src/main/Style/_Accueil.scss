@@ -139,7 +139,6 @@
         }
     }
 
-
     //!#####################################################################
     .archviz_presantation {
         height: 25em;
@@ -205,20 +204,6 @@
             display: grid;
             grid-gap: .5em;
 
-            @keyframes mymove {
-                0% {
-                    background-color: rgba(0, 0, 0, 0.5);
-                }
-
-                50% {
-                    background-color: rgba(0, 0, 0, 0.02);
-                }
-
-                100% {
-                    background-color: rgba(0, 0, 0, 0.5);
-                }
-            }
-
             .image_container {
                 width: 100%;
                 height: 100%;
@@ -226,7 +211,6 @@
                 background-repeat: no-repeat;
                 background-size: 100%;
                 transition-duration: .4s;
-                animation: mymove 5s ease infinite;
 
                 &:hover {
                     background-size: 105%;
@@ -307,7 +291,6 @@
             .image_container {
                 grid-column: 2 / 4;
                 grid-row: 1 / 1;
-                animation: mymove 5s ease infinite;
             }
 
             .info_container {
@@ -325,7 +308,6 @@
             .image_container {
                 grid-column: 1 / 3;
                 grid-row: 1 / 1;
-                animation: mymove 5s ease infinite;
             }
 
             .info_container {
@@ -582,7 +564,6 @@
                     background-size: 100%;
                     background-repeat: no-repeat;
                     border-radius: 1em;
-                    animation: mymove 5s ease infinite;
 
                     &:hover {
                         background-size: 100%;
@@ -619,7 +600,6 @@
                 .image_container {
                     grid-column: 1 / 1;
                     grid-row: 1 / 1;
-                    animation: mymove 5s ease infinite;
                 }
 
                 .info_container {
@@ -635,7 +615,6 @@
                 .image_container {
                     grid-column: 1 / 1;
                     grid-row: 1 / 1;
-                    animation: mymove 5s ease infinite;
                 }
 
                 .info_container {
