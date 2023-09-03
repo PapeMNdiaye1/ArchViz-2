@@ -70,14 +70,14 @@ function Hangar_1({ }) {
                     <p>
                         Le rendu et l'animation avec des temps de production de plus en plus rapide ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques.                                       </p>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC2} width='100%' alt=' Maquette Hangar Photovoltaïque - 1' />
+                        <img loading="lazy" onClick={displayImage} src={ImageProjectC2} width='100%' alt=' Maquette Hangar Photovoltaïque - 1' />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC4} width='47%' alt=' Maquette Hangar Photovoltaïque - 2' />
-                        <img onClick={displayImage} src={ImageProjectC3} width='47%' alt=' Maquette Hangar Photovoltaïque - 3' />
+                        <img loading="lazy" onClick={displayImage} src={ImageProjectC4} width='47%' alt=' Maquette Hangar Photovoltaïque - 2' />
+                        <img loading="lazy" onClick={displayImage} src={ImageProjectC3} width='47%' alt=' Maquette Hangar Photovoltaïque - 3' />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC1} width='100%' alt=' Maquette Hangar Photovoltaïque - 4' />
+                        <img loading="lazy" onClick={displayImage} src={ImageProjectC1} width='100%' alt=' Maquette Hangar Photovoltaïque - 4' />
                     </div>
                 </div>
             </div>

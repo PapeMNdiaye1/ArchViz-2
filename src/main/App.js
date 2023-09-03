@@ -1,15 +1,12 @@
 import './Style/Style.css';
 import React, { useState, Suspense } from 'react';
-// import React from "react";
 import { Routes, BrowserRouter, Route, } from "react-router-dom";
-// import OtherComponent from './OtherComponent';
 
 import { Accueil } from './Pages/Accueil';
 import { TheFooter } from './Pages/Accueil';
 import Service from './Pages/Service';
 
 const TopBare = React.lazy(() => import('./TopBare'));
-
 const Travaux = React.lazy(() => import('./Pages/Travaux'));
 const Contact = React.lazy(() => import('./Pages/Contact'));
 

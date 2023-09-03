@@ -55,7 +55,7 @@ function City1({ }) {
                             onClick={displayImage}
                             className='close_image_container'>
                         </div>
-                        <img src={TheImageInTheContainer} width='100%' />
+                        <img src={TheImageInTheContainer} width='100%' loading="lazy" />
                     </div>
                 </div>
             }
@@ -71,21 +71,21 @@ function City1({ }) {
                         Ce projet comprend des villas familiales, des bâtiments commerciaux et résidentiels ainsi que des lieux publics. Notre travail se partage à parts égales entre les animations architecturales et les rendus 3D. Nous mettons en œuvre différentes approches pour une optimisation de vos espaces extérieurs et intérieurs.
                     </p>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC9} width='100%' alt='Design de Maison Moderne - 9' />
+                        <img onClick={displayImage} src={ImageProjectC9} width='100%' alt='Design de Maison Moderne - 9' loading="lazy" />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC5} width='47%' alt='Design de Maison Moderne - 5' />
-                        <img onClick={displayImage} src={ImageProjectC6} width='47%' alt='Design de Maison Moderne - 6' />
+                        <img onClick={displayImage} src={ImageProjectC5} width='47%' alt='Design de Maison Moderne - 5' loading="lazy" />
+                        <img onClick={displayImage} src={ImageProjectC6} width='47%' alt='Design de Maison Moderne - 6' loading="lazy" />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC2} width='100%' alt='Design de Maison Moderne - 2' />
+                        <img onClick={displayImage} src={ImageProjectC2} width='100%' alt='Design de Maison Moderne - 2' loading="lazy" />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC3} width='47%' alt='Design de Maison Moderne - 3' />
-                        <img onClick={displayImage} src={ImageProjectC4} width='47%' alt='Design de Maison Moderne - 4' />
+                        <img onClick={displayImage} src={ImageProjectC3} width='47%' alt='Design de Maison Moderne - 3' loading="lazy" />
+                        <img onClick={displayImage} src={ImageProjectC4} width='47%' alt='Design de Maison Moderne - 4' loading="lazy" />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC1} width='100%' alt='Design de Maison Moderne - 1' />
+                        <img onClick={displayImage} src={ImageProjectC1} width='100%' alt='Design de Maison Moderne - 1' loading="lazy" />
                     </div>
                     <div className='the_video'>
                         <iframe width="100%"
@@ -113,8 +113,8 @@ function City1({ }) {
                         </iframe>
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC7} width='47%' alt='Design de Maison Moderne - 7' />
-                        <img onClick={displayImage} src={ImageProjectC8} width='47%' alt='Design de Maison Moderne - 8' />
+                        <img onClick={displayImage} src={ImageProjectC7} width='47%' alt='Design de Maison Moderne - 7' loading="lazy" />
+                        <img onClick={displayImage} src={ImageProjectC8} width='47%' alt='Design de Maison Moderne - 8' loading="lazy" />
                     </div>
                 </div>
             </div>
