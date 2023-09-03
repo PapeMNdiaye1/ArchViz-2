@@ -31,6 +31,11 @@ function Contacts() {
     return (
         <div id="Contacts">
             <div className='Contact-container'>
+
+                <OneSection link={'https://www.youtube.com/@archviz-dakar'}
+                    title={<div className="network"><ion-icon name="logo-youtube"></ion-icon>YOUTUBE</div>}
+                    title2={<div className="network">@archviz-dakar</div>}
+                />
                 <OneSection link={'https://api.whatsapp.com/send?phone=221777278655&text=The message'}
                     title={<div className="network"><ion-icon name="logo-whatsapp"></ion-icon>WHATSAPP</div>}
                     title2={<div className="network">+221 777278655</div>}
@@ -40,22 +45,19 @@ function Contacts() {
                     title2={<div className="network">@arch_viz_sn</div>}
 
                 />
+                <OneSection link={'https://www.facebook.com/ARVHVIZ/'}
+                    title={<div className="network"><ion-icon name="logo-facebook"></ion-icon>FACEBOOK</div>}
+                    title2={<div className="network">f/ARCHVIZ</div>}
+                />
                 <OneSection link={'https://www.linkedin.com/company/archviz-sn/'}
                     title={<div className="network"><ion-icon name="logo-linkedin"></ion-icon>LINKEDIN</div>}
                     title2={<div className="network">in/Archviz</div>}
 
                 />
-                <OneSection link={'https://www.facebook.com/ARVHVIZ/'}
-                    title={<div className="network"><ion-icon name="logo-facebook"></ion-icon>FACEBOOK</div>}
-                    title2={<div className="network">f/ARCHVIZ</div>}
-                />
-
                 <OneSection link={'mailto:archviz.sn@gmail.com?subject=The message'}
                     title={<div className="network"><ion-icon name="mail-outline"></ion-icon>MAIL</div>}
                     title2={<div className="network">archviz.sn@gmail.com</div>}
                 />
-
-
             </div>
         </div>
     );

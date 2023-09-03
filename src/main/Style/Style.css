@@ -4498,6 +4498,9 @@
     margin-bottom: 3em;
     display: none;
   }
+  .Villa_A_container .project_display h2 {
+    display: none;
+  }
   .Villa_A_container .project_display .project_title {
     font-size: 1.5em;
   }
