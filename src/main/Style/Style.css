@@ -1387,6 +1387,30 @@
   grid-gap: .5em;
 }
 
+@-webkit-keyframes mymove {
+  0% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.02);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@keyframes mymove {
+  0% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.02);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
 #Accueil .AccueilBigProjectsSection .One_Project_In_Home .image_container {
   width: 100%;
   height: 100%;
@@ -1395,6 +1419,8 @@
   background-size: 100%;
   -webkit-transition-duration: .4s;
           transition-duration: .4s;
+  -webkit-animation: mymove 5s ease infinite;
+          animation: mymove 5s ease infinite;
 }
 
 #Accueil .AccueilBigProjectsSection .One_Project_In_Home .image_container:hover {
@@ -1518,6 +1544,8 @@
   grid-column: 2 / 4;
   -ms-grid-row: 1;
   grid-row: 1 / 1;
+  -webkit-animation: mymove 5s ease infinite;
+          animation: mymove 5s ease infinite;
 }
 
 #Accueil .AccueilBigProjectsSection .right .info_container {
@@ -1540,6 +1568,8 @@
   grid-column: 1 / 3;
   -ms-grid-row: 1;
   grid-row: 1 / 1;
+  -webkit-animation: mymove 5s ease infinite;
+          animation: mymove 5s ease infinite;
 }
 
 #Accueil .AccueilBigProjectsSection .left .info_container {
@@ -1866,6 +1896,8 @@
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 1em;
+    -webkit-animation: mymove 5s ease infinite;
+            animation: mymove 5s ease infinite;
   }
   #Accueil .AccueilBigProjectsSection .One_Project_In_Home .image_container:hover {
     background-size: 100%;
@@ -1898,6 +1930,8 @@
     grid-column: 1 / 1;
     -ms-grid-row: 1;
     grid-row: 1 / 1;
+    -webkit-animation: mymove 5s ease infinite;
+            animation: mymove 5s ease infinite;
   }
   #Accueil .AccueilBigProjectsSection .right .info_container {
     -ms-grid-column: 1;
@@ -1916,6 +1950,8 @@
     grid-column: 1 / 1;
     -ms-grid-row: 1;
     grid-row: 1 / 1;
+    -webkit-animation: mymove 5s ease infinite;
+            animation: mymove 5s ease infinite;
   }
   #Accueil .AccueilBigProjectsSection .left .info_container {
     -ms-grid-column: 1;
