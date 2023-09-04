@@ -59,12 +59,12 @@ function App() {
             <Route exact path="/"
               element={<Accueil GetImageToApp={GetImage} />}
             />
-            <Route exact path="/Travaux" element={<Suspense fallback={<div></div>}><Travaux /></Suspense>} />
+            <Route exact path="/Travaux" element={<Suspense fallback={<div className='the-suspense' ></div>}><Travaux /></Suspense>} />
             <Route exact path="/Services" element={<Service />} />
-            <Route exact path="/Contact" element={<Suspense fallback={<div></div>}><Contact /></Suspense>} />
+            <Route exact path="/Contact" element={<Suspense fallback={<div className='the-suspense' ></div>}><Contact /></Suspense>} />
 
             <Route exact path="/Galerie" element={
-              <Suspense fallback={<div>Chargement...</div>}>
+              <Suspense fallback={<div className='the-suspense' >Chargement...</div>}>
                 <Gallery
                   TheImageToGallery={TheImage}
                   TheTitleToGallery={TheTitle}
@@ -76,18 +76,18 @@ function App() {
 
             {/* !############################################## */}
 
-            <Route exact path="/Interior1" element={<Suspense fallback={<div></div>}><Interior1 /></Suspense>} />
-            <Route exact path="/SmallHouse1" element={<Suspense fallback={<div></div>}><SmallHouse1 /></Suspense>} />
-            <Route exact path="/Hangar1" element={<Suspense fallback={<div></div>}><Hangar1 /></Suspense>} />
-            <Route exact path="/Touba" element={<Suspense fallback={<div></div>}><Touba /></Suspense>} />
-            <Route exact path="/Pharmacie1" element={<Suspense fallback={<div></div>}><Pharmacie1 /></Suspense>} />
-            <Route exact path="/Pharmacie2" element={<Suspense fallback={<div></div>}><Pharmacie2 /></Suspense>} />
-            <Route exact path="/Gym" element={<Suspense fallback={<div></div>}><Gym /></Suspense>} />
-            <Route exact path="/City1" element={<Suspense fallback={<div></div>}><City1 /></Suspense>} />
-            <Route exact path="/MSAD" element={<Suspense fallback={<div></div>}><MSAD /></Suspense>} />
-            <Route exact path="/Villa" element={<Suspense fallback={<div></div>}><Villa /></Suspense>} />
-            <Route exact path="/Villa-Saly" element={<Suspense fallback={<div></div>}><Villa_Saly /></Suspense>} />
-            <Route exact path="/VillaTerangaAlAmin" element={<Suspense fallback={<div></div>}><VillaTerangaAlAmin /></Suspense>} />
+            <Route exact path="/Interior1" element={<Suspense fallback={<div className='the-suspense' ></div>}><Interior1 /></Suspense>} />
+            <Route exact path="/SmallHouse1" element={<Suspense fallback={<div className='the-suspense' ></div>}><SmallHouse1 /></Suspense>} />
+            <Route exact path="/Hangar1" element={<Suspense fallback={<div className='the-suspense' ></div>}><Hangar1 /></Suspense>} />
+            <Route exact path="/Touba" element={<Suspense fallback={<div className='the-suspense' ></div>}><Touba /></Suspense>} />
+            <Route exact path="/Pharmacie1" element={<Suspense fallback={<div className='the-suspense' ></div>}><Pharmacie1 /></Suspense>} />
+            <Route exact path="/Pharmacie2" element={<Suspense fallback={<div className='the-suspense' ></div>}><Pharmacie2 /></Suspense>} />
+            <Route exact path="/Gym" element={<Suspense fallback={<div className='the-suspense' ></div>}><Gym /></Suspense>} />
+            <Route exact path="/City1" element={<Suspense fallback={<div className='the-suspense' ></div>}><City1 /></Suspense>} />
+            <Route exact path="/MSAD" element={<Suspense fallback={<div className='the-suspense' ></div>}><MSAD /></Suspense>} />
+            <Route exact path="/Villa" element={<Suspense fallback={<div className='the-suspense' ></div>}><Villa /></Suspense>} />
+            <Route exact path="/Villa-Saly" element={<Suspense fallback={<div className='the-suspense' ></div>}><Villa_Saly /></Suspense>} />
+            <Route exact path="/VillaTerangaAlAmin" element={<Suspense fallback={<div className='the-suspense' ></div>}><VillaTerangaAlAmin /></Suspense>} />
 
           </Routes>
           <TheFooter />

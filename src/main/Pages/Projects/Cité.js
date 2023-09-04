@@ -96,7 +96,7 @@ function City1({ }) {
                             autoplay; clipboard-write;
                             encrypted-media; gyroscope;
                             picture-in-picture"
-                            allowfullscreen>
+                            allowFullScreen>
                         </iframe>
                     </div>
 
@@ -109,7 +109,7 @@ function City1({ }) {
                             autoplay; clipboard-write;
                             encrypted-media; gyroscope;
                             picture-in-picture"
-                            allowfullscreen>
+                            allowFullScreen>
                         </iframe>
                     </div>
                     <div className='TheImageContainer'>

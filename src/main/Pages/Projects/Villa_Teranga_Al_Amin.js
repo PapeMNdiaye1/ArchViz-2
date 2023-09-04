@@ -87,7 +87,7 @@ function SmallHouse1({ }) {
                             autoplay; clipboard-write;
                             encrypted-media; gyroscope;
                             picture-in-picture"
-                            allowfullscreen>
+                            allowFullScreen>
 
                         </iframe>
                     </div>

@@ -105,7 +105,7 @@ function Interior1({ }) {
                             autoplay; clipboard-write;
                             encrypted-media; gyroscope;
                             picture-in-picture"
-                            allowfullscreen>
+                            allowFullScreen>
 
                         </iframe>
                     </div>
@@ -121,7 +121,7 @@ function Interior1({ }) {
                             autoplay; clipboard-write;
                             encrypted-media; gyroscope;
                             picture-in-picture"
-                            allowfullscreen>
+                            allowFullScreen>
                         </iframe>
                     </div> */}
 
