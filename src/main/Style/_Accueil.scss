@@ -211,6 +211,7 @@
                 background-repeat: no-repeat;
                 background-size: 100%;
                 transition-duration: .4s;
+                background-color: rgba(0, 0, 0, 0.5);
 
                 &:hover {
                     background-size: 105%;
@@ -566,6 +567,7 @@
                     background-size: 100%;
                     background-repeat: no-repeat;
                     border-radius: 1em;
+                    background-color: rgba(0, 0, 0, 0.5);
 
                     &:hover {
                         background-size: 100%;
