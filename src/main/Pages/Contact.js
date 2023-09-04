@@ -20,6 +20,9 @@ function Contacts() {
         setTimeout(function () {
             hoverLoaderContainer.style.display = '';
         }, 1500);
+        let TheFooter = document.querySelector(".the_footer")
+        TheFooter.style.opacity = '1';
+
 
 
         return () => {

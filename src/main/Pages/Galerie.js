@@ -28,9 +28,12 @@ function Gallery({ TheImageToGallery,
         let hoverLoaderContainer = document.querySelector(".hover_loader_container")
         hoverLoaderContainer.style.display = 'flex';
 
+
         setTimeout(function () {
             hoverLoaderContainer.style.display = '';
         }, 1500);
+        let TheFooter = document.querySelector(".the_footer")
+        TheFooter.style.opacity = '1';
 
         setTimeout(function () {
             setLoadGalerieContainer(true)
