@@ -32,6 +32,10 @@ function Contacts() {
         <div id="Contacts">
             <div className='Contact-container'>
 
+                <OneSection link={'mailto:archviz.sn@gmail.com?subject=The message'}
+                    title={<div className="network"><ion-icon name="mail-outline"></ion-icon>MAIL</div>}
+                    title2={<div className="network">archviz.sn@gmail.com</div>}
+                />
                 <OneSection link={'https://www.youtube.com/@archviz-dakar'}
                     title={<div className="network"><ion-icon name="logo-youtube"></ion-icon>YOUTUBE</div>}
                     title2={<div className="network">@archviz-dakar</div>}
@@ -53,10 +57,6 @@ function Contacts() {
                     title={<div className="network"><ion-icon name="logo-linkedin"></ion-icon>LINKEDIN</div>}
                     title2={<div className="network">in/Archviz</div>}
 
-                />
-                <OneSection link={'mailto:archviz.sn@gmail.com?subject=The message'}
-                    title={<div className="network"><ion-icon name="mail-outline"></ion-icon>MAIL</div>}
-                    title2={<div className="network">archviz.sn@gmail.com</div>}
                 />
             </div>
         </div>
