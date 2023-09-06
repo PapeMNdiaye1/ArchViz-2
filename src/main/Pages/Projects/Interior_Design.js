@@ -93,8 +93,8 @@ function Interior1({ }) {
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC4} width='100%' alt='Interior Decoration - 3' />
                     </div>
-                    <h1 className='project_title'>
-                        Animation                    </h1>
+                    <h2 className='project_title'>
+                        Animation                    </h2>
                     <div className='the_video'>
                         <iframe width="100%"
                             height="100%"
@@ -125,9 +125,9 @@ function Interior1({ }) {
                         </iframe>
                     </div> */}
 
-                    <h1 className='project_title'>
+                    <h3 className='project_title'>
                         Clay Renders
-                    </h1>
+                    </h3>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC6} width='47%' alt='Interior Decoration - 4' />
                         <img onClick={displayImage} src={ImageProjectC7} width='47%' alt='Interior Decoration - 5' />

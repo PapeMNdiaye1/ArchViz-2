@@ -1400,7 +1400,7 @@
   background-size: 100%;
   -webkit-transition-duration: .4s;
           transition-duration: .4s;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 #Accueil .AccueilBigProjectsSection .One_Project_In_Home .image_container:hover {
@@ -1875,7 +1875,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 1em;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
   }
   #Accueil .AccueilBigProjectsSection .One_Project_In_Home .image_container:hover {
     background-size: 100%;
@@ -2028,7 +2028,7 @@
   background-repeat: no-repeat;
   -webkit-transition-duration: .4s;
           transition-duration: .4s;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 #Travaux .AccueilBigProjectsSection .One_Project_In_Home .image_container:hover {
@@ -2235,7 +2235,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 1em;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
   }
   #Travaux .AccueilBigProjectsSection .One_Project_In_Home .image_container:hover {
     background-size: 100%;
