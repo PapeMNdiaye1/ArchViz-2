@@ -3892,6 +3892,37 @@
   padding-bottom: 2em;
 }
 
+.Appartement-F4-A-container .project_display a {
+  margin-bottom: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8em;
+  font-weight: 800;
+  width: 12em;
+  height: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: .1em solid #000;
+  border-radius: .3em;
+  text-decoration: none;
+  color: var(--colorX);
+}
+
+.Appartement-F4-A-container .project_display a:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.Appartement-F4-A-container .project_display a ion-icon {
+  font-size: 1.2em;
+}
+
 .Appartement-F4-A-container .project_display .the_video {
   width: 60vw;
   height: 45vw;

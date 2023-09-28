@@ -73,7 +73,7 @@ function Travaux() {
 
                 <OneBigProject title={'Décoration Intérieur'} image={ImageProjectJ1}
                     description={"À l'aide des logiciels de dernière génération et de notre savoir-faire dans le domaine de l’architecture d’intérieur. Nous vous aidons dans l’aménagement de vos espaces."}
-                    color={'#8a6f54'} textcolor={'#f1f1f1'} theKey={4} link={'/Appartement-F4-A'} side={'right'} The_Experience={false} />
+                    color={'#8a6f54'} textcolor={'#f1f1f1'} theKey={4} link={'/Appartement-F4-A'} side={'right'} The_Experience={true} The_Experience_Link={'https://archviz-villa-bamba-ba.netlify.app/'} />
 
                 <OneBigProject title={'Design de Maison Moderne'} image={ImageProjectA1}
                     description={"Des designs Modernes, épurés, minimalistes etc.… nous mettons en œuvre différentes approches pour une optimisation de vos espaces extérieurs et intérieurs. Pour se faire nous utilisons différents logiciels avec les dernières innovations pour des rendus d’images à la fois réalistes et immersives."}

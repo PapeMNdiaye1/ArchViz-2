@@ -64,6 +64,9 @@ function Pharmacie1({ }) {
                     <p>
                         À l'aide des logiciels de dernière génération et de notre savoir-faire dans le domaine de l’architecture d’intérieur. Nous vous aidons dans l’aménagement de vos espaces.
                     </p>
+                    <a className='the_links' href='https://archviz-villa-bamba-ba.netlify.app/' target="_blank">
+                        Experience VR/AR <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC1} width='100%' alt='  Pharmacie Design - 2' />
                     </div>
@@ -71,6 +74,9 @@ function Pharmacie1({ }) {
                         <img onClick={displayImage} src={ImageProjectC2} width='47%' alt='  Pharmacie Design - 3' />
                         <img onClick={displayImage} src={ImageProjectC4} width='47%' alt='  Pharmacie Design - 6' />
                     </div>
+                    <h2 className='project_title'>
+                        Animation
+                    </h2>
                     <div className='the_video'>
                         <iframe width="100%"
                             height="100%"
