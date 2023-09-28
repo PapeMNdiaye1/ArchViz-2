@@ -142,7 +142,6 @@ function Accueil({ GetImageToApp }) {
                     description={"Ce projet comprend des villas familiales, des bâtiments commerciaux et résidentiels ainsi que des lieux publics. Notre travail se partage à parts égales entre les animations architecturales et les rendus 3D. Nous mettons en œuvre différentes approches pour une optimisation de vos espaces extérieurs et intérieurs."}
                     color={'#EAEAEA'} textcolor={'#222'} theKey={5} link={'/City1'} side={'right'} The_Experience={false} />
 
-
                 <OneBigProject title={'Design pour les Commerces'} image={ImageProjectE3}
                     description={'Nous avons une grande expérience dans l’agencement de point de vente, et l’aménagement de bureaux. Quelle que soit la typologie du point de vente, sa vocation, sa stratégie et son positionnement.'}
                     color={'#F4EFE4'} textcolor={'#222'} theKey={6} side={'left'} The_Experience={false} link={'/Pharmacie1'} />

@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-.Pharmacie_2_container {
+.Appartement-F4-A-container {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(2, auto);
@@ -20,6 +20,25 @@
         grid-template-columns: 1fr;
         padding-bottom: 2em;
 
+        .the_video {
+            width: 60vw;
+            height: 45vw;
+            margin-bottom: 3em;
+
+            iframe {
+
+                border: none;
+                border-radius: 1.5em;
+            }
+
+            margin-bottom: 3em;
+
+            iframe {
+
+                border: none;
+                border-radius: 1.5em;
+            }
+        }
 
         .project_title {
             font-family: 'Montserrat', sans-serif;
@@ -84,7 +103,7 @@
 @media all and (max-width: 1000px) {
 
 
-    .Pharmacie_2_container {
+    .Appartement-F4-A-container {
         padding-left: 5vw;
         padding-right: 0vw;
 
@@ -95,6 +114,17 @@
 
             .project_description {
                 font-size: .7em;
+            }
+
+            .the_video {
+                width: 90vw;
+                height: 65vw;
+                margin-bottom: 3em;
+                display: none;
+            }
+
+            h2 {
+                display: none;
             }
 
             .TheImageContainer {

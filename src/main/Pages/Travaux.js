@@ -14,7 +14,7 @@ import ImageProjectH1 from '../Style/Images/Project/Villa_Astan-Ndiaye-1.jpg';
 
 import ImageProjectI2 from '../Style/Images/Project/Villa_B-2.jpg';
 
-import ImageProjectJ1 from '../Style/Images/Project/Pharmacie_B-1.jpg';
+import ImageProjectJ1 from '../Style/Images/Project/Appartement-F4-A-1.jpg';
 
 import ImageProjectK4 from '../Style/Images/Project/Pharmacie_C-4.jpg';
 
@@ -71,9 +71,9 @@ function Travaux() {
                     description={"Ce projet comprend des villas familiales, des bâtiments commerciaux et résidentiels ainsi que des lieux publics. Notre travail se partage à parts égales entre les animations architecturales et les rendus 3D. Nous mettons en œuvre différentes approches pour une optimisation de vos espaces extérieurs et intérieurs."}
                     color={'#EAEAEA'} textcolor={'#222'} theKey={3} link={'/City1'} side={'left'} The_Experience={false} />
 
-                <OneBigProject title={'Design pour les Commerces'} image={ImageProjectJ1}
-                    description={"Nous avons une grande expérience dans l’agencement de point de vente, et l’aménagement de bureaux. Quelle que soit la typologie du point de vente, sa vocation, sa stratégie et son positionnement."}
-                    color={'#8a6f54'} textcolor={'#f1f1f1'} theKey={4} link={'/Pharmacie2'} side={'right'} The_Experience={false} />
+                <OneBigProject title={'Décoration Intérieur'} image={ImageProjectJ1}
+                    description={"À l'aide des logiciels de dernière génération et de notre savoir-faire dans le domaine de l’architecture d’intérieur. Nous vous aidons dans l’aménagement de vos espaces."}
+                    color={'#8a6f54'} textcolor={'#f1f1f1'} theKey={4} link={'/Appartement-F4-A'} side={'right'} The_Experience={false} />
 
                 <OneBigProject title={'Design de Maison Moderne'} image={ImageProjectA1}
                     description={"Des designs Modernes, épurés, minimalistes etc.… nous mettons en œuvre différentes approches pour une optimisation de vos espaces extérieurs et intérieurs. Pour se faire nous utilisons différents logiciels avec les dernières innovations pour des rendus d’images à la fois réalistes et immersives."}

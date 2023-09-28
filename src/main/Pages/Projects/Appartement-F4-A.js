@@ -1,13 +1,11 @@
 import { React, useEffect, useState, Fragment } from 'react';
 
-
-import ImageProjectC1 from '../../Style/Images/Project/Pharmacie_B-1.jpg';
-import ImageProjectC2 from '../../Style/Images/Project/Pharmacie_B-2.jpg';
-import ImageProjectC3 from '../../Style/Images/Project/Pharmacie_B-3.jpg';
-import ImageProjectC4 from '../../Style/Images/Project/Pharmacie_B-4.jpg';
-import ImageProjectC5 from '../../Style/Images/Project/Pharmacie_B-5.jpg';
-
-
+import ImageProjectC1 from '../../Style/Images/Project/Appartement-F4-A-1.jpg';
+import ImageProjectC2 from '../../Style/Images/Project/Appartement-F4-A-2.jpg';
+import ImageProjectC3 from '../../Style/Images/Project/Appartement-F4-A-3.jpg';
+import ImageProjectC4 from '../../Style/Images/Project/Appartement-F4-A-4.jpg';
+import ImageProjectC5 from '../../Style/Images/Project/Appartement-F4-A-5.jpg';
+import ImageProjectC6 from '../../Style/Images/Project/Appartement-F4-A-6.jpg';
 
 function Pharmacie1({ }) {
     const [TheImageContainer, setTheImageContainer] = useState(false);
@@ -55,28 +53,45 @@ function Pharmacie1({ }) {
                     </div>
                 </div>
             }
-            <div className='Pharmacie_2_container'>
+            <div className='Appartement-F4-A-container'>
                 <div className='project_display'>
                     <h1 className='project_title'>
-                        Design pour les Commerces
+                        Décoration Intérieur
                     </h1>
                     <h3 className='project_description'>
-                        par Bokar Ndiaye | 27 Mai, 2012 |
+                        par Bokar Ndiaye | 25 Septembre, 2023 |
                     </h3>
                     <p>
-                        Nous avons une grande expérience dans l’agencement de point de vente, et l’aménagement de bureaux. Quelle que soit la typologie du point de vente, sa vocation, sa stratégie et son positionnement.</p>
+                        À l'aide des logiciels de dernière génération et de notre savoir-faire dans le domaine de l’architecture d’intérieur. Nous vous aidons dans l’aménagement de vos espaces.
+                    </p>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC1} width='100%' alt='  Pharmacie Design - 2' />
                     </div>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC2} width='47%' alt='  Pharmacie Design - 3' />
-                        <img onClick={displayImage} src={ImageProjectC3} width='47%' alt='  Pharmacie Design - 4' />
+                        <img onClick={displayImage} src={ImageProjectC4} width='47%' alt='  Pharmacie Design - 6' />
                     </div>
-                    <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC4} width='100%' alt='  Pharmacie Design - 5' />
+                    <div className='the_video'>
+                        <iframe width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/9k5F-2JcGGc?si=Ebm9pqsFUwCJJvEU"
+                            title="Interior Design"
+                            allow="accelerometer; 
+                            autoplay; clipboard-write;
+                            encrypted-media; gyroscope;
+                            picture-in-picture"
+                            allowFullScreen>
+                        </iframe>
                     </div>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC5} width='100%' alt='  Pharmacie Design - 1' />
+                    </div>
+                    <div className='TheImageContainer'>
+                        <img onClick={displayImage} src={ImageProjectC6} width='100%' alt='  Pharmacie Design - 5' />
+                    </div>
+
+                    <div className='TheImageContainer'>
+                        <img onClick={displayImage} src={ImageProjectC3} width='100%' alt='  Pharmacie Design - 4' />
                     </div>
                 </div>
             </div>
