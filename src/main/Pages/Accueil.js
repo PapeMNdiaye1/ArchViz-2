@@ -64,20 +64,6 @@ function Accueil({ GetImageToApp }) {
         let ThesliderImg = document.querySelectorAll(".slider")
         let thePageWidth = window.innerWidth
 
-        // if (thePageWidth >= 1000) {
-        //     return AccueilContainer.addEventListener('scroll', (event) => {
-        //         let TheScrollTop = AccueilContainer.scrollTop;
-        //         let TheScrollHeight = AccueilContainer.scrollHeight;
-        //         let WindowInnerHeight = window.innerHeight;
-        //         let TheScrollTopInP = (TheScrollTop / (TheScrollHeight - WindowInnerHeight)) * 100;
-
-        //         ThesliderImg.forEach(element => {
-        //             element.style.backgroundPositionY = `-${TheScrollTopInP * 10}%`;
-        //         });
-        //     })
-        // }
-        // return () => {
-        // }
     }, []);
 
     const GetImageOnApp = (theimage, title, date, link) => {
