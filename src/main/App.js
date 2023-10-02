@@ -20,9 +20,7 @@ function TheLoader() {
     </div>
   );
 }
-
 //!###############################################################
-
 
 const Gallery = React.lazy(() => import('./Pages/Galerie'));
 const Interior1 = React.lazy(() => import('./Pages/Projects/Interior_Design'));
@@ -38,10 +36,7 @@ const Villa = React.lazy(() => import('./Pages/Projects/Villa_A'));
 const Villa_Saly = React.lazy(() => import('./Pages/Projects/Villa_B'));
 const VillaTerangaAlAmin = React.lazy(() => import('./Pages/Projects/Villa_Teranga_Al_Amin'));
 
-
-
 //!###############################################################
-
 function App() {
 
   const [TheImage, setTheImage] = useState('');
@@ -69,6 +64,7 @@ function App() {
         <div className='App_container'>
           <TheLoader />
           <Routes>
+
             <Route exact path="/"
               element={<Accueil GetImageToApp={GetImage} />}
             />
@@ -109,9 +105,5 @@ function App() {
     </BrowserRouter>
   );
 }
-
-
-
-
 
 export default App;
