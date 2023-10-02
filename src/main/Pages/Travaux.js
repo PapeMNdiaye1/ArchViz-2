@@ -11,13 +11,9 @@ import ImageProjectG1 from '../Style/Images/Project/MSAD_2.jpg';
 
 
 import ImageProjectH1 from '../Style/Images/Project/Villa_Astan-Ndiaye-1.jpg';
-
 import ImageProjectI2 from '../Style/Images/Project/Villa_B-2.jpg';
-
 import ImageProjectJ1 from '../Style/Images/Project/Appartement-F4-A-1.jpg';
-
 import ImageProjectK4 from '../Style/Images/Project/Pharmacie_C-4.jpg';
-
 import ImageProjectL1 from '../Style/Images/Project/Villa_Teranga_Al_Amin-1.jpg';
 
 function Travaux() {

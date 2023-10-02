@@ -49,7 +49,6 @@ function App() {
   const [TheDate, setTheDate] = useState('');
   const [TheLink, setTheLink] = useState('/');
 
-
   const changeTab = (newTab, link) => {
     console.log(newTab, link);
     let TheFooter = document.querySelector(".the_footer")
@@ -78,7 +77,7 @@ function App() {
             <Route exact path="/Contact" element={<Suspense fallback={<TheLoader />}><Contact /></Suspense>} />
 
             <Route exact path="/Galerie" element={
-              <Suspense fallback={<div className='the-suspense' >Chargement...</div>}>
+              <Suspense fallback={<TheLoader />}>
                 <Gallery
                   TheImageToGallery={TheImage}
                   TheTitleToGallery={TheTitle}
