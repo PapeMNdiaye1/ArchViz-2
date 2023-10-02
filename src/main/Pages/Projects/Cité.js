@@ -16,8 +16,8 @@ function City1({ }) {
     const [TheImageInTheContainer, setTheImageInTheContainer] = useState(ImageProjectC1);
 
     useEffect(() => {
-
-
+        let hoverLoaderContainer = document.querySelector(".hover_loader_container")
+        hoverLoaderContainer.style.display = 'flex';
 
         let Page_slider = document.querySelector('.page_title_slider')
         Page_slider.style.opacity = `0`
@@ -25,8 +25,6 @@ function City1({ }) {
         let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;
 
-        let hoverLoaderContainer = document.querySelector(".hover_loader_container")
-        hoverLoaderContainer.style.display = 'flex';
 
         setTimeout(function () {
             hoverLoaderContainer.style.display = '';

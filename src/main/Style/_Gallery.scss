@@ -276,6 +276,14 @@
             .one_galerie_element {
                 @include cent();
 
+                img {
+                    transform: scale(1);
+
+                    &:hover {
+                        transform: scale(1);
+                    }
+                }
+
                 &:hover {
                     img {
                         transform: scale(1);

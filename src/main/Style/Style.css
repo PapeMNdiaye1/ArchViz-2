@@ -1961,6 +1961,14 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  #Accueil .the_galerie_container .one_galerie_element img {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  #Accueil .the_galerie_container .one_galerie_element img:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
   #Accueil .the_galerie_container .one_galerie_element:hover img {
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -3102,8 +3110,8 @@
     font-size: 1.5em;
   }
   #Gallery .the_galerie_presantation_container .the_title:hover {
-    -webkit-transform: scale(1.03);
-            transform: scale(1.03);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   #Gallery .the_galerie_presantation_container .the_date {
     width: 90%;
@@ -3126,6 +3134,14 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  #Gallery .the_galerie_container .one_galerie_element img {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  #Gallery .the_galerie_container .one_galerie_element img:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   #Gallery .the_galerie_container .one_galerie_element:hover img {
     -webkit-transform: scale(1);
