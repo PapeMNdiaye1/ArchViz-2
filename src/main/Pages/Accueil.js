@@ -20,7 +20,6 @@ import ImageProjectE4 from '../Style/Images/Project/Pharmacie-4.jpg';
 import ImageProjectF2 from '../Style/Images/Project/Hangar-2.jpg';
 import ImageProjectF3 from '../Style/Images/Project/Hangar-3.jpg';
 
-import ImageProjectG2 from '../Style/Images/Project/MSAD_2.jpg';
 import ImageProjectH3 from '../Style/Images/Project/Villa_Astan-Ndiaye-2.jpg';
 
 import ImageProjectI2 from '../Style/Images/Project/Villa_B-2.jpg';
@@ -38,7 +37,6 @@ import ImageProjectL4 from '../Style/Images/Project/Villa_Teranga_Al_Amin-4.jpg'
 import ImageProjectL6 from '../Style/Images/Project/Villa_Teranga_Al_Amin-6.jpg';
 
 import ImageProjectH1 from '../Style/Images/Project/Villa_Astan-Ndiaye-1.jpg';
-
 import ImageProjectJ1 from '../Style/Images/Project/Appartement-F4-A-1.jpg';
 
 
@@ -145,8 +143,6 @@ function Accueil({ GetImageToApp }) {
                 <OneBigProject title={'La 3D dans le domaine des Industries'} image={ImageProjectF2}
                     description={"Le rendu et l'animation avec des temps de production de plus en plus rapide ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques."}
                     color={'#F1F1F1'} textcolor={'#222'} theKey={9} The_Experience={false} link={'/Hangar1'} side={'right'} />
-
-
             </section>
             <section className='galerie_presantation'>
                 <Link className='nos_réalisations' to={'./Travaux'}>
@@ -278,7 +274,7 @@ function TheGallery({ GetImageOnAccueil }) {
             <OneGalerieElement giveImageId={onClickOnImage} link={'/Interior1'} image={ImageProjectC2} title={'Décoration Interieur'} date={'03 Juin, 2022'} />
             <OneGalerieElement giveImageId={onClickOnImage} link={'/VillaTerangaAlAmin'} image={ImageProjectL3} title={'Villa Al Amin'} date={'26 Janvier, 2023'} />
 
-            <OneGalerieElement giveImageId={onClickOnImage} link={'/MSAD'} image={ImageProjectG2} title={'Manufacture des Arts Décoratifs de Thiés'} date={'03 Septembre, 2022'} />
+            <OneGalerieElement giveImageId={onClickOnImage} link={'/Appartement-F4-A'} image={ImageProjectJ1} title={'Appartement-F4-A'} date={'25 Septembre, 2023'} />
             <OneGalerieElement giveImageId={onClickOnImage} link={'/Pharmacie1'} image={ImageProjectE2} title={'Pharmacie Design'} date={'27 Mai, 2022'} />
             <OneGalerieElement giveImageId={onClickOnImage} link={'/City1'} image={ImageProjectB9} title={'Cité El Hadj Amadou BA'} date={'12 Juin, 2023'} />
             <OneGalerieElement giveImageId={onClickOnImage} link={'/SmallHouse1'} image={ImageProjectA1} title={'Design de Maison Moderne'} date={'15 avril, 2022'} />
@@ -518,9 +514,6 @@ function TheFooter({ }) {
                         <ion-icon name="logo-instagram"></ion-icon>
                     </div>
                 </a>
-
-
-
                 <a href="https://www.linkedin.com/company/archviz-sn/" target="_blank">
                     <div className="network">
                         <ion-icon name="logo-linkedin"></ion-icon>

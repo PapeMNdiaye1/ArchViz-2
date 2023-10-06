@@ -79,32 +79,29 @@ function Travaux() {
                     description={'Nous avons une grande expérience dans l’agencement de point de vente, et l’aménagement de bureaux. Quelle que soit la typologie du point de vente, sa vocation, sa stratégie et son positionnement.'}
                     color={'#F4EFE4'} textcolor={'#222'} theKey={6} link={'/Pharmacie1'} side={'right'} The_Experience={false} />
 
-                <OneBigProject title={'Expériences de réalité virtuelle'} image={ImageProjectG1}
-                    description={"Expériences de réalité virtuelle réalisées pour la M.S.A.D de Thiès. Nous pouvons vous aider à améliorer vos ventes avec cette technique en constante évolution."}
-                    color={'#EAEAEA'} textcolor={'#222'} theKey={7} link={'/MSAD'} side={'left'} The_Experience={true} The_Experience_Link={'https://papemndiaye1.github.io/MSAT-WebSite/'} />
+
+                <OneBigProject title={'Visualisation de projets immobiliers'} image={ImageProjectL1}
+                    description={"Les visites virtuelles offrent de nombreux avantages pour les acheteurs, propriétaires et agents immobiliers. Pour les acheteurs, elles permettent de visualiser les propriétés sans se déplacer. Pour les agents immobiliers, elles peuvent diffuser les propriétés à plus de gens, ce qui peut conduire à une vente plus rapide..."}
+                    color={'#664f3c'} textcolor={'#f1f1f1'} theKey={7} link={'/VillaTerangaAlAmin'} side={'left'}
+                    The_Experience={true} The_Experience_Link={'https://archviz-villa-teranga-al-amine.netlify.app/'}
+                />
 
                 <OneBigProject title={'Espace Sportif'} image={ImageProjectK4}
                     description={"Nous avons une vaste expérience dans l'aménagement d'espaces communs et de bureaux, quelle que soit leur typologie, leur vocation, leur stratégie et leur positionnement."}
                     color={'#495D68'} textcolor={'#f1f1f1'} theKey={8} link={'/Gym'} side={'right'} The_Experience={false} />
 
-
-                <OneBigProject title={'Visualisation de projets immobiliers'} image={ImageProjectL1}
-                    description={"Les visites virtuelles offrent de nombreux avantages pour les acheteurs, propriétaires et agents immobiliers. Pour les acheteurs, elles permettent de visualiser les propriétés sans se déplacer. Pour les agents immobiliers, elles peuvent diffuser les propriétés à plus de gens, ce qui peut conduire à une vente plus rapide..."}
-                    color={'#664f3c'} textcolor={'#f1f1f1'} theKey={9} link={'/VillaTerangaAlAmin'} side={'left'}
-                    The_Experience={true} The_Experience_Link={'https://archviz-villa-teranga-al-amine.netlify.app/'}
-                />
+                <OneBigProject title={'Maquette de la Grande Mosquée de Touba'} image={ImageProjectD3}
+                    description={'Sur la base du matériel de briefing, nous créons des rendus ou croquis pour chaque image commandée.'}
+                    color={'#DB9B18'} textcolor={'#222'} theKey={9} link={'/Touba'} side={'left'} The_Experience={false} />
 
                 <OneBigProject title={'Villa Saly'} image={ImageProjectI2}
                     description={"Des designs Modernes, épurés, etc…. nous mettons en œuvre différentes approches pour une optimisation de vos espaces extérieurs et intérieurs. Pour se faire nous utilisons différents logiciels avec les dernières innovations pour des rendus d’images à la fois réalistes et immersives."}
                     color={'#F1F1F1'} textcolor={'#222'} theKey={10} The_Experience={true} The_Experience_Link={'https://villa-r-1.netlify.app/'} link={'/Villa-Saly'} side={'right'} />
 
-                <OneBigProject title={'Maquette de la Grande Mosquée de Touba'} image={ImageProjectD3}
-                    description={'Sur la base du matériel de briefing, nous créons des rendus ou croquis pour chaque image commandée.'}
-                    color={'#DB9B18'} textcolor={'#222'} theKey={11} link={'/Touba'} side={'left'} The_Experience={false} />
 
                 <OneBigProject title={'La 3D dans le domaine des Industries'} image={ImageProjectF2}
                     description={"Le rendu et l'animation avec des temps de production de plus en plus rapide ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques."}
-                    color={'#F1F1F1'} textcolor={'#222'} theKey={12} link={'/Hangar1'} side={'right'} The_Experience={false} />
+                    color={'#F1F1F1'} textcolor={'#222'} theKey={11} link={'/Hangar1'} side={'left'} The_Experience={false} />
 
             </section>
         </div>

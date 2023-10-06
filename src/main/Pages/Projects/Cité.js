@@ -25,7 +25,6 @@ function City1({ }) {
         let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;
 
-
         setTimeout(function () {
             hoverLoaderContainer.style.display = '';
         }, 1500);
