@@ -18,6 +18,8 @@ function Gallery({ TheImageToGallery,
     const [LoadGalerieContainer, setLoadGalerieContainer] = useState(false);
 
     useEffect(() => {
+        let ToDisplayonBLoade = document.querySelector(".To_displayon_B_loade")
+        ToDisplayonBLoade.style.display = 'none';
 
         let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;
@@ -60,6 +62,8 @@ function Gallery({ TheImageToGallery,
             setTheTitle(TheTitle);
             setTheDate(TheDate);
             setTheLink(TheLink);
+            ToDisplayonBLoade.style.display = 'flex';
+            AccueilContainer.scrollTop = 0;
         }
 
     }, []);
