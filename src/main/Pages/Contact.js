@@ -6,6 +6,8 @@ function Contacts() {
 
 
     useEffect(() => {
+        let ToDisplayonBLoade = document.querySelector(".To_displayon_B_loade")
+        ToDisplayonBLoade.style.display = 'none';
 
         let Page_slider = document.querySelector('.page_title_slider')
         Page_slider.style.top = `-400%`
@@ -20,13 +22,16 @@ function Contacts() {
         setTimeout(function () {
             hoverLoaderContainer.style.display = '';
         }, 1500);
-        
+
         let TheFooter = document.querySelector(".the_footer")
         TheFooter.style.opacity = '1';
 
 
 
         return () => {
+
+            ToDisplayonBLoade.style.display = 'flex';
+            AccueilContainer.scrollTop = 0;
 
         }
     }, []);

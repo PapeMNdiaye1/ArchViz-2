@@ -44,6 +44,9 @@ function Accueil({ GetImageToApp }) {
 
     useEffect(() => {
 
+        let ToDisplayonBLoade = document.querySelector(".To_displayon_B_loade")
+        ToDisplayonBLoade.style.display = 'none';
+
         let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;
 
@@ -52,7 +55,6 @@ function Accueil({ GetImageToApp }) {
 
         let hoverLoaderContainer = document.querySelector(".hover_loader_container")
         hoverLoaderContainer.style.display = 'flex';
-
 
         setTimeout(function () {
             hoverLoaderContainer.style.display = '';
@@ -63,6 +65,10 @@ function Accueil({ GetImageToApp }) {
 
         let ThesliderImg = document.querySelectorAll(".slider")
         let thePageWidth = window.innerWidth
+        return () => {
+            ToDisplayonBLoade.style.display = 'flex';
+            AccueilContainer.scrollTop = 0;
+        };
 
     }, []);
 
@@ -72,7 +78,6 @@ function Accueil({ GetImageToApp }) {
 
     return (
         <div id="Accueil">
-
 
             <AccueilSlider />
             <section className='archviz_presantation' >
@@ -377,6 +382,7 @@ function OneBigProject({ color, title, description, side, textcolor, theKey, ima
                         </div>
                     </div>
                     <div
+                        loading='lazy'
                         role="img" alt={title}
                         className='image_container'
                         style={{
@@ -432,6 +438,7 @@ function OneBigProject({ color, title, description, side, textcolor, theKey, ima
                         </div>
                     </div>
                     <div
+                        loading='lazy'
                         role="img" alt={title}
                         className='image_container'
                         style={{

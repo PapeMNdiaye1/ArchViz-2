@@ -62,6 +62,9 @@ function App() {
       <div className="App">
         <TopBare onChangeTab={changeTab} />
         <div className='App_container'>
+          <div className='To_displayon_B_loade'>
+
+          </div>
           <TheLoader />
           <Routes>
 

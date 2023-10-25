@@ -16,6 +16,9 @@ function City1({ }) {
     const [TheImageInTheContainer, setTheImageInTheContainer] = useState(ImageProjectC1);
 
     useEffect(() => {
+        let ToDisplayonBLoade = document.querySelector(".To_displayon_B_loade")
+        ToDisplayonBLoade.style.display = 'none';
+
         let hoverLoaderContainer = document.querySelector(".hover_loader_container")
         hoverLoaderContainer.style.display = 'flex';
 
@@ -31,6 +34,8 @@ function City1({ }) {
 
         return () => {
             Page_slider.style.opacity = `1`
+            ToDisplayonBLoade.style.display = 'flex';
+            AccueilContainer.scrollTop = 0;
         }
     }, []);
 

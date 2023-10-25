@@ -13,6 +13,9 @@ function Pharmacie1({ }) {
 
     useEffect(() => {
 
+        let ToDisplayonBLoade = document.querySelector(".To_displayon_B_loade")
+        ToDisplayonBLoade.style.display = 'none';
+
         let Page_slider = document.querySelector('.page_title_slider')
         Page_slider.style.opacity = `0`
 
@@ -28,6 +31,8 @@ function Pharmacie1({ }) {
 
         return () => {
             Page_slider.style.opacity = `1`
+            ToDisplayonBLoade.style.display = 'flex';
+            AccueilContainer.scrollTop = 0;
         }
     }, []);
 

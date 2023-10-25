@@ -44,6 +44,13 @@
   outline: none;
 }
 
+.App .App_container .To_displayon_B_loade {
+  height: 120vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .App .App_container .the_suspense {
   width: 100vw;
   height: 100vh;
