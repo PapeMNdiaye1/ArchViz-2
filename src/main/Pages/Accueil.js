@@ -69,7 +69,6 @@ function Accueil({ GetImageToApp }) {
             ToDisplayonBLoade.style.display = 'flex';
             AccueilContainer.scrollTop = 0;
         };
-
     }, []);
 
     const GetImageOnApp = (theimage, title, date, link) => {

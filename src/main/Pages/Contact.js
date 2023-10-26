@@ -2,7 +2,7 @@ import { React, useEffect, } from 'react';
 
 
 
-function Contacts() {
+function Contacts({ }) {
 
 
     useEffect(() => {

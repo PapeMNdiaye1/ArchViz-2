@@ -7,7 +7,7 @@ import ImageProjectC3 from '../Style/Images/Project/Interior-1-3.jpg';
 import ImageProjectD3 from '../Style/Images/Project/NFT-3.jpg';
 import ImageProjectE4 from '../Style/Images/Project/Pharmacie-3.jpg';
 import ImageProjectF2 from '../Style/Images/Project/Hangar-2.jpg';
-import ImageProjectG1 from '../Style/Images/Project/MSAD_2.jpg';
+// import ImageProjectG1 from '../Style/Images/Project/MSAD_2.jpg';
 
 
 import ImageProjectH1 from '../Style/Images/Project/Villa_Astan-Ndiaye-1.jpg';
@@ -16,9 +16,10 @@ import ImageProjectJ1 from '../Style/Images/Project/Appartement-F4-A-1.jpg';
 import ImageProjectK4 from '../Style/Images/Project/Pharmacie_C-4.jpg';
 import ImageProjectL1 from '../Style/Images/Project/Villa_Teranga_Al_Amin-1.jpg';
 
-function Travaux() {
+function Travaux({ }) {
 
     useEffect(() => {
+        console.log('opp Travaux');
         let ToDisplayonBLoade = document.querySelector(".To_displayon_B_loade")
         ToDisplayonBLoade.style.display = 'none';
 
@@ -42,7 +43,8 @@ function Travaux() {
         return () => {
             ToDisplayonBLoade.style.display = 'flex';
             AccueilContainer.scrollTop = 0;
-        }
+            console.log('clo Travaux');
+        };
     }, []);
 
 
