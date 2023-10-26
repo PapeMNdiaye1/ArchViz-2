@@ -41,7 +41,8 @@ const Travaux = () => {
         TheFooter.style.opacity = '1';
 
         return () => {
-            ToDisplayonBLoade.style.display = 'grid';
+            ToDisplayonBLoade.style.display = 'flex';
+            console.log(ToDisplayonBLoade);
             AccueilContainer.scrollTop = 0;
             console.log('clo Travaux');
         };
