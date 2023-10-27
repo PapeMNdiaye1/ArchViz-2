@@ -5,9 +5,10 @@ import { Routes, BrowserRouter, Route, } from "react-router-dom";
 import { Accueil } from './Pages/Accueil';
 import { TheFooter } from './Pages/Accueil';
 import Service from './Pages/Service';
+import Travaux from './Pages/Travaux';
+import Gallery from './Pages/Galerie';
 
 const TopBare = React.lazy(() => import('./TopBare'));
-const Travaux = React.lazy(() => import('./Pages/Travaux'));
 const Contact = React.lazy(() => import('./Pages/Contact'));
 
 //!###############################################################
@@ -22,7 +23,6 @@ function TheLoader() {
 }
 //!###############################################################
 
-const Gallery = React.lazy(() => import('./Pages/Galerie'));
 const Interior1 = React.lazy(() => import('./Pages/Projects/Interior_Design'));
 const SmallHouse1 = React.lazy(() => import('./Pages/Projects/Small_House_1'));
 const Hangar1 = React.lazy(() => import('./Pages/Projects/Hangar_1'));
@@ -66,24 +66,24 @@ function App() {
           </div>
           <TheLoader />
           <Routes>
-
             <Route exact path="/"
               element={<Accueil GetImageToApp={GetImage} />}
             />
-            <Route exact path="/Travaux" element={<Suspense fallback={<TheLoader />}><Travaux /></Suspense>} />
+            <Route exact path="/Travaux"
+              element={<Travaux />}
+            />
+            <Route exact path="/Galerie" element={
+              <Gallery
+                TheImageToGallery={TheImage}
+                TheTitleToGallery={TheTitle}
+                TheDateToGallery={TheDate}
+                TheLinkToGallery={TheLink}
+              />
+            } />
             <Route exact path="/Services" element={<Service />} />
+
             <Route exact path="/Contact" element={<Suspense fallback={<TheLoader />}><Contact /></Suspense>} />
 
-            <Route exact path="/Galerie" element={
-              <Suspense fallback={<TheLoader />}>
-                <Gallery
-                  TheImageToGallery={TheImage}
-                  TheTitleToGallery={TheTitle}
-                  TheDateToGallery={TheDate}
-                  TheLinkToGallery={TheLink}
-                />
-              </Suspense>
-            } />
 
             {/* !############################################## */}
 
