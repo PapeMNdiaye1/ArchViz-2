@@ -14,7 +14,7 @@ import ImageProjectJ1 from '../Style/Images/Project/Villa_B-2.jpg';
 
 function Services({ }) {
     useEffect(() => {
-        let ToDisplayonBLoade = document.querySelector(".To_displayon_B_loade")
+        let ToDisplayonBLoade = document.querySelector(".before-loader")
         ToDisplayonBLoade.style.display = 'none';
 
         let Page_slider = document.querySelector('.page_title_slider')

@@ -16,7 +16,7 @@ function City1({ }) {
     const [TheImageInTheContainer, setTheImageInTheContainer] = useState(ImageProjectC1);
 
     useEffect(() => {
-        let ToDisplayonBLoade = document.querySelector(".To_displayon_B_loade")
+        let ToDisplayonBLoade = document.querySelector(".before-loader")
         ToDisplayonBLoade.style.display = 'none';
 
         let hoverLoaderContainer = document.querySelector(".hover_loader_container")

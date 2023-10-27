@@ -22,7 +22,7 @@ function Interior1({ }) {
     const [TheImageInTheContainer, setTheImageInTheContainer] = useState(ImageProjectC6);
 
     useEffect(() => {
-        let ToDisplayonBLoade = document.querySelector(".To_displayon_B_loade")
+        let ToDisplayonBLoade = document.querySelector(".before-loader")
         ToDisplayonBLoade.style.display = 'none';
 
         let Page_slider = document.querySelector('.page_title_slider')

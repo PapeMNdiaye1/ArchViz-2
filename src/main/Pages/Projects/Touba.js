@@ -16,7 +16,7 @@ function Touba({ }) {
     const [TheImageInTheContainer, setTheImageInTheContainer] = useState(ImageProjectC1);
 
     useEffect(() => {
-        let ToDisplayonBLoade = document.querySelector(".To_displayon_B_loade")
+        let ToDisplayonBLoade = document.querySelector(".before-loader")
         ToDisplayonBLoade.style.display = 'none';
         let Page_slider = document.querySelector('.page_title_slider')
         Page_slider.style.opacity = `0`

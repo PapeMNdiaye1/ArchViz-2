@@ -1,5 +1,5 @@
 import './Style/Style.css';
-import React, { useState, Suspense } from 'react';
+import React, { useState, Suspense, Fragment } from 'react';
 import { Routes, BrowserRouter, Route, } from "react-router-dom";
 
 import { Accueil } from './Pages/Accueil';
@@ -14,11 +14,18 @@ const Contact = React.lazy(() => import('./Pages/Contact'));
 //!###############################################################
 function TheLoader() {
   return (
-    <div className='hover_loader_container'>
-      <div className='hover_loader'>
-        <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+    <Fragment>
+      <div className='before-loader'>
+        <div className='hover_loader'>
+          <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+        </div>
       </div>
-    </div>
+      <div className='hover_loader_container'>
+        <div className='hover_loader'>
+          <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+        </div>
+      </div>
+    </Fragment>
   );
 }
 //!###############################################################
@@ -31,7 +38,6 @@ const Pharmacie1 = React.lazy(() => import('./Pages/Projects/Pharmacie_1'));
 const AppartementFA = React.lazy(() => import('./Pages/Projects/Appartement-F4-A'));
 const Gym = React.lazy(() => import('./Pages/Projects/Gym'));
 const City1 = React.lazy(() => import('./Pages/Projects/Cité'));
-// const MSAD = React.lazy(() => import('./Pages/Projects/MSAD'));
 const Villa = React.lazy(() => import('./Pages/Projects/Villa_A'));
 const Villa_Saly = React.lazy(() => import('./Pages/Projects/Villa_B'));
 const VillaTerangaAlAmin = React.lazy(() => import('./Pages/Projects/Villa_Teranga_Al_Amin'));
@@ -62,8 +68,7 @@ function App() {
       <div className="App">
         <TopBare onChangeTab={changeTab} />
         <div className='App_container'>
-          <div className='To_displayon_B_loade'>
-          </div>
+
           <TheLoader />
           <Routes>
             <Route exact path="/"

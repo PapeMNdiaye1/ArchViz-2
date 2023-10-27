@@ -18,7 +18,7 @@ function Gallery({ TheImageToGallery,
     const [LoadGalerieContainer, setLoadGalerieContainer] = useState(false);
 
     useEffect(() => {
-        let ToDisplayonBLoade = document.querySelector(".To_displayon_B_loade")
+        let ToDisplayonBLoade = document.querySelector(".before-loader")
         ToDisplayonBLoade.style.display = 'none';
 
         let AccueilContainer = document.querySelector(".App_container")
