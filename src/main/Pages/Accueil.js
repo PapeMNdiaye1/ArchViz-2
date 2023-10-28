@@ -91,12 +91,12 @@ function Accueil({ GetImageToApp }) {
                         <img loading="lazy" src={ImageforIntro1} />
                         <div className='sliders_inner_container'>
                             <div style={{
-                                color: '#222',
+                                color: '#000',
                             }} className='slider_title'>
                                 <p >Visualisations 3D "Rendus Images & Animations"</p>
                             </div>
                             <div style={{
-                                color: '#222',
+                                color: '#000',
                             }} className='slider_date'>
                                 Séngal, Dakar
                             </div>

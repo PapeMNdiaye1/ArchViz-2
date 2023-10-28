@@ -1303,31 +1303,6 @@
   height: 100%;
 }
 
-#Accueil .Accueil_Slider-2 .sliders:nth-child(1) .sliders_inner_container .slider_title:nth-child(1) {
-  color: var(--color0);
-  color: var(--color0);
-}
-
-#Accueil .Accueil_Slider-2 .sliders:nth-child(1) .sliders_inner_container .slider_date {
-  color: var(--color0);
-}
-
-#Accueil .Accueil_Slider-2 .sliders:nth-child(2) .sliders_inner_container .slider_title:nth-child(1) {
-  color: #f1f1f1;
-}
-
-#Accueil .Accueil_Slider-2 .sliders:nth-child(2) .sliders_inner_container .slider_date {
-  color: #f1f1f1;
-}
-
-#Accueil .Accueil_Slider-2 .sliders:nth-child(3) .sliders_inner_container .slider_title:nth-child(1) {
-  color: #cfab8b;
-}
-
-#Accueil .Accueil_Slider-2 .sliders:nth-child(3) .sliders_inner_container .slider_date {
-  color: #cfab8b;
-}
-
 #Accueil .archviz_presantation {
   height: 25em;
   width: 100%;
