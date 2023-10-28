@@ -53,7 +53,7 @@ function Contacts({ }) {
                     title={<div className="network"><ion-icon name="logo-whatsapp"></ion-icon>WHATSAPP</div>}
                     title2={<div className="network">+221 777278655</div>}
                 />
-                <OneSection link={'https://www.instagram.com/arch_viz_sn/'}
+                <OneSection link={'https://www.instagram.com/archviz_dakar/'}
                     title={<div className="network"><ion-icon name="logo-instagram"></ion-icon>INSTAGRAM</div>}
                     title2={<div className="network">@arch_viz_sn</div>}
 

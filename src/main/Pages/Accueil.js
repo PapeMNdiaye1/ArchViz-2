@@ -1,5 +1,13 @@
 import { React, useEffect, useState, Fragment } from 'react';
 import { Link } from "react-router-dom";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+
+import ImageforIntro1 from '../Style/Images/Project/Exterior-0.jpg';
+import ImageforIntro2 from '../Style/Images/Project/Villa_Teranga_Al_Amin-1.jpg';
+import ImageforIntro3 from '../Style/Images/Project/Villa_Teranga_Al_Amin-3.jpg';
+import ImageforIntro4 from '../Style/Images/Project/Pharmacie-3.jpg';
+
 
 import ImageProjectA1 from '../Style/Images/Project/Exterior-1.jpg';
 
@@ -77,8 +85,60 @@ function Accueil({ GetImageToApp }) {
 
     return (
         <div id="Accueil">
+            <div className="Accueil_Slider-2">
+                <Carousel>
+                    <div className='sliders'>
+                        <img loading="lazy" src={ImageforIntro1} />
+                        <div className='sliders_inner_container'>
+                            <div style={{
+                                color: '#222',
+                            }} className='slider_title'>
+                                <p >Visualisations 3D "Rendus Images & Animations"</p>
+                            </div>
+                            <div style={{
+                                color: '#222',
+                            }} className='slider_date'>
+                                Séngal, Dakar
+                            </div>
+                        </div>
+                    </div>
+                    <div className='sliders'>
+                        <img loading="lazy" src={ImageforIntro2} />
+                        <div className='sliders_inner_container'>
+                            <div className='slider_title'>
+                                <p>Création De Maquettes </p>
+                            </div>
+                            <div className='slider_date'>
+                                Séngal, Dakar
+                            </div>
+                        </div>
+                    </div>
+                    <div loading="lazy" className='sliders'>
+                        <img src={ImageforIntro3} />
+                        <div className='sliders_inner_container'>
+                            <div className='slider_title'>
+                                <p>Réalité Virtuel & Experience 3D Web</p>
+                            </div>
+                            <div className='slider_date'>
+                                Séngal, Dakar
+                            </div>
+                        </div>
+                    </div>
+                    <div loading="lazy" className='sliders'>
+                        <img src={ImageforIntro4} />
+                        <div className='sliders_inner_container'>
+                            <div className='slider_title'>
+                                <p>Visualisations Architecturals Pour Commerces</p>
+                            </div>
+                            <div className='slider_date'>
+                                Séngal, Dakar
+                            </div>
+                        </div>
+                    </div>
+                </Carousel>
+            </div>
 
-            <AccueilSlider />
+            {/* <AccueilSlider /> */}
             <section className='archviz_presantation' >
                 <h2 className='qui_somme_nous' >
                     Qui sommes-nous ?
@@ -87,7 +147,7 @@ function Accueil({ GetImageToApp }) {
                 <p>
                     ArchViz est un studio de visualisation architecturale, nous créons des images et animations Photoréalistes pour architectes, designers, promoteurs immobiliers etc...                       </p>
                 <div className='network_container'>
-                    <a href="https://www.instagram.com/arch_viz_sn/" target="_blank">
+                    <a href="https://www.instagram.com/archviz_dakar/" target="_blank">
                         <div className="network">
                             <ion-icon name="logo-instagram"></ion-icon>
                         </div>
@@ -159,94 +219,7 @@ function Accueil({ GetImageToApp }) {
         </div >
     );
 }
-//!###############################################################
-function AccueilSlider() {
 
-    const onClickOnDot = (e) => {
-        let AllSlider = document.querySelectorAll(".slider")
-        let AllDot = document.querySelectorAll(".dot")
-        let theSliderKey = e.target.getAttribute('theSlider')
-        AllDot.forEach(element => {
-            element.classList.remove('ativeDot')
-        });
-        e.target.classList.add('ativeDot')
-        AllSlider.forEach(element => {
-            element.style.opacity = '0'
-        });
-        AllSlider[theSliderKey - 1].style.opacity = '1'
-        setTimeout(function () {
-            AllSlider.forEach(element => {
-                element.style.zIndex = '1'
-            });
-            AllSlider[theSliderKey - 1].style.zIndex = '4'
-        }, 6100);
-    }
-
-    useEffect(() => {
-        let sliderBtnContainer = document.querySelector(".slider_btn_container")
-        let AllDot = sliderBtnContainer.childNodes
-
-        AllDot.forEach(element => {
-            element.addEventListener("click", onClickOnDot);
-        });
-
-        AllDot[0].classList.add('ativeDot')
-        let theCourentSlide = 0
-
-        // let windowWidth = window.innerWidth;
-        // if (windowWidth >= 1000) {
-        //     setInterval(function () {
-        //         theCourentSlide++
-        //         AllDot[theCourentSlide].click()
-        //         if (theCourentSlide >= AllDot.length) {
-        //             return theCourentSlide = 0
-        //         }
-        //     }, 66000);
-        // }
-
-        return () => {
-            sliderBtnContainer.innerHTML = '';
-        }
-
-    }, [])
-
-    const CreateSliderBtn = (theSlider) => {
-        let sliderBtnContainer = document.querySelector(".slider_btn_container")
-        let OneDot = document.createElement("div")
-        OneDot.classList.add('dot');
-        OneDot.setAttribute("theSlider", theSlider);
-        sliderBtnContainer.appendChild(OneDot)
-    }
-
-    return (
-        <div className="Accueil_Slider">
-            <Slider giveSliderKey={CreateSliderBtn} theKey={1} date={'Sénégal, Dakar'} title={<p>Visualisations 3D "Rendus Images & Animations"</p>} />
-            <Slider giveSliderKey={CreateSliderBtn} theKey={2} date={'Sénégal, Dakar'} title={<p>Création De Maquettes </p>} />
-            <Slider giveSliderKey={CreateSliderBtn} theKey={3} date={'Sénégal, Dakar'} title={<p>Réalité Virtuel & Experience 3D Web</p>} />
-            <Slider giveSliderKey={CreateSliderBtn} theKey={4} date={'Sénégal, Dakar'} title={<p>Visualisations Architecturals Pour Commerces</p>} />
-            <div className='slider_btn_container'>
-            </div>
-        </div>
-    );
-}
-//!###############################################################
-function Slider({ giveSliderKey, title, date, theKey }) {
-
-    useEffect(() => {
-        giveSliderKey(theKey)
-    });
-
-    return (
-        <div className='slider'>
-            <div className='slider_title'>
-                {title}
-            </div>
-            <div className='slider_date'>
-                {date}
-            </div>
-        </div>
-    );
-}
 //!###############################################################
 function TheGallery({ GetImageOnAccueil }) {
 
@@ -512,7 +485,7 @@ function TheFooter({ }) {
 
             <div className='network_container'>
 
-                <a href="https://www.instagram.com/arch_viz_sn/" target="_blank">
+                <a href="https://www.instagram.com/archviz_dakar/" target="_blank">
                     <div className="network">
                         <ion-icon name="logo-instagram"></ion-icon>
                     </div>

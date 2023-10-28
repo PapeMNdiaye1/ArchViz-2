@@ -82,7 +82,7 @@ function TopBare({ onChangeTab }) {
                     <OneSection parentCallback={callback} link={'/Contact'} title={'CONTACT'} />
                 </nav>
                 <div className="network_container">
-                    <a href="https://www.instagram.com/arch_viz_sn/" target="_blank">
+                    <a href="https://www.instagram.com/archviz_dakar/" target="_blank">
                         <div className="network">
                             <ion-icon name="logo-instagram"></ion-icon>
                         </div>
