@@ -1171,8 +1171,8 @@
 }
 
 #Accueil .Accueil_Slider-2 .control-dots .dot {
-  -webkit-transform: scale(1.7);
-          transform: scale(1.7);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   margin: .6em;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.24);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.24);
