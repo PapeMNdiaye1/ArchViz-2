@@ -66,7 +66,7 @@ function SmallHouse1({ }) {
             <div className='Villa_Sarr'>
                 <div className='project_display'>
                     <h1 className='project_title'>
-                        Villa Sarr test
+                        Villa Sarr
                     </h1>
                     <h3 className='project_description'>
                         par Pape Momar Ndiaye | 05 Septembre, 2024 |
@@ -81,10 +81,10 @@ function SmallHouse1({ }) {
                         <img onClick={displayImage} src={ImageProjectC2} width='47%' />
                         <img onClick={displayImage} src={ImageProjectC3} width='47%' />
                     </div>
-                    {/* <div className='the_video'>
+                    <div className='the_video'>
                         <iframe width="100%"
                             height="100%"
-                            src="https://www.youtube.com/embed/qQsJF9Du2kw?si=6JLl4rfEQpkibWEV"
+                            src="https://www.youtube.com/embed/NkvBu9EKcQk?si=B_YFK9J7lw19nNvB" 
                             title=" Sarr"
                             allow="accelerometer; 
                             autoplay; clipboard-write;
@@ -92,7 +92,9 @@ function SmallHouse1({ }) {
                             picture-in-picture"
                             allowFullScreen>
                         </iframe>
-                    </div> */}
+                    </div>
+
+                   
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC4} width='100%' />
                     </div>
