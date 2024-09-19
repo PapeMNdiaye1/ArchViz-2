@@ -503,8 +503,8 @@ function TheFooter({ }) {
             </div>
 
             <div className='contact_elemant_container'>
-                <div className='contact_elemant '>Tel: 77 727 86 55</div>
-                <div className='contact_elemant '>Tel: 77 355 88 44</div>
+                <div className='contact_elemant '>Tel: +221 77 727 86 55</div>
+                <div className='contact_elemant '>Tel: +221 77 355 88 44</div>
                 <div className='contact_elemant '>archviz.sn@gmail.com</div>
             </div>
 

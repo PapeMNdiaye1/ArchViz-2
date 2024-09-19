@@ -85,7 +85,7 @@ function SmallHouse1({ }) {
                         <iframe width="100%"
                             height="100%"
                             src="https://www.youtube.com/embed/NkvBu9EKcQk?si=B_YFK9J7lw19nNvB" 
-                            title=" Sarr"
+                            title="Villa Sarr"
                             allow="accelerometer; 
                             autoplay; clipboard-write;
                             encrypted-media; gyroscope;
