@@ -10,7 +10,9 @@ import ImageProjectB1 from '../Style/Images/Project/City-8.jpg';
 import ImageProjectB2 from '../Style/Images/Project/City-1.jpg';
 import ImageProjectB3 from '../Style/Images/Project/City-3.jpg';
 import ImageProjectB9 from '../Style/Images/Project/City-9.jpg';
+
 // HHHHHHHHH
+
 import ImageProjectE3 from '../Style/Images/Project/Pharmacie-3.jpg';
 
 import ImageProjectI2 from '../Style/Images/Project/Villa_B-2.jpg';
