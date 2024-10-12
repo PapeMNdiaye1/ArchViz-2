@@ -3430,4 +3430,39 @@
   .Villa_Sarr .project_display p {
     width: 80vw;
   }
+}
+.Formation {
+  display: grid;
+  grid-template-rows: auto 70vh 100vh;
+  grid-template-columns: 1fr;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.Formation .formation_section_1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.Formation .formation_section_1 .project_title {
+  font-family: "Ubuntu", Italic;
+  position: absolute;
+  font-size: 5vw;
+  left: 0%;
+  top: 0%;
+}
+.Formation .formation_section_2 {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: seagreen;
+}
+.Formation .formation_section_3 {
+  grid-column: 1;
+  grid-row: 3;
+  background-color: red;
+}
+
+@media all and (max-width: 1000px) {
+  .Formation {
+    padding-left: 0vw;
+    padding-right: 0vw;
+  }
 }/*# sourceMappingURL=Style.css.map */

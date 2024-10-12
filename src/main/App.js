@@ -45,6 +45,8 @@ const Villa_Saly = React.lazy(() => import('./Pages/Projects/Villa_B'));
 const VillaTerangaAlAmin = React.lazy(() => import('./Pages/Projects/Villa_Teranga_Al_Amin'));
 const VillaSamb = React.lazy(() => import('./Pages/Projects/Villa_Samb'));
 const VillaSarr = React.lazy(() => import('./Pages/Projects/Villa_Sarr'));
+const Formation = React.lazy(() => import('./Pages/Projects/Formation'));
+
 
 //!###############################################################
 function App() {
@@ -83,8 +85,8 @@ function App() {
             />
             <Route exact path="/Galerie" element={
               <Gallery
-                TheImageToGallery={TheImage}
-                TheTitleToGallery={TheTitle}
+              TheImageToGallery={TheImage}
+              TheTitleToGallery={TheTitle}
                 TheDateToGallery={TheDate}
                 TheLinkToGallery={TheLink}
               />
@@ -109,6 +111,7 @@ function App() {
             <Route exact path="/VillaTerangaAlAmin" element={<Suspense fallback={<TheLoader />}><VillaTerangaAlAmin /></Suspense>} />
             <Route exact path="/VillaSamb" element={<Suspense fallback={<TheLoader />}><VillaSamb /></Suspense>} />
             <Route exact path="/VillaSarr" element={<Suspense fallback={<TheLoader />}><VillaSarr /></Suspense>} />
+                <Route exact path="/Formation" element={<Suspense fallback={<TheLoader />}><Formation /></Suspense>} />
 
           </Routes>
           <TheFooter />
