@@ -7,9 +7,9 @@
 .Formation {
     display: grid;
 
-    grid-template-rows: auto 70vh 100vh;
+    grid-template-rows: auto autoa 100vh;
     grid-template-columns: 1fr ;
-    padding-left: 5vw;
+    // padding-left: 5vw;
     padding-right: 5vw;
     // padding-top: 2em;
     // background-color: salmon;
@@ -18,20 +18,16 @@
     .formation_section_1{
           grid-column: 1;
   grid-row: 1;
-        // width: 100%;
-        // height: 150vw;
-        // background-color: antiquewhite;
-        // background-image: url('.././Style/Images/SVG/Formation-1.png');
-        // background-repeat: no-repeat;
-        // background-position-x: 100%;
-        // background-size: 100%;
+      
         .project_title{
-             font-family: "Ubuntu", Italic;
+             font-family: "Ubuntu", sans-serif;
+             font-style: italic;
+             font-weight: 900;
     position: absolute;
     // width: 50%;
-    font-size: 5vw;
-    left: 0%;
-    top: 0%;
+    font-size: 6vw;
+    left: 5%;
+    top: 2%;
 }
 
     }
@@ -40,7 +36,28 @@
           grid-column: 1;
   grid-row: 2;
   
-        background-color: seagreen;
+       .project_title{
+             font-family: "Ubuntu", sans-serif;
+             font-style: italic;
+             font-weight: 900;
+             line-height: 90%;
+    position: absolute;
+    // width: 50%;
+    font-size: 4.5vw;
+    left: 15%;
+    top: 13%;
+}
+p{
+             font-family: "Ubuntu", sans-serif;
+             font-style: italic;
+             font-weight: 900;
+             line-height: 100%;
+    position: absolute;
+    // width: 50%;
+    font-size: 1.6vw;
+    left: 15%;
+    top: 42%;
+}
 
     }
     .formation_section_3{
