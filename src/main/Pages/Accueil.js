@@ -106,7 +106,7 @@ function Accueil({ GetImageToApp }) {
                             <div style={{
                                 color: '#000',
                             }} className='slider_date'>
-                                Séngal, Dakar
+                                sénégal, Dakar
                             </div>
                         </div>
                     </div>
@@ -117,7 +117,7 @@ function Accueil({ GetImageToApp }) {
                                 <p>Création De Plants et Maquettes</p>
                             </div>
                             <div className='slider_date'>
-                                Séngal, Dakar
+                                sénégal, Dakar
                             </div>
                         </div>
                     </div>
@@ -128,7 +128,7 @@ function Accueil({ GetImageToApp }) {
                                 <p>Réalité Virtuel & Experience 3D Web</p>
                             </div>
                             <div className='slider_date'>
-                                Séngal, Dakar
+                                sénégal, Dakar
                             </div>
                         </div>
                     </div>
@@ -139,7 +139,7 @@ function Accueil({ GetImageToApp }) {
                                 <p>Visualisations Architecturals Pour Commerces</p>
                             </div>
                             <div className='slider_date'>
-                                Séngal, Dakar
+                                sénégal, Dakar
                             </div>
                         </div>
                     </div>

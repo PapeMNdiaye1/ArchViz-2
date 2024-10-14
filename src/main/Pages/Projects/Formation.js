@@ -4,8 +4,6 @@ import ImageFormation1 from '../../Style/Images/SVG/Formation-1.png';
 import ImageFormation2 from '../../Style/Images/SVG/Formation-2.png';
 
 function SmallHouse1({ }) {
-    // const [TheImageContainer, setTheImageContainer] = useState(false);
-    // const [TheImageInTheCoFontainer, setTheImageInTheContainer] = useState(ImageProjectC1);
     useEffect(() => {
         let ToDisplayonBLoade = document.querySelector(".before-loader")
         ToDisplayonBLoade.style.display = 'none';
@@ -30,14 +28,6 @@ function SmallHouse1({ }) {
         }
     }, []);
 
-    // const displayImage = (e) => {
-    //     if (TheImageContainer) {
-    //         setTheImageContainer(false);
-    //     } else {
-    //         setTheImageInTheContainer(e.target.getAttribute("src"))
-    //         setTheImageContainer(true);
-    //     }
-    // }
 
     return (
         <Fragment>
@@ -52,7 +42,19 @@ function SmallHouse1({ }) {
                     <h1 className='project_title-2'>
                         Architecture visualisation
                     </h1>
-
+                    <pre className='prix prix-Ins' >
+                        <em>Inscription</em> 50.000 Fcfa
+                    </pre>
+                    <pre className='prix prix-Mens' >
+                        <em>Mensualite</em> 25.000 Fcfa
+                    </pre>
+                    <pre className='Link' >
+                        <em>Voir Realisation</em> 25.000 Fcfa
+                    </pre>
+                    <pre className='Link' >
+                        +221 77 727 86 55
+                        +221 77 727 86 55
+                    </pre>
                 </div>
                 <div className='formation_section_2'>
                     <img src={ImageFormation2} width='100%' />
