@@ -2,6 +2,7 @@ import { React, useEffect, useState, Fragment } from 'react';
 
 import ImageFormation1 from '../../Style/Images/SVG/Formation-1.png';
 import ImageFormation2 from '../../Style/Images/SVG/Formation-2.png';
+import ImageFormation3 from '../../Style/Images/SVG/Formation-3.png';
 
 function SmallHouse1({ }) {
     useEffect(() => {
@@ -86,6 +87,8 @@ function SmallHouse1({ }) {
                     </p>
                 </div>
                 <div className='formation_section_3'>
+                                  <img src={ImageFormation3} width='100%' />
+
                 </div>
 
 
