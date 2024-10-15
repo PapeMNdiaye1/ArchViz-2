@@ -47,7 +47,6 @@
     font-family: "Ubuntu", sans-serif;
     font-style: italic;  
     color: #f1f1f1;
-    // width: 30vw;
     position: absolute;
     font-weight: 500;
     font-size: 2.1vw;
@@ -59,6 +58,32 @@
     padding-bottom: 0.4vw;
     em{
         font-size: 1.5vw;
+
+    }
+ }
+ .prix{
+     font-family: "Ubuntu", sans-serif;
+    font-style: italic;  
+    color: #1f1f1f;
+    width: 45vw;
+    position: absolute;
+    font-weight: 900;
+    font-size: 2.8vw;
+    left: 63.5%;
+    top: 21%;
+    padding-left: 1vw;
+    padding-right: 9.5vw;
+    padding-bottom: 0.4vw;
+    em{
+        font-size: 2.4vw;
+        padding-right: 1.5vw;
+
+    }
+ }
+ .men-prix{
+     top: 25.7%;
+         em{
+        padding-right: 1.2vw;
 
     }
  }

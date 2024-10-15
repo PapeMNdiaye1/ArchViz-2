@@ -44,18 +44,30 @@ function SmallHouse1({ }) {
                          Architecture visualisation
                     </h1>
 
-                    <pre className='link'>
+                    <div className='link'>
                         <em>
                         Voir Réalisation Sur
                         </em>
                         <br />
                         www.archviz-dakar.com
-                    </pre>
+                    </div>
+                    <div className='prix ins-prix'>
+                        <em>
+                        Inscription  
+                        </em>
+                        50.000 Fcfa
+                    </div>
+                    <div className='prix men-prix'>
+                        <em>
+                        Mensualite  
+                        </em>
+                        25.000 Fcfa
+                    </div>
                  
-                    <pre className='phone'>
+                    <div className='phone'>
                         +221777278655 <br/>
                         +221777278655
-                    </pre>
+                    </div>
 
                 </div>
                 <div className='formation_section_2'>
