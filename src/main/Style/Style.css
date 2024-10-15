@@ -3464,8 +3464,9 @@
   position: absolute;
   font-weight: 900;
   font-size: 2.9vw;
-  left: 50%;
+  left: 52%;
   top: 91.7%;
+  line-height: 145%;
 }
 .Formation .formation_section_1 .link {
   font-family: "Ubuntu", sans-serif;
@@ -3528,9 +3529,11 @@
   font-weight: 900;
   line-height: 100%;
   position: absolute;
-  font-size: 1.6vw;
+  font-size: 1.5vw;
   left: 15%;
-  top: 42%;
+  top: 40%;
+  font-weight: 550;
+  line-height: 125%;
 }
 .Formation .formation_section_3 {
   grid-column: 1;
@@ -3550,7 +3553,7 @@
   font-family: "Ubuntu", sans-serif;
   font-style: normal;
   position: absolute;
-  font-size: 1.4vw;
+  font-size: 1.5vw;
   left: 6%;
   top: 45%;
   font-weight: 550;
@@ -3569,7 +3572,7 @@
   font-weight: 500;
   font-size: 1.8vw;
   left: 6%;
-  top: 64%;
+  top: 67%;
   background-color: #ECD233;
   padding-left: 1vw;
   padding-right: 1vw;
