@@ -3524,7 +3524,7 @@
 }
 .Formation .formation_section_2 p {
   font-family: "Ubuntu", sans-serif;
-  font-style: italic;
+  font-style: normal;
   font-weight: 900;
   line-height: 100%;
   position: absolute;
@@ -3535,6 +3535,49 @@
 .Formation .formation_section_3 {
   grid-column: 1;
   grid-row: 3/5;
+}
+.Formation .formation_section_3 .project_title {
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 90%;
+  position: absolute;
+  font-size: 5.5vw;
+  left: 5.5vw;
+  top: 33%;
+}
+.Formation .formation_section_3 p {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  position: absolute;
+  font-size: 1.4vw;
+  left: 6%;
+  top: 45%;
+  font-weight: 550;
+  line-height: 125%;
+}
+.Formation .formation_section_3 p em {
+  font-size: 1.8vw;
+  font-style: normal;
+  font-weight: 900;
+}
+.Formation .formation_section_3 .link {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  color: #1f1f1f;
+  position: absolute;
+  font-weight: 500;
+  font-size: 1.8vw;
+  left: 6%;
+  top: 64%;
+  background-color: #ECD233;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 0.4vw;
+}
+.Formation .formation_section_3 .link em {
+  font-style: normal;
+  font-size: 1.1vw;
 }
 
 @media all and (max-width: 1000px) {
