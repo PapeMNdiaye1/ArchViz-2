@@ -1,0 +1,3787 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+*::-moz-selection {
+  color: var(--color0);
+  background: var(--colorX);
+}
+*::selection {
+  color: var(--color0);
+  background: var(--colorX);
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background: var(--color0);
+  --color0: #f1f1f1;
+  --colorX: #222;
+  --color_bak: #fff;
+  --color_tab_hover: #222;
+  --shadow0: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  display: flex;
+  overflow-y: hidden;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+.App .App_container {
+  margin-top: 4em;
+  width: 100%;
+  height: calc(100% - 4em);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+.App .App_container .the_suspense {
+  width: 100vw;
+  height: 100vh;
+}
+.App .App_container .before-loader {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color0);
+  position: fixed;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.App .App_container .hover_loader_container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color0);
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.App .App_container .hover_loader {
+  top: -4em;
+}
+.App .App_container .hover_loader .lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.App .App_container .hover_loader .lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--colorX);
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.App .App_container .hover_loader .lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.App .App_container .hover_loader .lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.App .App_container .hover_loader .lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.App .App_container .hover_loader .lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+.App .App_container .the_footer {
+  width: calc(97% - 10em);
+  height: 40em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(13, 1fr);
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-top: 2em;
+  background-color: rgb(0, 0, 0);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 800;
+  color: var(--color0);
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-radius: 1em;
+}
+.App .App_container .the_footer .logo-container {
+  width: 5em;
+  height: 5.5em;
+  margin-left: 10%;
+  background-image: url("./Images/SVG/Asset 6.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  filter: invert(100%);
+}
+.App .App_container .the_footer .archviz_description {
+  margin-left: 10%;
+  margin-top: 1.5em;
+  font-size: 0.7em;
+  color: rgb(104, 104, 104);
+}
+.App .App_container .the_footer .titles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-left: 20%;
+}
+.App .App_container .the_footer .titles:nth-child(4) {
+  grid-column: 4;
+  grid-row: 2;
+  display: none;
+}
+.App .App_container .the_footer .titles:nth-child(5) {
+  grid-column: 4;
+  grid-row: 1;
+}
+.App .App_container .the_footer .portfolio_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-left: 20%;
+  grid-column: 4;
+  grid-row: 3;
+  font-size: 0.7em;
+  color: red;
+}
+.App .App_container .the_footer .portfolio_link ion-icon {
+  font-size: 1.2em;
+}
+.App .App_container .the_footer .menu_elemant_container {
+  height: 100%;
+  grid-column: 1/2;
+  grid-row: 3/8;
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.App .App_container .the_footer .menu_elemant_container .menu_elemant {
+  height: 500%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-size: 0.7em;
+  color: rgb(104, 104, 104);
+  text-decoration: none;
+}
+.App .App_container .the_footer .menu_elemant_container .menu_elemant:hover {
+  transform: scale(1.1);
+}
+.App .App_container .the_footer .categories_elemant_container {
+  height: 100%;
+  grid-column: 2/2;
+  grid-row: 3/9;
+  margin-left: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.App .App_container .the_footer .categories_elemant_container ion-icon {
+  top: -0.1em;
+  transform: scale(0.8);
+}
+.App .App_container .the_footer .categories_elemant_container .categories_elemant {
+  height: 600%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-size: 0.7em;
+  color: rgb(104, 104, 104);
+}
+.App .App_container .the_footer .contact_elemant_container {
+  grid-column: 3/3;
+  grid-row: 3/6;
+  margin-left: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.App .App_container .the_footer .contact_elemant_container .contact_elemant {
+  height: 200%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-size: 0.7em;
+  color: rgb(104, 104, 104);
+}
+.App .App_container .the_footer .contact_elemant_container .contact_elemant {
+  height: 200%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-size: 0.7em;
+  color: rgb(104, 104, 104);
+}
+.App .App_container .the_footer .network_container {
+  font-size: 0.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: row;
+  color: var(--colorX);
+  grid-column: 3;
+  grid-row: 6/11;
+  margin-left: 20%;
+  flex-direction: column;
+}
+.App .App_container .the_footer .network_container a {
+  height: 25%;
+  color: var(--color0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-end;
+}
+.App .App_container .the_footer .network_container a ion-icon {
+  bottom: -0.3em;
+}
+.App .App_container .the_footer .network_container a:hover {
+  transform: scale(1.1);
+  color: var(--color0);
+}
+.App .App_container .the_footer .network_container a:active {
+  transform: scale(0.9);
+}
+.App .App_container .the_footer .network_container a .network {
+  width: 1.5em;
+  text-align: start;
+  font-size: 2em;
+  cursor: pointer;
+}
+.App .App_container .the_footer .the_line {
+  width: 100%;
+  height: 0.1em;
+  background-color: rgb(104, 104, 104);
+  grid-column: 1/5;
+  grid-row: 12/12;
+  opacity: 0.5;
+}
+.App .App_container .the_footer .country {
+  grid-column: 4/5;
+  grid-row: 12/13;
+  font-size: 0.7em;
+  color: rgb(104, 104, 104);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 500;
+}
+.App .App_container .the_footer .rights {
+  grid-column: 1/3;
+  grid-row: 12/13;
+  font-size: 0.7em;
+  color: rgb(104, 104, 104);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  justify-content: flex-start;
+}
+@media all and (max-width: 1000px) {
+  .App .App_container .the_footer {
+    width: 100%;
+    height: 70em;
+    grid-template-rows: repeat(23, 1fr);
+    padding-left: 0em;
+    padding-right: 0em;
+    padding-top: 1em;
+    margin: 0;
+    border-radius: 0em;
+  }
+  .App .App_container .the_footer .logo-container {
+    width: 5em;
+    height: 5em;
+    margin-left: 4vh;
+  }
+  .App .App_container .the_footer .archviz_description {
+    margin-top: 1.5em;
+    grid-column: 1/4;
+    grid-row: 2/2;
+    margin-left: 4vh;
+  }
+  .App .App_container .the_footer .titles {
+    margin-left: 4vh;
+  }
+  .App .App_container .the_footer .titles:nth-child(2) {
+    grid-column: 1/4;
+    grid-row: 8/8;
+  }
+  .App .App_container .the_footer .titles:nth-child(3) {
+    grid-column: 1/4;
+    grid-row: 16/16;
+  }
+  .App .App_container .the_footer .titles:nth-child(4) {
+    grid-column: 1/4;
+    grid-row: 20/20;
+    display: none;
+  }
+  .App .App_container .the_footer .titles:nth-child(5) {
+    grid-column: 3/5;
+    grid-row: 6;
+    margin-left: 10%;
+  }
+  .App .App_container .the_footer .portfolio_link {
+    margin-left: 10%;
+    grid-column: 3/5;
+    grid-row: 7;
+    z-index: 1;
+  }
+  .App .App_container .the_footer .menu_elemant_container {
+    grid-column: 1/4;
+    margin-left: 4vh;
+    font-size: 1.2em;
+  }
+  .App .App_container .the_footer .categories_elemant_container {
+    margin-left: 4vh;
+    grid-column: 1/5;
+    grid-row: 9/15;
+    font-size: 1.2em;
+  }
+  .App .App_container .the_footer .contact_elemant_container {
+    grid-column: 1/5;
+    grid-row: 17/20;
+    margin-left: 4vh;
+    font-size: 1.2em;
+  }
+  .App .App_container .the_footer .network_container {
+    font-size: 1em;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/5;
+    grid-row: 20/22;
+    margin-left: 0%;
+    flex-direction: row;
+  }
+  .App .App_container .the_footer .the_line {
+    grid-column: 1/5;
+    grid-row: 17/17;
+    display: none;
+  }
+  .App .App_container .the_footer .country {
+    grid-column: 1/5;
+    grid-row: 23/23;
+    justify-content: center;
+    margin: 0;
+  }
+  .App .App_container .the_footer .rights {
+    grid-column: 1/5;
+    grid-row: 22/22;
+    justify-content: center;
+    margin: 0;
+  }
+}
+
+#Top-Bare {
+  width: 100%;
+  height: 4em;
+  background-color: var(--color0);
+  position: absolute;
+  z-index: 4000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+#Top-Bare .logo-container {
+  width: 4em;
+  height: 100%;
+  position: absolute;
+  left: 1.5vw;
+  top: 0em;
+  background-image: url("./Images/SVG/Asset 6.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+#Top-Bare .page_title {
+  height: 4em;
+  width: auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  overflow: hidden;
+}
+#Top-Bare .page_title .page_title_slider {
+  width: 100%;
+  height: 500%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  transition-duration: 1s;
+}
+#Top-Bare .page_title .page_title_slider .slides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Top-Bare .Menu-container {
+  width: 3em;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 1.5em;
+}
+#Top-Bare .Menu-container .Menu {
+  width: 2.3em;
+  height: 2.3em;
+  border-radius: 50%;
+  background-color: rgba(34, 34, 34, 0);
+  transition-duration: 0.2s;
+}
+#Top-Bare .Menu-container .Menu::before {
+  content: "";
+  position: absolute;
+  top: calc(40% - 0.1em);
+  left: 25%;
+  width: 50%;
+  height: 0.15em;
+  background-color: var(--colorX);
+  transition-duration: 0.2s;
+}
+#Top-Bare .Menu-container .Menu::after {
+  content: "";
+  position: absolute;
+  top: calc(60% - 0.1em);
+  left: 25%;
+  width: 50%;
+  height: 0.15em;
+  background-color: var(--colorX);
+  transition-duration: 0.2s;
+}
+#Top-Bare .Menu-container .Menu:hover {
+  background-color: rgba(34, 34, 34, 0.1);
+}
+#Top-Bare .Menu-container .Menu_On {
+  background-color: rgba(34, 34, 34, 0);
+}
+#Top-Bare .Menu-container .Menu_On::before {
+  transform: rotate(-45deg);
+  top: calc(50% - 0.1em);
+}
+#Top-Bare .Menu-container .Menu_On::after {
+  transform: rotate(45deg);
+  top: calc(50% - 0.1em);
+}
+#Top-Bare .Menu-container .Menu_On:hover {
+  background-color: rgba(34, 34, 34, 0.1);
+}
+
+#Top-bare-slider-container {
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 4em);
+  z-index: 3;
+  opacity: 0.1;
+  transition-duration: 0.5s, 1s;
+  transition-property: top, opacity;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(241, 241, 241, 0.97);
+}
+#Top-bare-slider-container .Menu-container {
+  width: 30em;
+  height: 30em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: scale(0.8);
+}
+#Top-bare-slider-container .Menu-container .One-Section {
+  height: 3.5em;
+  overflow: hidden;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  top: 40%;
+  opacity: 0;
+  transition-duration: 0.6s, 2s;
+  transition-property: top, opacity;
+  text-decoration: none;
+}
+#Top-bare-slider-container .Menu-container .One-Section::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: var(--colorX);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+#Top-bare-slider-container .Menu-container .One-Section .One-slider-Section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  position: relative;
+  top: 0%;
+  transition-duration: 0.5s;
+}
+#Top-bare-slider-container .Menu-container .One-Section .One-slider-Section .Top-Title {
+  width: 100%;
+  height: 3.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Top-bare-slider-container .Menu-container .One-Section .One-slider-Section .Top-Title div {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5em;
+  font-weight: 900;
+  color: #000;
+}
+#Top-bare-slider-container .Menu-container .One-Section .One-slider-Section .bottom-Title {
+  width: 100%;
+  height: 3.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+#Top-bare-slider-container .Menu-container .One-Section .One-slider-Section .bottom-Title div {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5em;
+  font-weight: 900;
+  color: #000;
+}
+#Top-bare-slider-container .network_container {
+  position: absolute;
+  bottom: 2%;
+  width: 10em;
+  height: 2em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 3;
+  color: var(--colorX);
+}
+#Top-bare-slider-container .network_container a {
+  color: var(--colorX);
+}
+#Top-bare-slider-container .network_container a:hover {
+  transform: scale(1.5);
+  color: #000;
+}
+#Top-bare-slider-container .network_container a:active {
+  transform: scale(0.9);
+}
+#Top-bare-slider-container .network_container a .network {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+@media all and (max-width: 1000px) {
+  #Top-Bare .logo-container {
+    margin-left: 0.5em;
+  }
+  #Top-Bare .page_title .page_title_slider .slides {
+    font-size: 0.8em;
+  }
+  #Top-Bare .Menu-container {
+    margin-right: 0.5em;
+  }
+  #Top-Bare .Menu-container .Menu {
+    transform: scale(1.1);
+  }
+  #Top-Bare .Menu-container .Menu::before {
+    height: 0.12em;
+    top: calc(40% - 0em);
+  }
+  #Top-Bare .Menu-container .Menu::after {
+    top: calc(60% - 0em);
+    height: 0.12em;
+  }
+  #Top-Bare .Menu-container .Menu:hover {
+    background-color: rgba(34, 34, 34, 0);
+  }
+  #Top-Bare .Menu-container .Menu_On::before {
+    transform: rotate(-45deg);
+    top: calc(50% - 0.1em);
+  }
+  #Top-Bare .Menu-container .Menu_On::after {
+    transform: rotate(45deg);
+    top: calc(50% - 0.1em);
+  }
+  #Top-Bare .Menu-container .Menu_On:hover {
+    background-color: rgba(34, 34, 34, 0);
+  }
+}
+#Accueil {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+#Accueil .Accueil_Slider-2 {
+  width: 100%;
+  height: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  overflow: hidden;
+}
+#Accueil .Accueil_Slider-2 .thumbs {
+  display: none;
+}
+#Accueil .Accueil_Slider-2 .control-dots {
+  z-index: 10;
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Accueil .Accueil_Slider-2 .control-dots .dot {
+  transform: scale(1.2);
+  margin: 0.6em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+#Accueil .Accueil_Slider-2 .carousel-status {
+  display: none;
+}
+#Accueil .Accueil_Slider-2 .sliders {
+  background-position: inherit;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-column: 1/1;
+  grid-row: 1/1;
+  transition-duration: 1s, 0s;
+  transition-property: opacity, background-position-y;
+}
+#Accueil .Accueil_Slider-2 .sliders .sliders_inner_container {
+  position: absolute;
+  background-position: inherit;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-column: 1/1;
+  grid-row: 1/1;
+  transition-duration: 1s, 0s;
+  transition-property: opacity, background-position-y;
+}
+#Accueil .Accueil_Slider-2 .sliders .sliders_inner_container .slider_title {
+  width: 55%;
+  font-size: 5em;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  line-height: 1.2em;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  top: -6%;
+  color: white;
+}
+#Accueil .Accueil_Slider-2 .sliders .sliders_inner_container .slider_title p {
+  text-align: left;
+}
+#Accueil .Accueil_Slider-2 .sliders .sliders_inner_container .slider_date {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  width: 55%;
+  color: var(--color0);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+  font-weight: 300;
+  top: -6%;
+}
+#Accueil .Accueil_Slider-2 .sliders img {
+  width: 100%;
+  height: 100%;
+}
+#Accueil .archviz_presantation {
+  height: 25em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#Accueil .archviz_presantation .qui_somme_nous {
+  width: 80%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 1.8em;
+}
+#Accueil .archviz_presantation p {
+  width: 50%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  font-size: 1.2em;
+}
+#Accueil .archviz_presantation .network_container {
+  font-size: 0.8em;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  color: var(--colorX);
+}
+#Accueil .archviz_presantation .network_container a {
+  color: var(--colorX);
+}
+#Accueil .archviz_presantation .network_container a:hover {
+  transform: scale(1.5);
+  color: #000;
+}
+#Accueil .archviz_presantation .network_container a:active {
+  transform: scale(0.9);
+}
+#Accueil .archviz_presantation .network_container a .network {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2em;
+  cursor: pointer;
+}
+#Accueil .AccueilBigProjectsSection {
+  width: 100%;
+  min-height: 50em;
+}
+#Accueil .AccueilBigProjectsSection .One_Project_In_Home {
+  min-height: 48em;
+  display: grid;
+  grid-gap: 0.5em;
+}
+#Accueil .AccueilBigProjectsSection .One_Project_In_Home .image_container {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition-duration: 0.4s;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#Accueil .AccueilBigProjectsSection .One_Project_In_Home .image_container:hover {
+  background-size: 105%;
+}
+#Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container {
+  width: 100%;
+  height: 100%;
+  grid-column: 1/1;
+  grid-row: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40% 60%;
+}
+#Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .title {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 80%;
+  height: 70%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 900;
+  text-decoration: none;
+}
+#Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .description {
+  margin: auto;
+  margin-top: 4em;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  flex-wrap: wrap;
+}
+#Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link {
+  margin-top: 1em;
+  font-size: 0.71em;
+  text-decoration: none;
+  padding: 0.3em;
+  border-radius: 0.2em;
+}
+#Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link:hover {
+  transform: scale(1.1);
+}
+#Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link ion-icon {
+  bottom: -0.2em;
+}
+#Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link:nth-child(2) {
+  margin-right: 2em;
+}
+#Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .bar {
+  height: 0.15em;
+  width: 8em;
+  position: absolute;
+  top: -1em;
+  left: 0%;
+}
+#Accueil .AccueilBigProjectsSection .right {
+  grid-template-columns: 30em repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+#Accueil .AccueilBigProjectsSection .right .image_container {
+  grid-column: 2/4;
+  grid-row: 1/1;
+}
+#Accueil .AccueilBigProjectsSection .right .info_container {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+#Accueil .AccueilBigProjectsSection .left {
+  grid-template-columns: repeat(2, 1fr) 30em;
+  grid-template-rows: 1fr;
+}
+#Accueil .AccueilBigProjectsSection .left .image_container {
+  grid-column: 1/3;
+  grid-row: 1/1;
+}
+#Accueil .AccueilBigProjectsSection .left .info_container {
+  grid-column: 3/3;
+  grid-row: 1/1;
+}
+#Accueil .galerie_presantation {
+  height: 15em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#Accueil .galerie_presantation .nos_réalisations {
+  width: auto;
+  padding: 0.4em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: var(--colorX);
+  border: 0.1em solid #000;
+  border-radius: 0.3em;
+}
+#Accueil .galerie_presantation .nos_réalisations:hover {
+  transform: scale(1.1);
+}
+#Accueil .galerie_presantation .nos_réalisations ion-icon {
+  bottom: -0.2em;
+}
+#Accueil .galerie_presantation .galerie_container {
+  width: 100%;
+  padding-left: 10vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+}
+#Accueil .the_galerie_presantation_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--colorX);
+}
+#Accueil .the_galerie_presantation_container img {
+  width: 60%;
+  margin-top: 10em;
+}
+#Accueil .the_galerie_presantation_container .the_title {
+  width: 60%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  color: var(--colorX);
+  font-weight: 700;
+  margin: 1em 0em 0em 0em;
+}
+#Accueil .the_galerie_presantation_container .the_date {
+  width: 60%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  color: var(--colorX);
+  font-weight: 100;
+  margin: 1em 0em 5em 0em;
+}
+#Accueil .the_galerie_container {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+#Accueil .the_galerie_container .one_galerie_element {
+  width: calc(100% - 0.01em);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  overflow: hidden;
+  border: 0.01em solid var(--colorX);
+}
+#Accueil .the_galerie_container .one_galerie_element img {
+  grid-column: 1/1;
+  grid-row: 1/1;
+  transition-duration: 1s;
+  transform: scale(1.1);
+}
+#Accueil .the_galerie_container .one_galerie_element:hover img {
+  transform: scale(1.2);
+}
+#Accueil .the_galerie_container .one_galerie_element:hover .one_galerie_element_hover {
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+#Accueil .the_galerie_container .one_galerie_element:hover .one_galerie_element_hover .iner_container {
+  top: 0%;
+}
+#Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover {
+  grid-column: 1/1;
+  grid-row: 1/1;
+  width: 100%;
+  height: 0%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0);
+  transition-duration: 0s, 1s;
+  transition-property: height, background-color;
+}
+#Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  top: 6%;
+  transition-duration: 0.3s;
+}
+#Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .Icon-to-click-on {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.3em;
+  color: var(--colorX);
+  cursor: pointer;
+  transform: scale(1);
+}
+#Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .Icon-to-click-on:hover {
+  transform: scale(1.2);
+}
+#Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .Icon-to-click-on:active {
+  transform: scale(1);
+}
+#Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .titre {
+  width: 95%;
+  min-height: 1em;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+  color: var(--colorX);
+}
+#Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .titre:hover {
+  transform: scale(1.1);
+}
+#Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .date {
+  width: 100%;
+  height: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7em;
+  font-weight: 100;
+}
+
+@media all and (max-width: 1000px) {
+  #Accueil .Accueil_Slider-2 {
+    overflow: hidden;
+    height: 60vh;
+  }
+  #Accueil .Accueil_Slider-2 .control-dots .dot {
+    transform: scale(1.3);
+  }
+  #Accueil .Accueil_Slider-2 .sliders {
+    background-size: 100%;
+    background-size: cover;
+    background-position-x: 30%;
+    transition-duration: 0s, 0s;
+    transition-property: opacity, background-position-y;
+    height: 65vh;
+    overflow: hidden;
+  }
+  #Accueil .Accueil_Slider-2 .sliders img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #Accueil .Accueil_Slider-2 .sliders .sliders_inner_container {
+    height: 100%;
+    overflow: hidden;
+  }
+  #Accueil .Accueil_Slider-2 .sliders .sliders_inner_container .slider_title {
+    width: 80%;
+    font-size: 2em;
+    margin-left: 0%;
+  }
+  #Accueil .Accueil_Slider-2 .sliders .sliders_inner_container .slider_date {
+    width: 80%;
+    font-size: 0.9em;
+    margin-left: 0vw;
+  }
+  #Accueil .Accueil_Slider-2 .sliders:nth-child(1) .sliders_inner_container .slider_title:nth-child(1) {
+    color: var(--color0);
+    opacity: 0.9;
+  }
+  #Accueil .archviz_presantation .qui_somme_nous {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #Accueil .archviz_presantation p {
+    width: 80%;
+  }
+  #Accueil .archviz_presantation .network_container {
+    justify-content: center;
+  }
+  #Accueil .AccueilBigProjectsSection {
+    width: 100%;
+    min-height: auto;
+  }
+  #Accueil .AccueilBigProjectsSection .One_Project_In_Home {
+    min-height: 28em;
+    height: auto;
+    grid-gap: 0em;
+    padding-bottom: 12%;
+  }
+  #Accueil .AccueilBigProjectsSection .One_Project_In_Home .image_container {
+    width: 100%;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  #Accueil .AccueilBigProjectsSection .One_Project_In_Home .image_container:hover {
+    background-size: 100%;
+  }
+  #Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .title {
+    font-size: 1.3em;
+    width: 90%;
+    transform: scale(1);
+  }
+  #Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .title .bar {
+    bottom: -0.3em;
+  }
+  #Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .description {
+    margin-top: 1em;
+    font-size: 0.7em;
+    width: 90%;
+  }
+  #Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link {
+    font-size: 1.2em;
+  }
+  #Accueil .AccueilBigProjectsSection .right {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  #Accueil .AccueilBigProjectsSection .right .image_container {
+    grid-column: 1/1;
+    grid-row: 1/1;
+  }
+  #Accueil .AccueilBigProjectsSection .right .info_container {
+    grid-column: 1/1;
+    grid-row: 2/2;
+  }
+  #Accueil .AccueilBigProjectsSection .left {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  #Accueil .AccueilBigProjectsSection .left .image_container {
+    grid-column: 1/1;
+    grid-row: 1/1;
+  }
+  #Accueil .AccueilBigProjectsSection .left .info_container {
+    grid-column: 1/1;
+    grid-row: 2/2;
+  }
+  #Accueil .galerie_presantation {
+    height: 10em;
+  }
+  #Accueil .galerie_presantation .nos_réalisations {
+    padding-left: 1em;
+    font-size: 0.8em;
+  }
+  #Accueil .galerie_presantation .galerie_container {
+    font-size: 1.3em;
+  }
+  #Accueil .the_galerie_container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+    height: 95em;
+  }
+  #Accueil .the_galerie_container .one_galerie_element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #Accueil .the_galerie_container .one_galerie_element img {
+    transform: scale(1);
+  }
+  #Accueil .the_galerie_container .one_galerie_element img:hover {
+    transform: scale(1);
+  }
+  #Accueil .the_galerie_container .one_galerie_element:hover img {
+    transform: scale(1);
+  }
+}
+#Travaux {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+#Travaux .Travaux-Header {
+  width: 100%;
+  height: 20em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#Travaux .Travaux-Header .visualization-projects {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 900;
+  width: 40%;
+  padding-bottom: 1em;
+}
+#Travaux .Travaux-Header .visualization-projects-description {
+  width: 40%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+}
+#Travaux .AccueilBigProjectsSection {
+  width: 100%;
+  min-height: 50em;
+}
+#Travaux .AccueilBigProjectsSection .One_Project_In_Home {
+  min-height: 47em;
+  display: grid;
+  grid-gap: 0.5em;
+}
+#Travaux .AccueilBigProjectsSection .One_Project_In_Home .image_container {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transition-duration: 0.4s;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#Travaux .AccueilBigProjectsSection .One_Project_In_Home .image_container:hover {
+  background-size: 105%;
+}
+#Travaux .AccueilBigProjectsSection .One_Project_In_Home .info_container {
+  width: 100%;
+  height: 100%;
+  grid-column: 1/1;
+  grid-row: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40% 60%;
+}
+#Travaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .title {
+  margin: auto;
+  margin-bottom: 0em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 80%;
+  height: auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 900;
+  text-decoration: none;
+}
+#Travaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .description {
+  margin: auto;
+  margin-top: 4em;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  flex-wrap: wrap;
+}
+#Travaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link {
+  margin-top: 1em;
+  font-size: 0.71em;
+  text-decoration: none;
+  padding: 0.3em;
+  border-radius: 0.2em;
+}
+#Travaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link:hover {
+  transform: scale(1.1);
+}
+#Travaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link ion-icon {
+  bottom: -0.2em;
+}
+#Travaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link:nth-child(2) {
+  margin-right: 2em;
+}
+#Travaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .bar {
+  height: 0.15em;
+  width: 7em;
+  position: absolute;
+  top: -1em;
+  left: 0%;
+}
+#Travaux .AccueilBigProjectsSection .right {
+  grid-template-columns: 30em repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+#Travaux .AccueilBigProjectsSection .right .image_container {
+  grid-column: 2/4;
+  grid-row: 1/1;
+}
+#Travaux .AccueilBigProjectsSection .right .info_container {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+#Travaux .AccueilBigProjectsSection .left {
+  grid-template-columns: repeat(2, 1fr) 30em;
+  grid-template-rows: 1fr;
+}
+#Travaux .AccueilBigProjectsSection .left .image_container {
+  grid-column: 1/3;
+  grid-row: 1/1;
+}
+#Travaux .AccueilBigProjectsSection .left .info_container {
+  grid-column: 3/3;
+  grid-row: 1/1;
+}
+
+@media all and (max-width: 1000px) {
+  #Travaux .Travaux-Header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #Travaux .Travaux-Header .visualization-projects {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5em;
+    font-weight: 900;
+    width: 87%;
+    padding-bottom: 1em;
+    margin-top: 2em;
+  }
+  #Travaux .Travaux-Header .visualization-projects-description {
+    width: 87%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-bottom: 3em;
+  }
+  #Travaux .AccueilBigProjectsSection {
+    width: 100%;
+    min-height: auto;
+  }
+  #Travaux .AccueilBigProjectsSection .One_Project_In_Home {
+    min-height: 28em;
+    height: auto;
+    grid-gap: 0em;
+    padding-bottom: 12%;
+  }
+  #Travaux .AccueilBigProjectsSection .One_Project_In_Home .image_container {
+    width: 100%;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  #Travaux .AccueilBigProjectsSection .One_Project_In_Home .image_container:hover {
+    background-size: 100%;
+  }
+  #Travaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .title {
+    font-size: 1.3em;
+    width: 90%;
+    transform: scale(1);
+    margin-bottom: 0.5em;
+  }
+  #Travaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .title .bar {
+    bottom: -0.3em;
+  }
+  #Travaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .description {
+    margin-top: 1em;
+    font-size: 0.7em;
+    width: 90%;
+  }
+  #Travaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link {
+    font-size: 1.2em;
+  }
+  #Travaux .AccueilBigProjectsSection .right {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  #Travaux .AccueilBigProjectsSection .right .image_container {
+    grid-column: 1/1;
+    grid-row: 1/1;
+  }
+  #Travaux .AccueilBigProjectsSection .right .info_container {
+    grid-column: 1/1;
+    grid-row: 2/2;
+  }
+  #Travaux .AccueilBigProjectsSection .left {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  #Travaux .AccueilBigProjectsSection .left .image_container {
+    grid-column: 1/1;
+    grid-row: 1/1;
+  }
+  #Travaux .AccueilBigProjectsSection .left .info_container {
+    grid-column: 1/1;
+    grid-row: 2/2;
+  }
+}
+#Services {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+#Services .one_service {
+  width: calc(100% - 40vw);
+  background-color: #F4EFE4;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding-top: 4em;
+}
+#Services .one_service .the_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5em;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-bottom: 1em;
+  width: 55%;
+}
+#Services .one_service .the_title::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 15em;
+  height: 0.1em;
+  background-color: var(--colorX);
+  transition-duration: 0.2s;
+}
+#Services .one_service .the_descrition {
+  margin-top: 2em;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9em;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+}
+#Services .one_service .the_descrition p {
+  width: 100%;
+  text-align: start;
+}
+#Services .one_service .project_container {
+  margin-top: 7em;
+  padding-bottom: 7em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 1em;
+}
+#Services .one_service .project_container .one_galerie_element_container {
+  height: auto;
+}
+#Services .one_service .project_container .one_galerie_element_container .one_galerie_element {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  border-radius: 1.4em;
+  overflow: hidden;
+}
+#Services .one_service .project_container .one_galerie_element_container .one_galerie_element img {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+#Services .one_service .project_container .one_galerie_element_container .one_galerie_element:hover .one_galerie_element_hover {
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+#Services .one_service .project_container .one_galerie_element_container .one_galerie_element:hover .one_galerie_element_hover .iner_container {
+  top: 0%;
+}
+#Services .one_service .project_container .one_galerie_element_container .one_galerie_element .one_galerie_element_hover {
+  grid-column: 1/1;
+  grid-row: 1/1;
+  width: 100%;
+  height: 0%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0);
+  transition-duration: 0s, 1s;
+  transition-property: height, background-color;
+}
+#Services .one_service .project_container .one_galerie_element_container .one_galerie_element .one_galerie_element_hover .iner_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  top: 6%;
+  transition-duration: 0.3s;
+}
+#Services .one_service .project_container .one_galerie_element_container .one_galerie_element .one_galerie_element_hover .iner_container .titre {
+  width: 99%;
+  min-height: 1em;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  text-align: center;
+  color: var(--colorX);
+  text-decoration: none;
+}
+#Services .one_service .project_container .one_galerie_element_container .one_galerie_element .one_galerie_element_hover .iner_container .date {
+  width: 100%;
+  height: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7em;
+  font-weight: 100;
+}
+#Services .one_service .project_container .one_galerie_element_container .one_galerie_link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9em;
+  font-weight: 800;
+  width: auto;
+  height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 1em;
+  transform: scale(1);
+  text-decoration: none;
+  color: var(--colorX);
+  cursor: pointer;
+}
+#Services .one_service .project_container .one_galerie_element_container .one_galerie_link ion-icon {
+  font-size: 1.2em;
+}
+#Services .one_service .project_container .one_galerie_element_container .one_galerie_link:hover {
+  transform: scale(1.01) translate(0%, -1%);
+}
+#Services .one_service .project_container .one_galerie_element_container .one_galerie_link:active {
+  transform: scale(1);
+}
+
+@media all and (max-width: 1000px) {
+  #Services .one_service {
+    width: calc(100% - 4vw);
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  #Services .one_service .the_title {
+    font-size: 1.4em;
+    width: 87vw;
+  }
+  #Services .one_service .the_title::after {
+    width: 50vw;
+  }
+  #Services .one_service .the_descrition {
+    margin-top: 1em;
+    font-size: 0.8em;
+  }
+  #Services .one_service .the_descrition p {
+    width: 100%;
+    text-align: start;
+  }
+  #Services .one_service .project_container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+  }
+}
+#Contacts {
+  width: 100%;
+  height: calc(100vh - 4em);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-size: 100%;
+}
+#Contacts .follow_us {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+}
+#Contacts .Contact-container {
+  width: 50em;
+  height: 30em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: scale(1.5);
+}
+#Contacts .Contact-container .One-Contact {
+  height: 3.5em;
+  overflow: hidden;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  transition-property: top, opacity;
+  text-decoration: none;
+}
+#Contacts .Contact-container .One-Contact::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: var(--colorX);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+#Contacts .Contact-container .One-Contact .One-slider-Section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  position: relative;
+  top: 0%;
+  transition-duration: 0.5s;
+}
+#Contacts .Contact-container .One-Contact .One-slider-Section .Top-Title {
+  width: 100%;
+  height: 3.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Contacts .Contact-container .One-Contact .One-slider-Section .Top-Title .network {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 3em;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: var(--colorX);
+  text-decoration: none;
+}
+#Contacts .Contact-container .One-Contact .One-slider-Section .Top-Title .network:hover {
+  transform: scale(1.1);
+  color: #000;
+}
+#Contacts .Contact-container .One-Contact .One-slider-Section .Top-Title .network:active {
+  transform: scale(0.9);
+}
+#Contacts .Contact-container .One-Contact .One-slider-Section .Top-Title .network ion-icon {
+  font-size: 0.7em;
+}
+#Contacts .Contact-container .One-Contact .One-slider-Section .bottom-Title {
+  width: 100%;
+  height: 3.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+#Contacts .Contact-container .One-Contact .One-slider-Section .bottom-Title .network {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 3em;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: var(--colorX);
+  text-decoration: none;
+}
+#Contacts .Contact-container .One-Contact .One-slider-Section .bottom-Title .network:hover {
+  transform: scale(1.1);
+  color: #000;
+}
+#Contacts .Contact-container .One-Contact .One-slider-Section .bottom-Title .network:active {
+  transform: scale(0.9);
+}
+#Contacts .Contact-container .One-Contact .One-slider-Section .bottom-Title .network ion-icon {
+  font-size: 0.7em;
+}
+#Contacts .Contact-container .One-Contact .One-slider-Section .bottom-Title div {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5em;
+  font-weight: 900;
+  color: #000;
+}
+
+@media all and (max-width: 1000px) {
+  #Contacts .Contact-container {
+    transform: scale(0.7);
+  }
+}
+#Gallery {
+  width: 100%;
+  min-height: 100vh;
+  z-index: 1;
+}
+#Gallery .the_galerie_presantation_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  cursor: pointer;
+}
+#Gallery .the_galerie_presantation_container img {
+  width: 60%;
+  margin-top: 2em;
+}
+#Gallery .the_galerie_presantation_container img:hover {
+  transform: scale(1.01);
+}
+#Gallery .the_galerie_presantation_container img:active {
+  transform: scale(1);
+}
+#Gallery .the_galerie_presantation_container .the_title {
+  width: 60%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  margin: 1em 0em 0em 0em;
+  color: var(--colorX);
+  text-decoration: none;
+  cursor: pointer;
+}
+#Gallery .the_galerie_presantation_container .the_title:hover {
+  transform: scale(1.01);
+}
+#Gallery .the_galerie_presantation_container .the_date {
+  width: 60%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  color: var(--colorX);
+  font-weight: 100;
+  margin: 1em 0em 5em 0em;
+}
+#Gallery .the_galerie_container {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+#Gallery .the_galerie_container .one_galerie_element {
+  width: calc(100% - 0.01em);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  overflow: hidden;
+  border: 0.01em solid var(--colorX);
+}
+#Gallery .the_galerie_container .one_galerie_element img {
+  grid-column: 1/1;
+  grid-row: 1/1;
+  transition-duration: 1s;
+  transform: scale(1.1);
+}
+#Gallery .the_galerie_container .one_galerie_element:hover img {
+  transform: scale(1.2);
+}
+#Gallery .the_galerie_container .one_galerie_element:hover .one_galerie_element_hover {
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+#Gallery .the_galerie_container .one_galerie_element:hover .one_galerie_element_hover .iner_container {
+  top: 0%;
+}
+#Gallery .the_galerie_container .one_galerie_element .one_galerie_element_hover {
+  grid-column: 1/1;
+  grid-row: 1/1;
+  width: 100%;
+  height: 0%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0);
+  transition-duration: 0s, 1s;
+  transition-property: height, background-color;
+}
+#Gallery .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  top: 6%;
+  transition-duration: 0.3s;
+}
+#Gallery .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .Icon-to-click-on {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.51);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.3em;
+  transform: scale(1);
+}
+#Gallery .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .Icon-to-click-on:hover {
+  transform: scale(1.2);
+}
+#Gallery .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .Icon-to-click-on:active {
+  transform: scale(1);
+}
+#Gallery .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .titre {
+  width: 95%;
+  min-height: 1em;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+  color: var(--colorX);
+}
+#Gallery .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .titre:hover {
+  transform: scale(1.1);
+}
+#Gallery .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .date {
+  width: 100%;
+  height: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7em;
+  font-weight: 100;
+}
+
+.display_image_container {
+  position: fixed;
+  top: 4em;
+  width: 100vw;
+  min-height: calc(100vh - 4em);
+  background-color: rgba(241, 241, 241, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 110;
+}
+.display_image_container div {
+  width: 50%;
+  background-color: var(--colorX);
+  border: 0.5em solid var(--colorX);
+  border-bottom: 1em solid var(--colorX);
+  border-radius: 0.2em;
+}
+.display_image_container div .close_image_container {
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  border-radius: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition-duration: 0.2s;
+  z-index: 5;
+  right: 0%;
+  top: 0%;
+  margin: 0.5em;
+  border: 0em solid var(--colorX);
+  transform: scale(1);
+}
+.display_image_container div .close_image_container::before {
+  content: "";
+  position: absolute;
+  transform: rotate(-45deg);
+  top: calc(50% - 0.1em);
+  left: 25%;
+  width: 50%;
+  height: 0.15em;
+  background-color: var(--color0);
+  transition-duration: 0.2s;
+}
+.display_image_container div .close_image_container::after {
+  content: "";
+  position: absolute;
+  transform: rotate(45deg);
+  top: calc(50% - 0.1em);
+  left: 25%;
+  width: 50%;
+  height: 0.15em;
+  background-color: var(--color0);
+  transition-duration: 0.2s;
+}
+.display_image_container div .close_image_container:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: scale(1.2);
+}
+.display_image_container div .close_image_container:active {
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: scale(1);
+}
+
+@media all and (max-width: 1000px) {
+  #Gallery {
+    width: 100%;
+    z-index: 1;
+  }
+  #Gallery .the_galerie_presantation_container img {
+    width: 100%;
+  }
+  #Gallery .the_galerie_presantation_container .the_title {
+    width: 90%;
+    font-size: 1.5em;
+  }
+  #Gallery .the_galerie_presantation_container .the_title:hover {
+    transform: scale(1);
+  }
+  #Gallery .the_galerie_presantation_container .the_date {
+    width: 90%;
+    font-size: 0.8em;
+  }
+  #Gallery .the_galerie_container {
+    grid-template-rows: repeat(13, 15em);
+    grid-template-columns: repeat(1, 1fr);
+    height: auto;
+  }
+  #Gallery .the_galerie_container .one_galerie_element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #Gallery .the_galerie_container .one_galerie_element img {
+    transform: scale(1);
+  }
+  #Gallery .the_galerie_container .one_galerie_element img:hover {
+    transform: scale(1);
+  }
+  #Gallery .the_galerie_container .one_galerie_element:hover img {
+    transform: scale(1);
+  }
+  #Gallery .the_galerie_container .one_galerie_element .one_galerie_element_hover {
+    background-color: aqua;
+    opacity: 1;
+  }
+  #Gallery .display_image_container {
+    top: 4em;
+    min-height: calc(100vh - 4em);
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  #Gallery .display_image_container div {
+    width: 97%;
+    border: 0.1em solid var(--colorX);
+    border-bottom: 0.6em solid var(--colorX);
+  }
+  #Gallery .display_image_container div .close_image_container {
+    width: 3em;
+    height: 3em;
+    top: -18%;
+    margin: -0.1em;
+  }
+}
+.Immeuble-Talles {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, auto);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5em;
+}
+.Immeuble-Talles .project_display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: repeat(10, auto);
+  grid-template-columns: 1fr;
+  padding-bottom: 2em;
+}
+.Immeuble-Talles .project_display a {
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 800;
+  width: 12em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1em solid #000;
+  border-radius: 0.3em;
+  text-decoration: none;
+  color: var(--colorX);
+}
+.Immeuble-Talles .project_display a:hover {
+  transform: scale(1.02);
+}
+.Immeuble-Talles .project_display a ion-icon {
+  font-size: 1.2em;
+}
+.Immeuble-Talles .project_display .the_video {
+  width: 60vw;
+  height: 45vw;
+  margin-bottom: 3em;
+  margin-bottom: 3em;
+}
+.Immeuble-Talles .project_display .the_video iframe {
+  border: none;
+  border-radius: 1.5em;
+}
+.Immeuble-Talles .project_display .the_video_2 {
+  height: 34vw;
+}
+.Immeuble-Talles .project_display .project_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 0.2em;
+}
+.Immeuble-Talles .project_display .project_description {
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  cursor: pointer;
+}
+.Immeuble-Talles .project_display .TheImageContainer {
+  width: 60vw;
+  height: auto;
+  margin-bottom: 3em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.Immeuble-Talles .project_display .TheImageContainer img {
+  transition-duration: 0.3s;
+  transform: scale(1);
+  border-radius: 1em;
+}
+.Immeuble-Talles .project_display .TheImageContainer img:hover {
+  transform: scale(1.03);
+}
+.Immeuble-Talles .project_display .TheImageContainer img {
+  transition-duration: 0.3s;
+  transform: scale(1);
+  border-radius: 1em;
+}
+.Immeuble-Talles .project_display .TheImageContainer img:hover {
+  transform: scale(1.03);
+}
+.Immeuble-Talles .project_display p {
+  width: 60vw;
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+@media all and (max-width: 1000px) {
+  .Immeuble-Talles {
+    padding-left: 5vw;
+    padding-right: 0vw;
+  }
+  .Immeuble-Talles .project_display .project_title {
+    font-size: 1.5em;
+  }
+  .Immeuble-Talles .project_display .project_description {
+    font-size: 0.7em;
+  }
+  .Immeuble-Talles .project_display .the_video {
+    width: 90vw;
+    height: 65vw;
+    margin-bottom: 3em;
+    display: none;
+  }
+  .Immeuble-Talles .project_display h2 {
+    display: none;
+  }
+  .Immeuble-Talles .project_display .TheImageContainer {
+    width: 90vw;
+    margin-bottom: 1em;
+  }
+  .Immeuble-Talles .project_display p {
+    width: 80vw;
+  }
+}
+.Villa_Onomo_container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, auto);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5em;
+}
+.Villa_Onomo_container .project_display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: repeat(10, auto);
+  grid-template-columns: 1fr;
+  padding-bottom: 2em;
+}
+.Villa_Onomo_container .project_display .the_video {
+  width: 60vw;
+  height: 45vw;
+  margin-bottom: 3em;
+  margin-bottom: 3em;
+}
+.Villa_Onomo_container .project_display .the_video iframe {
+  border: none;
+  border-radius: 1.5em;
+}
+.Villa_Onomo_container .project_display .project_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 0.2em;
+}
+.Villa_Onomo_container .project_display .project_description {
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.Villa_Onomo_container .project_display .TheImageContainer {
+  width: 60vw;
+  height: auto;
+  margin-bottom: 3em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.Villa_Onomo_container .project_display .TheImageContainer img {
+  transition-duration: 0.3s;
+  transform: scale(1);
+  border-radius: 1em;
+}
+.Villa_Onomo_container .project_display .TheImageContainer img:hover {
+  transform: scale(1.03);
+}
+.Villa_Onomo_container .project_display p {
+  width: 60vw;
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+@media all and (max-width: 1000px) {
+  .Villa_Onomo_container {
+    padding-left: 5vw;
+    padding-right: 0vw;
+  }
+  .Villa_Onomo_container .project_display .project_title {
+    font-size: 1.5em;
+  }
+  .Villa_Onomo_container .project_display .project_description {
+    font-size: 0.7em;
+  }
+  .Villa_Onomo_container .project_display .TheImageContainer {
+    width: 90vw;
+    margin-bottom: 1em;
+  }
+  .Villa_Onomo_container .project_display p {
+    width: 80vw;
+  }
+}
+.Hangar_1_container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, auto);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5em;
+}
+.Hangar_1_container .project_display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: repeat(10, auto);
+  grid-template-columns: 1fr;
+  padding-bottom: 2em;
+}
+.Hangar_1_container .project_display .project_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 0.2em;
+}
+.Hangar_1_container .project_display .project_description {
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.Hangar_1_container .project_display .TheImageContainer {
+  width: 60vw;
+  height: auto;
+  margin-bottom: 3em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.Hangar_1_container .project_display .TheImageContainer img {
+  transition-duration: 0.3s;
+  transform: scale(1);
+  border-radius: 1em;
+}
+.Hangar_1_container .project_display .TheImageContainer img:hover {
+  transform: scale(1.03);
+}
+.Hangar_1_container .project_display .TheImageContainer img {
+  transition-duration: 0.3s;
+  transform: scale(1);
+  border-radius: 1em;
+}
+.Hangar_1_container .project_display .TheImageContainer img:hover {
+  transform: scale(1.03);
+}
+.Hangar_1_container .project_display p {
+  width: 60vw;
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+@media all and (max-width: 1000px) {
+  .Hangar_1_container {
+    padding-left: 5vw;
+    padding-right: 0vw;
+  }
+  .Hangar_1_container .project_display .project_title {
+    font-size: 1.5em;
+  }
+  .Hangar_1_container .project_display .project_description {
+    font-size: 0.7em;
+  }
+  .Hangar_1_container .project_display .TheImageContainer {
+    width: 90vw;
+    margin-bottom: 1em;
+  }
+  .Hangar_1_container .project_display p {
+    width: 80vw;
+  }
+}
+.Touba_1_container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, auto);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5em;
+}
+.Touba_1_container .project_display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: repeat(10, auto);
+  grid-template-columns: 1fr;
+  padding-bottom: 2em;
+}
+.Touba_1_container .project_display .project_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 0.2em;
+}
+.Touba_1_container .project_display .project_description {
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.Touba_1_container .project_display .TheImageContainer {
+  width: 60vw;
+  height: auto;
+  margin-bottom: 3em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.Touba_1_container .project_display .TheImageContainer img {
+  transition-duration: 0.3s;
+  transform: scale(1);
+  border-radius: 1em;
+}
+.Touba_1_container .project_display .TheImageContainer img:hover {
+  transform: scale(1.03);
+}
+.Touba_1_container .project_display .the_video {
+  width: 60vw;
+  height: 45vw;
+  margin-bottom: 3em;
+  margin-bottom: 3em;
+}
+.Touba_1_container .project_display .the_video iframe {
+  border: none;
+  border-radius: 1.5em;
+}
+.Touba_1_container .project_display p {
+  width: 60vw;
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+.Touba_1_container .tools {
+  margin-top: 7em;
+  margin-left: 2em;
+  height: 15em;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(2, auto);
+}
+.Touba_1_container .tools .theToolsTitle {
+  height: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+  grid-column: 1/3;
+  grid-row: 1/1;
+}
+.Touba_1_container .tools .theToolsIcon1 {
+  width: 5em;
+  grid-column: 1/1;
+  grid-row: 2/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.Touba_1_container .tools .theToolsIcon2 {
+  width: 5em;
+  grid-column: 2/2;
+  grid-row: 2/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.Touba_1_container .tools .theToolsIcon3 {
+  width: 5em;
+  grid-column: 3/3;
+  grid-row: 2/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media all and (max-width: 1000px) {
+  .Touba_1_container {
+    padding-left: 5vw;
+    padding-right: 0vw;
+  }
+  .Touba_1_container .project_display .project_title {
+    font-size: 1.5em;
+  }
+  .Touba_1_container .project_display .the_video {
+    width: 90vw;
+    height: 57vw;
+    display: none;
+  }
+  .Touba_1_container .project_display h2 {
+    display: none;
+  }
+  .Touba_1_container .project_display .project_description {
+    font-size: 0.7em;
+  }
+  .Touba_1_container .project_display .TheImageContainer {
+    width: 90vw;
+    margin-bottom: 1em;
+  }
+  .Touba_1_container .project_display p {
+    width: 80vw;
+  }
+}
+.Pharmacie_1_container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, auto);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5em;
+}
+.Pharmacie_1_container .project_display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: repeat(10, auto);
+  grid-template-columns: 1fr;
+  padding-bottom: 2em;
+}
+.Pharmacie_1_container .project_display .project_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 0.2em;
+}
+.Pharmacie_1_container .project_display .project_description {
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.Pharmacie_1_container .project_display .TheImageContainer {
+  width: 60vw;
+  height: auto;
+  margin-bottom: 3em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.Pharmacie_1_container .project_display .TheImageContainer img {
+  transition-duration: 0.3s;
+  transform: scale(1);
+  border-radius: 1em;
+}
+.Pharmacie_1_container .project_display .TheImageContainer img:hover {
+  transform: scale(1.03);
+}
+.Pharmacie_1_container .project_display .TheImageContainer img {
+  transition-duration: 0.3s;
+  transform: scale(1);
+  border-radius: 1em;
+}
+.Pharmacie_1_container .project_display .TheImageContainer img:hover {
+  transform: scale(1.03);
+}
+.Pharmacie_1_container .project_display p {
+  width: 60vw;
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+@media all and (max-width: 1000px) {
+  .Pharmacie_1_container {
+    padding-left: 5vw;
+    padding-right: 0vw;
+  }
+  .Pharmacie_1_container .project_display .project_title {
+    font-size: 1.5em;
+  }
+  .Pharmacie_1_container .project_display .project_description {
+    font-size: 0.7em;
+  }
+  .Pharmacie_1_container .project_display .TheImageContainer {
+    width: 90vw;
+    margin-bottom: 1em;
+  }
+  .Pharmacie_1_container .project_display p {
+    width: 80vw;
+  }
+}
+.Appartement-F4-A-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, auto);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5em;
+}
+.Appartement-F4-A-container .project_display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: repeat(10, auto);
+  grid-template-columns: 1fr;
+  padding-bottom: 2em;
+}
+.Appartement-F4-A-container .project_display a {
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 800;
+  width: 12em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1em solid #000;
+  border-radius: 0.3em;
+  text-decoration: none;
+  color: var(--colorX);
+}
+.Appartement-F4-A-container .project_display a:hover {
+  transform: scale(1.02);
+}
+.Appartement-F4-A-container .project_display a ion-icon {
+  font-size: 1.2em;
+}
+.Appartement-F4-A-container .project_display .the_video {
+  width: 60vw;
+  height: 45vw;
+  margin-bottom: 3em;
+  margin-bottom: 3em;
+}
+.Appartement-F4-A-container .project_display .the_video iframe {
+  border: none;
+  border-radius: 1.5em;
+}
+.Appartement-F4-A-container .project_display .the_video iframe {
+  border: none;
+  border-radius: 1.5em;
+}
+.Appartement-F4-A-container .project_display .project_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 0.2em;
+}
+.Appartement-F4-A-container .project_display .project_description {
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.Appartement-F4-A-container .project_display .TheImageContainer {
+  width: 60vw;
+  height: auto;
+  margin-bottom: 3em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.Appartement-F4-A-container .project_display .TheImageContainer img {
+  transition-duration: 0.3s;
+  transform: scale(1);
+  border-radius: 1em;
+}
+.Appartement-F4-A-container .project_display .TheImageContainer img:hover {
+  transform: scale(1.03);
+}
+.Appartement-F4-A-container .project_display .TheImageContainer img {
+  transition-duration: 0.3s;
+  transform: scale(1);
+  border-radius: 1em;
+}
+.Appartement-F4-A-container .project_display .TheImageContainer img:hover {
+  transform: scale(1.03);
+}
+.Appartement-F4-A-container .project_display p {
+  width: 60vw;
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+@media all and (max-width: 1000px) {
+  .Appartement-F4-A-container {
+    padding-left: 5vw;
+    padding-right: 0vw;
+  }
+  .Appartement-F4-A-container .project_display .project_title {
+    font-size: 1.5em;
+  }
+  .Appartement-F4-A-container .project_display .project_description {
+    font-size: 0.7em;
+  }
+  .Appartement-F4-A-container .project_display .the_video {
+    width: 90vw;
+    height: 65vw;
+    margin-bottom: 3em;
+    display: none;
+  }
+  .Appartement-F4-A-container .project_display h2 {
+    display: none;
+  }
+  .Appartement-F4-A-container .project_display .TheImageContainer {
+    width: 90vw;
+    margin-bottom: 1em;
+  }
+  .Appartement-F4-A-container .project_display p {
+    width: 80vw;
+  }
+}
+.Pharmacie_3_container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, auto);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5em;
+}
+.Pharmacie_3_container .project_display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: repeat(10, auto);
+  grid-template-columns: 1fr;
+  padding-bottom: 2em;
+}
+.Pharmacie_3_container .project_display .project_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 0.2em;
+}
+.Pharmacie_3_container .project_display .project_description {
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.Pharmacie_3_container .project_display .TheImageContainer {
+  width: 60vw;
+  height: auto;
+  margin-bottom: 3em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.Pharmacie_3_container .project_display .TheImageContainer img {
+  transition-duration: 0.3s;
+  transform: scale(1);
+  border-radius: 1em;
+}
+.Pharmacie_3_container .project_display .TheImageContainer img:hover {
+  transform: scale(1.03);
+}
+.Pharmacie_3_container .project_display .TheImageContainer img {
+  transition-duration: 0.3s;
+  transform: scale(1);
+  border-radius: 1em;
+}
+.Pharmacie_3_container .project_display .TheImageContainer img:hover {
+  transform: scale(1.03);
+}
+.Pharmacie_3_container .project_display p {
+  width: 60vw;
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+@media all and (max-width: 1000px) {
+  .Pharmacie_3_container {
+    padding-left: 5vw;
+    padding-right: 0vw;
+  }
+  .Pharmacie_3_container .project_display .project_title {
+    font-size: 1.5em;
+  }
+  .Pharmacie_3_container .project_display .project_description {
+    font-size: 0.7em;
+  }
+  .Pharmacie_3_container .project_display .TheImageContainer {
+    width: 90vw;
+    margin-bottom: 1em;
+  }
+  .Pharmacie_3_container .project_display p {
+    width: 80vw;
+  }
+}
+.Immeuble_1_container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, auto);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5em;
+}
+.Immeuble_1_container .project_display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: repeat(10, auto);
+  grid-template-columns: 1fr;
+  padding-bottom: 2em;
+}
+.Immeuble_1_container .project_display .the_video {
+  width: 60vw;
+  height: 45vw;
+  margin-bottom: 3em;
+  margin-bottom: 3em;
+}
+.Immeuble_1_container .project_display .the_video iframe {
+  border: none;
+  border-radius: 1.5em;
+}
+.Immeuble_1_container .project_display .project_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 0.2em;
+}
+.Immeuble_1_container .project_display .project_description {
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.Immeuble_1_container .project_display .TheImageContainer {
+  width: 60vw;
+  height: auto;
+  margin-bottom: 3em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.Immeuble_1_container .project_display .TheImageContainer img {
+  transition-duration: 0.3s;
+  transform: scale(1);
+  border-radius: 1em;
+}
+.Immeuble_1_container .project_display .TheImageContainer img:hover {
+  transform: scale(1.03);
+}
+.Immeuble_1_container .project_display p {
+  width: 60vw;
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+@media all and (max-width: 1000px) {
+  .display_image_container {
+    top: 4em;
+    min-height: calc(100vh - 4em);
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  .display_image_container div {
+    width: 97%;
+    border: 0.1em solid var(--colorX);
+    border-bottom: 0.6em solid var(--colorX);
+  }
+  .display_image_container div .close_image_container {
+    width: 3em;
+    height: 3em;
+    top: -18%;
+    margin: -0.1em;
+  }
+  .Immeuble_1_container {
+    padding-left: 5vw;
+    padding-right: 0vw;
+  }
+  .Immeuble_1_container .project_display .project_title {
+    font-size: 1.5em;
+  }
+  .Immeuble_1_container .project_display .project_description {
+    font-size: 0.7em;
+  }
+  .Immeuble_1_container .project_display .the_video {
+    width: 90vw;
+    height: 65vw;
+    margin-bottom: 3em;
+    display: none;
+  }
+  .Immeuble_1_container .project_display h2 {
+    display: none;
+  }
+  .Immeuble_1_container .project_display .TheImageContainer {
+    width: 90vw;
+    margin-bottom: 1em;
+  }
+  .Immeuble_1_container .project_display p {
+    width: 80vw;
+  }
+}
+.Villa_A_container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, auto);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5em;
+}
+.Villa_A_container .project_display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: repeat(10, auto);
+  grid-template-columns: 1fr;
+  padding-bottom: 2em;
+}
+.Villa_A_container .project_display a {
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 800;
+  width: 12em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1em solid #000;
+  border-radius: 0.3em;
+  text-decoration: none;
+  color: var(--colorX);
+}
+.Villa_A_container .project_display a:hover {
+  transform: scale(1.02);
+}
+.Villa_A_container .project_display a ion-icon {
+  font-size: 1.2em;
+}
+.Villa_A_container .project_display .the_video {
+  width: 60vw;
+  height: 45vw;
+  margin-bottom: 3em;
+  margin-bottom: 3em;
+}
+.Villa_A_container .project_display .the_video iframe {
+  border: none;
+  border-radius: 1.5em;
+}
+.Villa_A_container .project_display .the_video iframe {
+  border: none;
+  border-radius: 1.5em;
+}
+.Villa_A_container .project_display .project_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 0.2em;
+}
+.Villa_A_container .project_display .project_description {
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.Villa_A_container .project_display .TheImageContainer {
+  width: 60vw;
+  height: auto;
+  margin-bottom: 3em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.Villa_A_container .project_display .TheImageContainer img {
+  transition-duration: 0.3s;
+  transform: scale(1);
+  border-radius: 1em;
+}
+.Villa_A_container .project_display .TheImageContainer img:hover {
+  transform: scale(1.03);
+}
+.Villa_A_container .project_display p {
+  width: 60vw;
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+@media all and (max-width: 1000px) {
+  .Villa_A_container {
+    padding-left: 5vw;
+    padding-right: 0vw;
+  }
+  .Villa_A_container .project_display .the_video {
+    width: 90vw;
+    height: 65vw;
+    margin-bottom: 3em;
+    display: none;
+  }
+  .Villa_A_container .project_display h2 {
+    display: none;
+  }
+  .Villa_A_container .project_display .project_title {
+    font-size: 1.5em;
+  }
+  .Villa_A_container .project_display .project_description {
+    font-size: 0.7em;
+  }
+  .Villa_A_container .project_display .TheImageContainer {
+    width: 90vw;
+    margin-bottom: 1em;
+  }
+  .Villa_A_container .project_display p {
+    width: 80vw;
+  }
+}
+.Villa_B_container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, auto);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5em;
+}
+.Villa_B_container .project_display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: repeat(10, auto);
+  grid-template-columns: 1fr;
+  padding-bottom: 2em;
+}
+.Villa_B_container .project_display a {
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 800;
+  width: 12em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1em solid #000;
+  border-radius: 0.3em;
+  text-decoration: none;
+  color: var(--colorX);
+}
+.Villa_B_container .project_display a:hover {
+  transform: scale(1.02);
+}
+.Villa_B_container .project_display a ion-icon {
+  font-size: 1.2em;
+}
+.Villa_B_container .project_display .project_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 0.2em;
+}
+.Villa_B_container .project_display .project_description {
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.Villa_B_container .project_display .TheImageContainer {
+  width: 60vw;
+  height: auto;
+  margin-bottom: 3em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.Villa_B_container .project_display .TheImageContainer img {
+  transition-duration: 0.3s;
+  transform: scale(1);
+  border-radius: 1em;
+}
+.Villa_B_container .project_display .TheImageContainer img:hover {
+  transform: scale(1.03);
+}
+.Villa_B_container .project_display p {
+  width: 60vw;
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+@media all and (max-width: 1000px) {
+  .Villa_B_container {
+    padding-left: 5vw;
+    padding-right: 0vw;
+  }
+  .Villa_B_container .project_display .project_title {
+    font-size: 1.5em;
+  }
+  .Villa_B_container .project_display .project_description {
+    font-size: 0.7em;
+  }
+  .Villa_B_container .project_display .TheImageContainer {
+    width: 90vw;
+    margin-bottom: 1em;
+  }
+  .Villa_B_container .project_display p {
+    width: 80vw;
+  }
+}
+.Villa_Teranga_Al_Amin_container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, auto);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5em;
+}
+.Villa_Teranga_Al_Amin_container .project_display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: repeat(10, auto);
+  grid-template-columns: 1fr;
+  padding-bottom: 2em;
+}
+.Villa_Teranga_Al_Amin_container .project_display a {
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 800;
+  width: 12em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1em solid #000;
+  border-radius: 0.3em;
+  text-decoration: none;
+  color: var(--colorX);
+}
+.Villa_Teranga_Al_Amin_container .project_display a:hover {
+  transform: scale(1.02);
+}
+.Villa_Teranga_Al_Amin_container .project_display a ion-icon {
+  font-size: 1.2em;
+}
+.Villa_Teranga_Al_Amin_container .project_display .the_video {
+  width: 60vw;
+  height: 45vw;
+  margin-bottom: 3em;
+  margin-bottom: 3em;
+}
+.Villa_Teranga_Al_Amin_container .project_display .the_video iframe {
+  border: none;
+  border-radius: 1.5em;
+}
+.Villa_Teranga_Al_Amin_container .project_display .project_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 0.2em;
+}
+.Villa_Teranga_Al_Amin_container .project_display .project_description {
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.Villa_Teranga_Al_Amin_container .project_display .TheImageContainer {
+  width: 60vw;
+  height: auto;
+  margin-bottom: 3em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.Villa_Teranga_Al_Amin_container .project_display .TheImageContainer img {
+  transition-duration: 0.3s;
+  transform: scale(1);
+  border-radius: 1em;
+}
+.Villa_Teranga_Al_Amin_container .project_display .TheImageContainer img:hover {
+  transform: scale(1.03);
+}
+.Villa_Teranga_Al_Amin_container .project_display p {
+  width: 60vw;
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+@media all and (max-width: 1000px) {
+  .Villa_Teranga_Al_Amin_container {
+    padding-left: 5vw;
+    padding-right: 0vw;
+  }
+  .Villa_Teranga_Al_Amin_container .project_display .project_title {
+    font-size: 1.5em;
+  }
+  .Villa_Teranga_Al_Amin_container .project_display .project_description {
+    font-size: 0.7em;
+  }
+  .Villa_Teranga_Al_Amin_container .project_display .the_video {
+    width: 90vw;
+    height: 65vw;
+    margin-bottom: 3em;
+    display: none;
+  }
+  .Villa_Teranga_Al_Amin_container .project_display h2 {
+    display: none;
+  }
+  .Villa_Teranga_Al_Amin_container .project_display .TheImageContainer {
+    width: 90vw;
+    margin-bottom: 1em;
+  }
+  .Villa_Teranga_Al_Amin_container .project_display p {
+    width: 80vw;
+  }
+}
+.Villa_Samb {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, auto);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5em;
+}
+.Villa_Samb .project_display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: repeat(10, auto);
+  grid-template-columns: 1fr;
+  padding-bottom: 2em;
+}
+.Villa_Samb .project_display a {
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 800;
+  width: 12em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1em solid #000;
+  border-radius: 0.3em;
+  text-decoration: none;
+  color: var(--colorX);
+}
+.Villa_Samb .project_display a:hover {
+  transform: scale(1.02);
+}
+.Villa_Samb .project_display a ion-icon {
+  font-size: 1.2em;
+}
+.Villa_Samb .project_display .the_video {
+  width: 60vw;
+  height: 45vw;
+  margin-bottom: 3em;
+  margin-bottom: 3em;
+}
+.Villa_Samb .project_display .the_video iframe {
+  border: none;
+  border-radius: 1.5em;
+}
+.Villa_Samb .project_display .project_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 0.2em;
+}
+.Villa_Samb .project_display .project_description {
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.Villa_Samb .project_display .TheImageContainer {
+  width: 60vw;
+  height: auto;
+  margin-bottom: 3em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.Villa_Samb .project_display .TheImageContainer img {
+  transition-duration: 0.3s;
+  transform: scale(1);
+  border-radius: 1em;
+}
+.Villa_Samb .project_display .TheImageContainer img:hover {
+  transform: scale(1.03);
+}
+.Villa_Samb .project_display p {
+  width: 60vw;
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+@media all and (max-width: 1000px) {
+  .Villa_Samb {
+    padding-left: 5vw;
+    padding-right: 0vw;
+  }
+  .Villa_Samb .project_display .project_title {
+    font-size: 1.5em;
+  }
+  .Villa_Samb .project_display .project_description {
+    font-size: 0.7em;
+  }
+  .Villa_Samb .project_display .the_video {
+    width: 90vw;
+    height: 65vw;
+    margin-bottom: 3em;
+    display: none;
+  }
+  .Villa_Samb .project_display h2 {
+    display: none;
+  }
+  .Villa_Samb .project_display .TheImageContainer {
+    width: 90vw;
+    margin-bottom: 1em;
+  }
+  .Villa_Samb .project_display p {
+    width: 80vw;
+  }
+}
+.Villa_Sarr {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, auto);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5em;
+}
+.Villa_Sarr .project_display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: repeat(10, auto);
+  grid-template-columns: 1fr;
+  padding-bottom: 2em;
+}
+.Villa_Sarr .project_display a {
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 800;
+  width: 12em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1em solid #000;
+  border-radius: 0.3em;
+  text-decoration: none;
+  color: var(--colorX);
+}
+.Villa_Sarr .project_display a:hover {
+  transform: scale(1.02);
+}
+.Villa_Sarr .project_display a ion-icon {
+  font-size: 1.2em;
+}
+.Villa_Sarr .project_display .the_video {
+  width: 60vw;
+  height: 45vw;
+  margin-bottom: 3em;
+  margin-bottom: 3em;
+}
+.Villa_Sarr .project_display .the_video iframe {
+  border: none;
+  border-radius: 1.5em;
+}
+.Villa_Sarr .project_display .project_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 0.2em;
+}
+.Villa_Sarr .project_display .project_description {
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.Villa_Sarr .project_display .TheImageContainer {
+  width: 60vw;
+  height: auto;
+  margin-bottom: 3em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.Villa_Sarr .project_display .TheImageContainer img {
+  transition-duration: 0.3s;
+  transform: scale(1);
+  border-radius: 1em;
+}
+.Villa_Sarr .project_display .TheImageContainer img:hover {
+  transform: scale(1.03);
+}
+.Villa_Sarr .project_display p {
+  width: 60vw;
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+@media all and (max-width: 1000px) {
+  .Villa_Sarr {
+    padding-left: 5vw;
+    padding-right: 0vw;
+  }
+  .Villa_Sarr .project_display .project_title {
+    font-size: 1.5em;
+  }
+  .Villa_Sarr .project_display .project_description {
+    font-size: 0.7em;
+  }
+  .Villa_Sarr .project_display .the_video {
+    width: 90vw;
+    height: 65vw;
+    margin-bottom: 3em;
+    display: none;
+  }
+  .Villa_Sarr .project_display h2 {
+    display: none;
+  }
+  .Villa_Sarr .project_display .TheImageContainer {
+    width: 90vw;
+    margin-bottom: 1em;
+  }
+  .Villa_Sarr .project_display p {
+    width: 80vw;
+  }
+}
+.Formation {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  grid-template-columns: 1fr;
+}
+.Formation .formation_section_1 {
+  grid-column: 1;
+  grid-row: 1;
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+}
+.Formation .formation_section_1 .project_title {
+  font-weight: 900;
+  position: absolute;
+  font-size: 7.5vw;
+  left: 5%;
+  top: 1.3%;
+}
+.Formation .formation_section_1 .project_title-2 {
+  font-weight: 700;
+  position: absolute;
+  font-size: 3.8vw;
+  left: 5%;
+  top: 13%;
+}
+.Formation .formation_section_1 .link {
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+  color: #f1f1f1;
+  position: absolute;
+  font-weight: 500;
+  font-size: 2vw;
+  left: 64%;
+  top: 32.2%;
+  background-color: #1f1f1f;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 0.4vw;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 0.2em;
+}
+.Formation .formation_section_1 .link:hover {
+  transform: scale(1.1);
+}
+.Formation .formation_section_1 .link em {
+  font-size: 1.5vw;
+}
+.Formation .formation_section_1 .mail {
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+  color: #f1f1f1;
+  position: absolute;
+  font-weight: 900;
+  font-size: 2vw;
+  left: 67%;
+  top: 49%;
+  line-height: 145%;
+  background-color: #1f1f1f;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 0.2em;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Formation .formation_section_1 .phone,
+.Formation .formation_section_1 .phone-2 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+  color: #f1f1f1;
+  position: absolute;
+  font-weight: 900;
+  font-size: 2vw;
+  left: 62%;
+  top: 59.5%;
+  line-height: 145%;
+  background-color: #1f1f1f;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 0.2em;
+  padding-left: 1vw;
+  padding-right: 1.4vw;
+  padding-top: 0.3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Formation .formation_section_1 .phone-2 {
+  top: 70%;
+  left: 74%;
+}
+.Formation .formation_section_2 {
+  grid-column: 1;
+  grid-row: 2/4;
+  top: -1.5vh;
+}
+.Formation .formation_section_2 .project_title {
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 90%;
+  position: absolute;
+  font-size: 4.5vw;
+  left: 15%;
+  top: 13%;
+}
+.Formation .formation_section_2 p {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%;
+  position: absolute;
+  font-size: 1.5vw;
+  left: 15%;
+  top: 40%;
+  font-weight: 550;
+  line-height: 125%;
+}
+.Formation .formation_section_3 {
+  grid-column: 1;
+  grid-row: 3/5;
+}
+.Formation .formation_section_3 .picture {
+  width: 8.5vw;
+  height: 8.5vw;
+  background-color: #1f1f1f;
+  position: absolute;
+  left: 35%;
+  top: 34%;
+  border-radius: 50%;
+  background-image: url("./Images/SVG/My-pictur.jpg");
+  background-size: 100%;
+}
+.Formation .formation_section_3 .picture:hover {
+  transform: scale(1.1);
+}
+.Formation .formation_section_3 .project_title {
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 90%;
+  position: absolute;
+  font-size: 5.5vw;
+  left: 5.5vw;
+  top: 33%;
+}
+.Formation .formation_section_3 p {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  position: absolute;
+  font-size: 1.5vw;
+  left: 6%;
+  top: 45%;
+  font-weight: 550;
+  line-height: 125%;
+}
+.Formation .formation_section_3 p em {
+  font-size: 1.8vw;
+  font-style: normal;
+  font-weight: 900;
+  margin-bottom: 3em;
+}
+.Formation .formation_section_3 .link {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  color: #f1f1f1;
+  position: absolute;
+  font-weight: 500;
+  font-size: 2vw;
+  left: 6%;
+  top: 67%;
+  background-color: #1f1f1f;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 0.9vw;
+  padding-top: 0vw;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 0.2em;
+}
+.Formation .formation_section_3 .link:hover {
+  transform: scale(1.1);
+}
+.Formation .formation_section_3 .link em {
+  font-style: normal;
+  font-size: 1.5vw;
+}
+.Formation .formation_section_4 {
+  grid-column: 1;
+  grid-row: 5/6;
+  height: 34vw;
+  background-color: #ecd233;
+}
+.Formation .formation_section_4 .project_title {
+  font-weight: 900;
+  position: absolute;
+  font-size: 3.2vw;
+  left: 4%;
+  top: 15%;
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+}
+.Formation .formation_section_4 .project_title-2 {
+  font-weight: 500;
+  position: absolute;
+  font-size: 2.3vw;
+  left: 4%;
+  top: 41%;
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+}
+.Formation .formation_section_4 .prix {
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+  color: #1f1f1f;
+  width: 45vw;
+  position: absolute;
+  font-weight: 900;
+  left: 53.5%;
+  top: 18%;
+}
+.Formation .formation_section_4 .prix em {
+  font-weight: 700;
+  font-size: 3vw;
+  padding: 1.5vw;
+}
+.Formation .formation_section_4 .prix strong {
+  border: solid 0.01px rgba(255, 0, 0, 0.1764705882);
+  font-weight: 900;
+  padding: 0.51vw;
+  border-radius: 0.2em;
+  padding-right: 1.3vw;
+  font-size: 3.9vw;
+}
+.Formation .formation_section_4 .men-prix {
+  top: 40%;
+}
+.Formation .formation_section_4 .men-prix em {
+  padding-right: 1.3vw;
+}
+.Formation .formation_section_4 .link {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  color: #f1f1f1;
+  position: absolute;
+  font-weight: 500;
+  font-size: 3vw;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 77%;
+  background-color: #1f1f1f;
+  padding: 1vw 4vw;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 0.2em;
+}
+.Formation .formation_section_4 .link:hover {
+  transform: translateX(-50%) scale(1.1);
+}
+.Formation .formation_section_4 .theArrow {
+  position: absolute;
+  width: 6vw;
+  left: 31%;
+  transform: translateX(-50%);
+  top: 80%;
+  animation: animatename 1s linear infinite;
+  transform: scale(1);
+}
+@keyframes animatename {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.09);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.Formation .formation_section_5 {
+  grid-column: 1;
+  grid-row: 6;
+  height: 30vw;
+  background-color: #96bddc;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 5vw;
+  padding-left: 1.7vw;
+}
+.Formation .formation_section_5 .theCertif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.Formation .formation_section_5 .theCertif:hover {
+  transform: scale(1.2);
+}
+
+@media all and (max-width: 1000px) {
+  .Formation {
+    padding-right: 0vw;
+  }
+  .Formation .formation_section_1 .link {
+    font-size: 2.3vw;
+    left: 62%;
+    top: 45.2%;
+  }
+  .Formation .formation_section_1 .mail {
+    top: 61%;
+  }
+  .Formation .formation_section_1 .phone,
+  .Formation .formation_section_1 .phone-2 {
+    top: 73.5%;
+  }
+  .Formation .formation_section_1 .phone-2 {
+    top: 86%;
+  }
+  .Formation .formation_section_2 .project_title {
+    top: 5vw;
+  }
+  .Formation .formation_section_2 p {
+    top: 24vw;
+    font-size: 2.4vw;
+  }
+  .Formation .formation_section_3 .project_title {
+    left: 2%;
+  }
+  .Formation .formation_section_3 p {
+    font-size: 2.4vw;
+    left: 2%;
+  }
+  .Formation .formation_section_3 p em {
+    font-size: 2.5vw;
+  }
+  .Formation .formation_section_3 .link {
+    left: 2%;
+    top: 74%;
+    font-size: 3vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
+  .Formation .formation_section_5 {
+    height: 90vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 5vw;
+  }
+}/*# sourceMappingURL=Style.css.map */
