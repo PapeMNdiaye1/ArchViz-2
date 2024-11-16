@@ -58,7 +58,7 @@ const Travaux = () => {
           Nos rendues photoréalistes offrent une visibilité accrue aux projets
           immobiliers, en permettant une visualisation réaliste avant leur
           réalisation. Cela suscite l'intérêt des clients cibles et convainc les
-          acheteurs potentiels. En somme, nous donnons vie à vos projets.{" "}
+          acheteurs potentiels. En somme, nous donnons vie à vos projets. bi
         </p>
       </section>
       <section className="AccueilBigProjectsSection">

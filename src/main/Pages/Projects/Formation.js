@@ -96,12 +96,12 @@ function SmallHouse1({}) {
             <em>
               Pape Momar Ndiaye <br />
             </em>
-            Architecte, co-fondateur de ArchViz-Dakar
+            Architecte, co-fondateur de ArchViz-Dakar.
             <br />
             Diplômé en Art Graphique et Numérique.
             <br />
             Je serai votre formateur durant ces 4 mois <br />
-            Consacre principalement au logiciel Blender
+            consacre principalement au logiciel Blender
             <br />
             Pour la 3D et à Photoshop pour le compositing.
             <br />
@@ -123,7 +123,7 @@ function SmallHouse1({}) {
         <div className="formation_section_5">
           <img src={ImageFormation4} className="theCertif" width="70%" />
           <img src={ImageFormation5} className="theCertif" width="100%" />
-          <img src={ImageFormation6} className="theCertif" width="80%" />
+          <img src={ImageFormation6} className="theCertif" width="100%" />
           <img src={ImageFormation7} className="theCertif" width="95%" />
         </div>
         <div className="formation_section_4">
