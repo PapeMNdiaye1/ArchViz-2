@@ -78,7 +78,7 @@ function SmallHouse1({}) {
             Architecturale 3D
           </h1>
           <p>
-            Une formation complète de 4 mois en Visualisation 3D
+            Une formation complète de 4 mois en Visualisation 3D sur blender.
             <br />
             Deux cours live par semaine sur Discord, un canal de questions
             <br />
@@ -122,8 +122,8 @@ function SmallHouse1({}) {
         </div>
         <div className="formation_section_5">
           <img src={ImageFormation4} className="theCertif" width="70%" />
-          <img src={ImageFormation5} className="theCertif" width="100%" />
-          <img src={ImageFormation6} className="theCertif" width="100%" />
+          <img src={ImageFormation5} className="theCertif" width="90%" />
+          <img src={ImageFormation6} className="theCertif" width="85%" />
           <img src={ImageFormation7} className="theCertif" width="95%" />
         </div>
         <div className="formation_section_4">
