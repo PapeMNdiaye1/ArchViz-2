@@ -3680,7 +3680,7 @@
   color: #f1f1f1;
   position: absolute;
   font-weight: 500;
-  font-size: 3vw;
+  font-size: 2vw;
   left: 50%;
   transform: translateX(-50%);
   top: 77%;
@@ -3695,8 +3695,8 @@
 }
 .Formation .formation_section_4 .theArrow {
   position: absolute;
-  width: 6vw;
-  left: 31%;
+  width: 5vw;
+  left: 34%;
   transform: translateX(-50%);
   top: 80%;
   animation: animatename 1s linear infinite;
@@ -3731,7 +3731,7 @@
   margin: auto;
 }
 .Formation .formation_section_5 .theCertif:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 @media all and (max-width: 1000px) {
@@ -3776,6 +3776,17 @@
     font-size: 3vw;
     padding-left: 1vw;
     padding-right: 1vw;
+  }
+  .Formation .formation_section_4 .link {
+    font-size: 4vw;
+    left: 50%;
+    top: 70%;
+    color: #f1f1f1;
+  }
+  .Formation .formation_section_4 .theArrow {
+    width: 6vw;
+    left: 28%;
+    top: 75%;
   }
   .Formation .formation_section_5 {
     height: 90vw;
