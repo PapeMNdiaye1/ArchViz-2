@@ -45,30 +45,6 @@ function SmallHouse1({}) {
   return (
     <Fragment>
       <div className="Formation">
-        <div className="formation_section_1">
-          <img src={ImageFormation1} width="100%" />
-          <h1 className="project_title">Formation en 3D</h1>
-
-          <h1 className="project_title-2">Architecture visualisation</h1>
-
-          <a className="link" href={"https://archviz-dakar.com/Travaux"}>
-            <em>Voir Réalisation Sur</em>
-            <br />
-            www.archviz-dakar.com/Travaux
-          </a>
-
-          <div className="phone">
-            <ion-icon name="call"></ion-icon> +221 77 727 86 55
-          </div>
-
-          <div className="phone-2">
-            <ion-icon name="call"></ion-icon> +221 78 990 92 46
-          </div>
-          <div className="mail">
-            <ion-icon className="icon" name="mail"></ion-icon>
-            archviz.sn@gmail.com
-          </div>
-        </div>
         <div className="formation_section_2">
           <img src={ImageFormation2} width="100%" />
           <h1 className="project_title">
@@ -154,6 +130,30 @@ function SmallHouse1({}) {
             S'inscrire
           </a>
           <img src={ImageFormation8} className="theArrow" width="70%" />
+        </div>
+        <div className="formation_section_1">
+          <img src={ImageFormation1} width="100%" />
+          <h1 className="project_title">Formation en 3D</h1>
+
+          <h1 className="project_title-2">Architecture visualisation</h1>
+
+          <a className="link" href={"https://archviz-dakar.com/Travaux"}>
+            <em>Voir Réalisation Sur</em>
+            <br />
+            www.archviz-dakar.com/Travaux
+          </a>
+
+          <div className="phone">
+            <ion-icon name="call"></ion-icon> +221 77 727 86 55
+          </div>
+
+          <div className="phone-2">
+            <ion-icon name="call"></ion-icon> +221 78 990 92 46
+          </div>
+          <div className="mail">
+            <ion-icon className="icon" name="mail"></ion-icon>
+            archviz.sn@gmail.com
+          </div>
         </div>
       </div>
     </Fragment>
