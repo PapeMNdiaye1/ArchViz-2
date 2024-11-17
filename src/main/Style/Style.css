@@ -1164,7 +1164,7 @@
     min-height: auto;
   }
   #Accueil .AccueilBigProjectsSection .One_Project_In_Home {
-    min-height: 33em;
+    min-height: 34em;
     height: auto;
     grid-gap: 0em;
     padding-bottom: 12%;
@@ -1417,7 +1417,7 @@
     min-height: auto;
   }
   #Travaux .AccueilBigProjectsSection .One_Project_In_Home {
-    min-height: 28em;
+    min-height: 34em;
     height: auto;
     grid-gap: 0em;
     padding-bottom: 12%;
