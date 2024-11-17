@@ -3774,10 +3774,9 @@
     left: 2%;
     top: 74%;
     font-size: 3vw;
-    padding-left: 1.2vw;
-    padding-right: 1.2vw;
-    padding-bottom: 0.5em;
+    padding: 0vw 1.2vw;
     font-size: 4vw;
+    padding-bottom: 1vw;
   }
   .Formation .formation_section_3 .link em {
     font-size: 2vw;
