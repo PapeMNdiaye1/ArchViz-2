@@ -118,7 +118,7 @@ function SmallHouse1({}) {
             <strong>50.000 Fcfa</strong>
           </div>
           <div className="prix men-prix">
-            <em>Mensualite</em>
+            <em>Mensualité</em>
             <strong>25.000 Fcfa</strong>
           </div>
           <a
