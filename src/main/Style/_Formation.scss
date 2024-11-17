@@ -383,10 +383,14 @@
         left: 2%;
         top: 74%;
         font-size: 3vw;
-        padding-left: 1vw;
-        padding-right: 1vw;
+        padding-left: 1.2vw;
+        padding-right: 1.2vw;
+        padding-bottom: 0.5em;
+        font-size: 4vw;
+
         em {
-          // font-size: 1.5vw;
+          font-size: 2vw;
+          // color: red;
         }
       }
     }

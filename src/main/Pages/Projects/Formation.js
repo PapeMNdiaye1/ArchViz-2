@@ -12,7 +12,6 @@ import ImageFormation8 from "../../Style/Images/SVG/Arrow.png";
 function SmallHouse1({}) {
   useEffect(() => {
     let TheArchLogo = document.querySelector(".logo-container");
-    console.log(TheArchLogo);
     TheArchLogo.style.display = "none";
     let ToDisplayonBLoade = document.querySelector(".before-loader");
     ToDisplayonBLoade.style.display = "none";
