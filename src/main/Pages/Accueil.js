@@ -105,7 +105,7 @@ function Accueil({ GetImageToApp }) {
                 }}
                 className="slider_date"
               >
-                sénégal, Dakar
+                Sénégal, Dakar
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@ function Accueil({ GetImageToApp }) {
               <div className="slider_title">
                 <p>Création De Plants et Maquettes</p>
               </div>
-              <div className="slider_date">sénégal, Dakar</div>
+              <div className="slider_date">Sénégal, Dakar</div>
             </div>
           </div>
           <div loading="lazy" className="sliders">
@@ -124,7 +124,7 @@ function Accueil({ GetImageToApp }) {
               <div className="slider_title">
                 <p>Réalité Virtuel & Experience 3D Web</p>
               </div>
-              <div className="slider_date">sénégal, Dakar</div>
+              <div className="slider_date">Sénégal, Dakar</div>
             </div>
           </div>
           <div loading="lazy" className="sliders">
@@ -133,7 +133,7 @@ function Accueil({ GetImageToApp }) {
               <div className="slider_title">
                 <p>Visualisations Architecturals Pour Commerces</p>
               </div>
-              <div className="slider_date">sénégal, Dakar</div>
+              <div className="slider_date">Sénégal, Dakar</div>
             </div>
           </div>
         </Carousel>
