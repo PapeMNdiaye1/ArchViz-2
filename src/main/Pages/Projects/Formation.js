@@ -69,16 +69,16 @@ function SmallHouse1({}) {
 
           <p>
             <em>
-              Pape Momar Ndiaye <br />
+              Pape M. Ndiaye <br />
             </em>
-            Architecte, co-fondateur de ArchViz-Dakar.
+            Architecte, co-fondateur de ArchViz-Dakar,
             <br />
-            Diplômé en Art Graphique et Numérique.
+            diplômé en Art Graphique et Numérique.
             <br />
             Je serai votre formateur durant ces 4 mois <br />
-            consacre principalement au logiciel Blender
+            consacrés principalement au logiciel Blender
             <br />
-            Pour la 3D et à Photoshop pour le compositing.
+            pour la 3D et à Photoshop pour le compositing.
             <br />
           </p>
 
