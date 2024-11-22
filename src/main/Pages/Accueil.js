@@ -138,7 +138,6 @@ function Accueil({ GetImageToApp }) {
           </div>
         </Carousel>
       </div>
-
       {/* <AccueilSlider /> */}
       <section className="archviz_presantation">
         <h2 className="qui_somme_nous">Qui sommes-nous ?</h2>
@@ -154,7 +153,6 @@ function Accueil({ GetImageToApp }) {
               <ion-icon name="logo-instagram"></ion-icon>
             </div>
           </a>
-
           <a
             href="https://api.whatsapp.com/send?phone=221777278655&text=Message provenant de archviz-dakar.com"
             target="_blank"

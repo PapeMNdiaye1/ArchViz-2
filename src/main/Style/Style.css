@@ -3436,6 +3436,8 @@
   display: grid;
   grid-template-rows: auto auto auto auto auto auto auto;
   grid-template-columns: 1fr;
+  background-color: salmon;
+  min-height: 315vw;
 }
 .Formation .formation_section_1 {
   grid-column: 1;
