@@ -46,9 +46,13 @@ const ImmeubleTalles = React.lazy(() =>
   import("./Pages/Projects/Immeuble_Talles")
 );
 const SmallHouse1 = React.lazy(() => import("./Pages/Projects/Villa_Onomo"));
-const Hangar1 = React.lazy(() => import("./Pages/Projects/Hangar_1"));
+const AppartementBHome1 = React.lazy(() =>
+  import("./Pages/Projects/AppartementBHome_1")
+);
 const DesignBureau = React.lazy(() => import("./Pages/Projects/Design_Office"));
-const Pharmacie1 = React.lazy(() => import("./Pages/Projects/Pharmacie_1"));
+const Façade_Immeuble = React.lazy(() =>
+  import("./Pages/Projects/Façade_Immeuble")
+);
 const AppartementFA = React.lazy(() =>
   import("./Pages/Projects/Appartement-F4-A")
 );
@@ -142,10 +146,10 @@ function App() {
             />
             <Route
               exact
-              path="/Hangar1"
+              path="/AppartementBHome_1"
               element={
                 <Suspense fallback={<TheLoader />}>
-                  <Hangar1 />
+                  <AppartementBHome1 />
                 </Suspense>
               }
             />
@@ -160,10 +164,10 @@ function App() {
             />
             <Route
               exact
-              path="/Pharmacie1"
+              path="/Façade_Immeuble"
               element={
                 <Suspense fallback={<TheLoader />}>
-                  <Pharmacie1 />
+                  <Façade_Immeuble />
                 </Suspense>
               }
             />

@@ -11,8 +11,6 @@ import ImageProjectB2 from "../Style/Images/Project/City-1.jpg";
 import ImageProjectB3 from "../Style/Images/Project/City-3.jpg";
 import ImageProjectB9 from "../Style/Images/Project/City-9.jpg";
 
-import ImageProjectE3 from "../Style/Images/Project/Pharmacie-3.jpg";
-
 import ImageProjectI2 from "../Style/Images/Project/Villa_B-2.jpg";
 import ImageProjectI3 from "../Style/Images/Project/Villa_B-3.jpg";
 import ImageProjectI4 from "../Style/Images/Project/Villa_B-8.jpg";
@@ -26,7 +24,6 @@ import ImageProjectH1 from "../Style/Images/Project/Villa_Astan-Ndiaye-1.jpg";
 import ImageProjectJ1 from "../Style/Images/Project/Appartement-F4-A-1.jpg";
 
 import ImageProjectS1 from "../Style/Images/Project/Villa_Samb-1.jpg";
-import ImageProjectS2 from "../Style/Images/Project/Villa_Samb-2.jpg";
 import ImageProjectS3 from "../Style/Images/Project/Villa_Samb-3.jpg";
 import ImageProjectS4 from "../Style/Images/Project/Villa_Samb-4.jpg";
 
@@ -48,6 +45,9 @@ import ImageProjectBB6 from "../Style/Images/Project/Office-B-6.jpg";
 
 import ImageProjectQ1 from "../Style/Images/Project/Villa-Sarr-1.jpg";
 import ImageProjectQ10 from "../Style/Images/Project/Villa-Sarr-10.jpg";
+
+import ImageProjectR1 from "../Style/Images/Project/Façade-Immeuble-A-5.jpg";
+import ImageProjectR2 from "../Style/Images/Project/Façade-Immeuble-A-4.jpg";
 
 function Accueil({ GetImageToApp }) {
   useEffect(() => {
@@ -313,6 +313,20 @@ function Accueil({ GetImageToApp }) {
           The_Experience={false}
           side={"left"}
         />
+
+        <OneBigProject
+          title={"Design Façade"}
+          image={ImageProjectR1}
+          description={
+            "Visualisez votre bureau avant de le construire. La modélisation 3D vous permet d'explorer les agencements, le placement des meubles et les éléments de design, le tout virtuellement."
+          }
+          color={"#EAEAEA"}
+          textcolor={"#222"}
+          theKey={11}
+          link={"/Façade_Immeuble"}
+          The_Experience={false}
+          side={"right"}
+        />
       </section>
       <section className="galerie_presantation">
         <Link className="nos_réalisations" to={"./Travaux"}>
@@ -348,10 +362,11 @@ function TheGallery({ GetImageOnAccueil }) {
         title={"Villa Saly"}
         date={"06 Juin, 2023"}
       />
+
       <OneGalerieElement
         giveImageId={onClickOnImage}
         link={"/VillaSamb"}
-        image={ImageProjectS3}
+        image={ImageProjectS10}
         title={"Villa Samb"}
         date={"05 Mai, 2024"}
       />
@@ -370,6 +385,7 @@ function TheGallery({ GetImageOnAccueil }) {
         date={"12 Juin, 2024"}
       />
 
+      {/*///######################################## */}
       <OneGalerieElement
         giveImageId={onClickOnImage}
         link={"/VillaSamb"}
@@ -405,7 +421,7 @@ function TheGallery({ GetImageOnAccueil }) {
         title={"Cité El Hadj Amadou BA"}
         date={"12 Juin, 2023"}
       />
-
+      {/*///######################################## */}
       <OneGalerieElement
         giveImageId={onClickOnImage}
         link={"/Villa_Onomo"}
@@ -436,25 +452,34 @@ function TheGallery({ GetImageOnAccueil }) {
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
-        link={"/VillaTerangaAlAmin"}
-        image={ImageProjectL2}
-        title={"Villa Al Amin"}
-        date={"26 Janvier, 2023"}
+        link={"/VillaSarr"}
+        image={ImageProjectQ10}
+        title={"Villa Sarr"}
+        date={"12 Juin, 2024"}
       />
-
+      {/*///######################################## */}
       <OneGalerieElement
         giveImageId={onClickOnImage}
         link={"/VillaSamb"}
-        image={ImageProjectS10}
+        image={ImageProjectS3}
         title={"Villa Samb"}
         date={"05 Mai, 2024"}
       />
+
       <OneGalerieElement
         giveImageId={onClickOnImage}
         link={"/Villa_Onomo"}
         image={ImageProjectT4}
         title={"Villa Onomo"}
         date={"25 juin, 2024"}
+      />
+
+      <OneGalerieElement
+        giveImageId={onClickOnImage}
+        link={"/VillaTerangaAlAmin"}
+        image={ImageProjectL2}
+        title={"Villa Al Amin"}
+        date={"26 Janvier, 2023"}
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
@@ -465,19 +490,12 @@ function TheGallery({ GetImageOnAccueil }) {
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
-        link={"/Design_Bureau"}
-        image={ImageProjectQ10}
-        title={"Design Bureau"}
-        date={"12 Juin, 2024"}
-      />
-      <OneGalerieElement
-        giveImageId={onClickOnImage}
         link={"/City1"}
         image={ImageProjectB2}
         title={"Cité El Hadj Amadou BA"}
         date={"12 Juin, 2023"}
       />
-
+      {/*///######################################## */}
       <OneGalerieElement
         giveImageId={onClickOnImage}
         link={"/Design_Bureau"}
@@ -494,9 +512,9 @@ function TheGallery({ GetImageOnAccueil }) {
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
-        link={"/Pharmacie1"}
-        image={ImageProjectE3}
-        title={"Pharmacie Design"}
+        link={"/Façade_Immeuble"}
+        image={ImageProjectR2}
+        title={"Façade Immeuble"}
         date={"27 Mai, 2022"}
       />
       <OneGalerieElement

@@ -4,8 +4,8 @@ import { OneBigProject } from "./Accueil";
 import ImageProjectB1 from "../Style/Images/Project/City-1.jpg";
 import ImageProjectC3 from "../Style/Images/Project/Immeuble-Talles-7.jpg";
 import ImageProjectD3 from "../Style/Images/Project/Office-B-1.jpg";
-import ImageProjectE4 from "../Style/Images/Project/Pharmacie-3.jpg";
-import ImageProjectF2 from "../Style/Images/Project/Hangar-2.jpg";
+import ImageProjectE4 from "../Style/Images/Project/Façade-Immeuble-A-4.jpg";
+import ImageProjectF2 from "../Style/Images/Project/Appartement_B_Home_2.jpg";
 
 import ImageProjectH1 from "../Style/Images/Project/Villa_Astan-Ndiaye-1.jpg";
 import ImageProjectI2 from "../Style/Images/Project/Villa_B-2.jpg";
@@ -17,7 +17,7 @@ import ImageProjectS1 from "../Style/Images/Project/Villa_Samb-1.jpg";
 import ImageProjectO1 from "../Style/Images/Project/Villa-Onomo-2.jpg";
 
 import ImageProjectQ1 from "../Style/Images/Project/Villa-Sarr-1.jpg";
-import ImageProjectQ10 from "../Style/Images/Project/Villa-Sarr-10.jpg";
+// import ImageProjectQ10 from "../Style/Images/Project/Villa-Sarr-10.jpg";
 
 const Travaux = () => {
   useEffect(() => {
@@ -107,15 +107,15 @@ const Travaux = () => {
         />
 
         <OneBigProject
-          title={"Design pour les Commerces"}
+          title={"Design Façade d'Immeuble"}
           image={ImageProjectE4}
           description={
-            "Nous avons une grande expérience dans l’agencement de point de vente, et l’aménagement de bureaux. Quelle que soit la typologie du point de vente, sa vocation, sa stratégie et son positionnement."
+            " Grâce à l’utilisation des logiciels de pointe et à notre expertise en architecture, nous vous accompagnons dans la conception et la réalisation du design de façade de vos espaces."
           }
           color={"#F4EFE4"}
           textcolor={"#664f3c"}
           theKey={4}
-          link={"/Pharmacie1"}
+          link={"/Façade_Immeuble"}
           side={"right"}
           The_Experience={false}
         />
@@ -205,15 +205,15 @@ const Travaux = () => {
         />
 
         <OneBigProject
-          title={"La 3D dans le domaine des Industries"}
+          title={"Appartement_B_Home_1"}
           image={ImageProjectF2}
           description={
-            "Le rendu et l'animation avec des temps de production de plus en plus rapide ont ouvert la porte à un monde de variations infinies dans la conception graphique adaptée à vos demandes uniques."
+            "À l'aide des logiciels de dernière génération et de notre savoir-faire dans le domaine de l’architecture d’intérieur. Nous vous aidons dans l’aménagement de vos espaces."
           }
           color={"#F1F1F1"}
           textcolor={"#222"}
           theKey={11}
-          link={"/Hangar1"}
+          link={"/AppartementBHome_1"}
           side={"left"}
           The_Experience={false}
         />

@@ -1,11 +1,12 @@
 import { React, useEffect, useState, Fragment } from "react";
 
-import ImageProjectC2 from "../../Style/Images/Project/Pharmacie_C-2.jpg";
-import ImageProjectC1 from "../../Style/Images/Project/Pharmacie_C-1.jpg";
-import ImageProjectC3 from "../../Style/Images/Project/Pharmacie_C-3.jpg";
-import ImageProjectC4 from "../../Style/Images/Project/Pharmacie_C-4.jpg";
+import ImageProjectC1 from "../../Style/Images/Project/Appartement_B_Home_1.jpg";
+import ImageProjectC2 from "../../Style/Images/Project/Appartement_B_Home_2.jpg";
+import ImageProjectC3 from "../../Style/Images/Project/Appartement_B_Home_3.jpg";
+import ImageProjectC4 from "../../Style/Images/Project/Appartement_B_Home_4.jpg";
+import ImageProjectC5 from "../../Style/Images/Project/Appartement_B_Home_5.jpg";
 
-function Façade_Immeuble({}) {
+function AppartementBHome1({}) {
   const [TheImageContainer, setTheImageContainer] = useState(false);
   const [TheImageInTheContainer, setTheImageInTheContainer] =
     useState(ImageProjectC1);
@@ -55,47 +56,59 @@ function Façade_Immeuble({}) {
           </div>
         </div>
       )}
-      <div className="Pharmacie_3_container">
+
+      <div className="AppartementBHome_1_container">
         <div className="project_display">
-          <h1 className="project_title">Espace Sportif</h1>
+          <h1 className="project_title">Appartement_B_Home_1</h1>
           <h3 className="project_description">
-            par Pape M Ndiaye | 7 Mai, 2023 |
+            par Pape Momar Ndiaye | 03 Mars, 2024 |
           </h3>
           <p>
-            Nous avons une grande expérience dans l'agencement d'espace commune.{" "}
+            À l'aide des logiciels de dernière génération et de notre
+            savoir-faire dans le domaine de l’architecture d’intérieur. Nous
+            vous aidons dans l’aménagement de vos espaces.{" "}
           </p>
           <div className="TheImageContainer">
             <img
+              loading="lazy"
               onClick={displayImage}
               src={ImageProjectC1}
               width="100%"
-              alt="  Façade Immeuble - 2"
-              loading="lazy"
+              alt=" Appartement_B_Home - 1"
             />
           </div>
           <div className="TheImageContainer">
             <img
-              onClick={displayImage}
-              src={ImageProjectC2}
-              width="47%"
-              alt="  Façade Immeuble - 3"
               loading="lazy"
+              onClick={displayImage}
+              src={ImageProjectC4}
+              width="47%"
+              alt=" Appartement_B_Home - 2"
             />
             <img
+              loading="lazy"
               onClick={displayImage}
               src={ImageProjectC3}
               width="47%"
-              alt="  Façade Immeuble - 4"
-              loading="lazy"
+              alt=" Appartement_B_Home - 3"
             />
           </div>
           <div className="TheImageContainer">
             <img
-              onClick={displayImage}
-              src={ImageProjectC4}
-              width="100%"
-              alt="  Façade Immeuble - 5"
               loading="lazy"
+              onClick={displayImage}
+              src={ImageProjectC2}
+              width="100%"
+              alt=" Appartement_B_Home - 4"
+            />
+          </div>
+          <div className="TheImageContainer">
+            <img
+              loading="lazy"
+              onClick={displayImage}
+              src={ImageProjectC5}
+              width="100%"
+              alt=" Appartement_B_Home - 4"
             />
           </div>
         </div>
@@ -104,4 +117,4 @@ function Façade_Immeuble({}) {
   );
 }
 
-export default Façade_Immeuble;
+export default AppartementBHome1;
