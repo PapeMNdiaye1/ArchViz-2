@@ -4,7 +4,6 @@ import ImageProjectC1 from "../../Style/Images/Project/Villa_Teranga_Al_Amin-1.j
 import ImageProjectC2 from "../../Style/Images/Project/Villa_Teranga_Al_Amin-2.jpg";
 import ImageProjectC3 from "../../Style/Images/Project/Villa_Teranga_Al_Amin-3.jpg";
 import ImageProjectC4 from "../../Style/Images/Project/Villa_Teranga_Al_Amin-4.jpg";
-// import ImageProjectC5 from "../../Style/Images/Project/Villa_Teranga_Al_Amin-5.jpg";
 import ImageProjectC6 from "../../Style/Images/Project/Villa_Teranga_Al_Amin-6.jpg";
 
 function SmallHouse1({}) {
