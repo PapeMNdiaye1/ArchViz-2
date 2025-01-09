@@ -2,7 +2,7 @@ import { React, useEffect, useState, Fragment } from "react";
 
 import ImageProjectC1 from "../../Style/Images/Project/Appartement-F4-A-1.jpg";
 import ImageProjectC2 from "../../Style/Images/Project/Appartement-F4-A-2.jpg";
-import ImageProjectC3 from "../../Style/Images/Project/Appartement-F4-A-3.jpg";
+// import ImageProjectC3 from "../../Style/Images/Project/Appartement-F4-A-3.jpg";
 import ImageProjectC4 from "../../Style/Images/Project/Appartement-F4-A-4.jpg";
 import ImageProjectC5 from "../../Style/Images/Project/Appartement-F4-A-5.jpg";
 import ImageProjectC6 from "../../Style/Images/Project/Appartement-F4-A-6.jpg";
@@ -125,15 +125,6 @@ function Façade_Immeuble({}) {
               src={ImageProjectC6}
               width="100%"
               alt="  Façade Immeuble - 5"
-            />
-          </div>
-
-          <div className="TheImageContainer">
-            <img
-              onClick={displayImage}
-              src={ImageProjectC3}
-              width="100%"
-              alt="  Façade Immeuble - 4"
             />
           </div>
         </div>
