@@ -315,10 +315,10 @@ function Accueil({ GetImageToApp }) {
         />
 
         <OneBigProject
-          title={"Design Façade"}
+          title={"Design Façade d'Immeuble"}
           image={ImageProjectR1}
           description={
-            "Visualisez votre bureau avant de le construire. La modélisation 3D vous permet d'explorer les agencements, le placement des meubles et les éléments de design, le tout virtuellement."
+            "Grâce à l’utilisation des logiciels de pointe et à notre expertise en architecture, nous vous accompagnons dans la conception et la réalisation du design de façade de vos espaces."
           }
           color={"#EAEAEA"}
           textcolor={"#222"}

@@ -231,11 +231,7 @@
   top: -0.1em;
   transform: scale(0.8);
 }
-.App
-  .App_container
-  .the_footer
-  .categories_elemant_container
-  .categories_elemant {
+.App .App_container .the_footer .categories_elemant_container .categories_elemant {
   height: 600%;
   display: flex;
   justify-content: center;
@@ -592,33 +588,20 @@
   top: 0%;
   transition-duration: 0.5s;
 }
-#Top-bare-slider-container
-  .Menu-container
-  .One-Section
-  .One-slider-Section
-  .Top-Title {
+#Top-bare-slider-container .Menu-container .One-Section .One-slider-Section .Top-Title {
   width: 100%;
   height: 3.5em;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#Top-bare-slider-container
-  .Menu-container
-  .One-Section
-  .One-slider-Section
-  .Top-Title
-  div {
+#Top-bare-slider-container .Menu-container .One-Section .One-slider-Section .Top-Title div {
   font-family: "Montserrat", sans-serif;
   font-size: 3.5em;
   font-weight: 900;
   color: #000;
 }
-#Top-bare-slider-container
-  .Menu-container
-  .One-Section
-  .One-slider-Section
-  .bottom-Title {
+#Top-bare-slider-container .Menu-container .One-Section .One-slider-Section .bottom-Title {
   width: 100%;
   height: 3.5em;
   display: flex;
@@ -627,12 +610,7 @@
   opacity: 0;
   transition-duration: 0.3s;
 }
-#Top-bare-slider-container
-  .Menu-container
-  .One-Section
-  .One-slider-Section
-  .bottom-Title
-  div {
+#Top-bare-slider-container .Menu-container .One-Section .One-slider-Section .bottom-Title div {
   font-family: "Montserrat", sans-serif;
   font-size: 3.5em;
   font-weight: 900;
@@ -875,10 +853,7 @@
   transition-duration: 0.4s;
   background-color: rgba(0, 0, 0, 0.3);
 }
-#Accueil
-  .AccueilBigProjectsSection
-  .One_Project_In_Home
-  .image_container:hover {
+#Accueil .AccueilBigProjectsSection .One_Project_In_Home .image_container:hover {
   background-size: 105%;
 }
 #Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container {
@@ -893,11 +868,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 40% 60%;
 }
-#Accueil
-  .AccueilBigProjectsSection
-  .One_Project_In_Home
-  .info_container
-  .title {
+#Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .title {
   margin: auto;
   display: flex;
   justify-content: center;
@@ -911,11 +882,7 @@
   font-weight: 900;
   text-decoration: none;
 }
-#Accueil
-  .AccueilBigProjectsSection
-  .One_Project_In_Home
-  .info_container
-  .description {
+#Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .description {
   margin: auto;
   margin-top: 4em;
   width: 80%;
@@ -929,49 +896,23 @@
   font-weight: 700;
   flex-wrap: wrap;
 }
-#Accueil
-  .AccueilBigProjectsSection
-  .One_Project_In_Home
-  .info_container
-  .description
-  .the_link {
+#Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link {
   margin-top: 1em;
   font-size: 0.71em;
   text-decoration: none;
   padding: 0.3em;
   border-radius: 0.2em;
 }
-#Accueil
-  .AccueilBigProjectsSection
-  .One_Project_In_Home
-  .info_container
-  .description
-  .the_link:hover {
+#Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link:hover {
   transform: scale(1.1);
 }
-#Accueil
-  .AccueilBigProjectsSection
-  .One_Project_In_Home
-  .info_container
-  .description
-  .the_link
-  ion-icon {
+#Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link ion-icon {
   bottom: -0.2em;
 }
-#Accueil
-  .AccueilBigProjectsSection
-  .One_Project_In_Home
-  .info_container
-  .description
-  .the_link:nth-child(2) {
+#Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link:nth-child(2) {
   margin-right: 2em;
 }
-#Accueil
-  .AccueilBigProjectsSection
-  .One_Project_In_Home
-  .info_container
-  .description
-  .bar {
+#Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .bar {
   height: 0.15em;
   width: 8em;
   position: absolute;
@@ -1090,24 +1031,14 @@
 #Accueil .the_galerie_container .one_galerie_element:hover img {
   transform: scale(1.2);
 }
-#Accueil
-  .the_galerie_container
-  .one_galerie_element:hover
-  .one_galerie_element_hover {
+#Accueil .the_galerie_container .one_galerie_element:hover .one_galerie_element_hover {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.7);
 }
-#Accueil
-  .the_galerie_container
-  .one_galerie_element:hover
-  .one_galerie_element_hover
-  .iner_container {
+#Accueil .the_galerie_container .one_galerie_element:hover .one_galerie_element_hover .iner_container {
   top: 0%;
 }
-#Accueil
-  .the_galerie_container
-  .one_galerie_element
-  .one_galerie_element_hover {
+#Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover {
   grid-column: 1/1;
   grid-row: 1/1;
   width: 100%;
@@ -1121,11 +1052,7 @@
   transition-duration: 0s, 1s;
   transition-property: height, background-color;
 }
-#Accueil
-  .the_galerie_container
-  .one_galerie_element
-  .one_galerie_element_hover
-  .iner_container {
+#Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container {
   width: 100%;
   height: auto;
   display: flex;
@@ -1135,12 +1062,7 @@
   top: 6%;
   transition-duration: 0.3s;
 }
-#Accueil
-  .the_galerie_container
-  .one_galerie_element
-  .one_galerie_element_hover
-  .iner_container
-  .Icon-to-click-on {
+#Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .Icon-to-click-on {
   width: 1.5em;
   height: 1.5em;
   border-radius: 50%;
@@ -1152,28 +1074,13 @@
   cursor: pointer;
   transform: scale(1);
 }
-#Accueil
-  .the_galerie_container
-  .one_galerie_element
-  .one_galerie_element_hover
-  .iner_container
-  .Icon-to-click-on:hover {
+#Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .Icon-to-click-on:hover {
   transform: scale(1.2);
 }
-#Accueil
-  .the_galerie_container
-  .one_galerie_element
-  .one_galerie_element_hover
-  .iner_container
-  .Icon-to-click-on:active {
+#Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .Icon-to-click-on:active {
   transform: scale(1);
 }
-#Accueil
-  .the_galerie_container
-  .one_galerie_element
-  .one_galerie_element_hover
-  .iner_container
-  .titre {
+#Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .titre {
   width: 95%;
   min-height: 1em;
   height: auto;
@@ -1187,20 +1094,10 @@
   text-decoration: none;
   color: var(--colorX);
 }
-#Accueil
-  .the_galerie_container
-  .one_galerie_element
-  .one_galerie_element_hover
-  .iner_container
-  .titre:hover {
+#Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .titre:hover {
   transform: scale(1.1);
 }
-#Accueil
-  .the_galerie_container
-  .one_galerie_element
-  .one_galerie_element_hover
-  .iner_container
-  .date {
+#Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .date {
   width: 100%;
   height: 1em;
   display: flex;
@@ -1230,7 +1127,7 @@
   }
   #Accueil .Accueil_Slider-2 .sliders img {
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
   }
   #Accueil .Accueil_Slider-2 .sliders .sliders_inner_container {
     height: 100%;
@@ -1246,11 +1143,7 @@
     font-size: 0.9em;
     margin-left: 0vw;
   }
-  #Accueil
-    .Accueil_Slider-2
-    .sliders:nth-child(1)
-    .sliders_inner_container
-    .slider_title:nth-child(1) {
+  #Accueil .Accueil_Slider-2 .sliders:nth-child(1) .sliders_inner_container .slider_title:nth-child(1) {
     color: var(--color0);
     opacity: 0.9;
   }
@@ -1284,44 +1177,23 @@
     border-radius: 1em;
     background-color: rgba(0, 0, 0, 0.3);
   }
-  #Accueil
-    .AccueilBigProjectsSection
-    .One_Project_In_Home
-    .image_container:hover {
+  #Accueil .AccueilBigProjectsSection .One_Project_In_Home .image_container:hover {
     background-size: 100%;
   }
-  #Accueil
-    .AccueilBigProjectsSection
-    .One_Project_In_Home
-    .info_container
-    .title {
+  #Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .title {
     font-size: 1.3em;
     width: 90%;
     transform: scale(1);
   }
-  #Accueil
-    .AccueilBigProjectsSection
-    .One_Project_In_Home
-    .info_container
-    .title
-    .bar {
+  #Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .title .bar {
     bottom: -0.3em;
   }
-  #Accueil
-    .AccueilBigProjectsSection
-    .One_Project_In_Home
-    .info_container
-    .description {
+  #Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .description {
     margin-top: 1em;
     font-size: 0.7em;
     width: 90%;
   }
-  #Accueil
-    .AccueilBigProjectsSection
-    .One_Project_In_Home
-    .info_container
-    .description
-    .the_link {
+  #Accueil .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link {
     font-size: 1.2em;
   }
   #Accueil .AccueilBigProjectsSection .right {
@@ -1423,10 +1295,7 @@
   transition-duration: 0.4s;
   background-color: rgba(0, 0, 0, 0.3);
 }
-#Travaux
-  .AccueilBigProjectsSection
-  .One_Project_In_Home
-  .image_container:hover {
+#Travaux .AccueilBigProjectsSection .One_Project_In_Home .image_container:hover {
   background-size: 105%;
 }
 #Travaux .AccueilBigProjectsSection .One_Project_In_Home .info_container {
@@ -1441,11 +1310,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 40% 60%;
 }
-#Travaux
-  .AccueilBigProjectsSection
-  .One_Project_In_Home
-  .info_container
-  .title {
+#Travaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .title {
   margin: auto;
   margin-bottom: 0em;
   display: flex;
@@ -1460,11 +1325,7 @@
   font-weight: 900;
   text-decoration: none;
 }
-#Travaux
-  .AccueilBigProjectsSection
-  .One_Project_In_Home
-  .info_container
-  .description {
+#Travaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .description {
   margin: auto;
   margin-top: 4em;
   width: 80%;
@@ -1478,49 +1339,23 @@
   font-weight: 700;
   flex-wrap: wrap;
 }
-#Travaux
-  .AccueilBigProjectsSection
-  .One_Project_In_Home
-  .info_container
-  .description
-  .the_link {
+#Travaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link {
   margin-top: 1em;
   font-size: 0.71em;
   text-decoration: none;
   padding: 0.3em;
   border-radius: 0.2em;
 }
-#Travaux
-  .AccueilBigProjectsSection
-  .One_Project_In_Home
-  .info_container
-  .description
-  .the_link:hover {
+#Travaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link:hover {
   transform: scale(1.1);
 }
-#Travaux
-  .AccueilBigProjectsSection
-  .One_Project_In_Home
-  .info_container
-  .description
-  .the_link
-  ion-icon {
+#Travaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link ion-icon {
   bottom: -0.2em;
 }
-#Travaux
-  .AccueilBigProjectsSection
-  .One_Project_In_Home
-  .info_container
-  .description
-  .the_link:nth-child(2) {
+#Travaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link:nth-child(2) {
   margin-right: 2em;
 }
-#Travaux
-  .AccueilBigProjectsSection
-  .One_Project_In_Home
-  .info_container
-  .description
-  .bar {
+#Travaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .bar {
   height: 0.15em;
   width: 7em;
   position: absolute;
@@ -1595,45 +1430,24 @@
     border-radius: 1em;
     background-color: rgba(0, 0, 0, 0.3);
   }
-  #Travaux
-    .AccueilBigProjectsSection
-    .One_Project_In_Home
-    .image_container:hover {
+  #Travaux .AccueilBigProjectsSection .One_Project_In_Home .image_container:hover {
     background-size: 100%;
   }
-  #Travaux
-    .AccueilBigProjectsSection
-    .One_Project_In_Home
-    .info_container
-    .title {
+  #Travaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .title {
     font-size: 1.3em;
     width: 90%;
     transform: scale(1);
     margin-bottom: 0.5em;
   }
-  #Travaux
-    .AccueilBigProjectsSection
-    .One_Project_In_Home
-    .info_container
-    .title
-    .bar {
+  #Travaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .title .bar {
     bottom: -0.3em;
   }
-  #Travaux
-    .AccueilBigProjectsSection
-    .One_Project_In_Home
-    .info_container
-    .description {
+  #Travaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .description {
     margin-top: 1em;
     font-size: 0.7em;
     width: 90%;
   }
-  #Travaux
-    .AccueilBigProjectsSection
-    .One_Project_In_Home
-    .info_container
-    .description
-    .the_link {
+  #Travaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .description .the_link {
     font-size: 1.2em;
   }
   #Travaux .AccueilBigProjectsSection .right {
@@ -1668,7 +1482,7 @@
 }
 #Services .one_service {
   width: calc(100% - 40vw);
-  background-color: #f4efe4;
+  background-color: #F4EFE4;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, auto);
@@ -1724,11 +1538,7 @@
 #Services .one_service .project_container .one_galerie_element_container {
   height: auto;
 }
-#Services
-  .one_service
-  .project_container
-  .one_galerie_element_container
-  .one_galerie_element {
+#Services .one_service .project_container .one_galerie_element_container .one_galerie_element {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -1739,39 +1549,18 @@
   border-radius: 1.4em;
   overflow: hidden;
 }
-#Services
-  .one_service
-  .project_container
-  .one_galerie_element_container
-  .one_galerie_element
-  img {
+#Services .one_service .project_container .one_galerie_element_container .one_galerie_element img {
   grid-column: 1/1;
   grid-row: 1/1;
 }
-#Services
-  .one_service
-  .project_container
-  .one_galerie_element_container
-  .one_galerie_element:hover
-  .one_galerie_element_hover {
+#Services .one_service .project_container .one_galerie_element_container .one_galerie_element:hover .one_galerie_element_hover {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.7);
 }
-#Services
-  .one_service
-  .project_container
-  .one_galerie_element_container
-  .one_galerie_element:hover
-  .one_galerie_element_hover
-  .iner_container {
+#Services .one_service .project_container .one_galerie_element_container .one_galerie_element:hover .one_galerie_element_hover .iner_container {
   top: 0%;
 }
-#Services
-  .one_service
-  .project_container
-  .one_galerie_element_container
-  .one_galerie_element
-  .one_galerie_element_hover {
+#Services .one_service .project_container .one_galerie_element_container .one_galerie_element .one_galerie_element_hover {
   grid-column: 1/1;
   grid-row: 1/1;
   width: 100%;
@@ -1785,13 +1574,7 @@
   transition-duration: 0s, 1s;
   transition-property: height, background-color;
 }
-#Services
-  .one_service
-  .project_container
-  .one_galerie_element_container
-  .one_galerie_element
-  .one_galerie_element_hover
-  .iner_container {
+#Services .one_service .project_container .one_galerie_element_container .one_galerie_element .one_galerie_element_hover .iner_container {
   width: 100%;
   height: auto;
   display: flex;
@@ -1801,14 +1584,7 @@
   top: 6%;
   transition-duration: 0.3s;
 }
-#Services
-  .one_service
-  .project_container
-  .one_galerie_element_container
-  .one_galerie_element
-  .one_galerie_element_hover
-  .iner_container
-  .titre {
+#Services .one_service .project_container .one_galerie_element_container .one_galerie_element .one_galerie_element_hover .iner_container .titre {
   width: 99%;
   min-height: 1em;
   height: auto;
@@ -1822,14 +1598,7 @@
   color: var(--colorX);
   text-decoration: none;
 }
-#Services
-  .one_service
-  .project_container
-  .one_galerie_element_container
-  .one_galerie_element
-  .one_galerie_element_hover
-  .iner_container
-  .date {
+#Services .one_service .project_container .one_galerie_element_container .one_galerie_element .one_galerie_element_hover .iner_container .date {
   width: 100%;
   height: 1em;
   display: flex;
@@ -1839,11 +1608,7 @@
   font-size: 0.7em;
   font-weight: 100;
 }
-#Services
-  .one_service
-  .project_container
-  .one_galerie_element_container
-  .one_galerie_link {
+#Services .one_service .project_container .one_galerie_element_container .one_galerie_link {
   font-family: "Montserrat", sans-serif;
   font-size: 0.9em;
   font-weight: 800;
@@ -1859,26 +1624,13 @@
   color: var(--colorX);
   cursor: pointer;
 }
-#Services
-  .one_service
-  .project_container
-  .one_galerie_element_container
-  .one_galerie_link
-  ion-icon {
+#Services .one_service .project_container .one_galerie_element_container .one_galerie_link ion-icon {
   font-size: 1.2em;
 }
-#Services
-  .one_service
-  .project_container
-  .one_galerie_element_container
-  .one_galerie_link:hover {
+#Services .one_service .project_container .one_galerie_element_container .one_galerie_link:hover {
   transform: scale(1.01) translate(0%, -1%);
 }
-#Services
-  .one_service
-  .project_container
-  .one_galerie_element_container
-  .one_galerie_link:active {
+#Services .one_service .project_container .one_galerie_element_container .one_galerie_link:active {
   transform: scale(1);
 }
 
@@ -1969,12 +1721,7 @@
   justify-content: center;
   align-items: center;
 }
-#Contacts
-  .Contact-container
-  .One-Contact
-  .One-slider-Section
-  .Top-Title
-  .network {
+#Contacts .Contact-container .One-Contact .One-slider-Section .Top-Title .network {
   width: 100%;
   height: auto;
   border-radius: 50%;
@@ -1986,30 +1733,14 @@
   color: var(--colorX);
   text-decoration: none;
 }
-#Contacts
-  .Contact-container
-  .One-Contact
-  .One-slider-Section
-  .Top-Title
-  .network:hover {
+#Contacts .Contact-container .One-Contact .One-slider-Section .Top-Title .network:hover {
   transform: scale(1.1);
   color: #000;
 }
-#Contacts
-  .Contact-container
-  .One-Contact
-  .One-slider-Section
-  .Top-Title
-  .network:active {
+#Contacts .Contact-container .One-Contact .One-slider-Section .Top-Title .network:active {
   transform: scale(0.9);
 }
-#Contacts
-  .Contact-container
-  .One-Contact
-  .One-slider-Section
-  .Top-Title
-  .network
-  ion-icon {
+#Contacts .Contact-container .One-Contact .One-slider-Section .Top-Title .network ion-icon {
   font-size: 0.7em;
 }
 #Contacts .Contact-container .One-Contact .One-slider-Section .bottom-Title {
@@ -2021,12 +1752,7 @@
   opacity: 0;
   transition-duration: 0.3s;
 }
-#Contacts
-  .Contact-container
-  .One-Contact
-  .One-slider-Section
-  .bottom-Title
-  .network {
+#Contacts .Contact-container .One-Contact .One-slider-Section .bottom-Title .network {
   width: 100%;
   height: auto;
   border-radius: 50%;
@@ -2038,38 +1764,17 @@
   color: var(--colorX);
   text-decoration: none;
 }
-#Contacts
-  .Contact-container
-  .One-Contact
-  .One-slider-Section
-  .bottom-Title
-  .network:hover {
+#Contacts .Contact-container .One-Contact .One-slider-Section .bottom-Title .network:hover {
   transform: scale(1.1);
   color: #000;
 }
-#Contacts
-  .Contact-container
-  .One-Contact
-  .One-slider-Section
-  .bottom-Title
-  .network:active {
+#Contacts .Contact-container .One-Contact .One-slider-Section .bottom-Title .network:active {
   transform: scale(0.9);
 }
-#Contacts
-  .Contact-container
-  .One-Contact
-  .One-slider-Section
-  .bottom-Title
-  .network
-  ion-icon {
+#Contacts .Contact-container .One-Contact .One-slider-Section .bottom-Title .network ion-icon {
   font-size: 0.7em;
 }
-#Contacts
-  .Contact-container
-  .One-Contact
-  .One-slider-Section
-  .bottom-Title
-  div {
+#Contacts .Contact-container .One-Contact .One-slider-Section .bottom-Title div {
   font-family: "Montserrat", sans-serif;
   font-size: 3.5em;
   font-weight: 900;
@@ -2154,24 +1859,14 @@
 #Gallery .the_galerie_container .one_galerie_element:hover img {
   transform: scale(1.2);
 }
-#Gallery
-  .the_galerie_container
-  .one_galerie_element:hover
-  .one_galerie_element_hover {
+#Gallery .the_galerie_container .one_galerie_element:hover .one_galerie_element_hover {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.7);
 }
-#Gallery
-  .the_galerie_container
-  .one_galerie_element:hover
-  .one_galerie_element_hover
-  .iner_container {
+#Gallery .the_galerie_container .one_galerie_element:hover .one_galerie_element_hover .iner_container {
   top: 0%;
 }
-#Gallery
-  .the_galerie_container
-  .one_galerie_element
-  .one_galerie_element_hover {
+#Gallery .the_galerie_container .one_galerie_element .one_galerie_element_hover {
   grid-column: 1/1;
   grid-row: 1/1;
   width: 100%;
@@ -2185,11 +1880,7 @@
   transition-duration: 0s, 1s;
   transition-property: height, background-color;
 }
-#Gallery
-  .the_galerie_container
-  .one_galerie_element
-  .one_galerie_element_hover
-  .iner_container {
+#Gallery .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container {
   width: 100%;
   height: auto;
   display: flex;
@@ -2199,12 +1890,7 @@
   top: 6%;
   transition-duration: 0.3s;
 }
-#Gallery
-  .the_galerie_container
-  .one_galerie_element
-  .one_galerie_element_hover
-  .iner_container
-  .Icon-to-click-on {
+#Gallery .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .Icon-to-click-on {
   width: 1.5em;
   height: 1.5em;
   border-radius: 50%;
@@ -2215,28 +1901,13 @@
   font-size: 2.3em;
   transform: scale(1);
 }
-#Gallery
-  .the_galerie_container
-  .one_galerie_element
-  .one_galerie_element_hover
-  .iner_container
-  .Icon-to-click-on:hover {
+#Gallery .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .Icon-to-click-on:hover {
   transform: scale(1.2);
 }
-#Gallery
-  .the_galerie_container
-  .one_galerie_element
-  .one_galerie_element_hover
-  .iner_container
-  .Icon-to-click-on:active {
+#Gallery .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .Icon-to-click-on:active {
   transform: scale(1);
 }
-#Gallery
-  .the_galerie_container
-  .one_galerie_element
-  .one_galerie_element_hover
-  .iner_container
-  .titre {
+#Gallery .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .titre {
   width: 95%;
   min-height: 1em;
   height: auto;
@@ -2250,20 +1921,10 @@
   text-decoration: none;
   color: var(--colorX);
 }
-#Gallery
-  .the_galerie_container
-  .one_galerie_element
-  .one_galerie_element_hover
-  .iner_container
-  .titre:hover {
+#Gallery .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .titre:hover {
   transform: scale(1.1);
 }
-#Gallery
-  .the_galerie_container
-  .one_galerie_element
-  .one_galerie_element_hover
-  .iner_container
-  .date {
+#Gallery .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container .date {
   width: 100%;
   height: 1em;
   display: flex;
@@ -2375,10 +2036,7 @@
   #Gallery .the_galerie_container .one_galerie_element:hover img {
     transform: scale(1);
   }
-  #Gallery
-    .the_galerie_container
-    .one_galerie_element
-    .one_galerie_element_hover {
+  #Gallery .the_galerie_container .one_galerie_element .one_galerie_element_hover {
     background-color: aqua;
     opacity: 1;
   }
@@ -2395,7 +2053,7 @@
   #Gallery .display_image_container div .close_image_container {
     width: 3em;
     height: 3em;
-    top: -18%;
+    top: -3.5em;
     margin: -0.1em;
   }
 }
@@ -3184,7 +2842,7 @@
   .display_image_container {
     top: 4em;
     min-height: calc(100vh - 4em);
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(196, 196, 196, 0.9);
   }
   .display_image_container div {
     width: 97%;
@@ -3194,7 +2852,7 @@
   .display_image_container div .close_image_container {
     width: 3em;
     height: 3em;
-    top: -18%;
+    top: -3.5em;
     margin: -0.1em;
   }
   .Immeuble_1_container {
@@ -4144,4 +3802,4 @@
     grid-template-columns: 1fr 1fr;
     padding: 5vw;
   }
-} /*# sourceMappingURL=Style.css.map */
+}/*# sourceMappingURL=Style.css.map */

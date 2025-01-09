@@ -205,7 +205,7 @@ const Travaux = () => {
         />
 
         <OneBigProject
-          title={"Appartement_B_Home_1"}
+          title={"Appartement B-Home 1"}
           image={ImageProjectF2}
           description={
             "À l'aide des logiciels de dernière génération et de notre savoir-faire dans le domaine de l’architecture d’intérieur. Nous vous aidons dans l’aménagement de vos espaces."

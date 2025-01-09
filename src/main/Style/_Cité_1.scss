@@ -1,140 +1,135 @@
 @mixin cent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Immeuble_1_container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, auto);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5em;
+
+  .project_display {
+    @include cent();
+    flex-wrap: wrap;
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(2, auto);
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-top: 5em;
+    grid-template-rows: repeat(10, auto);
+    grid-template-columns: 1fr;
+    padding-bottom: 2em;
 
-    .project_display {
-        @include cent();
-        flex-wrap: wrap;
-        display: grid;
-        grid-template-rows: repeat(10, auto);
-        grid-template-columns: 1fr;
-        padding-bottom: 2em;
+    .the_video {
+      width: 60vw;
+      height: 45vw;
+      margin-bottom: 3em;
 
-        .the_video {
-            width: 60vw;
-            height: 45vw;
-            margin-bottom: 3em;
+      iframe {
+        border: none;
+        border-radius: 1.5em;
+      }
 
-            iframe {
-
-                border: none;
-                border-radius: 1.5em;
-            }
-
-            margin-bottom: 3em;
-        }
-
-        .project_title {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2em;
-            font-weight: 800;
-            margin-bottom: .2em;
-        }
-
-        .project_description {
-            margin-bottom: 2em;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.2em;
-            font-weight: 400;
-        }
-
-        .TheImageContainer {
-            width: 60vw;
-            height: auto;
-            margin-bottom: 3em;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-
-            img {
-                transition-duration: .3s;
-                transform: scale(1);
-                border-radius: 1em;
-
-                &:hover {
-                    transform: scale(1.03);
-                }
-            }
-        }
-
-        p {
-            width: 60vw;
-            margin-bottom: 2em;
-            font-family: 'Montserrat', sans-serif;
-            font-size: .8em;
-            font-weight: 700;
-        }
+      margin-bottom: 3em;
     }
 
+    .project_title {
+      font-family: "Montserrat", sans-serif;
+      font-size: 2em;
+      font-weight: 800;
+      margin-bottom: 0.2em;
+    }
 
+    .project_description {
+      margin-bottom: 2em;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.2em;
+      font-weight: 400;
+    }
+
+    .TheImageContainer {
+      width: 60vw;
+      height: auto;
+      margin-bottom: 3em;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        transition-duration: 0.3s;
+        transform: scale(1);
+        border-radius: 1em;
+
+        &:hover {
+          transform: scale(1.03);
+        }
+      }
+    }
+
+    p {
+      width: 60vw;
+      margin-bottom: 2em;
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.8em;
+      font-weight: 700;
+    }
+  }
 }
-
 
 //!########################################
 
 @media all and (max-width: 1000px) {
+  .display_image_container {
+    top: 4em;
+    min-height: calc(100vh - 4em);
+    background-color: rgba(196, 196, 196, 0.9);
 
-    .display_image_container {
-        top: 4em;
-        min-height: calc(100vh - 4em);
-        background-color: rgba(255, 255, 255, 0.9);
+    div {
+      width: 97%;
+      border: 0.1em solid var(--colorX);
+      border-bottom: 0.6em solid var(--colorX);
 
-        div {
-            width: 97%;
-            border: .1em solid var(--colorX);
-            border-bottom: .6em solid var(--colorX);
-
-            .close_image_container {
-                width: 3em;
-                height: 3em;
-                top: -18%;
-                margin: -.1em;
-            }
-        }
+      .close_image_container {
+        width: 3em;
+        height: 3em;
+        top: -3.5em;
+        margin: -0.1em;
+      }
     }
+  }
 
-    .Immeuble_1_container {
-        padding-left: 5vw;
-        padding-right: 0vw;
+  .Immeuble_1_container {
+    padding-left: 5vw;
+    padding-right: 0vw;
 
-        .project_display {
-            .project_title {
-                font-size: 1.5em;
-            }
+    .project_display {
+      .project_title {
+        font-size: 1.5em;
+      }
 
-            .project_description {
-                font-size: .7em;
-            }
+      .project_description {
+        font-size: 0.7em;
+      }
 
-            .the_video {
-                width: 90vw;
-                height: 65vw;
-                margin-bottom: 3em;
-                display: none;
-            }
+      .the_video {
+        width: 90vw;
+        height: 65vw;
+        margin-bottom: 3em;
+        display: none;
+      }
 
-            h2 {
-                display: none;
-            }
+      h2 {
+        display: none;
+      }
 
-            .TheImageContainer {
-                width: 90vw;
-                margin-bottom: 1em;
-            }
+      .TheImageContainer {
+        width: 90vw;
+        margin-bottom: 1em;
+      }
 
-            p {
-                width: 80vw;
-            }
-        }
+      p {
+        width: 80vw;
+      }
     }
+  }
 }
