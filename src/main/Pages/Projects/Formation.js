@@ -104,7 +104,7 @@ function SmallHouse1({}) {
         <div className="formation_section_4">
           <h1 className="project_title">
             CLÔTURE DES INSCRIPTIONS <br />
-            LE 20 DÉCEMBRE
+            LE 20
           </h1>
 
           <h1 className="project_title-2">
