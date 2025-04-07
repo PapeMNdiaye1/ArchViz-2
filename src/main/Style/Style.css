@@ -1229,11 +1229,13 @@
   }
   #Accueil .galerie_presantation .galerie_container {
     font-size: 1.3em;
+    display: none;
   }
   #Accueil .the_galerie_container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(13, 1fr);
     height: 95em;
+    display: none;
   }
   #Accueil .the_galerie_container .one_galerie_element {
     display: flex;

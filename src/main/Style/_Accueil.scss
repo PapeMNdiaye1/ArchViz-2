@@ -639,6 +639,7 @@
 
       .galerie_container {
         font-size: 1.3em;
+        display: none;
       }
     }
 
@@ -647,6 +648,7 @@
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(13, 1fr);
       height: 95em;
+      display: none;
 
       .one_galerie_element {
         @include cent();
