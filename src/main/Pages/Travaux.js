@@ -17,6 +17,8 @@ import ImageProjectS1 from "../Style/Images/Project/Villa_Samb-1.jpg";
 import ImageProjectO1 from "../Style/Images/Project/Villa-Onomo-2.jpg";
 
 import ImageProjectQ1 from "../Style/Images/Project/Villa-Sarr-1.jpg";
+import ImageProjectS2 from "../Style/Images/Project/Appartement-Ayla-2.jpg";
+
 // import ImageProjectQ10 from "../Style/Images/Project/Villa-Sarr-10.jpg";
 
 const Travaux = () => {
@@ -242,6 +244,20 @@ const Travaux = () => {
           link={"/VillaSarr"}
           The_Experience={false}
           side={"left"}
+        />
+        <OneBigProject
+          title={"Appartement Ayla"}
+          image={ImageProjectS2}
+          description={
+            "Notre équipe d'experts vous accompagne de A à Z pour créer un espace qui vous ressemble, adapté à votre mode de vie et à vos envies."
+          }
+          color={"#222"}
+          textcolor={"#f1f1f1"}
+          theKey={14}
+          link={"/AppartementAyla"}
+          The_Experience={true}
+          The_Experience_Link={"https://residence-ayla-f4-pm.netlify.app/"}
+          side={"right"}
         />
       </section>
     </div>
