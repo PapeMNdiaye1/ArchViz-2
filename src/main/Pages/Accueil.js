@@ -49,6 +49,8 @@ import ImageProjectQ10 from "../Style/Images/Project/Villa-Sarr-10.jpg";
 import ImageProjectR1 from "../Style/Images/Project/Façade-Immeuble-A-5.jpg";
 import ImageProjectR2 from "../Style/Images/Project/Façade-Immeuble-A-4.jpg";
 
+import ImageProjectS2 from "../Style/Images/Project/Appartement-Ayla-4.jpg";
+
 function Accueil({ GetImageToApp }) {
   useEffect(() => {
     let ToDisplayonBLoade = document.querySelector(".before-loader");
@@ -254,13 +256,15 @@ function Accueil({ GetImageToApp }) {
         />
 
         <OneBigProject
-          title={"Visualisation de projets immobiliers"}
-          image={ImageProjectS1}
-          description={`Visualisez et concrétisez vos projets d'aménagement grâce à l'accompagnement de nos architectes d'intérieur.`}
-          color={"#2b2828"}
-          textcolor={"#f1f1f1"}
+          title={"Design Façade d'Immeuble"}
+          image={ImageProjectR1}
+          description={
+            "Grâce à l’utilisation des logiciels de pointe et à notre expertise en architecture, nous vous accompagnons dans la conception et la réalisation du design de façade de vos espaces."
+          }
+          color={"#EAEAEA"}
+          textcolor={"#222"}
           theKey={6}
-          link={"/VillaSamb"}
+          link={"/Façade_Immeuble"}
           The_Experience={false}
           side={"left"}
         />
@@ -320,20 +324,6 @@ function Accueil({ GetImageToApp }) {
           link={"/Design_Bureau"}
           The_Experience={false}
           side={"left"}
-        />
-
-        <OneBigProject
-          title={"Design Façade d'Immeuble"}
-          image={ImageProjectR1}
-          description={
-            "Grâce à l’utilisation des logiciels de pointe et à notre expertise en architecture, nous vous accompagnons dans la conception et la réalisation du design de façade de vos espaces."
-          }
-          color={"#EAEAEA"}
-          textcolor={"#222"}
-          theKey={11}
-          link={"/Façade_Immeuble"}
-          The_Experience={false}
-          side={"right"}
         />
       </section>
       <section className="galerie_presantation">
@@ -446,11 +436,12 @@ function TheGallery({ GetImageOnAccueil }) {
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
-        link={"/Villa_Onomo"}
-        image={ImageProjectT7}
-        title={"Villa Onomo"}
-        date={"25 juin, 2024"}
+        link={"/Façade_Immeuble"}
+        image={ImageProjectR2}
+        title={"Façade Immeuble"}
+        date={"27 Mai, 2022"}
       />
+
       <OneGalerieElement
         giveImageId={onClickOnImage}
         link={"/VillaTerangaAlAmin"}
@@ -513,17 +504,17 @@ function TheGallery({ GetImageOnAccueil }) {
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
-        link={"/City1"}
-        image={ImageProjectB3}
-        title={"Cité El Hadj Amadou BA"}
-        date={"12 Juin, 2023"}
+        link={"/AppartementAyla"}
+        image={ImageProjectS2}
+        title={"Appartement Ayla"}
+        date={"22 Janvier, 2025"}
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
-        link={"/Façade_Immeuble"}
-        image={ImageProjectR2}
-        title={"Façade Immeuble"}
-        date={"27 Mai, 2022"}
+        link={"/Villa_Onomo"}
+        image={ImageProjectT7}
+        title={"Villa Onomo"}
+        date={"25 juin, 2024"}
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
