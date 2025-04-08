@@ -108,7 +108,7 @@ function SmallHouse1({}) {
           </h1>
 
           <h1 className="project_title-2">
-            DÉBUT DE LA FORMATION <br />4 JANVIER 10:00 AM – 11:30 AM
+            DÉBUT DE LA FORMATION <br /> 10:00 AM – 11:30 AM
           </h1>
 
           <div className="prix ins-prix">

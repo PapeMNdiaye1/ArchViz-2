@@ -74,6 +74,7 @@ function Accueil({ GetImageToApp }) {
 
     let ThesliderImg = document.querySelectorAll(".slider");
     let thePageWidth = window.innerWidth;
+
     return () => {
       ToDisplayonBLoade.style.display = "flex";
       AccueilContainer.scrollTop = 0;
@@ -141,7 +142,6 @@ function Accueil({ GetImageToApp }) {
       {/* <AccueilSlider /> */}
       <section className="archviz_presantation">
         <h2 className="qui_somme_nous">Qui sommes-nous ?</h2>
-
         <p>
           ArchViz est un studio de visualisation architecturale spécialisé dans
           la création d'images et d'animations photoréalistes pour la mise en
@@ -154,11 +154,24 @@ function Accueil({ GetImageToApp }) {
             </div>
           </a>
           <a
+            href="https://www.linkedin.com/company/archviz-sn/"
+            target="_blank"
+          >
+            <div className="network">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+          </a>
+          <a
             href="https://api.whatsapp.com/send?phone=221777278655&text=Message provenant de archviz-dakar.com"
             target="_blank"
           >
             <div className="network">
               <ion-icon name="logo-whatsapp"></ion-icon>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/@archviz-dakar" target="_blank">
+            <div className="network">
+              <ion-icon name="logo-youtube"></ion-icon>
             </div>
           </a>
           <a
@@ -167,11 +180,6 @@ function Accueil({ GetImageToApp }) {
           >
             <div className="network">
               <ion-icon name="mail-outline"></ion-icon>
-            </div>
-          </a>
-          <a href="https://www.youtube.com/@archviz-dakar" target="_blank">
-            <div className="network">
-              <ion-icon name="logo-youtube"></ion-icon>
             </div>
           </a>
         </div>
