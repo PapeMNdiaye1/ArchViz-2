@@ -299,17 +299,17 @@ function Accueil({ GetImageToApp }) {
 
         <OneBigProject
           title={"Visualisation de projets immobiliers"}
-          image={ImageProjectI2}
+          image={ImageProjectS2}
           description={
             "Des designs Modernes, épurés, etc… nous mettons en œuvre différentes approches pour une optimisation de vos espaces extérieurs et intérieurs. Pour se faire nous utilisons différents logiciels avec les dernières innovations pour des rendus d’images à la fois réalistes et immersives."
           }
           color={"#EAEAEA"}
           textcolor={"#222"}
           The_Experience={true}
-          The_Experience_Link={"https://villa-r-1.netlify.app/"}
+          The_Experience_Link={"https://residence-ayla-f4-pm.netlify.app/"}
           theKey={9}
           side={"right"}
-          link={"/Villa-Saly"}
+          link={"/AppartementAyla"}
         />
 
         <OneBigProject
@@ -727,16 +727,25 @@ function TheFooter({}) {
       <div className="titles">Categories</div>
       <div className="titles">Contacts</div>
       <div className="titles">Reseaux</div>
-      <div className="titles">Formation</div>
+      <div className="titles">Localisation</div>
 
       <Link
         to={"/formation"}
         // href="https://archviz-dakar.com/Formation"
         // target="_blank"
         className="portfolio_link"
-      >
-        Voir infos <ion-icon name="arrow-forward-outline"></ion-icon>
-      </Link>
+      ></Link>
+
+      <div class="map_container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21829.672231280812!2d-17.481922300740727!3d14.713874557348396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868d1e0bab8c8d25%3A0x664021658a7c1fe5!2sArchViz%20Dakar!5e0!3m2!1sfr!2ssn!4v1744225513580!5m2!1sfr!2ssn"
+          width="100%"
+          height="100%"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
 
       <p className="archviz_description">
         Nous aidons les constructeur et les promoteurs immobiliers à
@@ -783,7 +792,7 @@ function TheFooter({}) {
 
       <div className="contact_elemant_container">
         <div className="contact_elemant ">Tel: +221 77 727 86 55</div>
-        <div className="contact_elemant ">Tel: +221 77 355 88 44</div>
+        <div className="contact_elemant ">Tel: +221 78 990 92 46</div>
         <div className="contact_elemant ">archviz.sn@gmail.com</div>
       </div>
 
