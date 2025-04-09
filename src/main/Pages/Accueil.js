@@ -284,17 +284,17 @@ function Accueil({ GetImageToApp }) {
         />
 
         <OneBigProject
-          title={"Espace Sportif"}
-          image={ImageProjectK1}
+          title={"Design Bureau"}
+          image={ImageProjectBB1}
           description={
-            "Nous avons une vaste expérience dans l'aménagement d'espaces communs et de bureaux, quelle que soient leur typologie, leur vocation, leur stratégie et leur positionnement."
+            "Visualisez votre bureau avant de le construire. La modélisation 3D vous permet d'explorer les agencements, le placement des meubles et les éléments de design, le tout virtuellement."
           }
-          color={"#ffd89e"}
-          textcolor={"#222"}
+          color={"#222"}
+          textcolor={"#f1f1f1"}
           theKey={8}
-          side={"left"}
-          link={"/Gym"}
+          link={"/Design_Bureau"}
           The_Experience={false}
+          side={"left"}
         />
 
         <OneBigProject
@@ -310,20 +310,6 @@ function Accueil({ GetImageToApp }) {
           theKey={9}
           side={"right"}
           link={"/AppartementAyla"}
-        />
-
-        <OneBigProject
-          title={"Design Bureau"}
-          image={ImageProjectBB1}
-          description={
-            "Visualisez votre bureau avant de le construire. La modélisation 3D vous permet d'explorer les agencements, le placement des meubles et les éléments de design, le tout virtuellement."
-          }
-          color={"#222"}
-          textcolor={"#f1f1f1"}
-          theKey={10}
-          link={"/Design_Bureau"}
-          The_Experience={false}
-          side={"left"}
         />
       </section>
       <section className="galerie_presantation">
