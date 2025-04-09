@@ -2462,30 +2462,30 @@
 }
 
 @media all and (max-width: 1000px) {
-  .Appartement-F4-A-container {
+  .Appartement-Ayla {
     padding-left: 5vw;
     padding-right: 0vw;
   }
-  .Appartement-F4-A-container .project_display .project_title {
+  .Appartement-Ayla .project_display .project_title {
     font-size: 1.5em;
   }
-  .Appartement-F4-A-container .project_display .project_description {
+  .Appartement-Ayla .project_display .project_description {
     font-size: 0.7em;
   }
-  .Appartement-F4-A-container .project_display .the_video {
+  .Appartement-Ayla .project_display .the_video {
     width: 90vw;
     height: 65vw;
     margin-bottom: 3em;
     display: none;
   }
-  .Appartement-F4-A-container .project_display h2 {
+  .Appartement-Ayla .project_display h2 {
     display: none;
   }
-  .Appartement-F4-A-container .project_display .TheImageContainer {
+  .Appartement-Ayla .project_display .TheImageContainer {
     width: 90vw;
     margin-bottom: 1em;
   }
-  .Appartement-F4-A-container .project_display p {
+  .Appartement-Ayla .project_display p {
     width: 80vw;
   }
 }
