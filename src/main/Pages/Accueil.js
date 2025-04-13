@@ -532,7 +532,8 @@ function OneGalerieElement({ giveImageId, title, theKey, image, date, link }) {
 
   return (
     <div className="one_galerie_element">
-      <img loading="lazy" src={image} width="100%" alt={title} />
+      <ImageBlurhash src={image} />
+      {/* <img loading="lazy" src={image} width="100%" alt={title} /> */}
       <div className="one_galerie_element_hover">
         <div className="iner_container">
           <Link onClick={clickOnImage} to={"/Galerie"}>
