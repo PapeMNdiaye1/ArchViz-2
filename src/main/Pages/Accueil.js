@@ -2,7 +2,8 @@ import { React, useEffect, useState, Fragment } from "react";
 import { Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import ImageBlurhash from "./Image-Compona";
+import { ImageBlurhashA } from "./Image-Compona";
+import { ImageBlurhashB } from "./Image-Compona";
 
 import ImageforIntro1 from "../Style/Images/Project/Exterior-0.jpg";
 import ImageforIntro4 from "../Style/Images/Project/Pharmacie-3.jpg";
@@ -52,6 +53,8 @@ import ImageProjectR2 from "../Style/Images/Project/Façade-Immeuble-A-4.jpg";
 
 import ImageProjectS2 from "../Style/Images/Project/Appartement-Ayla-4.jpg";
 
+let hashIntro1 = "LLNKFy00?bt7~q%MWBWB-;t7j[M{";
+
 function Accueil({ GetImageToApp }) {
   useEffect(() => {
     let ToDisplayonBLoade = document.querySelector(".before-loader");
@@ -93,8 +96,7 @@ function Accueil({ GetImageToApp }) {
       <div className="Accueil_Slider-2">
         <Carousel>
           <div className="sliders">
-            <ImageBlurhash src={ImageforIntro1} />
-            {/* <img loading="lazy" src={ImageforIntro1} /> */}
+            <ImageBlurhashA src={ImageforIntro1} theHash={hashIntro1} />
             <div className="sliders_inner_container">
               <div
                 style={{
@@ -115,8 +117,8 @@ function Accueil({ GetImageToApp }) {
             </div>
           </div>
           <div className="sliders">
-            <ImageBlurhash src={ImageProjectP1} />
-            {/* <img loading="lazy" src={ImageProjectP1} /> */}
+            {/* <ImageBlurhashA src={ImageProjectP1} /> */}
+            <img loading="lazy" src={ImageProjectP1} />
             <div className="sliders_inner_container">
               <div className="slider_title">
                 <p>Création De Plants et Maquettes</p>
@@ -532,8 +534,8 @@ function OneGalerieElement({ giveImageId, title, theKey, image, date, link }) {
 
   return (
     <div className="one_galerie_element">
-      <ImageBlurhash src={image} />
-      {/* <img loading="lazy" src={image} width="100%" alt={title} /> */}
+      {/* <ImageBlurhashA src={image} /> */}
+      <img loading="lazy" src={image} width="100%" alt={title} />
       <div className="one_galerie_element_hover">
         <div className="iner_container">
           <Link onClick={clickOnImage} to={"/Galerie"}>
@@ -627,12 +629,14 @@ function OneBigProject({
               )}
             </div>
           </div>
-          <img
+          <ImageBlurhashB src={image} theHash={hashIntro1} theTitle={title} />
+          {/* <img
+            width="100%"
             src={image}
             loading="lazy"
             alt={title}
             className="image_container"
-          />
+          /> */}
         </section>
       ) : (
         <section className="One_Project_In_Home left">
