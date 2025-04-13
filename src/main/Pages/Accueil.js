@@ -690,12 +690,14 @@ function OneBigProject({
               )}
             </div>
           </div>
-          <img
+          <ImageBlurhashB src={image} theHash={hashIntro1} theTitle={title} />
+          {/* <img
+            width="100%"
             src={image}
             loading="lazy"
             alt={title}
             className="image_container"
-          />
+          /> */}
         </section>
       )}
     </Fragment>
