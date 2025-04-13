@@ -2,13 +2,14 @@ import { React, useEffect, useState, Fragment } from "react";
 import { Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import ImageBlurhash from "./Image-Compona";
 
 import ImageforIntro1 from "../Style/Images/Project/Exterior-0.jpg";
 import ImageforIntro4 from "../Style/Images/Project/Pharmacie-3.jpg";
 
 import ImageProjectB1 from "../Style/Images/Project/City-8.jpg";
 import ImageProjectB2 from "../Style/Images/Project/City-1.jpg";
-import ImageProjectB3 from "../Style/Images/Project/City-3.jpg";
+// import ImageProjectB3 from "../Style/Images/Project/City-3.jpg";
 import ImageProjectB9 from "../Style/Images/Project/City-9.jpg";
 
 import ImageProjectI2 from "../Style/Images/Project/Villa_B-2.jpg";
@@ -23,7 +24,7 @@ import ImageProjectL2 from "../Style/Images/Project/Villa_Teranga_Al_Amin-2.jpg"
 import ImageProjectH1 from "../Style/Images/Project/Villa_Astan-Ndiaye-1.jpg";
 import ImageProjectJ1 from "../Style/Images/Project/Appartement-F4-A-1.jpg";
 
-import ImageProjectS1 from "../Style/Images/Project/Villa_Samb-1.jpg";
+// import ImageProjectS1 from "../Style/Images/Project/Villa_Samb-1.jpg";
 import ImageProjectS3 from "../Style/Images/Project/Villa_Samb-3.jpg";
 import ImageProjectS4 from "../Style/Images/Project/Villa_Samb-4.jpg";
 
@@ -92,7 +93,8 @@ function Accueil({ GetImageToApp }) {
       <div className="Accueil_Slider-2">
         <Carousel>
           <div className="sliders">
-            <img loading="lazy" src={ImageforIntro1} />
+            <ImageBlurhash src={ImageforIntro1} />
+            {/* <img loading="lazy" src={ImageforIntro1} /> */}
             <div className="sliders_inner_container">
               <div
                 style={{
@@ -113,7 +115,8 @@ function Accueil({ GetImageToApp }) {
             </div>
           </div>
           <div className="sliders">
-            <img loading="lazy" src={ImageProjectP1} />
+            <ImageBlurhash src={ImageProjectP1} />
+            {/* <img loading="lazy" src={ImageProjectP1} /> */}
             <div className="sliders_inner_container">
               <div className="slider_title">
                 <p>Création De Plants et Maquettes</p>
@@ -623,15 +626,12 @@ function OneBigProject({
               )}
             </div>
           </div>
-          <div
+          <img
+            src={image}
             loading="lazy"
-            role="img"
             alt={title}
             className="image_container"
-            style={{
-              backgroundImage: `url('${image}')`,
-            }}
-          ></div>
+          />
         </section>
       ) : (
         <section className="One_Project_In_Home left">
@@ -685,15 +685,12 @@ function OneBigProject({
               )}
             </div>
           </div>
-          <div
+          <img
+            src={image}
             loading="lazy"
-            role="img"
             alt={title}
             className="image_container"
-            style={{
-              backgroundImage: `url('${image}')`,
-            }}
-          ></div>
+          />
         </section>
       )}
     </Fragment>

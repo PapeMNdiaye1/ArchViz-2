@@ -863,9 +863,6 @@
 #Accueil .AccueilBigProjectsSection .One_Project_In_Home .image_container {
   width: 100%;
   height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
   transition-duration: 0.4s;
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -1183,7 +1180,7 @@
     min-height: 34em;
     height: auto;
     grid-gap: 0em;
-    padding-bottom: 12%;
+    padding-bottom: 2%;
   }
   #Accueil .AccueilBigProjectsSection .One_Project_In_Home .image_container {
     width: 100%;
