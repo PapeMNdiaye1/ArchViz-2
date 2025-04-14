@@ -1432,17 +1432,15 @@
     min-height: auto;
   }
   #Travaux .AccueilBigProjectsSection .One_Project_In_Home {
-    min-height: 34em;
-    height: auto;
-    grid-gap: 0em;
-    padding-bottom: 12%;
+    min-height: 28em;
+    display: grid;
+    grid-gap: 0.5em;
   }
   #Travaux .AccueilBigProjectsSection .One_Project_In_Home .image_container {
     width: 100%;
     background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border-radius: 1em;
+    margin: auto;
+    transition-duration: 0.4s;
     background-color: rgba(0, 0, 0, 0.3);
   }
   #Travaux .AccueilBigProjectsSection .One_Project_In_Home .image_container:hover {
