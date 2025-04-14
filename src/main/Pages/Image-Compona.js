@@ -65,6 +65,7 @@ function ImageBlurhashB({ src, theHash, theTitle }) {
           width: "100%",
           height: "100%",
         }}
+        className="image_container"
       >
         <Blurhash
           hash={theHash}
@@ -72,7 +73,6 @@ function ImageBlurhashB({ src, theHash, theTitle }) {
           resolutionX={32}
           resolutionY={32}
           punch={1}
-          className="image_container"
         />
       </div>
       <img
