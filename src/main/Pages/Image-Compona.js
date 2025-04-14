@@ -27,7 +27,7 @@ function ImageBlurhashA({ src, theHash }) {
         <Blurhash
           hash={theHash}
           width={"100%"}
-          //   height={"100%"}
+          height={"100%"}
           resolutionX={32}
           resolutionY={32}
           punch={1}
@@ -114,6 +114,7 @@ function ImageBlurhashC({ src, theHash, theTitle }) {
         <Blurhash
           hash={theHash}
           width={"100%"}
+          height={"100%"}
           resolutionX={32}
           resolutionY={32}
           punch={1}
