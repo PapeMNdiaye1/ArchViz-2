@@ -373,7 +373,7 @@
       overflow: hidden;
       border: 0.01em solid var(--colorX);
 
-      img {
+      .img-in-galerie-element {
         width: 100%;
         grid-column: 1 / 1;
         grid-row: 1 / 1;

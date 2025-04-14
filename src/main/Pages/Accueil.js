@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { ImageBlurhashA } from "./Image-Compona";
 import { ImageBlurhashB } from "./Image-Compona";
+import { ImageBlurhashC } from "./Image-Compona";
 
 import ImageforIntro1 from "../Style/Images/Project/Exterior-0.jpg";
 import ImageforIntro4 from "../Style/Images/Project/Pharmacie-3.jpg";
@@ -534,8 +535,8 @@ function OneGalerieElement({ giveImageId, title, theKey, image, date, link }) {
 
   return (
     <div className="one_galerie_element">
-      {/* <ImageBlurhashA src={image} /> */}
-      <img loading="lazy" src={image} width="100%" alt={title} />
+      <ImageBlurhashC src={image} theHash={hashIntro1} theTitle={title} />
+
       <div className="one_galerie_element_hover">
         <div className="iner_container">
           <Link onClick={clickOnImage} to={"/Galerie"}>
