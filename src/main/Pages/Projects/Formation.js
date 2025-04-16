@@ -108,7 +108,7 @@ function SmallHouse1({}) {
           </h1>
 
           <h1 className="project_title-2">
-            DÉBUT DE LA FORMATION LE 1 JUIN
+            DÉBUT DE LA FORMATION LE 14 JUIN
             <br /> 10:00 AM – 11:30 AM
           </h1>
 
