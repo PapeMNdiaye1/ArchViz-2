@@ -362,7 +362,7 @@ function Accueil({ GetImageToApp }) {
           description={
             "Des designs Modernes, épurés, etc… nous mettons en œuvre différentes approches pour une optimisation de vos espaces extérieurs et intérieurs. Pour se faire nous utilisons différents logiciels avec les dernières innovations pour des rendus d’images à la fois réalistes et immersives."
           }
-          color={"#EAEAEA"}
+          color={"#F1F1F1"}
           textcolor={"#222"}
           The_Experience={true}
           The_Experience_Link={"https://residence-ayla-f4-pm.netlify.app/"}
