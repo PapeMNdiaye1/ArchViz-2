@@ -394,6 +394,7 @@ function TheGallery({ GetImageOnAccueil }) {
     <div className="the_galerie_container">
       <OneGalerieElement
         giveImageId={onClickOnImage}
+        oneHash={hashProjectT2}
         link={"/Villa_Onomo"}
         image={ImageProjectT2}
         title={"Villa Onomo"}
@@ -401,6 +402,7 @@ function TheGallery({ GetImageOnAccueil }) {
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
+        oneHash={hashProjectI4}
         link={"/Villa-Saly"}
         image={ImageProjectI4}
         title={"Villa Saly"}
@@ -409,6 +411,7 @@ function TheGallery({ GetImageOnAccueil }) {
 
       <OneGalerieElement
         giveImageId={onClickOnImage}
+        oneHash={hashProjectS10}
         link={"/VillaSamb"}
         image={ImageProjectS10}
         title={"Villa Samb"}
@@ -416,6 +419,7 @@ function TheGallery({ GetImageOnAccueil }) {
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
+        oneHash={hashProjectQ1}
         link={"/VillaSarr"}
         image={ImageProjectQ1}
         title={"Villa Sarr"}
@@ -423,6 +427,7 @@ function TheGallery({ GetImageOnAccueil }) {
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
+        oneHash={hashProjectBB3}
         link={"/Design_Bureau"}
         image={ImageProjectBB3}
         title={"Design Bureau"}
@@ -432,6 +437,7 @@ function TheGallery({ GetImageOnAccueil }) {
       {/*///######################################## */}
       <OneGalerieElement
         giveImageId={onClickOnImage}
+        oneHash={hashProjectS7}
         link={"/VillaSamb"}
         image={ImageProjectS7}
         title={"Villa Samb"}
@@ -439,6 +445,7 @@ function TheGallery({ GetImageOnAccueil }) {
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
+        oneHash={hashProjectj1}
         link={"/Appartement-F4-A"}
         image={ImageProjectJ1}
         title={"Appartement-F4-A"}
@@ -446,6 +453,7 @@ function TheGallery({ GetImageOnAccueil }) {
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
+        oneHash={hashProjectT8}
         link={"/Villa_Onomo"}
         image={ImageProjectT8}
         title={"Villa Onomo"}
@@ -453,6 +461,7 @@ function TheGallery({ GetImageOnAccueil }) {
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
+        oneHash={hashProjectS4}
         link={"/VillaSamb"}
         image={ImageProjectS4}
         title={"Villa Samb"}
@@ -460,6 +469,7 @@ function TheGallery({ GetImageOnAccueil }) {
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
+        oneHash={hashProjectB9}
         link={"/City1"}
         image={ImageProjectB9}
         title={"Cité El Hadj Amadou BA"}
@@ -468,6 +478,7 @@ function TheGallery({ GetImageOnAccueil }) {
       {/*///######################################## */}
       <OneGalerieElement
         giveImageId={onClickOnImage}
+        oneHash={hashProjectT9}
         link={"/Villa_Onomo"}
         image={ImageProjectT9}
         title={"Villa Onomo"}
@@ -475,6 +486,7 @@ function TheGallery({ GetImageOnAccueil }) {
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
+        oneHash={hashProjectK1}
         link={"/Gym"}
         image={ImageProjectK1}
         title={"Espace Sportif"}
@@ -482,6 +494,7 @@ function TheGallery({ GetImageOnAccueil }) {
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
+        oneHash={hashProjectR2}
         link={"/Façade_Immeuble"}
         image={ImageProjectR2}
         title={"Façade Immeuble"}
@@ -490,6 +503,7 @@ function TheGallery({ GetImageOnAccueil }) {
 
       <OneGalerieElement
         giveImageId={onClickOnImage}
+        oneHash={hashProjectL1}
         link={"/VillaTerangaAlAmin"}
         image={ImageProjectL1}
         title={"Villa Al Amin"}
@@ -497,6 +511,7 @@ function TheGallery({ GetImageOnAccueil }) {
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
+        oneHash={hashProjectQ10}
         link={"/VillaSarr"}
         image={ImageProjectQ10}
         title={"Villa Sarr"}
@@ -505,6 +520,7 @@ function TheGallery({ GetImageOnAccueil }) {
       {/*///######################################## */}
       <OneGalerieElement
         giveImageId={onClickOnImage}
+        oneHash={hashProjectS3}
         link={"/VillaSamb"}
         image={ImageProjectS3}
         title={"Villa Samb"}
@@ -513,6 +529,7 @@ function TheGallery({ GetImageOnAccueil }) {
 
       <OneGalerieElement
         giveImageId={onClickOnImage}
+        oneHash={hashProjectT4}
         link={"/Villa_Onomo"}
         image={ImageProjectT4}
         title={"Villa Onomo"}
@@ -521,6 +538,7 @@ function TheGallery({ GetImageOnAccueil }) {
 
       <OneGalerieElement
         giveImageId={onClickOnImage}
+        oneHash={hashProjectL2}
         link={"/VillaTerangaAlAmin"}
         image={ImageProjectL2}
         title={"Villa Al Amin"}
@@ -528,6 +546,7 @@ function TheGallery({ GetImageOnAccueil }) {
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
+        oneHash={hashProjectI2}
         link={"/Villa-Saly"}
         image={ImageProjectI2}
         title={"Villa Saly"}
@@ -535,6 +554,7 @@ function TheGallery({ GetImageOnAccueil }) {
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
+        oneHash={hashProjectB2}
         link={"/City1"}
         image={ImageProjectB2}
         title={"Cité El Hadj Amadou BA"}
@@ -543,6 +563,7 @@ function TheGallery({ GetImageOnAccueil }) {
       {/*///######################################## */}
       <OneGalerieElement
         giveImageId={onClickOnImage}
+        oneHash={hashProjectBB6}
         link={"/Design_Bureau"}
         image={ImageProjectBB6}
         title={"Design Bureau"}
@@ -550,6 +571,7 @@ function TheGallery({ GetImageOnAccueil }) {
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
+        oneHash={hashProjectS2}
         link={"/AppartementAyla"}
         image={ImageProjectS2}
         title={"Appartement Ayla"}
@@ -557,6 +579,7 @@ function TheGallery({ GetImageOnAccueil }) {
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
+        oneHash={hashProjectT7}
         link={"/Villa_Onomo"}
         image={ImageProjectT7}
         title={"Villa Onomo"}
@@ -564,6 +587,7 @@ function TheGallery({ GetImageOnAccueil }) {
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
+        oneHash={hashProjectI3}
         link={"/Villa-Saly"}
         image={ImageProjectI3}
         title={"Villa Saly"}
@@ -571,6 +595,7 @@ function TheGallery({ GetImageOnAccueil }) {
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
+        oneHash={hashProjectBB2}
         link={"/Design_Bureau"}
         image={ImageProjectBB2}
         title={"Design Bureau"}
@@ -580,7 +605,15 @@ function TheGallery({ GetImageOnAccueil }) {
   );
 }
 //!###############################################################
-function OneGalerieElement({ giveImageId, title, theKey, image, date, link }) {
+function OneGalerieElement({
+  giveImageId,
+  title,
+  theKey,
+  image,
+  date,
+  link,
+  oneHash,
+}) {
   const clickOnImage = (e) => {
     let AccueilContainer = document.querySelector(".App_container");
     AccueilContainer.scrollTop = 0;
@@ -589,7 +622,7 @@ function OneGalerieElement({ giveImageId, title, theKey, image, date, link }) {
 
   return (
     <div className="one_galerie_element">
-      <ImageBlurhashC src={image} theHash={hashIntro1} theTitle={title} />
+      <ImageBlurhashC src={image} theHash={oneHash} theTitle={title} />
 
       <div className="one_galerie_element_hover">
         <div className="iner_container">

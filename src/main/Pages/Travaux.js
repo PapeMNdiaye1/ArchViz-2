@@ -19,6 +19,28 @@ import ImageProjectO1 from "../Style/Images/Project/Villa-Onomo-2.jpg";
 import ImageProjectQ1 from "../Style/Images/Project/Villa-Sarr-1.jpg";
 import ImageProjectS2 from "../Style/Images/Project/Appartement-Ayla-2.jpg";
 
+// ######################################################################################
+// ######################################################################################
+// ######################################################################################
+// ######################################################################################
+let hashProjectB1 = "LGGu{_-o?w-;ITV@M}M_?dogxrRj";
+let hashProjectC3 = "L4GIly9F00WqD%-;D*~q00?v~qIU";
+let hashProjectD3 = "LIFrn#-n_NtREKWZWZRj?a-=t7t7";
+let hashProjectE4 = "LCAvwdxZ58M|~Vn~I@R+t8t6ofkC";
+let hashProjectF2 = "LLLz~#?bRix^~qM_Ioxvx^MxxtRj";
+
+let hashProjectH1 = "L9DJVJ00kD~qM|x]Rjx]?w9EIU-;";
+let hashProjectI2 = "LhIh?Ibcs,%2~pkCWYxa%Nt7jYoe";
+let hashProjectJ1 = "LNK-d[xu_4Di~qRjWBofM{t7RPt7";
+let hashProjectK4 = "LIHed;8^_NIUE2xvROt6-V%2Mxog";
+let hashProjectL1 = "LOIi5+bxoz9E_4%gR%V@AJt7eme.";
+let hashProjectS1 = "LJJt;v4n%M9F~pIUR+Rj-:NGj]-:";
+
+let hashProjectO1 = "LGIha400%gsl~q%M4n%M_Nn#V?oz";
+
+let hashProjectQ1 = "LaI~3~%MR%t8XpR*Woog.Aofj]j[";
+let hashProjectS2 = "LIK1g,00_3Mw~pskNet7NGxu$~xu";
+
 let hashProject1 = "LLNKFy00?bt7~q%MWBWB-;t7j[M{";
 
 const Travaux = () => {
@@ -75,7 +97,7 @@ const Travaux = () => {
           theKey={1}
           link={"/Villa"}
           side={"left"}
-          OneHash={hashProject1}
+          OneHash={hashProjectH1}
           The_Experience={true}
           The_Experience_Link={"https://archviz-villa-astan.netlify.app/"}
         />
@@ -91,7 +113,7 @@ const Travaux = () => {
           theKey={2}
           link={"/Appartement-F4-A"}
           side={"right"}
-          OneHash={hashProject1}
+          OneHash={hashProjectJ1}
           The_Experience={true}
           The_Experience_Link={"https://archviz-villa-bamba-ba.netlify.app/"}
         />
@@ -107,7 +129,7 @@ const Travaux = () => {
           theKey={3}
           link={"/City1"}
           side={"left"}
-          OneHash={hashProject1}
+          OneHash={hashProjectB1}
           The_Experience={false}
         />
 
@@ -122,7 +144,7 @@ const Travaux = () => {
           theKey={4}
           link={"/Façade_Immeuble"}
           side={"right"}
-          OneHash={hashProject1}
+          OneHash={hashProjectE4}
           The_Experience={false}
         />
 
@@ -137,7 +159,7 @@ const Travaux = () => {
           theKey={5}
           link={"/Villa_Onomo"}
           side={"left"}
-          OneHash={hashProject1}
+          OneHash={hashProjectO1}
           The_Experience={false}
         />
 
@@ -150,7 +172,7 @@ const Travaux = () => {
           theKey={6}
           link={"/Immeuble-Talles"}
           side={"right"}
-          OneHash={hashProject1}
+          OneHash={hashProjectC3}
           The_Experience={false}
         />
 
@@ -165,7 +187,7 @@ const Travaux = () => {
           theKey={7}
           link={"/VillaTerangaAlAmin"}
           side={"left"}
-          OneHash={hashProject1}
+          OneHash={hashProjectL1}
           The_Experience={true}
           The_Experience_Link={
             "https://archviz-villa-teranga-al-amine.netlify.app/"
@@ -183,7 +205,7 @@ const Travaux = () => {
           theKey={8}
           link={"/Gym"}
           side={"right"}
-          OneHash={hashProject1}
+          OneHash={hashProjectK4}
           The_Experience={false}
         />
 
@@ -200,7 +222,7 @@ const Travaux = () => {
           The_Experience_Link={"https://villa-r-1.netlify.app/"}
           link={"/Villa-Saly"}
           side={"left"}
-          OneHash={hashProject1}
+          OneHash={hashProjectI2}
         />
 
         <OneBigProject
@@ -213,7 +235,7 @@ const Travaux = () => {
           link={"/VillaSamb"}
           The_Experience={false}
           side={"right"}
-          OneHash={hashProject1}
+          OneHash={hashProjectS1}
         />
 
         <OneBigProject
@@ -227,7 +249,7 @@ const Travaux = () => {
           theKey={11}
           link={"/AppartementBHome_1"}
           side={"left"}
-          OneHash={hashProject1}
+          OneHash={hashProjectF2}
           The_Experience={false}
         />
 
@@ -243,7 +265,7 @@ const Travaux = () => {
           link={"/Design_Bureau"}
           The_Experience={false}
           side={"right"}
-          OneHash={hashProject1}
+          OneHash={hashProjectD3}
         />
 
         <OneBigProject
@@ -256,7 +278,7 @@ const Travaux = () => {
           link={"/VillaSarr"}
           The_Experience={false}
           side={"left"}
-          OneHash={hashProject1}
+          OneHash={hashProjectQ1}
         />
         <OneBigProject
           title={"Appartement Ayla"}
@@ -271,7 +293,7 @@ const Travaux = () => {
           The_Experience={true}
           The_Experience_Link={"https://residence-ayla-f4-pm.netlify.app/"}
           side={"right"}
-          OneHash={hashProject1}
+          OneHash={hashProjectS2}
         />
       </section>
     </div>

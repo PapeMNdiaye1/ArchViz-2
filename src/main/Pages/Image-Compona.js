@@ -118,7 +118,6 @@ function ImageBlurhashC({ src, theHash, theTitle }) {
           resolutionX={32}
           resolutionY={32}
           punch={1}
-          className="img-in-galerie-element"
         />
       </div>
       <img
