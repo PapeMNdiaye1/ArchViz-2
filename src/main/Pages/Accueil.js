@@ -72,7 +72,7 @@ let hashProjectL2 = "LBKL5W8w9tMx=YKP~WIo58$yE1ng";
 
 let hashProjectH1 = "L9DJVJ00kD~qM|x]Rjx]?w9EIU-;";
 
-let hashProjectj1 = "LNK-d[xu_4Di~qRjWBofM{t7RPt7";
+let hashProjectJ1 = "LNK-d[xu_4Di~qRjWBofM{t7RPt7";
 
 let hashProjectS3 = "L6JkZR~A0000NGn,ad-:yE_NE1D%";
 let hashProjectS4 = "LCMtK$D%X9_4~pRjt6RjRjxuWBIU";
@@ -163,8 +163,7 @@ function Accueil({ GetImageToApp }) {
             </div>
           </div>
           <div className="sliders">
-            {/* <ImageBlurhashA src={ImageProjectP1} /> */}
-            <img loading="lazy" src={ImageProjectP1} />
+            <ImageBlurhashA src={ImageProjectP1} theHash={hashProjectP1} />
             <div className="sliders_inner_container">
               <div className="slider_title">
                 <p>Création De Plants et Maquettes</p>
@@ -173,7 +172,8 @@ function Accueil({ GetImageToApp }) {
             </div>
           </div>
           <div loading="lazy" className="sliders">
-            <img src={ImageProjectJ1} />
+            <ImageBlurhashA src={ImageProjectJ1} theHash={hashProjectJ1} />
+
             <div className="sliders_inner_container">
               <div className="slider_title">
                 <p>Réalité Virtuel & Experience 3D Web</p>
@@ -182,7 +182,8 @@ function Accueil({ GetImageToApp }) {
             </div>
           </div>
           <div loading="lazy" className="sliders">
-            <img src={ImageforIntro4} />
+            <ImageBlurhashA src={ImageforIntro4} theHash={hashProjectI4} />
+
             <div className="sliders_inner_container">
               <div className="slider_title">
                 <p>Visualisations Architecturals Pour Commerces</p>
@@ -262,7 +263,7 @@ function Accueil({ GetImageToApp }) {
           theKey={2}
           link={"/Appartement-F4-A"}
           side={"left"}
-          OneHash={hashProjectj1}
+          OneHash={hashProjectJ1}
           The_Experience={true}
           The_Experience_Link={"https://archviz-villa-bamba-ba.netlify.app/"}
         />
@@ -445,7 +446,7 @@ function TheGallery({ GetImageOnAccueil }) {
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
-        oneHash={hashProjectj1}
+        oneHash={hashProjectJ1}
         link={"/Appartement-F4-A"}
         image={ImageProjectJ1}
         title={"Appartement-F4-A"}
@@ -719,13 +720,6 @@ function OneBigProject({
             </div>
           </div>
           <ImageBlurhashB src={image} theHash={OneHash} theTitle={title} />
-          {/* <img
-            width="100%"
-            src={image}
-            loading="lazy"
-            alt={title}
-            className="image_container"
-          /> */}
         </section>
       ) : (
         <section className="One_Project_In_Home left">
