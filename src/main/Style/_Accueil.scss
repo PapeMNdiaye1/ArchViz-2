@@ -360,6 +360,7 @@
   .the_galerie_container {
     width: 100%;
     height: auto;
+    min-height: 70vw;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);

@@ -57,6 +57,7 @@
 
   .the_galerie_container {
     width: 100%;
+    min-height: 70vw;
     height: auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);

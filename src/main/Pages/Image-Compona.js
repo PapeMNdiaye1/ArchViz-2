@@ -4,13 +4,10 @@ import { Blurhash } from "react-blurhash";
 function ImageBlurhashA({ src, theHash }) {
   const [imageLoaded, setImageLoaded] = useState(false);
 
-  //   console.log(imageLoaded);
-
   useEffect(() => {
     const img = new Image();
     img.onload = () => {
       setImageLoaded(true);
-      //   console.log(imageLoaded);
     };
     img.src = src;
   }, [src]);
@@ -21,7 +18,8 @@ function ImageBlurhashA({ src, theHash }) {
         style={{
           display: imageLoaded ? " none " : "inline",
           width: "100%",
-          height: "100%",
+          // height: "100%",
+          height: "70vw",
         }}
       >
         <Blurhash
