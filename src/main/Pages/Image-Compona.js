@@ -130,4 +130,51 @@ function ImageBlurhashC({ src, theHash, theTitle }) {
   );
 }
 
-export { ImageBlurhashA, ImageBlurhashB, ImageBlurhashC };
+function ImageBlurhashD({ src, theAspectRatio, theWidth, theHash, onClick }) {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => {
+      setImageLoaded(true);
+    };
+    img.src = src;
+  }, [src]);
+
+  const displayImage = (e) => {
+    onClick(e);
+  };
+
+  return (
+    <>
+      <div
+        style={{
+          display: imageLoaded ? " none " : "inline",
+          width: theWidth,
+          aspectRatio: theAspectRatio,
+          borderRadius: "1em",
+          overflow: "hidden",
+        }}
+      >
+        <Blurhash
+          hash={theHash}
+          width={"100%"}
+          height={"100%"}
+          resolutionX={32}
+          resolutionY={32}
+          punch={1}
+        />
+      </div>
+      <img
+        onClick={displayImage}
+        style={{ display: !imageLoaded ? " none " : "inline" }}
+        src={src}
+        alt=""
+        loading="lazy"
+        width={theWidth}
+      />
+    </>
+  );
+}
+
+export { ImageBlurhashA, ImageBlurhashB, ImageBlurhashC, ImageBlurhashD };
