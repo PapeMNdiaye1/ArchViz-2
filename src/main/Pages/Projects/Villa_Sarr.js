@@ -18,7 +18,6 @@ let hashProjectC3 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
 let hashProjectC4 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
 let hashProjectC5 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
 let hashProjectC6 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
-let hashProjectC7 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
 let hashProjectC8 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
 let hashProjectC9 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
 let hashProjectC10 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
@@ -84,27 +83,21 @@ function SmallHouse1({}) {
             services personnalisés afin de répondre à toutes vos attentes.
           </p>
           <div className="TheImageContainer">
-            <ImageBlurhashD
-              onClick={displayImage}
-              src={ImageProjectC1}
-              theHash={hashProjectC1}
-              theAspectRatio="1 / 0.746"
-              theWidth="100%"
-            />
+            import {ImageBlurhashD} from "../Image-Compona";
           </div>
 
           <div className="TheImageContainer">
             <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC2}
-              theHash={hashProjectC1}
+              theHash={hashProjectC2}
               theAspectRatio="1 / 0.746"
               theWidth="47%"
             />
             <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC3}
-              theHash={hashProjectC1}
+              theHash={hashProjectC3}
               theAspectRatio="1 / 0.746"
               theWidth="47%"
             />
@@ -162,7 +155,7 @@ function SmallHouse1({}) {
             <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC9}
-              theHash={hashProjectC4}
+              theHash={hashProjectC9}
               theAspectRatio="1 / 0.746"
               theWidth="47%"
             />

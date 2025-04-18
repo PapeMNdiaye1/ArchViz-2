@@ -183,6 +183,7 @@
         margin: auto;
         transition-duration: 0.4s;
         background-color: rgba(0, 0, 0, 0.3);
+        // aspect-ratio: "1 / 0.746";
 
         &:hover {
           background-size: 105%;
@@ -566,6 +567,7 @@
           background-size: 100%;
           border-radius: 1em;
           background-color: rgba(0, 0, 0, 0.3);
+          // aspect-ratio: "1 / 0.746";
 
           &:hover {
             background-size: 100%;

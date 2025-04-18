@@ -62,6 +62,9 @@ function ImageBlurhashB({ src, theHash, theTitle }) {
           display: imageLoaded ? " none " : "inline",
           width: "100%",
           height: "100%",
+          aspectRatio: "1 / 0.746",
+          borderRadius: "1em",
+          overflow: "hidden",
         }}
         className="image_container"
       >
@@ -169,7 +172,7 @@ function ImageBlurhashD({ src, theAspectRatio, theWidth, theHash, onClick }) {
         onClick={displayImage}
         style={{ display: !imageLoaded ? " none " : "inline" }}
         src={src}
-        alt=""
+        alt="ArchViz-Dakar-Image"
         loading="lazy"
         width={theWidth}
       />

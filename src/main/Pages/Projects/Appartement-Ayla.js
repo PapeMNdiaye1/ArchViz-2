@@ -6,6 +6,14 @@ import ImageProjectC3 from "../../Style/Images/Project/Appartement-Ayla-3.jpg";
 import ImageProjectC4 from "../../Style/Images/Project/Appartement-Ayla-4.jpg";
 import ImageProjectC5 from "../../Style/Images/Project/Appartement-Ayla-5.jpg";
 import ImageProjectC6 from "../../Style/Images/Project/Appartement-Ayla-6.jpg";
+import { ImageBlurhashD } from "../Image-Compona";
+
+let hashProjectC1 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
+let hashProjectC2 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
+let hashProjectC3 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
+let hashProjectC4 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
+let hashProjectC5 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
+let hashProjectC6 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
 
 function SmallHouse1({}) {
   const [TheImageContainer, setTheImageContainer] = useState(false);
@@ -74,11 +82,29 @@ function SmallHouse1({}) {
             Experience VR/AR <ion-icon name="arrow-forward-outline"></ion-icon>
           </a>
           <div className="TheImageContainer">
-            <img onClick={displayImage} src={ImageProjectC1} width="100%" />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectC1}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
+            />
           </div>
           <div className="TheImageContainer">
-            <img onClick={displayImage} src={ImageProjectC2} width="47%" />
-            <img onClick={displayImage} src={ImageProjectC3} width="47%" />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectC2}
+              theHash={hashProjectC2}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
+            />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectC3}
+              theHash={hashProjectC3}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
+            />
           </div>
           {/* <h2 className="project_title">Création</h2> */}
           <div className="the_video">
@@ -96,11 +122,29 @@ function SmallHouse1({}) {
           </div>
 
           <div className="TheImageContainer">
-            <img onClick={displayImage} src={ImageProjectC5} width="47%" />
-            <img onClick={displayImage} src={ImageProjectC6} width="47%" />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectC5}
+              theHash={hashProjectC5}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
+            />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectC4}
+              theHash={hashProjectC4}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
+            />
           </div>
           <div className="TheImageContainer">
-            <img onClick={displayImage} src={ImageProjectC4} width="100%" />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectC6}
+              theHash={hashProjectC6}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
+            />
           </div>
         </div>
       </div>
