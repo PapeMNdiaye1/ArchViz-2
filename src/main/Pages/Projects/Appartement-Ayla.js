@@ -87,7 +87,7 @@ function SmallHouse1({}) {
               src={ImageProjectC1}
               theHash={hashProjectC1}
               theAspectRatio="1 / 0.746"
-              theWidth="47%"
+              theWidth="100%"
             />
           </div>
           <div className="TheImageContainer">
@@ -95,14 +95,14 @@ function SmallHouse1({}) {
               onClick={displayImage}
               src={ImageProjectC2}
               theHash={hashProjectC2}
-              theAspectRatio="1 / 0.746"
+              theAspectRatio=".5 / 1"
               theWidth="47%"
             />
             <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC3}
               theHash={hashProjectC3}
-              theAspectRatio="1 / 0.746"
+              theAspectRatio=".5 / 1"
               theWidth="47%"
             />
           </div>
@@ -126,24 +126,24 @@ function SmallHouse1({}) {
               onClick={displayImage}
               src={ImageProjectC5}
               theHash={hashProjectC5}
-              theAspectRatio="1 / 0.746"
+              theAspectRatio=".5 / 1"
               theWidth="47%"
             />
             <ImageBlurhashD
               onClick={displayImage}
-              src={ImageProjectC4}
-              theHash={hashProjectC4}
-              theAspectRatio="1 / 0.746"
+              src={ImageProjectC6}
+              theHash={hashProjectC6}
+              theAspectRatio=".5 / 1"
               theWidth="47%"
             />
           </div>
           <div className="TheImageContainer">
             <ImageBlurhashD
               onClick={displayImage}
-              src={ImageProjectC6}
-              theHash={hashProjectC6}
+              src={ImageProjectC4}
+              theHash={hashProjectC4}
               theAspectRatio="1 / 0.746"
-              theWidth="47%"
+              theWidth="100%"
             />
           </div>
         </div>

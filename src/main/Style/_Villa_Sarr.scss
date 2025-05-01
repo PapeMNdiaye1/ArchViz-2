@@ -115,10 +115,10 @@
       }
 
       .the_video {
-        width: 90vw;
-        height: 65vw;
-        margin-bottom: 3em;
-        display: none;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/0.66;
+        margin-bottom: 1em;
       }
 
       h2 {

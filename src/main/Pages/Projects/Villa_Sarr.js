@@ -83,7 +83,13 @@ function SmallHouse1({}) {
             services personnalisés afin de répondre à toutes vos attentes.
           </p>
           <div className="TheImageContainer">
-            import {ImageBlurhashD} from "../Image-Compona";
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectC1}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="100%"
+            />
           </div>
 
           <div className="TheImageContainer">
