@@ -1431,7 +1431,7 @@
     min-height: auto;
   }
   #Travaux .AccueilBigProjectsSection .One_Project_In_Home {
-    min-height: 34em;
+    min-height: 28em;
     height: auto;
     grid-gap: 0em;
     padding-bottom: 2%;
@@ -1449,6 +1449,7 @@
     font-size: 1.3em;
     width: 90%;
     transform: scale(1);
+    margin-bottom: 0.5em;
   }
   #Travaux .AccueilBigProjectsSection .One_Project_In_Home .info_container .title .bar {
     bottom: -0.3em;
