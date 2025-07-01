@@ -98,8 +98,7 @@ const Travaux = () => {
           link={"/Villa-Ndayane"}
           side={"left"}
           OneHash={hashProjectH1}
-          The_Experience={true}
-          The_Experience_Link={"https://archviz-villa-astan.netlify.app/"}
+          The_Experience={false}
         />
 
         <OneBigProject

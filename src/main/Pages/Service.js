@@ -4,11 +4,10 @@ import { Link } from "react-router-dom";
 import ImageProjectA4 from "../Style/Images/Project/Villa-Onomo-4.jpg";
 import ImageProjectB3 from "../Style/Images/Project/City-0.jpg";
 
-import ImageProjectE7 from "../Style/Images/Project/Pharmacie-3.jpg";
+import ImageProjectE7 from "../Style/Images/Project/Façade-Immeuble-A-1.jpg";
 // import ImageProjectF2 from "../Style/Images/Project/Hangar-2.jpg";
 
 import ImageProjectL1 from "../Style/Images/Project/Villa_Teranga_Al_Amin-1.jpg";
-import ImageProjectJ1 from "../Style/Images/Project/Residence_Alya-2.jpg";
 import ImageProjectS2 from "../Style/Images/Project/Villa_Samb-2.jpg";
 import ImageProjectI4 from "../Style/Images/Project/Residence_Alya-2.jpg";
 import ImageProjectJ4 from "../Style/Images/Project/Appartement-F4-A-1.jpg";
@@ -69,6 +68,7 @@ function Services({}) {
               title={"Villa Samb"}
               date={"05 Mai, 2024"}
             />
+
             <OneGalerieElement
               link={"/Residence-Alya"}
               image={ImageProjectI4}
@@ -83,9 +83,9 @@ function Services({}) {
             />
             <OneGalerieElement
               image={ImageProjectE7}
-              title={"Design pour les Commerces"}
+              title={"Design Façade"}
               link={"/Façade_Immeuble"}
-              date={"27 Mai, 2022"}
+              date={"12 Décembre, 2024"}
             />
             <OneGalerieElement
               image={ImageProjectB3}
