@@ -65,7 +65,7 @@ function Façade_Immeuble({}) {
         <div className="project_display">
           <h1 className="project_title">Appartement Bamba Ba</h1>
           <h3 className="project_description">
-            par Bokar Ndiaye | 25 Septembre, 2023 |
+            By Archvi | 25 Septembre, 2023 |
           </h3>
           <p>
             À l'aide des logiciels de dernière génération et de notre

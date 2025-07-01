@@ -68,7 +68,7 @@ function SmallHouse1({}) {
         <div className="project_display">
           <h1 className="project_title">Appartement-Ayla</h1>
           <h3 className="project_description">
-            par Pape Momar Ayla | 22 Janvier, 2025 |
+            By Archviz | 22 Janvier, 2025 |
           </h3>
           <p>
             Notre équipe d'experts vous accompagne de A à Z pour créer un espace

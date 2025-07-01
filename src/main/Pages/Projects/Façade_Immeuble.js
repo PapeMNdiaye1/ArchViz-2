@@ -60,7 +60,7 @@ function Façade_Immeuble({}) {
         <div className="project_display">
           <h1 className="project_title">Façade Immeuble</h1>
           <h3 className="project_description">
-            par Pape Momar Ndiaye | 12 Décembre, 2024 |
+            By Archviz | 12 Décembre, 2024 |
           </h3>
           <p>
             Grâce à l’utilisation des logiciels de pointe et à notre expertise

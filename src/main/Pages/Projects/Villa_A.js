@@ -67,7 +67,7 @@ function SmallHouse1({}) {
         <div className="project_display">
           <h1 className="project_title">Villa Ndayane</h1>
           <h3 className="project_description">
-            par Bokar Ndiaye | 17 Juillet, 2023 |
+            By Archvi | 17 Juillet, 2023 |
           </h3>
           <p>
             Des designs Modernes et épurés. Nous mettons en œuvre différentes

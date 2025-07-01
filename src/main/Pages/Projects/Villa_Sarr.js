@@ -75,7 +75,7 @@ function SmallHouse1({}) {
         <div className="project_display">
           <h1 className="project_title">Villa Sarr</h1>
           <h3 className="project_description">
-            par Pape Momar Ndiaye | 05 Septembre, 2024 |
+            By Archviz | 05 Septembre, 2024 |
           </h3>
           <p>
             Notre équipe d'experts est là pour vous accompagner à chaque étape

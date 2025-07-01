@@ -59,7 +59,7 @@ function SmallHouse1({}) {
         <div className="project_display">
           <h1 className="project_title">Villa Al Amin</h1>
           <h3 className="project_description">
-            par Pape Momar Ndiaye | 26 Janvier, 2023 |
+            By Archviz | 26 Janvier, 2023 |
           </h3>
           <p>
             Les visites virtuelles offrent de nombreux avantages pour les
