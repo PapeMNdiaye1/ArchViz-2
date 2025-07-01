@@ -60,9 +60,7 @@ function AppartementBHome1({}) {
       <div className="AppartementBHome_1_container">
         <div className="project_display">
           <h1 className="project_title">Appartement_B_Home_1</h1>
-          <h3 className="project_description">
-            par Pape Momar Ndiaye | 03 Mars, 2024 |
-          </h3>
+          <h3 className="project_description">By Archviz | 03 Mars, 2024 |</h3>
           <p>
             À l'aide des logiciels de dernière génération et de notre
             savoir-faire dans le domaine de l’architecture d’intérieur. Nous

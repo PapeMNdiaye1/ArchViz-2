@@ -65,8 +65,8 @@ const VillaTerangaAlAmin = React.lazy(() =>
 );
 const VillaSamb = React.lazy(() => import("./Pages/Projects/Villa_Samb"));
 const VillaSarr = React.lazy(() => import("./Pages/Projects/Villa_Sarr"));
-const AppartementAyla = React.lazy(() =>
-  import("./Pages/Projects/Appartement-Ayla")
+const AppartementAlya = React.lazy(() =>
+  import("./Pages/Projects/Appartement-Alya")
 );
 const Formation = React.lazy(() => import("./Pages/Projects/Formation"));
 
@@ -203,7 +203,7 @@ function App() {
             />
             <Route
               exact
-              path="/Villa"
+              path="/Villa-Ndayane"
               element={
                 <Suspense fallback={<TheLoader />}>
                   <Villa />
@@ -212,7 +212,7 @@ function App() {
             />
             <Route
               exact
-              path="/Villa-Saly"
+              path="/Residence-Alya"
               element={
                 <Suspense fallback={<TheLoader />}>
                   <Villa_Saly />
@@ -248,10 +248,10 @@ function App() {
             />
             <Route
               exact
-              path="/AppartementAyla"
+              path="/Appartement-Alya"
               element={
                 <Suspense fallback={<TheLoader />}>
-                  <AppartementAyla />
+                  <AppartementAlya />
                 </Suspense>
               }
             />

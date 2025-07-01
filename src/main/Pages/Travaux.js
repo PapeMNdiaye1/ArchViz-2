@@ -8,7 +8,7 @@ import ImageProjectE4 from "../Style/Images/Project/Façade-Immeuble-A-4.jpg";
 import ImageProjectF2 from "../Style/Images/Project/Appartement_B_Home_2.jpg";
 
 import ImageProjectH1 from "../Style/Images/Project/Villa_Ndayane-1.jpg";
-import ImageProjectI2 from "../Style/Images/Project/Villa_B-2.jpg";
+import ImageProjectI2 from "../Style/Images/Project/Residence_Alya-2.jpg";
 import ImageProjectJ1 from "../Style/Images/Project/Appartement-F4-A-1.jpg";
 import ImageProjectK4 from "../Style/Images/Project/Pharmacie_C-4.jpg";
 import ImageProjectL1 from "../Style/Images/Project/Villa_Teranga_Al_Amin-1.jpg";
@@ -17,7 +17,7 @@ import ImageProjectS1 from "../Style/Images/Project/Villa_Samb-1.jpg";
 import ImageProjectO1 from "../Style/Images/Project/Villa-Onomo-2.jpg";
 
 import ImageProjectQ1 from "../Style/Images/Project/Villa-Sarr-1.jpg";
-import ImageProjectS2 from "../Style/Images/Project/Appartement-Ayla-2.jpg";
+import ImageProjectS2 from "../Style/Images/Project/Appartement-Alya-2.jpg";
 
 // ######################################################################################
 // ######################################################################################
@@ -82,7 +82,7 @@ const Travaux = () => {
           Nos rendues photoréalistes offrent une visibilité accrue aux projets
           immobiliers, en permettant une visualisation réaliste avant leur
           réalisation. Cela suscite l'intérêt des clients cibles et convainc les
-          acheteurs potentiels. En somme, nous donnons vie à vos projets. bi
+          acheteurs potentiels. En somme, nous donnons vie à vos projets.
         </p>
       </section>
       <section className="AccueilBigProjectsSection">
@@ -95,7 +95,7 @@ const Travaux = () => {
           color={"#4c525c"}
           textcolor={"#f1f1f1"}
           theKey={1}
-          link={"/Villa"}
+          link={"/Villa-Ndayane"}
           side={"left"}
           OneHash={hashProjectH1}
           The_Experience={true}
@@ -210,17 +210,16 @@ const Travaux = () => {
         />
 
         <OneBigProject
-          title={"Villa Saly"}
+          title={"Residence Alya"}
           image={ImageProjectI2}
           description={
-            "Des designs Modernes, épurés, etc…. nous mettons en œuvre différentes approches pour une optimisation de vos espaces extérieurs et intérieurs. Pour se faire nous utilisons différents logiciels avec les dernières innovations pour des rendus d’images à la fois réalistes et immersives."
+            "Valorisez votre actif immobilier commercial avec des espaces conçus pour l'efficacité et l'harmonie. Un design épuré, des matériaux nobles et une lumière étudiée au service de la performance et du confort."
           }
           color={"#F1F1F1"}
           textcolor={"#222"}
           theKey={9}
-          The_Experience={true}
-          The_Experience_Link={"https://villa-r-1.netlify.app/"}
-          link={"/Villa-Saly"}
+          The_Experience={false}
+          link={"/Residence-Alya"}
           side={"left"}
           OneHash={hashProjectI2}
         />
@@ -281,7 +280,7 @@ const Travaux = () => {
           OneHash={hashProjectQ1}
         />
         <OneBigProject
-          title={"Appartement Ayla"}
+          title={"Appartement Alya"}
           image={ImageProjectS2}
           description={
             "Notre équipe d'experts vous accompagne de A à Z pour créer un espace qui vous ressemble, adapté à votre mode de vie et à vos envies."
@@ -289,9 +288,9 @@ const Travaux = () => {
           color={"#222"}
           textcolor={"#f1f1f1"}
           theKey={14}
-          link={"/AppartementAyla"}
+          link={"/Appartement-Alya"}
           The_Experience={true}
-          The_Experience_Link={"https://residence-ayla-f4-pm.netlify.app/"}
+          The_Experience_Link={"https://residence-Alya-f4-pm.netlify.app/"}
           side={"right"}
           OneHash={hashProjectS2}
         />

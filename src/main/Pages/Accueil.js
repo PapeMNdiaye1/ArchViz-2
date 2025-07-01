@@ -13,9 +13,8 @@ import ImageProjectB1 from "../Style/Images/Project/City-8.jpg";
 import ImageProjectB2 from "../Style/Images/Project/City-1.jpg";
 import ImageProjectB9 from "../Style/Images/Project/City-9.jpg";
 
-import ImageProjectI2 from "../Style/Images/Project/Villa_B-2.jpg";
-import ImageProjectI3 from "../Style/Images/Project/Villa_B-3.jpg";
-import ImageProjectI4 from "../Style/Images/Project/Villa_B-8.jpg";
+import ImageProjectI3 from "../Style/Images/Project/Residence_Alya-4.jpg";
+import ImageProjectI4 from "../Style/Images/Project/Residence_Alya-2.jpg";
 
 import ImageProjectK1 from "../Style/Images/Project/Pharmacie_C-1.jpg";
 
@@ -50,7 +49,7 @@ import ImageProjectQ10 from "../Style/Images/Project/Villa-Sarr-10.jpg";
 import ImageProjectR1 from "../Style/Images/Project/Façade-Immeuble-A-5.jpg";
 import ImageProjectR2 from "../Style/Images/Project/Façade-Immeuble-A-4.jpg";
 
-import ImageProjectS2 from "../Style/Images/Project/Appartement-Ayla-4.jpg";
+import ImageProjectS2 from "../Style/Images/Project/Appartement-Alya-4.jpg";
 
 // ######################################################################################
 // ######################################################################################
@@ -290,11 +289,10 @@ function Accueil({ GetImageToApp }) {
           color={"#2b2828"}
           textcolor={"#f1f1f1"}
           theKey={4}
-          link={"/Villa"}
+          link={"/Villa-Ndayane"}
           side={"left"}
           OneHash={hashProjectH1}
-          The_Experience={true}
-          The_Experience_Link={"https://archviz-villa-astan.netlify.app/"}
+          The_Experience={false}
         />
 
         <OneBigProject
@@ -366,11 +364,11 @@ function Accueil({ GetImageToApp }) {
           color={"#F1F1F1"}
           textcolor={"#222"}
           The_Experience={true}
-          The_Experience_Link={"https://residence-ayla-f4-pm.netlify.app/"}
+          The_Experience_Link={"https://residence-Alya-f4-pm.netlify.app/"}
           theKey={9}
           side={"right"}
           OneHash={hashProjectS2}
-          link={"/AppartementAyla"}
+          link={"/Appartement-Alya"}
         />
       </section>
       <section className="galerie_presantation">
@@ -404,10 +402,10 @@ function TheGallery({ GetImageOnAccueil }) {
       <OneGalerieElement
         giveImageId={onClickOnImage}
         oneHash={hashProjectI4}
-        link={"/Villa-Saly"}
+        link={"/Residence-Alya"}
         image={ImageProjectI4}
-        title={"Villa Saly"}
-        date={"06 Juin, 2023"}
+        title={"Residence Alya"}
+        date={"18 Avril, 2025"}
       />
 
       <OneGalerieElement
@@ -548,10 +546,10 @@ function TheGallery({ GetImageOnAccueil }) {
       <OneGalerieElement
         giveImageId={onClickOnImage}
         oneHash={hashProjectI2}
-        link={"/Villa-Saly"}
-        image={ImageProjectI2}
-        title={"Villa Saly"}
-        date={"06 Juin, 2023"}
+        link={"/Residence-Alya"}
+        image={ImageProjectH1}
+        title={"Residence Alya"}
+        date={"18 Avril, 2025"}
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
@@ -573,9 +571,9 @@ function TheGallery({ GetImageOnAccueil }) {
       <OneGalerieElement
         giveImageId={onClickOnImage}
         oneHash={hashProjectS2}
-        link={"/AppartementAyla"}
+        link={"/Appartement-Alya"}
         image={ImageProjectS2}
-        title={"Appartement Ayla"}
+        title={"Appartement Alya"}
         date={"22 Janvier, 2025"}
       />
       <OneGalerieElement
@@ -589,10 +587,10 @@ function TheGallery({ GetImageOnAccueil }) {
       <OneGalerieElement
         giveImageId={onClickOnImage}
         oneHash={hashProjectI3}
-        link={"/Villa-Saly"}
+        link={"/Residence-Alya"}
         image={ImageProjectI3}
-        title={"Villa Saly"}
-        date={"06 Juin, 2023"}
+        title={"Residence Alya"}
+        date={"18 Avril, 2025"}
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}

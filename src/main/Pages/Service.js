@@ -8,9 +8,9 @@ import ImageProjectE7 from "../Style/Images/Project/Pharmacie-3.jpg";
 // import ImageProjectF2 from "../Style/Images/Project/Hangar-2.jpg";
 
 import ImageProjectL1 from "../Style/Images/Project/Villa_Teranga_Al_Amin-1.jpg";
-import ImageProjectJ1 from "../Style/Images/Project/Villa_B-2.jpg";
+import ImageProjectJ1 from "../Style/Images/Project/Residence_Alya-2.jpg";
 import ImageProjectS2 from "../Style/Images/Project/Villa_Samb-2.jpg";
-import ImageProjectI4 from "../Style/Images/Project/Villa_B-8.jpg";
+import ImageProjectI4 from "../Style/Images/Project/Residence_Alya-2.jpg";
 import ImageProjectJ4 from "../Style/Images/Project/Appartement-F4-A-1.jpg";
 import ImageProjectk4 from "../Style/Images/Project/Immeuble-Talles-8.jpg";
 
@@ -70,10 +70,10 @@ function Services({}) {
               date={"05 Mai, 2024"}
             />
             <OneGalerieElement
-              link={"/Villa-Saly"}
+              link={"/Residence-Alya"}
               image={ImageProjectI4}
-              title={"Villa Saly"}
-              date={"06 Juin, 2023"}
+              title={"Residence Alya"}
+              date={"18 Avril, 2025"}
             />
             <OneGalerieElement
               image={ImageProjectJ4}
@@ -108,12 +108,6 @@ function Services({}) {
         }
         TheGalerieElements={
           <div className="project_container">
-            <OneGalerieElement
-              image={ImageProjectJ1}
-              title={"Villa Saly"}
-              link={"/Villa-Saly"}
-              date={"06 Juin, 2023"}
-            />
             <OneGalerieElement
               image={ImageProjectJ4}
               title={"Appartement Bamba Ba"}

@@ -1,11 +1,14 @@
 import { React, useEffect, useState, Fragment } from "react";
 
-import ImageProjectC1 from "../../Style/Images/Project/Villa_B-1.jpg";
-import ImageProjectC2 from "../../Style/Images/Project/Villa_B-2.jpg";
-import ImageProjectC3 from "../../Style/Images/Project/Villa_B-3.jpg";
-import ImageProjectC4 from "../../Style/Images/Project/Villa_B-4.jpg";
-import ImageProjectC5 from "../../Style/Images/Project/Villa_B-5.jpg";
-import ImageProjectC6 from "../../Style/Images/Project/Villa_B-6.jpg";
+import ImageProjectC1 from "../../Style/Images/Project/Residence_Alya-2.jpg";
+import ImageProjectC2 from "../../Style/Images/Project/Residence_Alya-3.jpg";
+import ImageProjectC3 from "../../Style/Images/Project/Residence_Alya-4.jpg";
+import ImageProjectC4 from "../../Style/Images/Project/Residence_Alya-5.jpg";
+import ImageProjectC5 from "../../Style/Images/Project/Residence_Alya-6.jpg";
+import ImageProjectC6 from "../../Style/Images/Project/Residence_Alya-7.jpg";
+import ImageProjectC7 from "../../Style/Images/Project/Residence_Alya-10.jpg";
+import ImageProjectC8 from "../../Style/Images/Project/Residence_Alya-8.jpg";
+import ImageProjectC9 from "../../Style/Images/Project/Residence_Alya-9.jpg";
 
 function SmallHouse1({}) {
   const [TheImageContainer, setTheImageContainer] = useState(false);
@@ -60,22 +63,27 @@ function SmallHouse1({}) {
 
       <div className="Villa_B_container">
         <div className="project_display">
-          <h1 className="project_title">Villa Saly</h1>
-          <h3 className="project_description">By Archvi | 06 Juin, 2023 |</h3>
+          <h1 className="project_title">Residence Alya</h1>
+          <h3 className="project_description">By Archvi | 18 Avril, 2025 |</h3>
           <p>
-            Des designs Modernes et épurés. Nous mettons en œuvre différentes
-            approches pour une optimisation de vos espaces extérieurs et
-            intérieurs. Pour se faire nous utilisons différents logiciels avec
-            les dernières innovations pour des rendus d’images à la fois
-            réalistes et immersives.{" "}
+            Valorisez votre actif immobilier commercial avec des espaces conçus
+            pour l'efficacité et l'harmonie. Un design épuré, des matériaux
+            nobles et une lumière étudiée au service de la performance et du
+            confort.{" "}
           </p>
-          <a
-            className="the_links"
-            href="https://villa-r-1.netlify.app/"
-            target="_blank"
-          >
-            Experience VR/AR <ion-icon name="arrow-forward-outline"></ion-icon>
-          </a>
+
+          <div className="TheImageContainer">
+            <img
+              onClick={displayImage}
+              src={ImageProjectC1}
+              width="100%"
+              loading="lazy"
+            />
+          </div>
+          <div className="TheImageContainer">
+            <img onClick={displayImage} src={ImageProjectC9} width="47%" />
+            <img onClick={displayImage} src={ImageProjectC8} width="47%" />
+          </div>
           <div className="TheImageContainer">
             <img
               onClick={displayImage}
@@ -85,20 +93,12 @@ function SmallHouse1({}) {
             />
           </div>
           <div className="TheImageContainer">
-            <img onClick={displayImage} src={ImageProjectC1} width="47%" />
+            <img onClick={displayImage} src={ImageProjectC3} width="47%" />
             <img onClick={displayImage} src={ImageProjectC4} width="47%" />
           </div>
           <div className="TheImageContainer">
-            <img
-              onClick={displayImage}
-              src={ImageProjectC3}
-              width="100%"
-              loading="lazy"
-            />
-          </div>
-          <div className="TheImageContainer">
             <img onClick={displayImage} src={ImageProjectC5} width="47%" />
-            <img onClick={displayImage} src={ImageProjectC6} width="47%" />
+            <img onClick={displayImage} src={ImageProjectC7} width="47%" />
           </div>
         </div>
       </div>

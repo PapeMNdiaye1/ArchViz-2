@@ -1,11 +1,11 @@
 import { React, useEffect, useState, Fragment } from "react";
 
-import ImageProjectC1 from "../../Style/Images/Project/Appartement-Ayla-1.jpg";
-import ImageProjectC2 from "../../Style/Images/Project/Appartement-Ayla-2.jpg";
-import ImageProjectC3 from "../../Style/Images/Project/Appartement-Ayla-3.jpg";
-import ImageProjectC4 from "../../Style/Images/Project/Appartement-Ayla-4.jpg";
-import ImageProjectC5 from "../../Style/Images/Project/Appartement-Ayla-5.jpg";
-import ImageProjectC6 from "../../Style/Images/Project/Appartement-Ayla-6.jpg";
+import ImageProjectC1 from "../../Style/Images/Project/Appartement-Alya-1.jpg";
+import ImageProjectC2 from "../../Style/Images/Project/Appartement-Alya-2.jpg";
+import ImageProjectC3 from "../../Style/Images/Project/Appartement-Alya-3.jpg";
+import ImageProjectC4 from "../../Style/Images/Project/Appartement-Alya-4.jpg";
+import ImageProjectC5 from "../../Style/Images/Project/Appartement-Alya-5.jpg";
+import ImageProjectC6 from "../../Style/Images/Project/Appartement-Alya-6.jpg";
 import { ImageBlurhashD } from "../Image-Compona";
 
 let hashProjectC1 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
@@ -64,9 +64,9 @@ function SmallHouse1({}) {
           </div>
         </div>
       )}
-      <div className="Appartement-Ayla">
+      <div className="Appartement-Alya">
         <div className="project_display">
-          <h1 className="project_title">Appartement-Ayla</h1>
+          <h1 className="project_title">Appartement Alya</h1>
           <h3 className="project_description">
             By Archviz | 22 Janvier, 2025 |
           </h3>
@@ -76,7 +76,7 @@ function SmallHouse1({}) {
           </p>
           <a
             className="the_links"
-            href="https://residence-ayla-f4-pm.netlify.app/"
+            href="https://residence-Alya-f4-pm.netlify.app/"
             target="_blank"
           >
             Experience VR/AR <ion-icon name="arrow-forward-outline"></ion-icon>
@@ -112,7 +112,7 @@ function SmallHouse1({}) {
               width="100%"
               height="100%"
               src="https://www.youtube.com/embed/fnwEZOKK404?si=WrNeQGtULyex18_E"
-              title="Appartement-Ayla"
+              title="Appartement-Alya"
               allow="accelerometer; 
                             autoplay; clipboard-write;
                             encrypted-media; gyroscope;
