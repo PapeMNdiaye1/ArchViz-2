@@ -22,7 +22,7 @@ import ImageProjectK1 from "../Style/Images/Project/Pharmacie_C-1.jpg";
 import ImageProjectL1 from "../Style/Images/Project/Villa_Teranga_Al_Amin-1.jpg";
 import ImageProjectL2 from "../Style/Images/Project/Villa_Teranga_Al_Amin-2.jpg";
 
-import ImageProjectH1 from "../Style/Images/Project/Villa_Astan-Ndiaye-1.jpg";
+import ImageProjectH1 from "../Style/Images/Project/Villa_Ndayane-1.jpg";
 import ImageProjectJ1 from "../Style/Images/Project/Appartement-F4-A-1.jpg";
 
 import ImageProjectS3 from "../Style/Images/Project/Villa_Samb-3.jpg";
@@ -328,7 +328,7 @@ function Accueil({ GetImageToApp }) {
         />
 
         <OneBigProject
-          title={"Cité El Hadj Amadou BA"}
+          title={"Cité El Hadj Amadou Ba"}
           image={ImageProjectB1}
           description={
             "Ce projet comprend des villas familiales, des bâtiments commerciaux et résidentiels ainsi que des lieux publics. Notre travail se partage à parts égales entre les animations architecturales et les rendus 3D. Nous mettons en œuvre différentes approches pour une optimisation de vos espaces extérieurs et intérieurs."
@@ -473,7 +473,7 @@ function TheGallery({ GetImageOnAccueil }) {
         oneHash={hashProjectB9}
         link={"/City1"}
         image={ImageProjectB9}
-        title={"Cité El Hadj Amadou BA"}
+        title={"Cité El Hadj Amadou Ba"}
         date={"12 Juin, 2023"}
       />
       {/*///######################################## */}
@@ -558,7 +558,7 @@ function TheGallery({ GetImageOnAccueil }) {
         oneHash={hashProjectB2}
         link={"/City1"}
         image={ImageProjectB2}
-        title={"Cité El Hadj Amadou BA"}
+        title={"Cité El Hadj Amadou Ba"}
         date={"12 Juin, 2023"}
       />
       {/*///######################################## */}

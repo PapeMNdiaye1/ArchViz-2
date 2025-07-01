@@ -7,7 +7,7 @@ import ImageProjectD3 from "../Style/Images/Project/Office-B-1.jpg";
 import ImageProjectE4 from "../Style/Images/Project/Façade-Immeuble-A-4.jpg";
 import ImageProjectF2 from "../Style/Images/Project/Appartement_B_Home_2.jpg";
 
-import ImageProjectH1 from "../Style/Images/Project/Villa_Astan-Ndiaye-1.jpg";
+import ImageProjectH1 from "../Style/Images/Project/Villa_Ndayane-1.jpg";
 import ImageProjectI2 from "../Style/Images/Project/Villa_B-2.jpg";
 import ImageProjectJ1 from "../Style/Images/Project/Appartement-F4-A-1.jpg";
 import ImageProjectK4 from "../Style/Images/Project/Pharmacie_C-4.jpg";
@@ -87,7 +87,7 @@ const Travaux = () => {
       </section>
       <section className="AccueilBigProjectsSection">
         <OneBigProject
-          title={"Villa Teranga"}
+          title={"Villa Ndayane"}
           image={ImageProjectH1}
           description={
             "Des designs Modernes et épurés. Nous mettons en œuvre différentes approches pour une optimisation de vos espaces extérieurs et intérieurs. Pour se faire nous utilisons différents logiciels avec les dernières innovations pour des rendus d’images à la fois réalistes et immersives."
@@ -119,7 +119,7 @@ const Travaux = () => {
         />
 
         <OneBigProject
-          title={"Cité El Hadj Amadou BA"}
+          title={"Cité El Hadj Amadou Ba"}
           image={ImageProjectB1}
           description={
             "Ce projet comprend des villas familiales, des bâtiments commerciaux et résidentiels ainsi que des lieux publics. Notre travail se partage à parts égales entre les animations architecturales et les rendus 3D. Nous mettons en œuvre différentes approches pour une optimisation de vos espaces extérieurs et intérieurs."
