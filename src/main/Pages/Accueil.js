@@ -192,7 +192,6 @@ function Accueil({ GetImageToApp }) {
           </div>
         </Carousel>
       </div>
-      {/* <AccueilSlider /> */}
       <section className="archviz_presantation">
         <h2 className="qui_somme_nous">Qui sommes-nous ?</h2>
         <p>
@@ -246,7 +245,10 @@ function Accueil({ GetImageToApp }) {
           textcolor={"#000"}
           theKey={1}
           link={"/VillaSarr"}
-          The_Experience={false}
+          The_Experience={true}
+          The_Experience_Link={
+            "https://archviz-villa-gabriel-sarr.netlify.app/"
+          }
           side={"right"}
           OneHash={hashProjectQ1}
         />

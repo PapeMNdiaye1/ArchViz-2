@@ -5,13 +5,13 @@ import ImageProjectA4 from "../Style/Images/Project/Villa-Onomo-4.jpg";
 import ImageProjectB3 from "../Style/Images/Project/City-0.jpg";
 
 import ImageProjectE7 from "../Style/Images/Project/Façade-Immeuble-A-1.jpg";
-// import ImageProjectF2 from "../Style/Images/Project/Hangar-2.jpg";
 
 import ImageProjectL1 from "../Style/Images/Project/Villa_Teranga_Al_Amin-1.jpg";
 import ImageProjectS2 from "../Style/Images/Project/Villa_Samb-2.jpg";
 import ImageProjectI4 from "../Style/Images/Project/Residence_Alya-2.jpg";
 import ImageProjectJ4 from "../Style/Images/Project/Appartement-F4-A-1.jpg";
 import ImageProjectk4 from "../Style/Images/Project/Immeuble-Talles-8.jpg";
+import ImageProjectz2 from "../Style/Images/Project/Appartement-Alya-4.jpg";
 
 function Services({}) {
   useEffect(() => {
@@ -120,6 +120,13 @@ function Services({}) {
               link={"/VillaTerangaAlAmin"}
               date={"26 Janvier, 2023"}
             />
+
+            <OneGalerieElement
+              link={"/Appartement-Alya"}
+              image={ImageProjectz2}
+              title={"Appartement Alya"}
+              date={"22 Janvier, 2025"}
+            />
           </div>
         }
         color={"#F4EFE4"}
@@ -135,7 +142,6 @@ function Services({}) {
         }
         TheGalerieElements={
           <div className="project_container">
-            {/* <OneGalerieElement image={ImageProjectF2} title={'Maquette "Hangar Photovoltaïque'} link={'/Hangar1'} date={'29 Juin , 2021'} /> */}
             <OneGalerieElement
               image={ImageProjectk4}
               title={"Plans D'étage Isométriques"}

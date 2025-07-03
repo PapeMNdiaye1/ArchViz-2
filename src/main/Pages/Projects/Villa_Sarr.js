@@ -82,6 +82,13 @@ function SmallHouse1({}) {
             de vos projets, de la conception à la réalisation. Nous offrons des
             services personnalisés afin de répondre à toutes vos attentes.
           </p>
+          <a
+            className="the_links"
+            href="https://archviz-villa-gabriel-sarr.netlify.app/"
+            target="_blank"
+          >
+            Experience VR/AR <ion-icon name="arrow-forward-outline"></ion-icon>
+          </a>
           <div className="TheImageContainer">
             <ImageBlurhashD
               onClick={displayImage}
