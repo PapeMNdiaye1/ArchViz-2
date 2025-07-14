@@ -1960,7 +1960,7 @@
   z-index: 110;
 }
 .display_image_container div {
-  width: 50%;
+  width: 55%;
   background-color: var(--colorX);
   border: 0.5em solid var(--colorX);
   border-bottom: 1em solid var(--colorX);

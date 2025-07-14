@@ -170,9 +170,11 @@
   background-color: rgba(#f1f1f1, 0.9);
   @include cent();
   z-index: 110;
+  // overflow: scroll;
 
   div {
-    width: 50%;
+    width: 55%;
+    // height: fit-content;
     background-color: var(--colorX);
     border: 0.5em solid var(--colorX);
     border-bottom: 1em solid var(--colorX);

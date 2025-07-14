@@ -76,7 +76,7 @@ function SmallHouse1({}) {
           </p>
           <a
             className="the_links"
-            href="https://residence-Ayla-f4-pm.netlify.app/"
+            href="https://residence-Alya-f4-pm.netlify.app/"
             target="_blank"
           >
             Experience VR/AR <ion-icon name="arrow-forward-outline"></ion-icon>
