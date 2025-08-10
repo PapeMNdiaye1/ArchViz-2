@@ -89,6 +89,7 @@ function SmallHouse1({}) {
           >
             Experience VR/AR <ion-icon name="arrow-forward-outline"></ion-icon>
           </a>
+
           <div className="TheImageContainer">
             <ImageBlurhashD
               onClick={displayImage}
@@ -181,6 +182,12 @@ function SmallHouse1({}) {
               theAspectRatio="1 / 0.746"
               theWidth="100%"
             />
+          </div>
+          <div id="VR-viewer-container">
+            <iframe
+              src="https://archviz-villa-gabriel-sarr.netlify.app/"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </div>

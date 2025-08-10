@@ -127,6 +127,12 @@ function Façade_Immeuble({}) {
               theWidth="100%"
             />
           </div>
+          <div id="VR-viewer-container">
+            <iframe
+              src="https://archviz-villa-bamba-ba.netlify.app/"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
     </Fragment>
