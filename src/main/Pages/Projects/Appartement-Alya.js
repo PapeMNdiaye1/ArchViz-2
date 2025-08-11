@@ -146,6 +146,13 @@ function SmallHouse1({}) {
               theWidth="100%"
             />
           </div>
+
+          <div id="VR-viewer-container">
+            <iframe
+              src="https://residence-Alya-f4-pm.netlify.app/"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
     </Fragment>
