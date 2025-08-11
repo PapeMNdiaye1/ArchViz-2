@@ -65,7 +65,7 @@ function Touba({}) {
       <div className="Touba_1_container">
         <div className="project_display">
           <h1 className="project_title">Design Bureau</h1>
-          <h3 className="project_description">By Archvi | 12 Juin, 2024 |</h3>
+          <h3 className="project_description">By Archviz | 12 Juin, 2024 |</h3>
           <p>
             Visualisez votre bureau avant de le construire. La modélisation 3D
             vous permet d'explorer les agencements, le placement des meubles et

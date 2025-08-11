@@ -63,7 +63,7 @@ function SmallHouse1({}) {
       <div className="Villa_Onomo_container">
         <div className="project_display">
           <h1 className="project_title">Villa Onomo</h1>
-          <h3 className="project_description">By Archvi | 25 juin, 2024 |</h3>
+          <h3 className="project_description">By Archviz | 25 juin, 2024 |</h3>
           <p>
             Des designs Modernes et épurés. Nous mettons en œuvre différentes
             approches pour une optimisation de vos espaces extérieurs et

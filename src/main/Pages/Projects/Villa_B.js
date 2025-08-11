@@ -64,7 +64,7 @@ function SmallHouse1({}) {
       <div className="Villa_B_container">
         <div className="project_display">
           <h1 className="project_title">Residence Alya</h1>
-          <h3 className="project_description">By Archvi | 18 Avril, 2025 |</h3>
+          <h3 className="project_description">By Archviz | 18 Avril, 2025 |</h3>
           <p>
             Valorisez votre actif immobilier commercial avec des espaces conçus
             pour l'efficacité et l'harmonie. Un design épuré, des matériaux
