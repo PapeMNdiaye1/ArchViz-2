@@ -30,7 +30,7 @@ function TopBare({ onChangeTab }) {
         allMenuSection[i].style.opacity = `0`;
       }
     } else {
-      Menu_slider.style.top = "4em";
+      Menu_slider.style.top = "0em";
       Menu_slider.style.opacity = "1";
       theMenu.classList.add("Menu_On");
 

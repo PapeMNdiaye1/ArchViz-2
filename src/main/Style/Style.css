@@ -591,7 +591,8 @@
   top: -100vh;
   left: 0;
   width: 100vw;
-  height: calc(100vh - 4em);
+  min-height: 100vh;
+  height: auto;
   z-index: 3;
   opacity: 0.1;
   transition-duration: 0.5s, 1s;
@@ -673,7 +674,7 @@
 }
 #Top-bare-slider-container .network_container {
   position: absolute;
-  bottom: 2%;
+  bottom: 5%;
   width: 10em;
   height: 2em;
   display: flex;
