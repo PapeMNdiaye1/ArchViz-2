@@ -125,6 +125,7 @@
   @include cent();
   flex-direction: column;
   background-color: rgba(#f1f1f1, 0.97);
+  border-bottom: 8em solid rgba(#f1f1f1, 0.97);
 
   .Menu-container {
     width: 30em;
@@ -197,7 +198,7 @@
 
   .network_container {
     position: absolute;
-    bottom: 5%;
+    bottom: 10%;
     width: 10em;
     height: 2em;
     display: flex;
