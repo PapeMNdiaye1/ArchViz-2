@@ -588,7 +588,7 @@
 
 #Top-bare-slider-container {
   position: fixed;
-  top: -100vh;
+  top: -160vh;
   left: 0;
   width: 100vw;
   min-height: 100vh;
