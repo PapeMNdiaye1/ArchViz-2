@@ -8,6 +8,8 @@ import Service from "./Pages/Service";
 import Travaux from "./Pages/Travaux";
 import Gallery from "./Pages/Galerie";
 
+import ExtraPathPage from "./Pages/Extra_Path_Page";
+
 const TopBare = React.lazy(() => import("./TopBare"));
 const Contact = React.lazy(() => import("./Pages/Contact"));
 
@@ -97,6 +99,15 @@ function App() {
         <div className="App_container">
           <TheLoader />
           <Routes>
+            <Route
+              exact
+              path="*"
+              element={
+                <Suspense fallback={<TheLoader />}>
+                  <ExtraPathPage />
+                </Suspense>
+              }
+            />
             <Route
               exact
               path="/"

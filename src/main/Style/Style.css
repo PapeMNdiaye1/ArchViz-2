@@ -3988,4 +3988,42 @@
     grid-template-columns: 1fr 1fr;
     padding: 5vw;
   }
+}
+#extra-path-page-container {
+  background-color: #f1f1f1;
+  background-color: aqua;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100000;
+  top: 0em;
+}
+#extra-path-page-container #new-VR-viewer-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0px;
+  overflow: hidden;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin-bottom: 0em;
+}
+#extra-path-page-container #new-VR-viewer-container::-webkit-scrollbar {
+  display: none;
+  opacity: 0;
+}
+#extra-path-page-container #new-VR-viewer-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+#extra-path-page-container #new-VR-viewer-container iframe::-webkit-scrollbar {
+  opacity: 0;
+  display: none;
 }/*# sourceMappingURL=Style.css.map */
