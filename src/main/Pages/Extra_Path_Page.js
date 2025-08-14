@@ -50,9 +50,9 @@ function ExtraPathPage({}) {
               src="https://archviz-villa-gabriel-sarr.netlify.app/"
               title="VR Viewer"
               allow="accelerometer; gyroscope; magnetometer; fullscreen; xr-spatial-tracking"
-              allowfullscreen
-              mozallowfullscreen="true"
-              webkitallowfullscreen="true"
+              // allowfullscreen
+              // mozallowfullscreen="true"
+              // webkitallowfullscreen="true"
               frameborder="0"
             ></iframe>
           </div>
@@ -63,9 +63,9 @@ function ExtraPathPage({}) {
               src="https://archviz-villa-bamba-ba.netlify.app/"
               title="VR Viewer"
               allow="accelerometer; gyroscope; magnetometer; fullscreen; xr-spatial-tracking"
-              allowfullscreen
-              mozallowfullscreen="true"
-              webkitallowfullscreen="true"
+              // allowfullscreen
+              // mozallowfullscreen="true"
+              // webkitallowfullscreen="true"
               frameborder="0"
             ></iframe>
           </div>
