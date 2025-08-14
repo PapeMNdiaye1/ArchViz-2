@@ -5,38 +5,60 @@ let currentUrl;
 function ExtraPathPage({}) {
   const [theLinkToSet, setTheLink] = useState(0);
   useEffect(() => {
-    window.addEventListener("load", () => {
-      // Show alert — user has to tap "OK" (counts as a gesture on iOS)
-      alert("Tap OK to enable gyroscope access");
+    (function () {
+      // Detect iOS Safari (iPhone / iPad)
+      const isIOS =
+        /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-      // After alert is closed, request permission
-      if (typeof DeviceMotionEvent.requestPermission === "function") {
-        DeviceMotionEvent.requestPermission()
-          .then((state) => {
-            if (state === "granted") {
-              window.addEventListener("deviceorientation", (e) => {
-                console.log(
-                  "Alpha:",
-                  e.alpha,
-                  "Beta:",
-                  e.beta,
-                  "Gamma:",
-                  e.gamma
-                );
-              });
-              console.log("Gyroscope access granted");
-            } else {
-              console.warn("Gyroscope permission denied");
-            }
-          })
-          .catch(console.error);
-      } else {
-        // Non-iOS devices or older versions
-        window.addEventListener("deviceorientation", (e) => {
-          console.log("Alpha:", e.alpha, "Beta:", e.beta, "Gamma:", e.gamma);
-        });
+      function requestGyroPermission() {
+        if (typeof DeviceMotionEvent?.requestPermission === "function") {
+          DeviceMotionEvent.requestPermission()
+            .then((state) => {
+              if (state === "granted") {
+                console.log("✅ Gyroscope permission granted");
+                window.addEventListener("deviceorientation", handleOrientation);
+              } else {
+                console.warn("❌ Gyroscope permission denied");
+              }
+            })
+            .catch((err) => console.error("Gyro permission error:", err));
+        } else {
+          // For non-iOS or older browsers
+          window.addEventListener("deviceorientation", handleOrientation);
+        }
       }
-    });
+
+      function handleOrientation(event) {
+        // Replace this with your VR camera/scene update logic
+        console.log(
+          "Alpha:",
+          event.alpha,
+          "Beta:",
+          event.beta,
+          "Gamma:",
+          event.gamma
+        );
+      }
+
+      if (isIOS) {
+        // Make sure it only runs once
+        let hasAsked = false;
+
+        document.addEventListener(
+          "touchend",
+          () => {
+            if (!hasAsked) {
+              hasAsked = true;
+              requestGyroPermission();
+            }
+          },
+          { passive: true }
+        );
+      } else {
+        // On Android / Desktop, just start directly
+        requestGyroPermission();
+      }
+    })();
 
     let TopBar = document.querySelector("#Top-Bare");
     let TheFooter = document.querySelector(".the_footer");
@@ -83,10 +105,6 @@ function ExtraPathPage({}) {
               src="https://archviz-villa-gabriel-sarr.netlify.app/"
               title="VR Viewer"
               allow="accelerometer; gyroscope; magnetometer; fullscreen; xr-spatial-tracking"
-              // allowfullscreen
-              // mozallowfullscreen="true"
-              // webkitallowfullscreen="true"
-              frameborder="0"
             ></iframe>
           </div>
         )}
@@ -96,10 +114,6 @@ function ExtraPathPage({}) {
               src="https://archviz-villa-bamba-ba.netlify.app/"
               title="VR Viewer"
               allow="accelerometer; gyroscope; magnetometer; fullscreen; xr-spatial-tracking"
-              // allowfullscreen
-              // mozallowfullscreen="true"
-              // webkitallowfullscreen="true"
-              frameborder="0"
             ></iframe>
           </div>
         )}
