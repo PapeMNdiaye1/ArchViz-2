@@ -48,14 +48,13 @@ function ExtraPathPage({}) {
           <div id="new-VR-viewer-container">
             <iframe
               src="https://archviz-villa-gabriel-sarr.netlify.app/"
-              allowFullScreen
               title="VR Viewer"
-              allowvr="yes"
-              allow="vr; xr; accelerometer; magnetometer; gyroscope; webvr; webxr;"
+              allow="accelerometer; gyroscope; magnetometer; fullscreen; xr-spatial-tracking"
               allowfullscreen
               mozallowfullscreen="true"
               webkitallowfullscreen="true"
               frameborder="0"
+              style="width:100%; height:100%; border:none;"
             ></iframe>
           </div>
         )}
@@ -63,14 +62,13 @@ function ExtraPathPage({}) {
           <div id="new-VR-viewer-container">
             <iframe
               src="https://archviz-villa-bamba-ba.netlify.app/"
-              allowFullScreen
               title="VR Viewer"
-              allowvr="yes"
-              allow="vr; xr; accelerometer; magnetometer; gyroscope; webvr; webxr;"
+              allow="accelerometer; gyroscope; magnetometer; fullscreen; xr-spatial-tracking"
               allowfullscreen
               mozallowfullscreen="true"
               webkitallowfullscreen="true"
               frameborder="0"
+              style="width:100%; height:100%; border:none;"
             ></iframe>
           </div>
         )}
