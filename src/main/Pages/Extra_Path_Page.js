@@ -5,6 +5,39 @@ let currentUrl;
 function ExtraPathPage({}) {
   const [theLinkToSet, setTheLink] = useState(0);
   useEffect(() => {
+    window.addEventListener("load", () => {
+      // Show alert — user has to tap "OK" (counts as a gesture on iOS)
+      alert("Tap OK to enable gyroscope access");
+
+      // After alert is closed, request permission
+      if (typeof DeviceMotionEvent.requestPermission === "function") {
+        DeviceMotionEvent.requestPermission()
+          .then((state) => {
+            if (state === "granted") {
+              window.addEventListener("deviceorientation", (e) => {
+                console.log(
+                  "Alpha:",
+                  e.alpha,
+                  "Beta:",
+                  e.beta,
+                  "Gamma:",
+                  e.gamma
+                );
+              });
+              console.log("Gyroscope access granted");
+            } else {
+              console.warn("Gyroscope permission denied");
+            }
+          })
+          .catch(console.error);
+      } else {
+        // Non-iOS devices or older versions
+        window.addEventListener("deviceorientation", (e) => {
+          console.log("Alpha:", e.alpha, "Beta:", e.beta, "Gamma:", e.gamma);
+        });
+      }
+    });
+
     let TopBar = document.querySelector("#Top-Bare");
     let TheFooter = document.querySelector(".the_footer");
     let AppContainer = document.querySelector(".App_container ");
