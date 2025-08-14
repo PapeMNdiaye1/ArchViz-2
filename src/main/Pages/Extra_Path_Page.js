@@ -50,8 +50,12 @@ function ExtraPathPage({}) {
               src="https://archviz-villa-gabriel-sarr.netlify.app/"
               allowFullScreen
               title="VR Viewer"
-              allow="gyroscope; accelerometer; vr; webxr;"
+              allowvr="yes"
+              allow="vr; xr; accelerometer; magnetometer; gyroscope; webvr; webxr;"
               allowfullscreen
+              mozallowfullscreen="true"
+              webkitallowfullscreen="true"
+              frameborder="0"
             ></iframe>
           </div>
         )}
