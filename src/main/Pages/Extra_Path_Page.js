@@ -43,7 +43,7 @@ function ExtraPathPage({}) {
   return (
     <Fragment>
       <div id="extra-path-page-container">
-        {theLinkToSet == 0 && <div id="new-VR-viewer-container">ninp</div>}
+        {theLinkToSet == 0 && <div id="new-VR-viewer-container">404</div>}
         {theLinkToSet == 1 && (
           <div id="new-VR-viewer-container">
             <iframe
@@ -54,7 +54,6 @@ function ExtraPathPage({}) {
               mozallowfullscreen="true"
               webkitallowfullscreen="true"
               frameborder="0"
-              style="width:100%; height:100%; border:none;"
             ></iframe>
           </div>
         )}
@@ -68,7 +67,6 @@ function ExtraPathPage({}) {
               mozallowfullscreen="true"
               webkitallowfullscreen="true"
               frameborder="0"
-              style="width:100%; height:100%; border:none;"
             ></iframe>
           </div>
         )}
