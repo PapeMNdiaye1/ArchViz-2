@@ -50,6 +50,7 @@ function ExtraPathPage({}) {
               src="https://archviz-villa-gabriel-sarr.netlify.app/"
               allowFullScreen
               title="VR Viewer"
+              allow="gyroscope"
             ></iframe>
           </div>
         )}
@@ -59,6 +60,7 @@ function ExtraPathPage({}) {
               src="https://archviz-villa-bamba-ba.netlify.app/"
               allowFullScreen
               title="VR Viewer"
+              allow="gyroscope"
             ></iframe>
           </div>
         )}
