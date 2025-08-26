@@ -814,7 +814,7 @@ function TheFooter({}) {
       </div>
 
       <p className="archviz_description">
-        Nous aidons les constructeur et les promoteurs immobiliers à
+        Nous aidons les constructeurs et les promoteurs immobiliers à
         impressionner les investisseurs et les acheteurs avec des visuels
         professionnels.
       </p>
