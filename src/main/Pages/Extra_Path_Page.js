@@ -2,60 +2,60 @@ import { useEffect, Fragment, useState } from "react";
 
 let currentUrl;
 
-(function () {
-  // Detect iOS Safari (iPhone / iPad)
-  const isIOS =
-    /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+// (function () {
+//   // Detect iOS Safari (iPhone / iPad)
+//   const isIOS =
+//     /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-  function requestGyroPermission() {
-    if (typeof DeviceMotionEvent?.requestPermission === "function") {
-      DeviceMotionEvent.requestPermission()
-        .then((state) => {
-          if (state === "granted") {
-            console.log("✅ Gyroscope permission granted");
-            window.addEventListener("deviceorientation", handleOrientation);
-          } else {
-            console.warn("❌ Gyroscope permission denied");
-          }
-        })
-        .catch((err) => console.error("Gyro permission error:", err));
-    } else {
-      // For non-iOS or older browsers
-      window.addEventListener("deviceorientation", handleOrientation);
-    }
-  }
+//   function requestGyroPermission() {
+//     if (typeof DeviceMotionEvent?.requestPermission === "function") {
+//       DeviceMotionEvent.requestPermission()
+//         .then((state) => {
+//           if (state === "granted") {
+//             console.log("✅ Gyroscope permission granted");
+//             window.addEventListener("deviceorientation", handleOrientation);
+//           } else {
+//             console.warn("❌ Gyroscope permission denied");
+//           }
+//         })
+//         .catch((err) => console.error("Gyro permission error:", err));
+//     } else {
+//       // For non-iOS or older browsers
+//       window.addEventListener("deviceorientation", handleOrientation);
+//     }
+//   }
 
-  function handleOrientation(event) {
-    // Replace this with your VR camera/scene update logic
-    console.log(
-      "Alpha:",
-      event.alpha,
-      "Beta:",
-      event.beta,
-      "Gamma:",
-      event.gamma
-    );
-  }
+//   function handleOrientation(event) {
+//     // Replace this with your VR camera/scene update logic
+//     console.log(
+//       "Alpha:",
+//       event.alpha,
+//       "Beta:",
+//       event.beta,
+//       "Gamma:",
+//       event.gamma
+//     );
+//   }
 
-  if (isIOS) {
-    // Make sure it only runs once
-    let hasAsked = false;
+//   if (isIOS) {
+//     // Make sure it only runs once
+//     let hasAsked = false;
 
-    document.addEventListener(
-      "touchend",
-      () => {
-        if (!hasAsked) {
-          hasAsked = true;
-          requestGyroPermission();
-        }
-      },
-      { passive: true }
-    );
-  } else {
-    // On Android / Desktop, just start directly
-    requestGyroPermission();
-  }
-})();
+//     document.addEventListener(
+//       "touchend",
+//       () => {
+//         if (!hasAsked) {
+//           hasAsked = true;
+//           requestGyroPermission();
+//         }
+//       },
+//       { passive: true }
+//     );
+//   } else {
+//     // On Android / Desktop, just start directly
+//     requestGyroPermission();
+//   }
+// })();
 
 function ExtraPathPage({}) {
   const [theLinkToSet, setTheLink] = useState(0);
