@@ -77,7 +77,7 @@ function Contacts({}) {
               <ion-icon name="logo-facebook"></ion-icon>FACEBOOK
             </div>
           }
-          title2={<div className="network">f/ARCHVIZ</div>}
+          title2={<div className="network">f/archviz</div>}
         />
         <OneSection
           link={"https://www.linkedin.com/company/archviz-sn/"}
