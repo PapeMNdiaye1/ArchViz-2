@@ -790,7 +790,7 @@
   grid-row: 1/1;
   transition-duration: 1s, 0s;
   transition-property: opacity, background-position-y;
-  background-color: red;
+  background-color: rgba(69, 69, 69, 0.5);
 }
 #Accueil .Accueil_Slider-2 .sliders .sliders_inner_container {
   position: absolute;

@@ -53,7 +53,7 @@
       grid-row: 1 / 1;
       transition-duration: 1s, 0s;
       transition-property: opacity, background-position-y;
-      background-color: red;
+      background-color: rgba($color: #454545, $alpha: 0.5);
 
       .sliders_inner_container {
         position: absolute;
