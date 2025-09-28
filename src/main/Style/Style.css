@@ -1090,7 +1090,7 @@
 }
 #Accueil .the_galerie_container .one_galerie_element:hover .one_galerie_element_hover {
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 #Accueil .the_galerie_container .one_galerie_element:hover .one_galerie_element_hover .iner_container {
   top: 0%;
@@ -1108,6 +1108,7 @@
   background-color: rgba(255, 255, 255, 0);
   transition-duration: 0s, 1s;
   transition-property: height, background-color;
+  border-radius: 1em;
 }
 #Accueil .the_galerie_container .one_galerie_element .one_galerie_element_hover .iner_container {
   width: 100%;
@@ -1914,7 +1915,7 @@
 }
 #Gallery .the_galerie_container .one_galerie_element:hover .one_galerie_element_hover {
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 #Gallery .the_galerie_container .one_galerie_element:hover .one_galerie_element_hover .iner_container {
   top: 0%;
