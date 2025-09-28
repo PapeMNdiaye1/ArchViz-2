@@ -1075,6 +1075,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   overflow: hidden;
+  border-radius: 1em;
 }
 #Accueil .the_galerie_container .one_galerie_element .img-in-galerie-element {
   grid-column: 1/1;
