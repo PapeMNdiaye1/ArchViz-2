@@ -111,6 +111,7 @@ function ImageBlurhashC({ src, theHash, theTitle }) {
           display: imageLoaded ? " none " : "inline",
           width: "100%",
           height: "100%",
+          borderRadius: "1em",
         }}
         className="img-in-galerie-element"
       >
