@@ -1,4 +1,5 @@
 import { React, useEffect, useState, Fragment } from "react";
+import { ImageBlurhashD } from "../Image-Compona";
 
 import ImageProjectC1 from "../../Style/Images/Project/City-1.jpg";
 import ImageProjectC2 from "../../Style/Images/Project/City-2.jpg";
@@ -9,6 +10,8 @@ import ImageProjectC6 from "../../Style/Images/Project/City-6.jpg";
 import ImageProjectC7 from "../../Style/Images/Project/City-7.jpg";
 import ImageProjectC8 from "../../Style/Images/Project/City-8.jpg";
 import ImageProjectC9 from "../../Style/Images/Project/City-9.jpg";
+
+let hashProjectC1 = "LaLO4u-:4mRj~qogIUoff,ofxut7";
 
 function City1({}) {
   const [TheImageContainer, setTheImageContainer] = useState(false);
@@ -72,62 +75,62 @@ function City1({}) {
             optimisation de vos espaces extérieurs et intérieurs.
           </p>
           <div className="TheImageContainer">
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC9}
-              width="100%"
-              alt="Villa Onomo - 9"
-              loading="lazy"
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="100%"
             />
           </div>
           <div className="TheImageContainer">
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC5}
-              width="47%"
-              alt="Villa Onomo - 5"
-              loading="lazy"
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
             />
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC6}
-              width="47%"
-              alt="Villa Onomo - 6"
-              loading="lazy"
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
             />
           </div>
           <div className="TheImageContainer">
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC2}
-              width="100%"
-              alt="Villa Onomo - 2"
-              loading="lazy"
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="100%"
             />
           </div>
           <div className="TheImageContainer">
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC3}
-              width="47%"
-              alt="Villa Onomo - 3"
-              loading="lazy"
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
             />
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC4}
-              width="47%"
-              alt="Villa Onomo - 4"
-              loading="lazy"
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
             />
           </div>
           <div className="TheImageContainer">
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC1}
-              width="100%"
-              alt="Villa Onomo - 1"
-              loading="lazy"
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="100%"
             />
           </div>
           <div className="the_video">
@@ -158,19 +161,19 @@ function City1({}) {
             ></iframe>
           </div>
           <div className="TheImageContainer">
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC7}
-              width="47%"
-              alt="Villa Onomo - 7"
-              loading="lazy"
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
             />
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC8}
-              width="47%"
-              alt="Villa Onomo - 8"
-              loading="lazy"
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
             />
           </div>
         </div>

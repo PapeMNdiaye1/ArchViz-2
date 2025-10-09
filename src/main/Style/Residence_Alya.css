@@ -1,0 +1,94 @@
+.Residence_Alya_container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, auto);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5em;
+}
+.Residence_Alya_container .project_display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: repeat(10, auto);
+  grid-template-columns: 1fr;
+  padding-bottom: 2em;
+}
+.Residence_Alya_container .project_display a {
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 800;
+  width: 12em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1em solid #000;
+  border-radius: 0.3em;
+  text-decoration: none;
+  color: var(--colorX);
+}
+.Residence_Alya_container .project_display a:hover {
+  transform: scale(1.02);
+}
+.Residence_Alya_container .project_display a ion-icon {
+  font-size: 1.2em;
+}
+.Residence_Alya_container .project_display .project_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 0.2em;
+}
+.Residence_Alya_container .project_display .project_description {
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.Residence_Alya_container .project_display .TheImageContainer {
+  width: 60vw;
+  height: auto;
+  margin-bottom: 3em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.Residence_Alya_container .project_display .TheImageContainer img {
+  transition-duration: 0.3s;
+  transform: scale(1);
+  border-radius: 1em;
+}
+.Residence_Alya_container .project_display .TheImageContainer img:hover {
+  transform: scale(1.03);
+}
+.Residence_Alya_container .project_display p {
+  width: 60vw;
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+@media all and (max-width: 1000px) {
+  .Residence_Alya_container {
+    padding-left: 5vw;
+    padding-right: 0vw;
+  }
+  .Residence_Alya_container .project_display .project_title {
+    font-size: 1.5em;
+  }
+  .Residence_Alya_container .project_display .project_description {
+    font-size: 0.7em;
+  }
+  .Residence_Alya_container .project_display .TheImageContainer {
+    width: 90vw;
+    margin-bottom: 1em;
+  }
+  .Residence_Alya_container .project_display p {
+    width: 80vw;
+  }
+}/*# sourceMappingURL=Residence_Alya.css.map */

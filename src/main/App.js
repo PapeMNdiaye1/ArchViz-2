@@ -61,7 +61,7 @@ const AppartementFA = React.lazy(() =>
 const Gym = React.lazy(() => import("./Pages/Projects/Gym"));
 const City1 = React.lazy(() => import("./Pages/Projects/Cité"));
 const Villa = React.lazy(() => import("./Pages/Projects/Villa_A"));
-const Villa_Saly = React.lazy(() => import("./Pages/Projects/Villa_B"));
+const Villa_Saly = React.lazy(() => import("./Pages/Projects/Residence_Alya"));
 const VillaTerangaAlAmin = React.lazy(() =>
   import("./Pages/Projects/Villa_Teranga_Al_Amin")
 );

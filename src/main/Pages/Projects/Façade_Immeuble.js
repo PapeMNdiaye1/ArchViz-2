@@ -1,10 +1,16 @@
 import { React, useEffect, useState, Fragment } from "react";
+import { ImageBlurhashD } from "../Image-Compona";
 
 import ImageProjectC1 from "../../Style/Images/Project/Façade-Immeuble-A-1.jpg";
 import ImageProjectC3 from "../../Style/Images/Project/Façade-Immeuble-A-3.jpg";
 import ImageProjectC2 from "../../Style/Images/Project/Façade-Immeuble-A-2.jpg";
 import ImageProjectC4 from "../../Style/Images/Project/Façade-Immeuble-A-4.jpg";
 import ImageProjectC5 from "../../Style/Images/Project/Façade-Immeuble-A-5.jpg";
+
+let hashProjectC1 = "LCAc;[aIE4R,?wROkCbI58Ri$$oe";
+let hashProjectC2 = "LXDS?,Mxt7bI?wIUt7ofS6M{WBax";
+let hashProjectC3 = "LPGS4LV=WYbb?wM_j]a#9cM_WAjY";
+
 function Façade_Immeuble({}) {
   const [TheImageContainer, setTheImageContainer] = useState(false);
   const [TheImageInTheContainer, setTheImageInTheContainer] =
@@ -68,43 +74,47 @@ function Façade_Immeuble({}) {
             réalisation du design de façade de vos espaces.{" "}
           </p>
           <div className="TheImageContainer">
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC1}
-              width="100%"
-              alt="  Façade Immeuble - 2"
+              theHash={hashProjectC2}
+              theAspectRatio="1 / 1.24"
+              theWidth="100%"
             />
           </div>
           <div className="TheImageContainer">
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC5}
-              width="47%"
-              alt="  Façade Immeuble - 1"
+              theHash={hashProjectC2}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
             />
-
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC4}
-              width="47%"
-              alt="  Façade Immeuble - 4"
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
             />
           </div>
           <div className="TheImageContainer">
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC2}
-              width="100%"
-              alt="  Façade Immeuble - 3"
+              theHash={hashProjectC2}
+              theAspectRatio="1 / 1.24"
+              theWidth="100%"
             />
           </div>
           <h3 className="project_title">Clay Renders</h3>
           <div className="TheImageContainer">
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC3}
-              width="100%"
-              alt="  Façade Immeuble - 4"
+              theHash={hashProjectC3}
+              theAspectRatio="1 / 1.24"
+              theWidth="100%"
             />
           </div>
         </div>

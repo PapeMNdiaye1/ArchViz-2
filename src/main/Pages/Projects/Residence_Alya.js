@@ -1,14 +1,16 @@
 import { React, useEffect, useState, Fragment } from "react";
+import { ImageBlurhashD } from "../Image-Compona";
 
 import ImageProjectC1 from "../../Style/Images/Project/Residence_Alya-2.jpg";
 import ImageProjectC2 from "../../Style/Images/Project/Residence_Alya-3.jpg";
 import ImageProjectC3 from "../../Style/Images/Project/Residence_Alya-4.jpg";
 import ImageProjectC4 from "../../Style/Images/Project/Residence_Alya-5.jpg";
 import ImageProjectC5 from "../../Style/Images/Project/Residence_Alya-6.jpg";
-import ImageProjectC6 from "../../Style/Images/Project/Residence_Alya-7.jpg";
 import ImageProjectC7 from "../../Style/Images/Project/Residence_Alya-10.jpg";
 import ImageProjectC8 from "../../Style/Images/Project/Residence_Alya-8.jpg";
 import ImageProjectC9 from "../../Style/Images/Project/Residence_Alya-9.jpg";
+
+let hashProjectC1 = "LIG[vX?w000001M{xu%MoMjENtt8";
 
 function SmallHouse1({}) {
   const [TheImageContainer, setTheImageContainer] = useState(false);
@@ -61,7 +63,7 @@ function SmallHouse1({}) {
         </div>
       )}
 
-      <div className="Villa_B_container">
+      <div className="Residence_Alya_container">
         <div className="project_display">
           <h1 className="project_title">Residence Alya</h1>
           <h3 className="project_description">By Archviz | 18 Avril, 2025 |</h3>
@@ -73,32 +75,70 @@ function SmallHouse1({}) {
           </p>
 
           <div className="TheImageContainer">
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC1}
-              width="100%"
-              loading="lazy"
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="100%"
             />
           </div>
           <div className="TheImageContainer">
-            <img onClick={displayImage} src={ImageProjectC9} width="47%" />
-            <img onClick={displayImage} src={ImageProjectC8} width="47%" />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectC9}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 1.49"
+              theWidth="47%"
+            />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectC8}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 1.49"
+              theWidth="47%"
+            />
           </div>
           <div className="TheImageContainer">
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC2}
-              width="100%"
-              loading="lazy"
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="100%"
             />
           </div>
           <div className="TheImageContainer">
-            <img onClick={displayImage} src={ImageProjectC3} width="47%" />
-            <img onClick={displayImage} src={ImageProjectC4} width="47%" />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectC3}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
+            />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectC4}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
+            />
           </div>
           <div className="TheImageContainer">
-            <img onClick={displayImage} src={ImageProjectC5} width="47%" />
-            <img onClick={displayImage} src={ImageProjectC7} width="47%" />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectC5}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 1.49"
+              theWidth="47%"
+            />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectC7}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 1.49"
+              theWidth="47%"
+            />
           </div>
         </div>
       </div>

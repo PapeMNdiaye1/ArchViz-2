@@ -1,4 +1,6 @@
 import { React, useEffect, useState, Fragment } from "react";
+import { ImageBlurhashD } from "../Image-Compona";
+
 import ImageProjectO2 from "../../Style/Images/Project/Villa-Onomo-2.jpg";
 import ImageProjectO3 from "../../Style/Images/Project/Villa-Onomo-3.jpg";
 import ImageProjectO4 from "../../Style/Images/Project/Villa-Onomo-4.jpg";
@@ -8,6 +10,8 @@ import ImageProjectO7 from "../../Style/Images/Project/Villa-Onomo-7.jpg";
 import ImageProjectO8 from "../../Style/Images/Project/Villa-Onomo-8.jpg";
 import ImageProjectO9 from "../../Style/Images/Project/Villa-Onomo-9.jpg";
 import ImageProjectO11 from "../../Style/Images/Project/Villa-Onomo-11.jpg";
+
+let hashProjectC1 = "LFEoPn?bVrNG~qR-RjkCIToftS%M";
 
 function SmallHouse1({}) {
   const [TheImageContainer, setTheImageContainer] = useState(false);
@@ -72,18 +76,54 @@ function SmallHouse1({}) {
             réalistes et immersives.{" "}
           </p>
           <div className="TheImageContainer">
-            <img onClick={displayImage} src={ImageProjectO4} width="100%" />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectO4}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="100%"
+            />
           </div>
           <div className="TheImageContainer">
-            <img onClick={displayImage} src={ImageProjectO2} width="47%" />
-            <img onClick={displayImage} src={ImageProjectO3} width="47%" />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectO2}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
+            />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectO3}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
+            />
           </div>
           <div className="TheImageContainer">
-            <img onClick={displayImage} src={ImageProjectO8} width="100%" />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectO8}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="100%"
+            />
           </div>
           <div className="TheImageContainer">
-            <img onClick={displayImage} src={ImageProjectO6} width="47%" />
-            <img onClick={displayImage} src={ImageProjectO7} width="47%" />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectO6}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
+            />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectO7}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
+            />
           </div>
           <div className="the_video">
             <iframe
@@ -99,11 +139,29 @@ function SmallHouse1({}) {
             ></iframe>
           </div>
           <div className="TheImageContainer">
-            <img onClick={displayImage} src={ImageProjectO9} width="100%" />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectO9}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="100%"
+            />
           </div>
           <div className="TheImageContainer">
-            <img onClick={displayImage} src={ImageProjectO5} width="47%" />
-            <img onClick={displayImage} src={ImageProjectO11} width="47%" />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectO5}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
+            />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectO11}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
+            />
           </div>
         </div>
       </div>
