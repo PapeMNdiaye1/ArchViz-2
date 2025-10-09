@@ -1,4 +1,5 @@
 import { React, useEffect, useState, Fragment } from "react";
+import { ImageBlurhashD } from "../Image-Compona";
 
 import ImageProjectBB1 from "../../Style/Images/Project/Office-B-1.jpg";
 import ImageProjectBB2 from "../../Style/Images/Project/Office-B-2.jpg";
@@ -11,6 +12,10 @@ import ImageProjectBB8 from "../../Style/Images/Project/Office-B-8.jpg";
 import ImageProjectBB9 from "../../Style/Images/Project/Office-B-9.jpg";
 import ImageProjectBB10 from "../../Style/Images/Project/Office-B-10.jpg";
 import ImageProjectBB11 from "../../Style/Images/Project/Office-B-11.jpg";
+
+let hashProjectC1 = "LHH2ZrbVIVxtX1RQR%RQ~WM{NIV?";
+let hashProjectC2 = "LRKdJ4WE%1tRE2WBM|V@~Vj[E2j?";
+let hashProjectC3 = "LRIXy[4-tQ%MNGkCRjRj~Vbc%1xt";
 
 function Touba({}) {
   const [TheImageContainer, setTheImageContainer] = useState(false);
@@ -71,27 +76,31 @@ function Touba({}) {
             vous permet d'explorer les agencements, le placement des meubles et
             les éléments de design, le tout virtuellement.
           </p>
+
           <div className="TheImageContainer">
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectBB1}
-              width="100%"
-              alt=" Maquette de la Grande Mosquée de Touba - 1"
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="100%"
             />
           </div>
 
           <div className="TheImageContainer">
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectBB2}
-              width="47%"
-              alt="Interior Decoration - 1"
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
             />
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectBB3}
-              width="47%"
-              alt="Interior Decoration - 2"
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
             />
           </div>
 
@@ -112,61 +121,69 @@ function Touba({}) {
           <div className="TheImageContainer"></div>
 
           <div className="TheImageContainer">
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectBB5}
-              width="47%"
-              alt="Interior Decoration - 1"
+              theHash={hashProjectC2}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
             />
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectBB6}
-              width="47%"
-              alt="Interior Decoration - 2"
+              theHash={hashProjectC2}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
             />
           </div>
           <div className="TheImageContainer">
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectBB7}
-              width="100%"
-              alt=" Maquette de la Grande Mosquée de Touba - 3"
+              theHash={hashProjectC3}
+              theAspectRatio="1 / 0.746"
+              theWidth="100%"
             />
           </div>
           <div className="TheImageContainer">
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectBB8}
-              width="47%"
-              alt="Interior Decoration - 1"
+              theHash={hashProjectC3}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
             />
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectBB9}
-              width="47%"
-              alt="Interior Decoration - 2"
+              theHash={hashProjectC3}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
             />
           </div>
           <div className="TheImageContainer">
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectBB4}
-              width="100%"
-              alt=" Maquette de la Grande Mosquée de Touba - 3"
+              theHash={hashProjectC2}
+              theAspectRatio="1 / 0.746"
+              theWidth="100%"
             />
           </div>
           <div className="TheImageContainer">
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectBB11}
-              width="47%"
-              alt=" Maquette de la Grande Mosquée de Touba - 3"
+              theHash={hashProjectC3}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
             />
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectBB10}
-              width="47%"
-              alt=" Maquette de la Grande Mosquée de Touba - 2"
+              theHash={hashProjectC3}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
             />
           </div>
         </div>

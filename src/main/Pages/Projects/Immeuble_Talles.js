@@ -1,4 +1,5 @@
 import { React, useEffect, useState, Fragment } from "react";
+import { ImageBlurhashD } from "../Image-Compona";
 
 import ImageProjectC1 from "../../Style/Images/Project/Immeuble-Talles-1.jpg";
 import ImageProjectC2 from "../../Style/Images/Project/Immeuble-Talles-2.jpg";
@@ -8,6 +9,8 @@ import ImageProjectC5 from "../../Style/Images/Project/Immeuble-Talles-5.jpg";
 import ImageProjectC6 from "../../Style/Images/Project/Immeuble-Talles-6.jpg";
 import ImageProjectC7 from "../../Style/Images/Project/Immeuble-Talles-7.jpg";
 import ImageProjectC8 from "../../Style/Images/Project/Immeuble-Talles-8.jpg";
+
+let hashProjectC1 = "L4DcRA?b0001D*_3WB4n00of~pRj";
 
 function ImmeubleTalles({}) {
   const [TheImageContainer, setTheImageContainer] = useState(false);
@@ -76,98 +79,69 @@ function ImmeubleTalles({}) {
                     </a> */}
 
           <div className="TheImageContainer">
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC1}
-              width="47%"
-              alt="Interior Decoration - 1"
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
             />
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC2}
-              width="47%"
-              alt="Interior Decoration - 2"
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
             />
           </div>
           <div className="TheImageContainer">
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC7}
-              width="47%"
-              alt="Interior Decoration - 1"
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
             />
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC8}
-              width="47%"
-              alt="Interior Decoration - 2"
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
             />
           </div>
           <div className="TheImageContainer">
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC3}
-              width="47%"
-              alt="Interior Decoration - 1"
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
             />
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC4}
-              width="47%"
-              alt="Interior Decoration - 2"
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
             />
           </div>
           <div className="TheImageContainer">
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC5}
-              width="47%"
-              alt="Interior Decoration - 1"
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
             />
-            <img
+            <ImageBlurhashD
               onClick={displayImage}
               src={ImageProjectC6}
-              width="47%"
-              alt="Interior Decoration - 2"
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="47%"
             />
           </div>
-
-          {/* <h2 className='project_title'>
-                        Animation        
-                                    </h2> */}
-          {/* <div className='the_video'>
-                        <iframe width="100%"
-                            height="100%"
-                            src="https://www.youtube.com/embed/hci-BMwTmCU"
-                            title="Interior Design"
-                            // frameborder="0"
-                            allow="accelerometer; 
-                            autoplay; clipboard-write;
-                            encrypted-media; gyroscope;
-                            picture-in-picture"
-                            allowFullScreen>
-
-                        </iframe>
-                    </div> */}
-          {/* <h1 className='project_title'>
-                        Création
-                    </h1>
-                    <div className='the_video the_video_2 '>
-                        <iframe width="100%"
-                            height="100%"
-                            src="https://www.youtube.com/embed/Xtg9qROxy34"
-                            title="Interior Design"
-                            allow="accelerometer; 
-                            autoplay; clipboard-write;
-                            encrypted-media; gyroscope;
-                            picture-in-picture"
-                            allowFullScreen>
-                        </iframe>
-                    </div> */}
-
-          {/* <h3 className='project_title'>
-                        Clay Renders
-                    </h3> */}
         </div>
       </div>
     </Fragment>

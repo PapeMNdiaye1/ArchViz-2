@@ -1,4 +1,5 @@
 import { React, useEffect, useState, Fragment } from "react";
+import { ImageBlurhashD } from "../Image-Compona";
 
 import ImageProjectC1 from "../../Style/Images/Project/Villa_Ndayane-1.jpg";
 import ImageProjectC2 from "../../Style/Images/Project/Villa_Ndayane-2.jpg";
@@ -11,6 +12,8 @@ import ImageProjectC8 from "../../Style/Images/Project/Villa_Ndayane-8.jpg";
 import ImageProjectC9 from "../../Style/Images/Project/Villa_Ndayane-9.jpg";
 import ImageProjectC10 from "../../Style/Images/Project/Villa_Ndayane-10.jpg";
 import ImageProjectC11 from "../../Style/Images/Project/Villa_Ndayane-11.jpg";
+
+let hashProjectC1 = "LOIO-2D%ITxu%MohD$xu?wa^IAR%";
 
 function SmallHouse1({}) {
   const [TheImageContainer, setTheImageContainer] = useState(false);
@@ -76,30 +79,96 @@ function SmallHouse1({}) {
           </p>
 
           <div className="TheImageContainer">
-            <img onClick={displayImage} src={ImageProjectC1} width="100%" />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectC1}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="100%"
+            />
           </div>
           <div className="TheImageContainer">
-            <img onClick={displayImage} src={ImageProjectC4} width="47%" />
-            <img onClick={displayImage} src={ImageProjectC5} width="47%" />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectC4}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 1.24"
+              theWidth="47%"
+            />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectC5}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 1.24"
+              theWidth="47%"
+            />
           </div>
           <div className="TheImageContainer">
-            <img onClick={displayImage} src={ImageProjectC2} width="100%" />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectC2}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="100%"
+            />
           </div>
           <div className="TheImageContainer">
-            <img onClick={displayImage} src={ImageProjectC6} width="47%" />
-            <img onClick={displayImage} src={ImageProjectC7} width="47%" />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectC6}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 1.24"
+              theWidth="47%"
+            />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectC7}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 1.24"
+              theWidth="47%"
+            />
           </div>
           <div className="TheImageContainer">
-            <img onClick={displayImage} src={ImageProjectC3} width="100%" />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectC3}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 0.746"
+              theWidth="100%"
+            />
           </div>
           <div className="TheImageContainer">
-            <img onClick={displayImage} src={ImageProjectC8} width="47%" />
-            <img onClick={displayImage} src={ImageProjectC9} width="47%" />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectC8}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 1.24"
+              theWidth="47%"
+            />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectC9}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 1.24"
+              theWidth="47%"
+            />
           </div>
 
           <div className="TheImageContainer">
-            <img onClick={displayImage} src={ImageProjectC10} width="47%" />
-            <img onClick={displayImage} src={ImageProjectC11} width="47%" />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectC10}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 1.24"
+              theWidth="47%"
+            />
+            <ImageBlurhashD
+              onClick={displayImage}
+              src={ImageProjectC11}
+              theHash={hashProjectC1}
+              theAspectRatio="1 / 1.24"
+              theWidth="47%"
+            />
           </div>
         </div>
       </div>
