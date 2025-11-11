@@ -89,7 +89,7 @@ function TopBare({ onChangeTab }) {
             </div>
           </a>
           <a
-            href="https://www.linkedin.com/company/archviz-sn/"
+            href="https://www.linkedin.com/company/archviz-dakar/"
             target="_blank"
           >
             <div className="network">

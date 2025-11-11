@@ -206,7 +206,7 @@ function Accueil({ GetImageToApp }) {
             </div>
           </a>
           <a
-            href="https://www.linkedin.com/company/archviz-sn/"
+            href="https://www.linkedin.com/company/archviz-dakar/"
             target="_blank"
           >
             <div className="network">
@@ -868,7 +868,10 @@ function TheFooter({}) {
             <ion-icon name="logo-instagram"></ion-icon>
           </div>
         </a>
-        <a href="https://www.linkedin.com/company/archviz-sn/" target="_blank">
+        <a
+          href="https://www.linkedin.com/company/archviz-dakar/"
+          target="_blank"
+        >
           <div className="network">
             <ion-icon name="logo-linkedin"></ion-icon>
           </div>

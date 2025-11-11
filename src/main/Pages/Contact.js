@@ -80,7 +80,7 @@ function Contacts({}) {
           title2={<div className="network">f/archviz</div>}
         />
         <OneSection
-          link={"https://www.linkedin.com/company/archviz-sn/"}
+          link={"https://www.linkedin.com/company/archviz-dakar/"}
           title={
             <div className="network">
               <ion-icon name="logo-linkedin"></ion-icon>LINKEDIN
