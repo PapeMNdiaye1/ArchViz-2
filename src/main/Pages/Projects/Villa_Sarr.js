@@ -186,7 +186,7 @@ function SmallHouse1({}) {
           <div id="VR-viewer-container">
             <iframe
               src="https://archviz-villa-gabriel-sarr.netlify.app/"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
         </div>

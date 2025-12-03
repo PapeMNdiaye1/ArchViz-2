@@ -808,9 +808,9 @@ function TheFooter({}) {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21829.672231280812!2d-17.481922300740727!3d14.713874557348396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868d1e0bab8c8d25%3A0x664021658a7c1fe5!2sArchViz%20Dakar!5e0!3m2!1sfr!2ssn!4v1744225513580!5m2!1sfr!2ssn"
           width="100%"
           height="100%"
-          allowfullscreen=""
+          allowFullScreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
 

@@ -150,7 +150,7 @@ function SmallHouse1({}) {
           <div id="VR-viewer-container">
             <iframe
               src="https://residence-Alya-f4-pm.netlify.app/"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
         </div>
