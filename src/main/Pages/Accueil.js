@@ -18,8 +18,8 @@ import ImageProjectI4 from "../Style/Images/Project/Residence_Alya-2.jpg";
 
 import ImageProjectK1 from "../Style/Images/Project/Pharmacie_C-1.jpg";
 
-import ImageProjectL1 from "../Style/Images/Project/Villa_Teranga_Al_Amin-1.jpg";
-import ImageProjectL2 from "../Style/Images/Project/Villa_Teranga_Al_Amin-2.jpg";
+import ImageProjectL1 from "../Style/Images/Project/Immeuble-Talles-9.jpg";
+import ImageProjectL2 from "../Style/Images/Project/Immeuble-Talles-11.jpg";
 
 import ImageProjectH1 from "../Style/Images/Project/Villa_Ndayane-1.jpg";
 import ImageProjectJ1 from "../Style/Images/Project/Appartement-F4-A-1.jpg";
@@ -98,6 +98,7 @@ let hashProjectR1 = "LAB:W=%2tQRj~qR+%Mxb?ct7NK-p";
 let hashProjectR2 = "LCAvwdxZ58M|~Vn~I@R+t8t6ofkC";
 
 let hashProjectS2 = "LII=0]_4%h9FIARiIpoe%Mxuxtt7";
+let hashProjectZ1 = "L6Aw6it600o#?a?HIo4o00M|~Vxt";
 
 // ######################################################################################
 function Accueil({ GetImageToApp }) {
@@ -504,11 +505,11 @@ function TheGallery({ GetImageOnAccueil }) {
 
       <OneGalerieElement
         giveImageId={onClickOnImage}
-        oneHash={hashProjectL1}
-        link={"/VillaTerangaAlAmin"}
+        oneHash={hashProjectZ1}
+        link={"/Résidence-MANDA"}
         image={ImageProjectL1}
-        title={"Villa Al Amin"}
-        date={"26 Janvier, 2023"}
+        title={"Résidence MANDA"}
+        date={"9 Novembre, 2025"}
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
@@ -539,11 +540,11 @@ function TheGallery({ GetImageOnAccueil }) {
 
       <OneGalerieElement
         giveImageId={onClickOnImage}
-        oneHash={hashProjectL2}
-        link={"/VillaTerangaAlAmin"}
+        oneHash={hashProjectZ1}
+        link={"/Résidence-MANDA"}
         image={ImageProjectL2}
-        title={"Villa Al Amin"}
-        date={"26 Janvier, 2023"}
+        title={"Résidence MANDA"}
+        date={"9 Novembre, 2025"}
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}

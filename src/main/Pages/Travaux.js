@@ -11,7 +11,7 @@ import ImageProjectH1 from "../Style/Images/Project/Villa_Ndayane-1.jpg";
 import ImageProjectI2 from "../Style/Images/Project/Residence_Alya-2.jpg";
 import ImageProjectJ1 from "../Style/Images/Project/Appartement-F4-A-1.jpg";
 import ImageProjectK4 from "../Style/Images/Project/Pharmacie_C-4.jpg";
-import ImageProjectL1 from "../Style/Images/Project/Villa_Teranga_Al_Amin-1.jpg";
+import ImageProjectL1 from "../Style/Images/Project/Immeuble-Talles-11.jpg";
 import ImageProjectS1 from "../Style/Images/Project/Villa_Samb-1.jpg";
 
 import ImageProjectO1 from "../Style/Images/Project/Villa-Onomo-2.jpg";
@@ -176,7 +176,7 @@ const Travaux = () => {
         />
 
         <OneBigProject
-          title={"Villa Al Amin"}
+          title={"Résidence MANDA"}
           image={ImageProjectL1}
           description={
             "Les visites virtuelles offrent de nombreux avantages pour les acheteurs, propriétaires et agents immobiliers. Pour les acheteurs, elles permettent de visualiser les propriétés sans se déplacer. Pour les agents immobiliers, elles peuvent diffuser les propriétés à plus de gens, ce qui peut conduire à une vente plus rapide..."
@@ -184,13 +184,10 @@ const Travaux = () => {
           color={"#664f3c"}
           textcolor={"#F4EFE4"}
           theKey={7}
-          link={"/VillaTerangaAlAmin"}
+          link={"/Résidence-MANDA"}
           side={"left"}
           OneHash={hashProjectL1}
-          The_Experience={true}
-          The_Experience_Link={
-            "https://archviz-villa-teranga-al-amine.netlify.app/"
-          }
+          The_Experience={false}
         />
 
         <OneBigProject

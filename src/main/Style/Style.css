@@ -1349,6 +1349,7 @@
   margin: auto;
   transition-duration: 0.4s;
   background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 1em;
 }
 #Travaux .AccueilBigProjectsSection .One_Project_In_Home .image_container:hover {
   background-size: 105%;
@@ -3273,7 +3274,7 @@
     width: 80vw;
   }
 }
-.Villa_Teranga_Al_Amin_container {
+.Immenble_Talles_B_container {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(2, auto);
@@ -3281,7 +3282,7 @@
   padding-right: 10vw;
   padding-top: 5em;
 }
-.Villa_Teranga_Al_Amin_container .project_display {
+.Immenble_Talles_B_container .project_display {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3291,7 +3292,7 @@
   grid-template-columns: 1fr;
   padding-bottom: 2em;
 }
-.Villa_Teranga_Al_Amin_container .project_display a {
+.Immenble_Talles_B_container .project_display a {
   margin-bottom: 2em;
   font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
@@ -3306,35 +3307,35 @@
   text-decoration: none;
   color: var(--colorX);
 }
-.Villa_Teranga_Al_Amin_container .project_display a:hover {
+.Immenble_Talles_B_container .project_display a:hover {
   transform: scale(1.02);
 }
-.Villa_Teranga_Al_Amin_container .project_display a ion-icon {
+.Immenble_Talles_B_container .project_display a ion-icon {
   font-size: 1.2em;
 }
-.Villa_Teranga_Al_Amin_container .project_display .the_video {
+.Immenble_Talles_B_container .project_display .the_video {
   width: 60vw;
   height: 45vw;
   margin-bottom: 3em;
   margin-bottom: 3em;
 }
-.Villa_Teranga_Al_Amin_container .project_display .the_video iframe {
+.Immenble_Talles_B_container .project_display .the_video iframe {
   border: none;
   border-radius: 1.5em;
 }
-.Villa_Teranga_Al_Amin_container .project_display .project_title {
+.Immenble_Talles_B_container .project_display .project_title {
   font-family: "Montserrat", sans-serif;
   font-size: 2em;
   font-weight: 800;
   margin-bottom: 0.2em;
 }
-.Villa_Teranga_Al_Amin_container .project_display .project_description {
+.Immenble_Talles_B_container .project_display .project_description {
   margin-bottom: 2em;
   font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
   font-weight: 400;
 }
-.Villa_Teranga_Al_Amin_container .project_display .TheImageContainer {
+.Immenble_Talles_B_container .project_display .TheImageContainer {
   width: 60vw;
   height: auto;
   margin-bottom: 3em;
@@ -3342,15 +3343,15 @@
   display: flex;
   justify-content: space-between;
 }
-.Villa_Teranga_Al_Amin_container .project_display .TheImageContainer img {
+.Immenble_Talles_B_container .project_display .TheImageContainer img {
   transition-duration: 0.3s;
   transform: scale(1);
   border-radius: 1em;
 }
-.Villa_Teranga_Al_Amin_container .project_display .TheImageContainer img:hover {
+.Immenble_Talles_B_container .project_display .TheImageContainer img:hover {
   transform: scale(1.03);
 }
-.Villa_Teranga_Al_Amin_container .project_display p {
+.Immenble_Talles_B_container .project_display p {
   width: 60vw;
   margin-bottom: 2em;
   font-family: "Montserrat", sans-serif;
@@ -3359,30 +3360,30 @@
 }
 
 @media all and (max-width: 1000px) {
-  .Villa_Teranga_Al_Amin_container {
+  .Immenble_Talles_B_container {
     padding-left: 5vw;
     padding-right: 0vw;
   }
-  .Villa_Teranga_Al_Amin_container .project_display .project_title {
+  .Immenble_Talles_B_container .project_display .project_title {
     font-size: 1.5em;
   }
-  .Villa_Teranga_Al_Amin_container .project_display .project_description {
+  .Immenble_Talles_B_container .project_display .project_description {
     font-size: 0.7em;
   }
-  .Villa_Teranga_Al_Amin_container .project_display .the_video {
+  .Immenble_Talles_B_container .project_display .the_video {
     width: 90vw;
     height: 65vw;
     margin-bottom: 3em;
     display: none;
   }
-  .Villa_Teranga_Al_Amin_container .project_display h2 {
+  .Immenble_Talles_B_container .project_display h2 {
     display: none;
   }
-  .Villa_Teranga_Al_Amin_container .project_display .TheImageContainer {
+  .Immenble_Talles_B_container .project_display .TheImageContainer {
     width: 90vw;
     margin-bottom: 1em;
   }
-  .Villa_Teranga_Al_Amin_container .project_display p {
+  .Immenble_Talles_B_container .project_display p {
     width: 80vw;
   }
 }
