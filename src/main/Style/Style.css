@@ -790,7 +790,6 @@
   grid-row: 1/1;
   transition-duration: 1s, 0s;
   transition-property: opacity, background-position-y;
-  padding: 0%;
 }
 #Accueil .Accueil_Slider-2 .sliders .sliders_inner_container {
   position: absolute;
@@ -807,7 +806,6 @@
   grid-row: 1/1;
   transition-duration: 1s, 0s;
   transition-property: opacity, background-position-y;
-  margin: 0%;
 }
 #Accueil .Accueil_Slider-2 .sliders .sliders_inner_container .slider_title {
   width: 55%;
@@ -840,9 +838,6 @@
   flex-direction: column;
   font-weight: 300;
   top: -6%;
-}
-#Accueil .Accueil_Slider-2 .sliders .The-Slider-Image-Container-blur {
-  aspect-ratio: "1 / 0.746";
 }
 #Accueil .Accueil_Slider-2 .sliders img {
   width: 100%;
@@ -1186,9 +1181,6 @@
     transition-property: opacity, background-position-y;
     height: 65vh;
     overflow: hidden;
-  }
-  #Accueil .Accueil_Slider-2 .sliders .The-Slider-Image-Container-blur {
-    height: "70vh";
   }
   #Accueil .Accueil_Slider-2 .sliders img {
     -o-object-fit: cover;

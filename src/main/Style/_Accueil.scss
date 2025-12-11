@@ -53,7 +53,6 @@
       grid-row: 1 / 1;
       transition-duration: 1s, 0s;
       transition-property: opacity, background-position-y;
-      padding: 0%;
 
       .sliders_inner_container {
         position: absolute;
@@ -68,7 +67,6 @@
         grid-row: 1 / 1;
         transition-duration: 1s, 0s;
         transition-property: opacity, background-position-y;
-        margin: 0%;
 
         // opacity: .5;
         .slider_title {
@@ -104,9 +102,7 @@
           top: -6%;
         }
       }
-      .The-Slider-Image-Container-blur {
-        aspect-ratio: "1 / 0.746";
-      }
+
       img {
         // display: none;
         width: 100%;
@@ -501,10 +497,7 @@
         // background-color: #cfab8b;
         height: 65vh;
         overflow: hidden;
-        .The-Slider-Image-Container-blur {
-          // aspect-ratio: "1 / 0.746";
-          height: "70vh";
-        }
+
         img {
           object-fit: cover;
         }
