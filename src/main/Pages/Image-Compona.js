@@ -18,12 +18,13 @@ function ImageBlurhashA({ src, theHash }) {
         style={{
           display: imageLoaded ? " none " : "inline",
           width: "100%",
-          aspectRatio: "1 / 0.746",
+          // aspectRatio: "1 / 0.746",
           // height: "100%",
-          // height: "70vh",
+          height: "70vh",
           // background: "red",
           // border: "0.1em solid red",
         }}
+        className="The-Slider-Image-Container-blur"
       >
         <Blurhash
           hash={theHash}
