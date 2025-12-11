@@ -19,7 +19,7 @@ function ImageBlurhashA({ src, theHash }) {
           display: imageLoaded ? " none " : "inline",
           width: "100%",
           // height: "100%",
-          height: "70vh",
+          height: "100vh",
           background: "red",
           // border: "0.1em solid red",
         }}
