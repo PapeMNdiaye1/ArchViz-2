@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.38 258.62">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-3 {
+        stroke-width: 3.76px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-3, .cls-5 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        font-family: FONTSPRINGDEMO-Kettering105LightRegular, 'FONTSPRING DEMO - Kettering 105 Light';
+        font-size: 33.79px;
+        font-weight: 300;
+        stroke-width: 1.11px;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <rect class="cls-4" width="453.38" height="258.62"/>
+      <g>
+        <polyline class="cls-3" points="175.98 188.02 167.82 188.02 167.82 105.02 205.76 80.79 205.76 22.01 255.84 72.08 255.84 159.42"/>
+        <line class="cls-3" x1="205.78" y1="159.42" x2="205.78" y2="80.61"/>
+        <polyline class="cls-3" points="226.96 110.06 226.96 178.57 257.86 178.57"/>
+        <polyline class="cls-3" points="256.15 99.54 288.24 125.51 288.24 188.02 280.35 188.02"/>
+        <text class="cls-5" transform="translate(124.24 229.52)"><tspan class="cls-2" x="0" y="0">L</tspan><tspan class="cls-1" x="20.55" y="0">U</tspan></text>
+        <text class="cls-5" transform="translate(171.15 229.52)"><tspan class="cls-6" x="0" y="0">X</tspan><tspan class="cls-1" x="23.21" y="0">E </tspan><tspan class="cls-6" x="54.95" y="0">IM</tspan><tspan class="cls-1" x="98.17" y="0">MO</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

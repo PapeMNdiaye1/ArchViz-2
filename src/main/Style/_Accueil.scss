@@ -166,7 +166,63 @@
       }
     }
   }
+  //!#####################################################################
+  .nos-partners {
+    width: 80%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 1.8em;
+    padding-left: 10%;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    // padding-left: 20%;
+  }
+  .partnership-container {
+    width: 100%;
+    height: 15em;
+    @include cent();
+    // background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 10em;
+    .partnership-inner-container {
+      width: 80%;
+      height: 80%;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin: auto;
+    }
 
+    .partnership-inner-container:nth-child(1) {
+      background-image: url("../Style/Images/SVG/Partnership/aubi.svg");
+    }
+    .partnership-inner-container:nth-child(2) {
+      background-image: url("../Style/Images/SVG/Partnership/b-home.svg");
+    }
+    .partnership-inner-container:nth-child(3) {
+      background-image: url("../Style/Images/SVG/Partnership/digit.svg");
+    }
+    .partnership-inner-container:nth-child(4) {
+      background-image: url("../Style/Images/SVG/Partnership/csk.svg");
+    }
+    .partnership-inner-container:nth-child(5) {
+      background-image: url("../Style/Images/SVG/Partnership/imesh.svg");
+    }
+    .partnership-inner-container:nth-child(6) {
+      background-image: url("../Style/Images/SVG/Partnership/luxem.svg");
+    }
+    .partnership-inner-container:nth-child(7) {
+      background-image: url("../Style/Images/SVG/Partnership/REVA.svg");
+    }
+    .partnership-inner-container:nth-child(8) {
+      background-image: url("../Style/Images/SVG/Partnership/talles.svg");
+    }
+    .partnership-inner-container:nth-child(9) {
+      background-image: url("../Style/Images/SVG/Partnership/pd.svg");
+    }
+  }
   //!#####################################################################
   .AccueilBigProjectsSection {
     width: 100%;
@@ -551,6 +607,23 @@
 
       .network_container {
         justify-content: center;
+      }
+    }
+
+    //!#####################################################################
+    .nos-partners {
+      // width: 100%;
+      padding-left: none;
+      @include cent();
+      text-align: center;
+    }
+    .partnership-container {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      margin-bottom: 4em;
+      height: 40vh;
+      .partnership-inner-container {
+        width: 100%;
       }
     }
 

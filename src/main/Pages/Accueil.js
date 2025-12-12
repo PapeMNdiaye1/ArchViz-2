@@ -193,6 +193,7 @@ function Accueil({ GetImageToApp }) {
           </div>
         </Carousel>
       </div>
+
       <section className="archviz_presantation">
         <h2 className="qui_somme_nous">Qui sommes-nous ?</h2>
         <p>
@@ -237,6 +238,7 @@ function Accueil({ GetImageToApp }) {
           </a>
         </div>
       </section>
+
       <section className="AccueilBigProjectsSection">
         <OneBigProject
           title={"Visualisation de projets immobiliers"}
@@ -374,11 +376,24 @@ function Accueil({ GetImageToApp }) {
           link={"/Appartement-Alya"}
         />
       </section>
+
       <section className="galerie_presantation">
         <Link className="nos_réalisations" to={"./Travaux"}>
           Nos Réalisations <ion-icon name="arrow-forward-outline"></ion-icon>
         </Link>
-        <div className="galerie_container">Catalogue</div>
+      </section>
+      <h2 className="nos-partners"></h2>
+
+      <section className="partnership-container">
+        <div className="partnership-inner-container"></div>
+        <div className="partnership-inner-container"></div>
+        <div className="partnership-inner-container"></div>
+        <div className="partnership-inner-container"></div>
+        <div className="partnership-inner-container"></div>
+        <div className="partnership-inner-container"></div>
+        <div className="partnership-inner-container"></div>
+        <div className="partnership-inner-container"></div>
+        <div className="partnership-inner-container"></div>
       </section>
 
       <TheGallery GetImageOnAccueil={GetImageOnApp} />
