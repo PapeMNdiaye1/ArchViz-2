@@ -3,9 +3,7 @@ import { Link } from "react-router-dom";
 
 import ImageProjectA4 from "../Style/Images/Project/Villa-Onomo-4.jpg";
 import ImageProjectB3 from "../Style/Images/Project/City-0.jpg";
-
 import ImageProjectE7 from "../Style/Images/Project/Façade-Immeuble-A-1.jpg";
-
 import ImageProjectL1 from "../Style/Images/Project/Immeuble-Talles-11.jpg";
 import ImageProjectS2 from "../Style/Images/Project/Villa_Samb-2.jpg";
 import ImageProjectI4 from "../Style/Images/Project/Residence_Alya-2.jpg";

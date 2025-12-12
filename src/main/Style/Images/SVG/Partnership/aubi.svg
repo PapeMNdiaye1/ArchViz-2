@@ -3,11 +3,12 @@
   <defs>
     <style>
       .cls-1 {
-        letter-spacing: .09em;
+        fill: none;
       }
 
       .cls-2 {
-        fill: none;
+        font-family: Ubuntu-Regular, Ubuntu;
+        font-size: 13.49px;
       }
 
       .cls-3 {
@@ -15,14 +16,13 @@
       }
 
       .cls-4 {
-        font-family: Ubuntu-Regular, Ubuntu;
-        font-size: 13.49px;
+        letter-spacing: .09em;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer 1">
     <g>
-      <rect class="cls-2" width="453.38" height="258.62"/>
+      <rect class="cls-1" width="453.38" height="258.62"/>
       <g>
         <polygon points="127.46 88.14 134.92 70.84 177.13 161.91 161.54 161.91 127.46 88.14"/>
         <polygon points="122.87 97.98 93.4 161.91 97.33 161.91 124.97 102.29 122.87 97.98"/>
@@ -31,7 +31,7 @@
         <polygon points="345.96 70.73 359.91 70.73 359.91 162.1 345.76 162.1 345.96 70.73"/>
         <rect x="92.99" y="181.04" width="19.74" height="1.38"/>
         <rect x="340.65" y="181.04" width="19.74" height="1.38"/>
-        <text class="cls-4" transform="translate(118.13 185.35)"><tspan class="cls-1" x="0" y="0">L</tspan><tspan class="cls-3" x="8.16" y="0">’aubaine de l’immobilier </tspan></text>
+        <text class="cls-2" transform="translate(118.13 185.35)"><tspan class="cls-4" x="0" y="0">L</tspan><tspan class="cls-3" x="8.16" y="0">’aubaine de l’immobilier </tspan></text>
         <path d="M250.62,70.73v25.73l-7.66,3.73v25.76l-8.15,6.46.39-50.19-10.5-8.68-10.61,7.99v21.51l-13.47-6.59v-25.73h-15.44v35.96c0,20.15,14.13,32.23,31.55,32.23h6.11c17.43,0,31.55-13.57,31.55-32.23v-35.96h-3.76ZM200.61,114.29v-16.49l13.47,6.53v28.66c-7.83-2.61-13.47-9.99-13.47-18.7ZM224.7,133.99h-4.39c-1.79,0-3.53-.24-5.18-.69v-51.19l9.56-7.32v59.21Z"/>
         <path d="M320.61,111.99c18.46-14.35,11.61-41.27-13.38-41.27h-38.12v91.38h40.36c36.29,0,33.75-43.42,11.14-50.11ZM284.18,74.79h14.43c25.68,0,21.75,35.88,0,35.88h-14.43v-35.88ZM298.61,158.24h-14.43v-43.87h14.43c32.48,0,30.65,43.87,0,43.87Z"/>
       </g>

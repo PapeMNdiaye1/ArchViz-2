@@ -382,7 +382,6 @@ function Accueil({ GetImageToApp }) {
           Nos Réalisations <ion-icon name="arrow-forward-outline"></ion-icon>
         </Link>
       </section>
-      <h2 className="nos-partners"></h2>
 
       <section className="partnership-container">
         <div className="partnership-inner-container"></div>
