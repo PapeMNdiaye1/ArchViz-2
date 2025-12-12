@@ -175,17 +175,19 @@
     padding-left: 10%;
     margin-top: 4em;
     margin-bottom: 2em;
-    // padding-left: 20%;
+    display: none;
   }
   .partnership-container {
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
     height: 15em;
     @include cent();
     // background-color: aqua;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    margin-bottom: 10em;
+    // margin-bottom: em;
     .partnership-inner-container {
       width: 80%;
       height: 80%;
@@ -196,31 +198,31 @@
     }
 
     .partnership-inner-container:nth-child(1) {
-      background-image: url("../Style/Images/SVG/Partnership/aubi.svg");
+      background-image: url("../Style/Images/SVG/Partnership/luxem.svg");
     }
     .partnership-inner-container:nth-child(2) {
-      background-image: url("../Style/Images/SVG/Partnership/b-home.svg");
+      background-image: url("../Style/Images/SVG/Partnership/talles.svg");
     }
     .partnership-inner-container:nth-child(3) {
       background-image: url("../Style/Images/SVG/Partnership/digit.svg");
     }
     .partnership-inner-container:nth-child(4) {
-      background-image: url("../Style/Images/SVG/Partnership/csk.svg");
-    }
-    .partnership-inner-container:nth-child(5) {
       background-image: url("../Style/Images/SVG/Partnership/imesh.svg");
     }
+    .partnership-inner-container:nth-child(5) {
+      background-image: url("../Style/Images/SVG/Partnership/pd.svg");
+    }
     .partnership-inner-container:nth-child(6) {
-      background-image: url("../Style/Images/SVG/Partnership/luxem.svg");
+      background-image: url("../Style/Images/SVG/Partnership/aubi.svg");
     }
     .partnership-inner-container:nth-child(7) {
-      background-image: url("../Style/Images/SVG/Partnership/REVA.svg");
+      background-image: url("../Style/Images/SVG/Partnership/csk.svg");
     }
     .partnership-inner-container:nth-child(8) {
-      background-image: url("../Style/Images/SVG/Partnership/talles.svg");
+      background-image: url("../Style/Images/SVG/Partnership/b-home.svg");
     }
     .partnership-inner-container:nth-child(9) {
-      background-image: url("../Style/Images/SVG/Partnership/pd.svg");
+      background-image: url("../Style/Images/SVG/Partnership/REVA.svg");
     }
   }
   //!#####################################################################
