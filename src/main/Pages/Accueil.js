@@ -66,8 +66,8 @@ let hashProjectI4 = "LcIF6;RjWUt7~qkBahof%gaxWBof";
 
 let hashProjectK1 = "LAEL]G^*00NFJX?b$#D*_MX8D*%L";
 
-let hashProjectL1 = "LOIi5+bxoz9E_4%gR%V@AJt7eme.";
-let hashProjectL2 = "LBKL5W8w9tMx=YKP~WIo58$yE1ng";
+// let hashProjectL1 = "LOIi5+bxoz9E_4%gR%V@AJt7eme.";
+// let hashProjectL2 = "LBKL5W8w9tMx=YKP~WIo58$yE1ng";
 
 let hashProjectH1 = "L9DJVJ00kD~qM|x]Rjx]?w9EIU-;";
 
