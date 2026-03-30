@@ -25,7 +25,7 @@ function SmallHouse1({}) {
     AccueilContainer.scrollTop = 0;
 
     let hoverLoaderContainer = document.querySelector(
-      ".hover_loader_container"
+      ".hover_loader_container",
     );
     hoverLoaderContainer.style.display = "flex";
 
@@ -104,11 +104,11 @@ function SmallHouse1({}) {
         <div className="formation_section_4">
           <h1 className="project_title">
             CLÔTURE DES INSCRIPTIONS <br />
-            LE 25 OCTOBRE
+            LE 29 MAI
           </h1>
 
           <h1 className="project_title-2">
-            DÉBUT DE LA FORMATION LE 1er NOVEMBRE
+            DÉBUT DE LA FORMATION LE 6 JUIN
             <br /> 10:00 AM – 11:30 AM
           </h1>
 
