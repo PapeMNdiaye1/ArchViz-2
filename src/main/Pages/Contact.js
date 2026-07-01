@@ -41,6 +41,9 @@ function Contacts({}) {
           }
           title2={<div className="network">archviz.sn@gmail.com</div>}
         />
+
+
+
         <OneSection
           link={"https://www.youtube.com/@archviz-dakar"}
           title={
@@ -50,6 +53,9 @@ function Contacts({}) {
           }
           title2={<div className="network">@archviz-dakar</div>}
         />
+
+
+        
         <OneSection
           link={
             "https://api.whatsapp.com/send?phone=221777278655&text=The message"
