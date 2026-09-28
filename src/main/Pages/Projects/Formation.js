@@ -104,11 +104,11 @@ function SmallHouse1({}) {
         <div className="formation_section_4">
           <h1 className="project_title">
             CLÔTURE DES INSCRIPTIONS <br />
-            LE 29 MAI
+          LE 30 OCTOBRE
           </h1>
 
           <h1 className="project_title-2">
-            DÉBUT DE LA FORMATION LE 6 JUIN
+            DÉBUT DE LA FORMATION LE 7  NOVEMBRE
             <br /> 10:00 AM – 11:30 AM
           </h1>
 

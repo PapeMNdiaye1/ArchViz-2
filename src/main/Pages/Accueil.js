@@ -950,7 +950,7 @@ function TheFooter({}) {
       <div className="country">
         <ion-icon name="globe-outline"></ion-icon> Sénégal
       </div>
-      <div className="rights">© 2025 | Archviz. Tout droit réservé.</div>
+      <div className="rights">© 2026 | Archviz. Tout droit réservé.</div>
     </footer>
   );
 }
