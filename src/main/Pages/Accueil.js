@@ -254,19 +254,6 @@ function Accueil({ GetImageToApp }) {
       </section>
 
 
-    <section className="partnership-container">
-      
-        <div className="partnership-inner-container"></div>
-        <div className="partnership-inner-container"></div>
-        <div className="partnership-inner-container"></div>
-        <div className="partnership-inner-container"></div>
-        <div className="partnership-inner-container"></div>
-        <div className="partnership-inner-container"></div>
-        <div className="partnership-inner-container"></div>
-        <div className="partnership-inner-container"></div>
-        <div className="partnership-inner-container"></div>
-      </section>
-
       <section className="AccueilBigProjectsSection">
         <OneBigProject
           title={"Visualisation de projets immobiliers"}
@@ -405,6 +392,12 @@ function Accueil({ GetImageToApp }) {
         />
       </section>
 
+
+
+
+
+
+
       <section className="galerie_presantation">
         <Link className="nos_réalisations" to={"./Travaux"}>
           Nos Réalisations <ion-icon name="arrow-forward-outline"></ion-icon>
@@ -412,6 +405,18 @@ function Accueil({ GetImageToApp }) {
       </section>
 
    
+    <section className="partnership-container">
+      
+        <div className="partnership-inner-container"></div>
+        <div className="partnership-inner-container"></div>
+        <div className="partnership-inner-container"></div>
+        <div className="partnership-inner-container"></div>
+        <div className="partnership-inner-container"></div>
+        <div className="partnership-inner-container"></div>
+        <div className="partnership-inner-container"></div>
+        <div className="partnership-inner-container"></div>
+        <div className="partnership-inner-container"></div>
+      </section>
 
       <TheGallery GetImageOnAccueil={GetImageOnApp} />
     </div>
