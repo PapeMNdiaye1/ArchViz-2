@@ -117,20 +117,23 @@ const Travaux = () => {
           The_Experience_Link={"https://archviz-villa-bamba-ba.netlify.app/"}
         />
 
+    
         <OneBigProject
-          title={"Cité El Hadj Amadou Ba"}
-          image={ImageProjectB1}
+          title={"Villa Omaïs"}
+          image={ImageProjectF2}
           description={
-            "Ce projet comprend des villas familiales, des bâtiments commerciaux et résidentiels ainsi que des lieux publics. Notre travail se partage à parts égales entre les animations architecturales et les rendus 3D. Nous mettons en œuvre différentes approches pour une optimisation de vos espaces extérieurs et intérieurs."
+            "À l'aide des logiciels de dernière génération et de notre savoir-faire dans le domaine de l’architecture d’intérieur. Nous vous aidons dans l’aménagement de vos espaces."
           }
-          color={"#EAEAEA"}
+          color={"#F1F1F1"}
           textcolor={"#222"}
           theKey={3}
-          link={"/City1"}
+          link={"/Villa_Omaïs"}
           side={"left"}
-          OneHash={hashProjectB1}
+          OneHash={hashProjectF2}
           The_Experience={false}
         />
+
+
 
         <OneBigProject
           title={"Design Façade d'Immeuble"}
@@ -233,20 +236,26 @@ const Travaux = () => {
           OneHash={hashProjectS1}
         />
 
-        <OneBigProject
-          title={"Villa Omaïs"}
-          image={ImageProjectF2}
+
+
+    <OneBigProject
+          title={"Cité El Hadj Amadou Ba"}
+          image={ImageProjectB1}
           description={
-            "À l'aide des logiciels de dernière génération et de notre savoir-faire dans le domaine de l’architecture d’intérieur. Nous vous aidons dans l’aménagement de vos espaces."
+            "Ce projet comprend des villas familiales, des bâtiments commerciaux et résidentiels ainsi que des lieux publics. Notre travail se partage à parts égales entre les animations architecturales et les rendus 3D. Nous mettons en œuvre différentes approches pour une optimisation de vos espaces extérieurs et intérieurs."
           }
-          color={"#F1F1F1"}
+          color={"#EAEAEA"}
           textcolor={"#222"}
           theKey={11}
-          link={"/Villa_Omaïs"}
+          link={"/City1"}
           side={"left"}
-          OneHash={hashProjectF2}
+          OneHash={hashProjectB1}
           The_Experience={false}
         />
+
+
+
+
 
         <OneBigProject
           title={"Design Bureau"}
