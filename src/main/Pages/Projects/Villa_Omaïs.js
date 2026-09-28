@@ -1,4 +1,5 @@
 import { React, useEffect, useState, Fragment } from "react";
+import { ImageBlurhashD } from "../Image-Compona";
 
 import ImageProjectC1 from "../../Style/Images/Project/Villa-Omaïs-1.jpg";
 import ImageProjectC2 from "../../Style/Images/Project/Villa-Omaïs-16.jpg";
@@ -11,6 +12,19 @@ import ImageProjectC7 from "../../Style/Images/Project/Villa-Omaïs-43.jpg";
 import ImageProjectC8 from "../../Style/Images/Project/Villa-Omaïs-46.jpg";
 import ImageProjectC9 from "../../Style/Images/Project/Villa-Omaïs-48.jpg";
 import ImageProjectC10 from "../../Style/Images/Project/Villa-Omaïs-49.jpg";
+
+
+let hashProjectC1 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
+let hashProjectC2 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
+let hashProjectC3 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
+let hashProjectC4 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
+let hashProjectC5 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
+let hashProjectC6 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
+let hashProjectC7 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
+let hashProjectC8 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
+let hashProjectC9 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
+let hashProjectC10 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
+let hashProjectC11 = "LGGlVE-o?w-;ITV@M|M_?dogxrRj";
 
 function AppartementBHome1({}) {
   const [TheImageContainer, setTheImageContainer] = useState(false);
@@ -73,47 +87,47 @@ function AppartementBHome1({}) {
             vous aidons dans l’aménagement de vos espaces.{" "}
           </p>
           <div className="TheImageContainer">
-            <img
-              loading="lazy"
-              onClick={displayImage}
-              src={ImageProjectC3}
-              width="100%"
-              alt=" Appartement_B_Home - 1"
-            />
+            <ImageBlurhashD
+                        onClick={displayImage}
+                        src={ImageProjectC3}
+                        theHash={hashProjectC3}
+                        theAspectRatio="1 / 0.746"
+                        theWidth="100%"
+                      />
           </div>
           <div className="TheImageContainer">
-            <img
-              loading="lazy"
-              onClick={displayImage}
-              src={ImageProjectC7}
-              width="100%"
-              alt=" Appartement_B_Home - 1"
-            />
+              <ImageBlurhashD
+                        onClick={displayImage}
+                        src={ImageProjectC7}
+                        theHash={hashProjectC7}
+                        theAspectRatio="1 / 0.746"
+                        theWidth="100%"
+                      />
           </div>
           <div className="TheImageContainer">
-            <img
-              loading="lazy"
-              onClick={displayImage}
-              src={ImageProjectC1}
-              width="47%"
-              alt=" Appartement_B_Home - 2"
-            />
-            <img
-              loading="lazy"
-              onClick={displayImage}
-              src={ImageProjectC4}
-              width="47%"
-              alt=" Appartement_B_Home - 3"
-            />
+            <ImageBlurhashD
+                         onClick={displayImage}
+                         src={ImageProjectC1}
+                         theHash={hashProjectC1}
+                         theAspectRatio="1 / 0.746"
+                         theWidth="47%"
+                       />
+                       <ImageBlurhashD
+                         onClick={displayImage}
+                         src={ImageProjectC4}
+                         theHash={hashProjectC4}
+                         theAspectRatio="1 / 0.746"
+                         theWidth="47%"
+                       />
           </div>
           <div className="TheImageContainer">
-            <img
-              loading="lazy"
-              onClick={displayImage}
-              src={ImageProjectC2}
-              width="100%"
-              alt=" Appartement_B_Home - 4"
-            />
+            <ImageBlurhashD
+                        onClick={displayImage}
+                        src={ImageProjectC2}
+                        theHash={hashProjectC2}
+                        theAspectRatio="1 / 0.746"
+                        theWidth="100%"
+                      />
           </div>
           <div className="TheImageContainer">
             <img
@@ -141,29 +155,29 @@ function AppartementBHome1({}) {
             />
           </div>
           <div className="TheImageContainer">
-            <img
-              loading="lazy"
-              onClick={displayImage}
-              src={ImageProjectC8}
-              width="100%"
-              alt=" Appartement_B_Home - 4"
-            />
+            <ImageBlurhashD
+                        onClick={displayImage}
+                        src={ImageProjectC8}
+                        theHash={hashProjectC8}
+                        theAspectRatio="1 / 0.746"
+                        theWidth="100%"
+                      />
           </div>
               <div className="TheImageContainer">
-            <img
-              loading="lazy"
-              onClick={displayImage}
-              src={ImageProjectC9}
-              width="47%"
-              alt=" Appartement_B_Home - 2"
-            />
-            <img
-              loading="lazy"
-              onClick={displayImage}
-              src={ImageProjectC10}
-              width="47%"
-              alt=" Appartement_B_Home - 3"
-            />
+           <ImageBlurhashD
+                         onClick={displayImage}
+                         src={ImageProjectC10}
+                         theHash={hashProjectC10}
+                         theAspectRatio="1 / 0.746"
+                         theWidth="47%"
+                       />
+                       <ImageBlurhashD
+                         onClick={displayImage}
+                         src={ImageProjectC9}
+                         theHash={hashProjectC9}
+                         theAspectRatio="1 / 0.746"
+                         theWidth="47%"
+                       />
           </div>
         </div>
       </div>

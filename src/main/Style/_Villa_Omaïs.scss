@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.Villa_Omaïs_container {
+.Villa_Omaîs {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(2, auto);
@@ -19,6 +19,41 @@
     grid-template-rows: repeat(10, auto);
     grid-template-columns: 1fr;
     padding-bottom: 2em;
+
+    a {
+      margin-bottom: 2em;
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.8em;
+      font-weight: 800;
+      width: 12em;
+      height: 2em;
+      @include cent();
+      border: 0.1em solid #000;
+      border-radius: 0.3em;
+      text-decoration: none;
+      color: var(--colorX);
+
+      &:hover {
+        transform: scale(1.02);
+      }
+
+      ion-icon {
+        font-size: 1.2em;
+      }
+    }
+
+    .the_video {
+      width: 60vw;
+      height: 45vw;
+      margin-bottom: 3em;
+
+      iframe {
+        border: none;
+        border-radius: 1.5em;
+      }
+
+      margin-bottom: 3em;
+    }
 
     .project_title {
       font-family: "Montserrat", sans-serif;
@@ -48,18 +83,6 @@
         border-radius: 1em;
 
         &:hover {
-          // box-shadow: #86c5e5 0 0 5px, inset #86c5e5 0 0 5px;
-          transform: scale(1.03);
-        }
-      }
-
-      img {
-        transition-duration: 0.3s;
-        transform: scale(1);
-        border-radius: 1em;
-
-        &:hover {
-          // box-shadow: #86c5e5 0 0 5px, inset #86c5e5 0 0 5px;
           transform: scale(1.03);
         }
       }
@@ -78,7 +101,7 @@
 //!########################################
 
 @media all and (max-width: 1000px) {
-  .Villa_Omaïs_container {
+  .Villa_Omaîs {
     padding-left: 5vw;
     padding-right: 0vw;
 
@@ -89,6 +112,17 @@
 
       .project_description {
         font-size: 0.7em;
+      }
+
+      .the_video {
+        width: 95%;
+        height: auto;
+        aspect-ratio: 1/0.7;
+        margin-bottom: 1em;
+      }
+
+      h2 {
+        display: none;
       }
 
       .TheImageContainer {

@@ -181,9 +181,10 @@
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
+    // margin-bottom: 10%;
+    // background-color: red;
     height: 15em;
     @include cent();
-    // background-color: aqua;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);

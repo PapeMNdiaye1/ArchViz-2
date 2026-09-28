@@ -150,6 +150,7 @@ function Accueil({ GetImageToApp }) {
 
   return (
     <div id="Accueil">
+   
       <div className="Accueil_Slider-2">
         <Carousel>
           <div className="sliders">
@@ -205,6 +206,8 @@ function Accueil({ GetImageToApp }) {
         </Carousel>
       </div>
 
+   
+
       <section className="archviz_presantation">
         <h2 className="qui_somme_nous">Qui sommes-nous ?</h2>
         <p>
@@ -248,6 +251,20 @@ function Accueil({ GetImageToApp }) {
             </div>
           </a>
         </div>
+      </section>
+
+
+    <section className="partnership-container">
+      
+        <div className="partnership-inner-container"></div>
+        <div className="partnership-inner-container"></div>
+        <div className="partnership-inner-container"></div>
+        <div className="partnership-inner-container"></div>
+        <div className="partnership-inner-container"></div>
+        <div className="partnership-inner-container"></div>
+        <div className="partnership-inner-container"></div>
+        <div className="partnership-inner-container"></div>
+        <div className="partnership-inner-container"></div>
       </section>
 
       <section className="AccueilBigProjectsSection">
@@ -394,17 +411,7 @@ function Accueil({ GetImageToApp }) {
         </Link>
       </section>
 
-      <section className="partnership-container">
-        <div className="partnership-inner-container"></div>
-        <div className="partnership-inner-container"></div>
-        <div className="partnership-inner-container"></div>
-        <div className="partnership-inner-container"></div>
-        <div className="partnership-inner-container"></div>
-        <div className="partnership-inner-container"></div>
-        <div className="partnership-inner-container"></div>
-        <div className="partnership-inner-container"></div>
-        <div className="partnership-inner-container"></div>
-      </section>
+   
 
       <TheGallery GetImageOnAccueil={GetImageOnApp} />
     </div>
