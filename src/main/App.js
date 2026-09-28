@@ -49,7 +49,7 @@ const ImmeubleTalles = React.lazy(() =>
 );
 const SmallHouse1 = React.lazy(() => import("./Pages/Projects/Villa_Onomo"));
 const AppartementBHome1 = React.lazy(() =>
-  import("./Pages/Projects/AppartementBHome_1")
+  import("./Pages/Projects/Villa_Omaïs")
 );
 const DesignBureau = React.lazy(() => import("./Pages/Projects/Design_Office"));
 const Façade_Immeuble = React.lazy(() =>
@@ -160,7 +160,7 @@ function App() {
             />
             <Route
               exact
-              path="/AppartementBHome_1"
+              path="/Villa_Omaïs"
               element={
                 <Suspense fallback={<TheLoader />}>
                   <AppartementBHome1 />

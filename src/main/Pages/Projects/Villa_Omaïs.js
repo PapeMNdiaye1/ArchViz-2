@@ -1,10 +1,16 @@
 import { React, useEffect, useState, Fragment } from "react";
 
-import ImageProjectC1 from "../../Style/Images/Project/Appartement_B_Home_1.jpg";
-import ImageProjectC2 from "../../Style/Images/Project/Appartement_B_Home_2.jpg";
-import ImageProjectC3 from "../../Style/Images/Project/Appartement_B_Home_3.jpg";
-import ImageProjectC4 from "../../Style/Images/Project/Appartement_B_Home_4.jpg";
-import ImageProjectC5 from "../../Style/Images/Project/Appartement_B_Home_5.jpg";
+import ImageProjectC1 from "../../Style/Images/Project/Villa-Omaïs-1.jpg";
+import ImageProjectC2 from "../../Style/Images/Project/Villa-Omaïs-16.jpg";
+import ImageProjectC3 from "../../Style/Images/Project/Villa-Omaïs-26.jpg";
+import ImageProjectC4 from "../../Style/Images/Project/Villa-Omaïs-29.jpg";
+import ImageProjectC11 from "../../Style/Images/Project/Villa-Omaïs-32.jpg";
+import ImageProjectC5 from "../../Style/Images/Project/Villa-Omaïs-35.jpg";
+import ImageProjectC6 from "../../Style/Images/Project/Villa-Omaïs-36.jpg";
+import ImageProjectC7 from "../../Style/Images/Project/Villa-Omaïs-43.jpg";
+import ImageProjectC8 from "../../Style/Images/Project/Villa-Omaïs-46.jpg";
+import ImageProjectC9 from "../../Style/Images/Project/Villa-Omaïs-48.jpg";
+import ImageProjectC10 from "../../Style/Images/Project/Villa-Omaïs-49.jpg";
 
 function AppartementBHome1({}) {
   const [TheImageContainer, setTheImageContainer] = useState(false);
@@ -57,10 +63,10 @@ function AppartementBHome1({}) {
         </div>
       )}
 
-      <div className="AppartementBHome_1_container">
+      <div className="Villa_Omaïs_container">
         <div className="project_display">
-          <h1 className="project_title">Appartement_B_Home_1</h1>
-          <h3 className="project_description">By Archviz | 03 Mars, 2024 |</h3>
+          <h1 className="project_title">Villa Omaïs</h1>
+          <h3 className="project_description">By Archviz | 03 septembre, 2026 |</h3>
           <p>
             À l'aide des logiciels de dernière génération et de notre
             savoir-faire dans le domaine de l’architecture d’intérieur. Nous
@@ -70,7 +76,7 @@ function AppartementBHome1({}) {
             <img
               loading="lazy"
               onClick={displayImage}
-              src={ImageProjectC1}
+              src={ImageProjectC3}
               width="100%"
               alt=" Appartement_B_Home - 1"
             />
@@ -79,14 +85,23 @@ function AppartementBHome1({}) {
             <img
               loading="lazy"
               onClick={displayImage}
-              src={ImageProjectC4}
+              src={ImageProjectC7}
+              width="100%"
+              alt=" Appartement_B_Home - 1"
+            />
+          </div>
+          <div className="TheImageContainer">
+            <img
+              loading="lazy"
+              onClick={displayImage}
+              src={ImageProjectC1}
               width="47%"
               alt=" Appartement_B_Home - 2"
             />
             <img
               loading="lazy"
               onClick={displayImage}
-              src={ImageProjectC3}
+              src={ImageProjectC4}
               width="47%"
               alt=" Appartement_B_Home - 3"
             />
@@ -104,9 +119,50 @@ function AppartementBHome1({}) {
             <img
               loading="lazy"
               onClick={displayImage}
-              src={ImageProjectC5}
+              src={ImageProjectC11}
               width="100%"
               alt=" Appartement_B_Home - 4"
+            />
+          </div>
+            <div className="TheImageContainer">
+            <img
+              loading="lazy"
+              onClick={displayImage}
+              src={ImageProjectC5}
+              width="47%"
+              alt=" Appartement_B_Home - 2"
+            />
+            <img
+              loading="lazy"
+              onClick={displayImage}
+              src={ImageProjectC6}
+              width="47%"
+              alt=" Appartement_B_Home - 3"
+            />
+          </div>
+          <div className="TheImageContainer">
+            <img
+              loading="lazy"
+              onClick={displayImage}
+              src={ImageProjectC8}
+              width="100%"
+              alt=" Appartement_B_Home - 4"
+            />
+          </div>
+              <div className="TheImageContainer">
+            <img
+              loading="lazy"
+              onClick={displayImage}
+              src={ImageProjectC9}
+              width="47%"
+              alt=" Appartement_B_Home - 2"
+            />
+            <img
+              loading="lazy"
+              onClick={displayImage}
+              src={ImageProjectC10}
+              width="47%"
+              alt=" Appartement_B_Home - 3"
             />
           </div>
         </div>

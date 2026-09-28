@@ -5,7 +5,7 @@ import ImageProjectB1 from "../Style/Images/Project/City-1.jpg";
 import ImageProjectC3 from "../Style/Images/Project/Immeuble-Talles-7.jpg";
 import ImageProjectD3 from "../Style/Images/Project/Office-B-1.jpg";
 import ImageProjectE4 from "../Style/Images/Project/Façade-Immeuble-A-4.jpg";
-import ImageProjectF2 from "../Style/Images/Project/Appartement_B_Home_2.jpg";
+import ImageProjectF2 from "../Style/Images/Project/Villa-Omaïs-26.jpg";
 
 import ImageProjectH1 from "../Style/Images/Project/Villa_Ndayane-1.jpg";
 import ImageProjectI2 from "../Style/Images/Project/Residence_Alya-2.jpg";
@@ -234,7 +234,7 @@ const Travaux = () => {
         />
 
         <OneBigProject
-          title={"Appartement B-Home 1"}
+          title={"Villa Omaïs"}
           image={ImageProjectF2}
           description={
             "À l'aide des logiciels de dernière génération et de notre savoir-faire dans le domaine de l’architecture d’intérieur. Nous vous aidons dans l’aménagement de vos espaces."
@@ -242,7 +242,7 @@ const Travaux = () => {
           color={"#F1F1F1"}
           textcolor={"#222"}
           theKey={11}
-          link={"/AppartementBHome_1"}
+          link={"/Villa_Omaïs"}
           side={"left"}
           OneHash={hashProjectF2}
           The_Experience={false}

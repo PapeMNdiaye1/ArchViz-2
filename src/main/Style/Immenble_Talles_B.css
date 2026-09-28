@@ -41,11 +41,13 @@
   width: 60vw;
   height: 45vw;
   margin-bottom: 3em;
-  margin-bottom: 3em;
 }
 .Immenble_Talles_B_container .project_display .the_video iframe {
   border: none;
   border-radius: 1.5em;
+}
+.Immenble_Talles_B_container .project_display .the_video {
+  margin-bottom: 3em;
 }
 .Immenble_Talles_B_container .project_display .project_title {
   font-family: "Montserrat", sans-serif;

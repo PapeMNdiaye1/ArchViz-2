@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.AppartementBHome_1_container {
+.Villa_Omaïs_container {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(2, auto);
@@ -78,7 +78,7 @@
 //!########################################
 
 @media all and (max-width: 1000px) {
-  .AppartementBHome_1_container {
+  .Villa_Omaïs_container {
     padding-left: 5vw;
     padding-right: 0vw;
 

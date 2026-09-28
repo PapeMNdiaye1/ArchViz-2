@@ -2222,11 +2222,13 @@
   width: 60vw;
   height: 45vw;
   margin-bottom: 3em;
-  margin-bottom: 3em;
 }
 .Immeuble-Talles .project_display .the_video iframe {
   border: none;
   border-radius: 1.5em;
+}
+.Immeuble-Talles .project_display .the_video {
+  margin-bottom: 3em;
 }
 .Immeuble-Talles .project_display .the_video_2 {
   height: 34vw;
@@ -2326,11 +2328,13 @@
   width: 60vw;
   height: 45vw;
   margin-bottom: 3em;
-  margin-bottom: 3em;
 }
 .Villa_Onomo_container .project_display .the_video iframe {
   border: none;
   border-radius: 1.5em;
+}
+.Villa_Onomo_container .project_display .the_video {
+  margin-bottom: 3em;
 }
 .Villa_Onomo_container .project_display .project_title {
   font-family: "Montserrat", sans-serif;
@@ -2393,7 +2397,7 @@
     width: 80vw;
   }
 }
-.AppartementBHome_1_container {
+.Villa_Omaïs_container {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(2, auto);
@@ -2401,7 +2405,7 @@
   padding-right: 10vw;
   padding-top: 5em;
 }
-.AppartementBHome_1_container .project_display {
+.Villa_Omaïs_container .project_display {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2411,19 +2415,19 @@
   grid-template-columns: 1fr;
   padding-bottom: 2em;
 }
-.AppartementBHome_1_container .project_display .project_title {
+.Villa_Omaïs_container .project_display .project_title {
   font-family: "Montserrat", sans-serif;
   font-size: 2em;
   font-weight: 800;
   margin-bottom: 0.2em;
 }
-.AppartementBHome_1_container .project_display .project_description {
+.Villa_Omaïs_container .project_display .project_description {
   margin-bottom: 2em;
   font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
   font-weight: 400;
 }
-.AppartementBHome_1_container .project_display .TheImageContainer {
+.Villa_Omaïs_container .project_display .TheImageContainer {
   width: 60vw;
   height: auto;
   margin-bottom: 3em;
@@ -2431,23 +2435,23 @@
   display: flex;
   justify-content: space-between;
 }
-.AppartementBHome_1_container .project_display .TheImageContainer img {
+.Villa_Omaïs_container .project_display .TheImageContainer img {
   transition-duration: 0.3s;
   transform: scale(1);
   border-radius: 1em;
 }
-.AppartementBHome_1_container .project_display .TheImageContainer img:hover {
+.Villa_Omaïs_container .project_display .TheImageContainer img:hover {
   transform: scale(1.03);
 }
-.AppartementBHome_1_container .project_display .TheImageContainer img {
+.Villa_Omaïs_container .project_display .TheImageContainer img {
   transition-duration: 0.3s;
   transform: scale(1);
   border-radius: 1em;
 }
-.AppartementBHome_1_container .project_display .TheImageContainer img:hover {
+.Villa_Omaïs_container .project_display .TheImageContainer img:hover {
   transform: scale(1.03);
 }
-.AppartementBHome_1_container .project_display p {
+.Villa_Omaïs_container .project_display p {
   width: 60vw;
   margin-bottom: 2em;
   font-family: "Montserrat", sans-serif;
@@ -2456,21 +2460,21 @@
 }
 
 @media all and (max-width: 1000px) {
-  .AppartementBHome_1_container {
+  .Villa_Omaïs_container {
     padding-left: 5vw;
     padding-right: 0vw;
   }
-  .AppartementBHome_1_container .project_display .project_title {
+  .Villa_Omaïs_container .project_display .project_title {
     font-size: 1.5em;
   }
-  .AppartementBHome_1_container .project_display .project_description {
+  .Villa_Omaïs_container .project_display .project_description {
     font-size: 0.7em;
   }
-  .AppartementBHome_1_container .project_display .TheImageContainer {
+  .Villa_Omaïs_container .project_display .TheImageContainer {
     width: 90vw;
     margin-bottom: 1em;
   }
-  .AppartementBHome_1_container .project_display p {
+  .Villa_Omaïs_container .project_display p {
     width: 80vw;
   }
 }
@@ -2517,11 +2521,13 @@
   width: 60vw;
   height: 45vw;
   margin-bottom: 3em;
-  margin-bottom: 3em;
 }
 .Appartement-Alya .project_display .the_video iframe {
   border: none;
   border-radius: 1.5em;
+}
+.Appartement-Alya .project_display .the_video {
+  margin-bottom: 3em;
 }
 .Appartement-Alya .project_display .the_video iframe {
   border: none;
@@ -2649,11 +2655,13 @@
   width: 60vw;
   height: 45vw;
   margin-bottom: 3em;
-  margin-bottom: 3em;
 }
 .Touba_1_container .project_display .the_video iframe {
   border: none;
   border-radius: 1.5em;
+}
+.Touba_1_container .project_display .the_video {
+  margin-bottom: 3em;
 }
 .Touba_1_container .project_display p {
   width: 60vw;
@@ -2864,11 +2872,13 @@
   width: 60vw;
   height: 45vw;
   margin-bottom: 3em;
-  margin-bottom: 3em;
 }
 .Appartement-F4-A-container .project_display .the_video iframe {
   border: none;
   border-radius: 1.5em;
+}
+.Appartement-F4-A-container .project_display .the_video {
+  margin-bottom: 3em;
 }
 .Appartement-F4-A-container .project_display .the_video iframe {
   border: none;
@@ -3049,11 +3059,13 @@
   width: 60vw;
   height: 45vw;
   margin-bottom: 3em;
-  margin-bottom: 3em;
 }
 .Immeuble_1_container .project_display .the_video iframe {
   border: none;
   border-radius: 1.5em;
+}
+.Immeuble_1_container .project_display .the_video {
+  margin-bottom: 3em;
 }
 .Immeuble_1_container .project_display .project_title {
   font-family: "Montserrat", sans-serif;
@@ -3179,11 +3191,13 @@
   width: 60vw;
   height: 45vw;
   margin-bottom: 3em;
-  margin-bottom: 3em;
 }
 .Villa_A_container .project_display .the_video iframe {
   border: none;
   border-radius: 1.5em;
+}
+.Villa_A_container .project_display .the_video {
+  margin-bottom: 3em;
 }
 .Villa_A_container .project_display .the_video iframe {
   border: none;
@@ -3390,11 +3404,13 @@
   width: 60vw;
   height: 45vw;
   margin-bottom: 3em;
-  margin-bottom: 3em;
 }
 .Immenble_Talles_B_container .project_display .the_video iframe {
   border: none;
   border-radius: 1.5em;
+}
+.Immenble_Talles_B_container .project_display .the_video {
+  margin-bottom: 3em;
 }
 .Immenble_Talles_B_container .project_display .project_title {
   font-family: "Montserrat", sans-serif;
@@ -3503,11 +3519,13 @@
   width: 60vw;
   height: 45vw;
   margin-bottom: 3em;
-  margin-bottom: 3em;
 }
 .Villa_Samb .project_display .the_video iframe {
   border: none;
   border-radius: 1.5em;
+}
+.Villa_Samb .project_display .the_video {
+  margin-bottom: 3em;
 }
 .Villa_Samb .project_display .project_title {
   font-family: "Montserrat", sans-serif;
@@ -3616,11 +3634,13 @@
   width: 60vw;
   height: 45vw;
   margin-bottom: 3em;
-  margin-bottom: 3em;
 }
 .Villa_Sarr .project_display .the_video iframe {
   border: none;
   border-radius: 1.5em;
+}
+.Villa_Sarr .project_display .the_video {
+  margin-bottom: 3em;
 }
 .Villa_Sarr .project_display .project_title {
   font-family: "Montserrat", sans-serif;

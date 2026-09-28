@@ -51,6 +51,11 @@ import ImageProjectR2 from "../Style/Images/Project/Façade-Immeuble-A-4.jpg";
 
 import ImageProjectS2 from "../Style/Images/Project/Appartement-Alya-4.jpg";
 
+import ImageProjectO1 from "../Style/Images/Project/Villa-Omaïs-26.jpg";
+import ImageProjectO2 from "../Style/Images/Project/Villa-Omaïs-46.jpg";
+import ImageProjectO3 from "../Style/Images/Project/Villa-Omaïs-43.jpg";
+// import ImageProjectO1 from "../Style/Images/Project/Villa-Omaïs-1.jpg";
+
 // ######################################################################################
 // ######################################################################################
 // ######################################################################################
@@ -103,6 +108,8 @@ let hashProjectR2 = "LCAvwdxZ58M|~Vn~I@R+t8t6ofkC";
 
 let hashProjectS2 = "LII=0]_4%h9FIARiIpoe%Mxuxtt7";
 let hashProjectZ1 = "L6Aw6it600o#?a?HIo4o00M|~Vxt";
+
+let hashProjectO1 = "LAI#P%00Egxv_MH?Rixv-;oyIUIU";
 
 // ######################################################################################
 function Accueil({ GetImageToApp }) {
@@ -431,11 +438,11 @@ function TheGallery({ GetImageOnAccueil }) {
 
       <OneGalerieElement
         giveImageId={onClickOnImage}
-        oneHash={hashProjectS10}
-        link={"/VillaSamb"}
-        image={ImageProjectS10}
-        title={"Villa Samb"}
-        date={"05 Mai, 2024"}
+        oneHash={hashProjectO1}
+        link={"/Villa_Omaïs"}
+        image={ImageProjectO1}
+        title={"Villa Omaïs"}
+        date={"03 septembre, 2026"}
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
@@ -482,18 +489,18 @@ function TheGallery({ GetImageOnAccueil }) {
       <OneGalerieElement
         giveImageId={onClickOnImage}
         oneHash={hashProjectS4}
-        link={"/VillaSamb"}
-        image={ImageProjectS4}
-        title={"Villa Samb"}
-        date={"05 Mai, 2024"}
+        link={"/Villa_Omaïs"}
+        image={ImageProjectO2}
+       title={"Villa Omaïs"}
+        date={"25 Septembre, 2023"}
       />
       <OneGalerieElement
         giveImageId={onClickOnImage}
         oneHash={hashProjectB9}
-        link={"/City1"}
-        image={ImageProjectB9}
-        title={"Cité El Hadj Amadou Ba"}
-        date={"12 Juin, 2023"}
+        link={"/Villa_Omaïs"}
+        image={ImageProjectO3}
+        title={"Villa Omaïs"}
+        date={"03 septembre, 2026"}
       />
       {/*///######################################## */}
       <OneGalerieElement
