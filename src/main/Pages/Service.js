@@ -6,12 +6,12 @@ import ImageProjectB3 from "../Style/Images/Project/City-0.jpg";
 
 import ImageProjectE7 from "../Style/Images/Project/Façade-Immeuble-A-1.jpg";
 
-import ImageProjectL1 from "../Style/Images/Project/Immeuble-Talles-11.jpg";
+import ImageProjectL1 from "../Style/Images/Project/Résidence_Pierre_De_Lune-11.jpg";
 import ImageProjectS2 from "../Style/Images/Project/Villa_Samb-2.jpg";
 import ImageProjectI4 from "../Style/Images/Project/Residence_Alya-2.jpg";
-import ImageProjectJ4 from "../Style/Images/Project/Appartement-F4-A-1.jpg";
-import ImageProjectk4 from "../Style/Images/Project/Immeuble-Talles-8.jpg";
-import ImageProjectz2 from "../Style/Images/Project/Appartement-Alya-4.jpg";
+import ImageProjectJ4 from "../Style/Images/Project/Appartement_Bamba_Ba-1.jpg";
+import ImageProjectk4 from "../Style/Images/Project/Résidence_Pierre_De_Lune-8.jpg";
+import ImageProjectz2 from "../Style/Images/Project/Appartement_Alya-4.jpg";
 
 function Services({}) {
   useEffect(() => {
@@ -70,7 +70,7 @@ function Services({}) {
             />
 
             <OneGalerieElement
-              link={"/Residence-Alya"}
+              link={"/Residence_Alya"}
               image={ImageProjectI4}
               title={"Residence Alya"}
               date={"18 Avril, 2025"}
@@ -78,7 +78,7 @@ function Services({}) {
             <OneGalerieElement
               image={ImageProjectJ4}
               title={"design intérieur"}
-              link={"/Appartement-F4-A"}
+              link={"/Appartement_Bamba_Ba"}
               date={"25 Septembre, 2023"}
             />
             <OneGalerieElement
@@ -90,7 +90,7 @@ function Services({}) {
             <OneGalerieElement
               image={ImageProjectB3}
               title={"Visualisation Extérieur d'Immeuble"}
-              link={"/City1"}
+              link={"/Cité_El_Hadj_Amadou_Ba"}
               date={"27 Mai, 2022"}
             />
           </div>
@@ -111,12 +111,12 @@ function Services({}) {
             <OneGalerieElement
               image={ImageProjectJ4}
               title={"Appartement Bamba Ba"}
-              link={"/Appartement-F4-A"}
+              link={"/Appartement_Bamba_Ba"}
               date={"25 Septembre, 2023"}
             />
 
             <OneGalerieElement
-              link={"/Appartement-Alya"}
+              link={"/Appartement_Alya"}
               image={ImageProjectz2}
               title={"Appartement Alya"}
               date={"22 Janvier, 2025"}
@@ -139,14 +139,14 @@ function Services({}) {
             <OneGalerieElement
               image={ImageProjectk4}
               title={"Plans D'étage Isométriques"}
-              link={"/Immeuble-Talles"}
+              link={"/Résidence_Pierre_De_Lune"}
               date={"3 Juin , 2024"}
             />
 
             <OneGalerieElement
               image={ImageProjectL1}
               title={"Résidence MANDA"}
-              link={"/Résidence-MANDA"}
+              link={"/Résidence_Manda"}
               date={"9 Novembre, 2025"}
             />
           </div>

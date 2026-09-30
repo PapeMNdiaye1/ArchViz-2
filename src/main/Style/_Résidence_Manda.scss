@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.Immenble_Talles_B_container {
+.Residence_Manda_container {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(2, auto);
@@ -101,7 +101,7 @@
 //!########################################
 
 @media all and (max-width: 1000px) {
-  .Immenble_Talles_B_container {
+  .Residence_Manda_container {
     padding-left: 5vw;
     padding-right: 0vw;
 

@@ -2,22 +2,22 @@ import { React, useEffect } from "react";
 import { OneBigProject } from "./Accueil";
 
 import ImageProjectB1 from "../Style/Images/Project/City-1.jpg";
-import ImageProjectC3 from "../Style/Images/Project/Immeuble-Talles-7.jpg";
+import ImageProjectC3 from "../Style/Images/Project/Résidence_Pierre_De_Lune-7.jpg";
 import ImageProjectD3 from "../Style/Images/Project/Office-B-1.jpg";
 import ImageProjectE4 from "../Style/Images/Project/Façade-Immeuble-A-4.jpg";
 import ImageProjectF2 from "../Style/Images/Project/Villa-Omaïs-26.jpg";
 
 import ImageProjectH1 from "../Style/Images/Project/Villa_Ndayane-1.jpg";
 import ImageProjectI2 from "../Style/Images/Project/Residence_Alya-2.jpg";
-import ImageProjectJ1 from "../Style/Images/Project/Appartement-F4-A-1.jpg";
+import ImageProjectJ1 from "../Style/Images/Project/Appartement_Bamba_Ba-1.jpg";
 import ImageProjectK4 from "../Style/Images/Project/Pharmacie_C-4.jpg";
-import ImageProjectL1 from "../Style/Images/Project/Immeuble-Talles-11.jpg";
+import ImageProjectL1 from "../Style/Images/Project/Résidence_Pierre_De_Lune-11.jpg";
 import ImageProjectS1 from "../Style/Images/Project/Villa_Samb-1.jpg";
 
 import ImageProjectO1 from "../Style/Images/Project/Villa-Onomo-2.jpg";
 
 import ImageProjectQ1 from "../Style/Images/Project/Villa-Sarr-1.jpg";
-import ImageProjectS2 from "../Style/Images/Project/Appartement-Alya-2.jpg";
+import ImageProjectS2 from "../Style/Images/Project/Appartement_Alya-2.jpg";
 
 // ######################################################################################
 // ######################################################################################
@@ -95,7 +95,7 @@ const Travaux = () => {
           color={"#4c525c"}
           textcolor={"#f1f1f1"}
           theKey={1}
-          link={"/Villa-Ndayane"}
+          link={"/Villa_Ndayane"}
           side={"left"}
           OneHash={hashProjectH1}
           The_Experience={false}
@@ -110,7 +110,7 @@ const Travaux = () => {
           color={"#8a6f54"}
           textcolor={"#f1f1f1"}
           theKey={2}
-          link={"/Appartement-F4-A"}
+          link={"/Appartement_Bamba_Ba"}
           side={"right"}
           OneHash={hashProjectJ1}
           The_Experience={true}
@@ -172,7 +172,7 @@ const Travaux = () => {
           color={"#F1F1F1"}
           textcolor={"#222"}
           theKey={6}
-          link={"/Immeuble-Talles"}
+          link={"/Résidence_Pierre_De_Lune"}
           side={"right"}
           OneHash={hashProjectC3}
           The_Experience={false}
@@ -187,7 +187,7 @@ const Travaux = () => {
           color={"#664f3c"}
           textcolor={"#F4EFE4"}
           theKey={7}
-          link={"/Résidence-MANDA"}
+          link={"/Résidence_Manda"}
           side={"left"}
           OneHash={hashProjectL1}
           The_Experience={false}
@@ -218,7 +218,7 @@ const Travaux = () => {
           textcolor={"#222"}
           theKey={9}
           The_Experience={false}
-          link={"/Residence-Alya"}
+          link={"/Residence_Alya"}
           side={"left"}
           OneHash={hashProjectI2}
         />
@@ -247,7 +247,7 @@ const Travaux = () => {
           color={"#EAEAEA"}
           textcolor={"#222"}
           theKey={11}
-          link={"/City1"}
+          link={"/Cité_El_Hadj_Amadou_Ba"}
           side={"left"}
           OneHash={hashProjectB1}
           The_Experience={false}
@@ -279,7 +279,7 @@ const Travaux = () => {
           color={"#f1f1f1"}
           textcolor={"#000"}
           theKey={13}
-          link={"/VillaSarr"}
+          link={"/Villa_Sarr"}
           The_Experience={false}
           side={"left"}
           OneHash={hashProjectQ1}
@@ -293,7 +293,7 @@ const Travaux = () => {
           color={"#222"}
           textcolor={"#f1f1f1"}
           theKey={14}
-          link={"/Appartement-Alya"}
+          link={"/Appartement_Alya"}
           The_Experience={true}
           The_Experience_Link={"https://residence-Alya-f4-pm.netlify.app/"}
           side={"right"}

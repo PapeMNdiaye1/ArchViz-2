@@ -1,14 +1,14 @@
 import { React, useEffect, useState, Fragment } from "react";
 import { ImageBlurhashD } from "../Image-Compona";
 
-import ImageProjectC1 from "../../Style/Images/Project/Immeuble-Talles-1.jpg";
-import ImageProjectC2 from "../../Style/Images/Project/Immeuble-Talles-2.jpg";
-import ImageProjectC3 from "../../Style/Images/Project/Immeuble-Talles-3.jpg";
-import ImageProjectC4 from "../../Style/Images/Project/Immeuble-Talles-4.jpg";
-import ImageProjectC5 from "../../Style/Images/Project/Immeuble-Talles-5.jpg";
-import ImageProjectC6 from "../../Style/Images/Project/Immeuble-Talles-6.jpg";
-import ImageProjectC7 from "../../Style/Images/Project/Immeuble-Talles-7.jpg";
-import ImageProjectC8 from "../../Style/Images/Project/Immeuble-Talles-8.jpg";
+import ImageProjectC1 from "../../Style/Images/Project/Résidence_Pierre_De_Lune-1.jpg";
+import ImageProjectC2 from "../../Style/Images/Project/Résidence_Pierre_De_Lune-2.jpg";
+import ImageProjectC3 from "../../Style/Images/Project/Résidence_Pierre_De_Lune-3.jpg";
+import ImageProjectC4 from "../../Style/Images/Project/Résidence_Pierre_De_Lune-4.jpg";
+import ImageProjectC5 from "../../Style/Images/Project/Résidence_Pierre_De_Lune-5.jpg";
+import ImageProjectC6 from "../../Style/Images/Project/Résidence_Pierre_De_Lune-6.jpg";
+import ImageProjectC7 from "../../Style/Images/Project/Résidence_Pierre_De_Lune-7.jpg";
+import ImageProjectC8 from "../../Style/Images/Project/Résidence_Pierre_De_Lune-8.jpg";
 
 let hashProjectC1 = "L4DcRA?b0001D*_3WB4n00of~pRj";
 
@@ -63,7 +63,7 @@ function ImmeubleTalles({}) {
         </div>
       )}
 
-      <div className="Immeuble-Talles">
+      <div className="Résidence_Pierre_De_Lune">
         <div className="project_display">
           <h1 className="project_title">Résidence Pierre de Lune</h1>
           <h3 className="project_description">By Archviz | 3 Juin, 2024 |</h3>

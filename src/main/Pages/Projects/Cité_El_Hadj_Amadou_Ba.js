@@ -13,7 +13,7 @@ import ImageProjectC9 from "../../Style/Images/Project/City-9.jpg";
 
 let hashProjectC1 = "LaLO4u-:4mRj~qogIUoff,ofxut7";
 
-function City1({}) {
+function Cité_El_Hadj_Amadou_Ba({}) {
   const [TheImageContainer, setTheImageContainer] = useState(false);
   const [TheImageInTheContainer, setTheImageInTheContainer] =
     useState(ImageProjectC1);
@@ -182,4 +182,4 @@ function City1({}) {
   );
 }
 
-export default City1;
+export default Cité_El_Hadj_Amadou_Ba;

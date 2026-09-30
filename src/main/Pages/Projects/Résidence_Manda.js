@@ -1,12 +1,12 @@
 import { React, useEffect, useState, Fragment } from "react";
 import { ImageBlurhashD } from "../Image-Compona";
 
-import ImageProjectC6 from "../../Style/Images/Project/Immeuble-Talles-9.jpg";
-import ImageProjectC1 from "../../Style/Images/Project/Immeuble-Talles-10.jpg";
-import ImageProjectC2 from "../../Style/Images/Project/Immeuble-Talles-11.jpg";
-import ImageProjectC3 from "../../Style/Images/Project/Immeuble-Talles-12.jpg";
-import ImageProjectC4 from "../../Style/Images/Project/Immeuble-Talles-13.jpg";
-import ImageProjectC5 from "../../Style/Images/Project/Immeuble-Talles-14.jpg";
+import ImageProjectC6 from "../../Style/Images/Project/Résidence_Pierre_De_Lune-9.jpg";
+import ImageProjectC1 from "../../Style/Images/Project/Résidence_Pierre_De_Lune-10.jpg";
+import ImageProjectC2 from "../../Style/Images/Project/Résidence_Pierre_De_Lune-11.jpg";
+import ImageProjectC3 from "../../Style/Images/Project/Résidence_Pierre_De_Lune-12.jpg";
+import ImageProjectC4 from "../../Style/Images/Project/Résidence_Pierre_De_Lune-13.jpg";
+import ImageProjectC5 from "../../Style/Images/Project/Résidence_Pierre_De_Lune-14.jpg";
 
 let hashProjectC1 = "L6Aw6it600o#?a?HIo4o00M|~Vxt";
 
@@ -59,7 +59,7 @@ function SmallHouse1({}) {
           </div>
         </div>
       )}
-      <div className="Immenble_Talles_B_container">
+      <div className="Residence_Manda_container">
         <div className="project_display">
           <h1 className="project_title">Résidence MANDA</h1>
           <h3 className="project_description">

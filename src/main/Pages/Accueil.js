@@ -18,11 +18,11 @@ import ImageProjectI4 from "../Style/Images/Project/Residence_Alya-2.jpg";
 
 import ImageProjectK1 from "../Style/Images/Project/Pharmacie_C-1.jpg";
 
-import ImageProjectL1 from "../Style/Images/Project/Immeuble-Talles-9.jpg";
-import ImageProjectL2 from "../Style/Images/Project/Immeuble-Talles-11.jpg";
+import ImageProjectL1 from "../Style/Images/Project/Résidence_Pierre_De_Lune-9.jpg";
+import ImageProjectL2 from "../Style/Images/Project/Résidence_Pierre_De_Lune-11.jpg";
 
 import ImageProjectH1 from "../Style/Images/Project/Villa_Ndayane-1.jpg";
-import ImageProjectJ1 from "../Style/Images/Project/Appartement-F4-A-1.jpg";
+import ImageProjectJ1 from "../Style/Images/Project/Appartement_Bamba_Ba-1.jpg";
 
 import ImageProjectS3 from "../Style/Images/Project/Villa_Samb-3.jpg";
 import ImageProjectS4 from "../Style/Images/Project/Villa_Samb-4.jpg";
@@ -36,7 +36,7 @@ import ImageProjectT7 from "../Style/Images/Project/Villa-Onomo-7.jpg";
 import ImageProjectT8 from "../Style/Images/Project/Villa-Onomo-8.jpg";
 import ImageProjectT9 from "../Style/Images/Project/Villa-Onomo-9.jpg";
 
-import ImageProjectP1 from "../Style/Images/Project/Immeuble-Talles-6.jpg";
+import ImageProjectP1 from "../Style/Images/Project/Résidence_Pierre_De_Lune-6.jpg";
 
 import ImageProjectBB1 from "../Style/Images/Project/Office-B-1.jpg";
 import ImageProjectBB2 from "../Style/Images/Project/Office-B-2.jpg";
@@ -49,7 +49,7 @@ import ImageProjectQ10 from "../Style/Images/Project/Villa-Sarr-10.jpg";
 import ImageProjectR1 from "../Style/Images/Project/Façade-Immeuble-A-5.jpg";
 import ImageProjectR2 from "../Style/Images/Project/Façade-Immeuble-A-4.jpg";
 
-import ImageProjectS2 from "../Style/Images/Project/Appartement-Alya-4.jpg";
+import ImageProjectS2 from "../Style/Images/Project/Appartement_Alya-4.jpg";
 
 import ImageProjectO1 from "../Style/Images/Project/Villa-Omaïs-26.jpg";
 import ImageProjectO2 from "../Style/Images/Project/Villa-Omaïs-46.jpg";
@@ -262,7 +262,7 @@ function Accueil({ GetImageToApp }) {
           color={"#f1f1f1"}
           textcolor={"#000"}
           theKey={1}
-          link={"/VillaSarr"}
+          link={"/Villa_Sarr"}
           The_Experience={true}
           The_Experience_Link={
             "https://archviz-villa-gabriel-sarr.netlify.app/"
@@ -280,7 +280,7 @@ function Accueil({ GetImageToApp }) {
           color={"#8a6f54"}
           textcolor={"#f1f1f1"}
           theKey={2}
-          link={"/Appartement-F4-A"}
+          link={"/Appartement_Bamba_Ba"}
           side={"left"}
           OneHash={hashProjectJ1}
           The_Experience={true}
@@ -294,7 +294,7 @@ function Accueil({ GetImageToApp }) {
           color={"#F1F1F1"}
           textcolor={"#222"}
           theKey={3}
-          link={"/Immeuble-Talles"}
+          link={"/Résidence_Pierre_De_Lune"}
           side={"right"}
           OneHash={hashProjectP1}
           The_Experience={false}
@@ -309,7 +309,7 @@ function Accueil({ GetImageToApp }) {
           color={"#2b2828"}
           textcolor={"#f1f1f1"}
           theKey={4}
-          link={"/Villa-Ndayane"}
+          link={"/Villa_Ndayane"}
           side={"left"}
           OneHash={hashProjectH1}
           The_Experience={false}
@@ -354,7 +354,7 @@ function Accueil({ GetImageToApp }) {
           color={"#F1F1F1"}
           textcolor={"#222"}
           theKey={7}
-          link={"/City1"}
+          link={"/Cité_El_Hadj_Amadou_Ba"}
           side={"right"}
           OneHash={hashProjectB1}
           The_Experience={false}
@@ -388,7 +388,7 @@ function Accueil({ GetImageToApp }) {
           theKey={9}
           side={"right"}
           OneHash={hashProjectS2}
-          link={"/Appartement-Alya"}
+          link={"/Appartement_Alya"}
         />
       </section>
 
@@ -442,7 +442,7 @@ function TheGallery({ GetImageOnAccueil }) {
       <OneGalerieElement
         giveImageId={onClickOnImage}
         oneHash={hashProjectI4}
-        link={"/Residence-Alya"}
+        link={"/Residence_Alya"}
         image={ImageProjectI4}
         title={"Residence Alya"}
         date={"18 Avril, 2025"}
@@ -459,7 +459,7 @@ function TheGallery({ GetImageOnAccueil }) {
       <OneGalerieElement
         giveImageId={onClickOnImage}
         oneHash={hashProjectQ1}
-        link={"/VillaSarr"}
+        link={"/Villa_Sarr"}
         image={ImageProjectQ1}
         title={"Villa Sarr"}
         date={"05 Septembre, 2024"}
@@ -485,9 +485,9 @@ function TheGallery({ GetImageOnAccueil }) {
       <OneGalerieElement
         giveImageId={onClickOnImage}
         oneHash={hashProjectJ1}
-        link={"/Appartement-F4-A"}
+        link={"/Appartement_Bamba_Ba"}
         image={ImageProjectJ1}
-        title={"Appartement-F4-A"}
+        title={"Appartement_Bamba_Ba"}
         date={"25 Septembre, 2023"}
       />
       <OneGalerieElement
@@ -543,7 +543,7 @@ function TheGallery({ GetImageOnAccueil }) {
       <OneGalerieElement
         giveImageId={onClickOnImage}
         oneHash={hashProjectZ1}
-        link={"/Résidence-MANDA"}
+        link={"/Résidence_Manda"}
         image={ImageProjectL1}
         title={"Résidence MANDA"}
         date={"9 Novembre, 2025"}
@@ -551,7 +551,7 @@ function TheGallery({ GetImageOnAccueil }) {
       <OneGalerieElement
         giveImageId={onClickOnImage}
         oneHash={hashProjectQ10}
-        link={"/VillaSarr"}
+        link={"/Villa_Sarr"}
         image={ImageProjectQ10}
         title={"Villa Sarr"}
         date={"12 Juin, 2024"}
@@ -578,7 +578,7 @@ function TheGallery({ GetImageOnAccueil }) {
       <OneGalerieElement
         giveImageId={onClickOnImage}
         oneHash={hashProjectZ1}
-        link={"/Résidence-MANDA"}
+        link={"/Résidence_Manda"}
         image={ImageProjectL2}
         title={"Résidence MANDA"}
         date={"9 Novembre, 2025"}
@@ -586,7 +586,7 @@ function TheGallery({ GetImageOnAccueil }) {
       <OneGalerieElement
         giveImageId={onClickOnImage}
         oneHash={hashProjectI2}
-        link={"/Residence-Alya"}
+        link={"/Residence_Alya"}
         image={ImageProjectH1}
         title={"Residence Alya"}
         date={"18 Avril, 2025"}
@@ -594,7 +594,7 @@ function TheGallery({ GetImageOnAccueil }) {
       <OneGalerieElement
         giveImageId={onClickOnImage}
         oneHash={hashProjectB2}
-        link={"/City1"}
+        link={"/Cité_El_Hadj_Amadou_Ba"}
         image={ImageProjectB2}
         title={"Cité El Hadj Amadou Ba"}
         date={"12 Juin, 2023"}
@@ -611,7 +611,7 @@ function TheGallery({ GetImageOnAccueil }) {
       <OneGalerieElement
         giveImageId={onClickOnImage}
         oneHash={hashProjectS2}
-        link={"/Appartement-Alya"}
+        link={"/Appartement_Alya"}
         image={ImageProjectS2}
         title={"Appartement Alya"}
         date={"22 Janvier, 2025"}
@@ -627,7 +627,7 @@ function TheGallery({ GetImageOnAccueil }) {
       <OneGalerieElement
         giveImageId={onClickOnImage}
         oneHash={hashProjectI3}
-        link={"/Residence-Alya"}
+        link={"/Residence_Alya"}
         image={ImageProjectI3}
         title={"Residence Alya"}
         date={"18 Avril, 2025"}

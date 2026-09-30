@@ -66,7 +66,7 @@ function SmallHouse1({}) {
         </div>
       )}
 
-      <div className="Villa_A_container">
+      <div className="Villa_Ndayane_container">
         <div className="project_display">
           <h1 className="project_title">Villa Ndayane</h1>
           <h3 className="project_description">By Archviz | 4 Mai, 2023 |</h3>

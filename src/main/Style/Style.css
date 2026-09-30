@@ -2179,7 +2179,7 @@
     margin: -0.1em;
   }
 }
-.Immeuble-Talles {
+.Résidence_Pierre_De_Lune {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(2, auto);
@@ -2187,7 +2187,7 @@
   padding-right: 10vw;
   padding-top: 5em;
 }
-.Immeuble-Talles .project_display {
+.Résidence_Pierre_De_Lune .project_display {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2197,7 +2197,7 @@
   grid-template-columns: 1fr;
   padding-bottom: 2em;
 }
-.Immeuble-Talles .project_display a {
+.Résidence_Pierre_De_Lune .project_display a {
   margin-bottom: 2em;
   font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
@@ -2212,41 +2212,41 @@
   text-decoration: none;
   color: var(--colorX);
 }
-.Immeuble-Talles .project_display a:hover {
+.Résidence_Pierre_De_Lune .project_display a:hover {
   transform: scale(1.02);
 }
-.Immeuble-Talles .project_display a ion-icon {
+.Résidence_Pierre_De_Lune .project_display a ion-icon {
   font-size: 1.2em;
 }
-.Immeuble-Talles .project_display .the_video {
+.Résidence_Pierre_De_Lune .project_display .the_video {
   width: 60vw;
   height: 45vw;
   margin-bottom: 3em;
 }
-.Immeuble-Talles .project_display .the_video iframe {
+.Résidence_Pierre_De_Lune .project_display .the_video iframe {
   border: none;
   border-radius: 1.5em;
 }
-.Immeuble-Talles .project_display .the_video {
+.Résidence_Pierre_De_Lune .project_display .the_video {
   margin-bottom: 3em;
 }
-.Immeuble-Talles .project_display .the_video_2 {
+.Résidence_Pierre_De_Lune .project_display .the_video_2 {
   height: 34vw;
 }
-.Immeuble-Talles .project_display .project_title {
+.Résidence_Pierre_De_Lune .project_display .project_title {
   font-family: "Montserrat", sans-serif;
   font-size: 2em;
   font-weight: 800;
   margin-bottom: 0.2em;
 }
-.Immeuble-Talles .project_display .project_description {
+.Résidence_Pierre_De_Lune .project_display .project_description {
   margin-bottom: 2em;
   font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
   font-weight: 400;
   cursor: pointer;
 }
-.Immeuble-Talles .project_display .TheImageContainer {
+.Résidence_Pierre_De_Lune .project_display .TheImageContainer {
   width: 60vw;
   height: auto;
   margin-bottom: 3em;
@@ -2254,23 +2254,23 @@
   display: flex;
   justify-content: space-between;
 }
-.Immeuble-Talles .project_display .TheImageContainer img {
+.Résidence_Pierre_De_Lune .project_display .TheImageContainer img {
   transition-duration: 0.3s;
   transform: scale(1);
   border-radius: 1em;
 }
-.Immeuble-Talles .project_display .TheImageContainer img:hover {
+.Résidence_Pierre_De_Lune .project_display .TheImageContainer img:hover {
   transform: scale(1.03);
 }
-.Immeuble-Talles .project_display .TheImageContainer img {
+.Résidence_Pierre_De_Lune .project_display .TheImageContainer img {
   transition-duration: 0.3s;
   transform: scale(1);
   border-radius: 1em;
 }
-.Immeuble-Talles .project_display .TheImageContainer img:hover {
+.Résidence_Pierre_De_Lune .project_display .TheImageContainer img:hover {
   transform: scale(1.03);
 }
-.Immeuble-Talles .project_display p {
+.Résidence_Pierre_De_Lune .project_display p {
   width: 60vw;
   margin-bottom: 2em;
   font-family: "Montserrat", sans-serif;
@@ -2279,30 +2279,30 @@
 }
 
 @media all and (max-width: 1000px) {
-  .Immeuble-Talles {
+  .Résidence_Pierre_De_Lune {
     padding-left: 5vw;
     padding-right: 0vw;
   }
-  .Immeuble-Talles .project_display .project_title {
+  .Résidence_Pierre_De_Lune .project_display .project_title {
     font-size: 1.5em;
   }
-  .Immeuble-Talles .project_display .project_description {
+  .Résidence_Pierre_De_Lune .project_display .project_description {
     font-size: 0.7em;
   }
-  .Immeuble-Talles .project_display .the_video {
+  .Résidence_Pierre_De_Lune .project_display .the_video {
     width: 90vw;
     height: 65vw;
     margin-bottom: 3em;
     display: none;
   }
-  .Immeuble-Talles .project_display h2 {
+  .Résidence_Pierre_De_Lune .project_display h2 {
     display: none;
   }
-  .Immeuble-Talles .project_display .TheImageContainer {
+  .Résidence_Pierre_De_Lune .project_display .TheImageContainer {
     width: 90vw;
     margin-bottom: 1em;
   }
-  .Immeuble-Talles .project_display p {
+  .Résidence_Pierre_De_Lune .project_display p {
     width: 80vw;
   }
 }
@@ -2478,7 +2478,7 @@
     width: 80vw;
   }
 }
-.Appartement-Alya {
+.Appartement_Alya {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(2, auto);
@@ -2486,7 +2486,7 @@
   padding-right: 10vw;
   padding-top: 5em;
 }
-.Appartement-Alya .project_display {
+.Appartement_Alya .project_display {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2496,7 +2496,7 @@
   grid-template-columns: 1fr;
   padding-bottom: 2em;
 }
-.Appartement-Alya .project_display a {
+.Appartement_Alya .project_display a {
   margin-bottom: 2em;
   font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
@@ -2511,41 +2511,41 @@
   text-decoration: none;
   color: var(--colorX);
 }
-.Appartement-Alya .project_display a:hover {
+.Appartement_Alya .project_display a:hover {
   transform: scale(1.02);
 }
-.Appartement-Alya .project_display a ion-icon {
+.Appartement_Alya .project_display a ion-icon {
   font-size: 1.2em;
 }
-.Appartement-Alya .project_display .the_video {
+.Appartement_Alya .project_display .the_video {
   width: 60vw;
   height: 45vw;
   margin-bottom: 3em;
 }
-.Appartement-Alya .project_display .the_video iframe {
+.Appartement_Alya .project_display .the_video iframe {
   border: none;
   border-radius: 1.5em;
 }
-.Appartement-Alya .project_display .the_video {
+.Appartement_Alya .project_display .the_video {
   margin-bottom: 3em;
 }
-.Appartement-Alya .project_display .the_video iframe {
+.Appartement_Alya .project_display .the_video iframe {
   border: none;
   border-radius: 1.5em;
 }
-.Appartement-Alya .project_display .project_title {
+.Appartement_Alya .project_display .project_title {
   font-family: "Montserrat", sans-serif;
   font-size: 2em;
   font-weight: 800;
   margin-bottom: 0.2em;
 }
-.Appartement-Alya .project_display .project_description {
+.Appartement_Alya .project_display .project_description {
   margin-bottom: 2em;
   font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
   font-weight: 400;
 }
-.Appartement-Alya .project_display .TheImageContainer {
+.Appartement_Alya .project_display .TheImageContainer {
   width: 60vw;
   height: auto;
   margin-bottom: 3em;
@@ -2553,23 +2553,23 @@
   display: flex;
   justify-content: space-between;
 }
-.Appartement-Alya .project_display .TheImageContainer img {
+.Appartement_Alya .project_display .TheImageContainer img {
   transition-duration: 0.3s;
   transform: scale(1);
   border-radius: 1em;
 }
-.Appartement-Alya .project_display .TheImageContainer img:hover {
+.Appartement_Alya .project_display .TheImageContainer img:hover {
   transform: scale(1.03);
 }
-.Appartement-Alya .project_display .TheImageContainer img {
+.Appartement_Alya .project_display .TheImageContainer img {
   transition-duration: 0.3s;
   transform: scale(1);
   border-radius: 1em;
 }
-.Appartement-Alya .project_display .TheImageContainer img:hover {
+.Appartement_Alya .project_display .TheImageContainer img:hover {
   transform: scale(1.03);
 }
-.Appartement-Alya .project_display p {
+.Appartement_Alya .project_display p {
   width: 60vw;
   margin-bottom: 2em;
   font-family: "Montserrat", sans-serif;
@@ -2578,30 +2578,30 @@
 }
 
 @media all and (max-width: 1000px) {
-  .Appartement-Alya {
+  .Appartement_Alya {
     padding-left: 5vw;
     padding-right: 0vw;
   }
-  .Appartement-Alya .project_display .project_title {
+  .Appartement_Alya .project_display .project_title {
     font-size: 1.5em;
   }
-  .Appartement-Alya .project_display .project_description {
+  .Appartement_Alya .project_display .project_description {
     font-size: 0.7em;
   }
-  .Appartement-Alya .project_display .the_video {
+  .Appartement_Alya .project_display .the_video {
     width: 90vw;
     height: 65vw;
     margin-bottom: 3em;
     display: none;
   }
-  .Appartement-Alya .project_display h2 {
+  .Appartement_Alya .project_display h2 {
     display: none;
   }
-  .Appartement-Alya .project_display .TheImageContainer {
+  .Appartement_Alya .project_display .TheImageContainer {
     width: 90vw;
     margin-bottom: 1em;
   }
-  .Appartement-Alya .project_display p {
+  .Appartement_Alya .project_display p {
     width: 80vw;
   }
 }
@@ -2829,7 +2829,7 @@
     width: 80vw;
   }
 }
-.Appartement-F4-A-container {
+.Appartement_Bamba_Ba-container {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(2, auto);
@@ -2837,7 +2837,7 @@
   padding-right: 10vw;
   padding-top: 5em;
 }
-.Appartement-F4-A-container .project_display {
+.Appartement_Bamba_Ba-container .project_display {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2847,7 +2847,7 @@
   grid-template-columns: 1fr;
   padding-bottom: 2em;
 }
-.Appartement-F4-A-container .project_display a {
+.Appartement_Bamba_Ba-container .project_display a {
   margin-bottom: 2em;
   font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
@@ -2862,41 +2862,41 @@
   text-decoration: none;
   color: var(--colorX);
 }
-.Appartement-F4-A-container .project_display a:hover {
+.Appartement_Bamba_Ba-container .project_display a:hover {
   transform: scale(1.02);
 }
-.Appartement-F4-A-container .project_display a ion-icon {
+.Appartement_Bamba_Ba-container .project_display a ion-icon {
   font-size: 1.2em;
 }
-.Appartement-F4-A-container .project_display .the_video {
+.Appartement_Bamba_Ba-container .project_display .the_video {
   width: 60vw;
   height: 45vw;
   margin-bottom: 3em;
 }
-.Appartement-F4-A-container .project_display .the_video iframe {
+.Appartement_Bamba_Ba-container .project_display .the_video iframe {
   border: none;
   border-radius: 1.5em;
 }
-.Appartement-F4-A-container .project_display .the_video {
+.Appartement_Bamba_Ba-container .project_display .the_video {
   margin-bottom: 3em;
 }
-.Appartement-F4-A-container .project_display .the_video iframe {
+.Appartement_Bamba_Ba-container .project_display .the_video iframe {
   border: none;
   border-radius: 1.5em;
 }
-.Appartement-F4-A-container .project_display .project_title {
+.Appartement_Bamba_Ba-container .project_display .project_title {
   font-family: "Montserrat", sans-serif;
   font-size: 2em;
   font-weight: 800;
   margin-bottom: 0.2em;
 }
-.Appartement-F4-A-container .project_display .project_description {
+.Appartement_Bamba_Ba-container .project_display .project_description {
   margin-bottom: 2em;
   font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
   font-weight: 400;
 }
-.Appartement-F4-A-container .project_display .TheImageContainer {
+.Appartement_Bamba_Ba-container .project_display .TheImageContainer {
   width: 60vw;
   height: auto;
   margin-bottom: 3em;
@@ -2904,23 +2904,23 @@
   display: flex;
   justify-content: space-between;
 }
-.Appartement-F4-A-container .project_display .TheImageContainer img {
+.Appartement_Bamba_Ba-container .project_display .TheImageContainer img {
   transition-duration: 0.3s;
   transform: scale(1);
   border-radius: 1em;
 }
-.Appartement-F4-A-container .project_display .TheImageContainer img:hover {
+.Appartement_Bamba_Ba-container .project_display .TheImageContainer img:hover {
   transform: scale(1.03);
 }
-.Appartement-F4-A-container .project_display .TheImageContainer img {
+.Appartement_Bamba_Ba-container .project_display .TheImageContainer img {
   transition-duration: 0.3s;
   transform: scale(1);
   border-radius: 1em;
 }
-.Appartement-F4-A-container .project_display .TheImageContainer img:hover {
+.Appartement_Bamba_Ba-container .project_display .TheImageContainer img:hover {
   transform: scale(1.03);
 }
-.Appartement-F4-A-container .project_display p {
+.Appartement_Bamba_Ba-container .project_display p {
   width: 60vw;
   margin-bottom: 2em;
   font-family: "Montserrat", sans-serif;
@@ -2929,30 +2929,30 @@
 }
 
 @media all and (max-width: 1000px) {
-  .Appartement-F4-A-container {
+  .Appartement_Bamba_Ba-container {
     padding-left: 5vw;
     padding-right: 0vw;
   }
-  .Appartement-F4-A-container .project_display .project_title {
+  .Appartement_Bamba_Ba-container .project_display .project_title {
     font-size: 1.5em;
   }
-  .Appartement-F4-A-container .project_display .project_description {
+  .Appartement_Bamba_Ba-container .project_display .project_description {
     font-size: 0.7em;
   }
-  .Appartement-F4-A-container .project_display .the_video {
+  .Appartement_Bamba_Ba-container .project_display .the_video {
     width: 90vw;
     height: 65vw;
     margin-bottom: 3em;
     display: none;
   }
-  .Appartement-F4-A-container .project_display h2 {
+  .Appartement_Bamba_Ba-container .project_display h2 {
     display: none;
   }
-  .Appartement-F4-A-container .project_display .TheImageContainer {
+  .Appartement_Bamba_Ba-container .project_display .TheImageContainer {
     width: 90vw;
     margin-bottom: 1em;
   }
-  .Appartement-F4-A-container .project_display p {
+  .Appartement_Bamba_Ba-container .project_display p {
     width: 80vw;
   }
 }
@@ -3148,7 +3148,7 @@
     width: 80vw;
   }
 }
-.Villa_A_container {
+.Villa_Ndayane_container {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(2, auto);
@@ -3156,7 +3156,7 @@
   padding-right: 10vw;
   padding-top: 5em;
 }
-.Villa_A_container .project_display {
+.Villa_Ndayane_container .project_display {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3166,7 +3166,7 @@
   grid-template-columns: 1fr;
   padding-bottom: 2em;
 }
-.Villa_A_container .project_display a {
+.Villa_Ndayane_container .project_display a {
   margin-bottom: 2em;
   font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
@@ -3181,41 +3181,41 @@
   text-decoration: none;
   color: var(--colorX);
 }
-.Villa_A_container .project_display a:hover {
+.Villa_Ndayane_container .project_display a:hover {
   transform: scale(1.02);
 }
-.Villa_A_container .project_display a ion-icon {
+.Villa_Ndayane_container .project_display a ion-icon {
   font-size: 1.2em;
 }
-.Villa_A_container .project_display .the_video {
+.Villa_Ndayane_container .project_display .the_video {
   width: 60vw;
   height: 45vw;
   margin-bottom: 3em;
 }
-.Villa_A_container .project_display .the_video iframe {
+.Villa_Ndayane_container .project_display .the_video iframe {
   border: none;
   border-radius: 1.5em;
 }
-.Villa_A_container .project_display .the_video {
+.Villa_Ndayane_container .project_display .the_video {
   margin-bottom: 3em;
 }
-.Villa_A_container .project_display .the_video iframe {
+.Villa_Ndayane_container .project_display .the_video iframe {
   border: none;
   border-radius: 1.5em;
 }
-.Villa_A_container .project_display .project_title {
+.Villa_Ndayane_container .project_display .project_title {
   font-family: "Montserrat", sans-serif;
   font-size: 2em;
   font-weight: 800;
   margin-bottom: 0.2em;
 }
-.Villa_A_container .project_display .project_description {
+.Villa_Ndayane_container .project_display .project_description {
   margin-bottom: 2em;
   font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
   font-weight: 400;
 }
-.Villa_A_container .project_display .TheImageContainer {
+.Villa_Ndayane_container .project_display .TheImageContainer {
   width: 60vw;
   height: auto;
   margin-bottom: 3em;
@@ -3223,15 +3223,15 @@
   display: flex;
   justify-content: space-between;
 }
-.Villa_A_container .project_display .TheImageContainer img {
+.Villa_Ndayane_container .project_display .TheImageContainer img {
   transition-duration: 0.3s;
   transform: scale(1);
   border-radius: 1em;
 }
-.Villa_A_container .project_display .TheImageContainer img:hover {
+.Villa_Ndayane_container .project_display .TheImageContainer img:hover {
   transform: scale(1.03);
 }
-.Villa_A_container .project_display p {
+.Villa_Ndayane_container .project_display p {
   width: 60vw;
   margin-bottom: 2em;
   font-family: "Montserrat", sans-serif;
@@ -3240,30 +3240,30 @@
 }
 
 @media all and (max-width: 1000px) {
-  .Villa_A_container {
+  .Villa_Ndayane_container {
     padding-left: 5vw;
     padding-right: 0vw;
   }
-  .Villa_A_container .project_display .the_video {
+  .Villa_Ndayane_container .project_display .the_video {
     width: 90vw;
     height: 65vw;
     margin-bottom: 3em;
     display: none;
   }
-  .Villa_A_container .project_display h2 {
+  .Villa_Ndayane_container .project_display h2 {
     display: none;
   }
-  .Villa_A_container .project_display .project_title {
+  .Villa_Ndayane_container .project_display .project_title {
     font-size: 1.5em;
   }
-  .Villa_A_container .project_display .project_description {
+  .Villa_Ndayane_container .project_display .project_description {
     font-size: 0.7em;
   }
-  .Villa_A_container .project_display .TheImageContainer {
+  .Villa_Ndayane_container .project_display .TheImageContainer {
     width: 90vw;
     margin-bottom: 1em;
   }
-  .Villa_A_container .project_display p {
+  .Villa_Ndayane_container .project_display p {
     width: 80vw;
   }
 }
@@ -3361,7 +3361,7 @@
     width: 80vw;
   }
 }
-.Immenble_Talles_B_container {
+.Residence_Manda_container {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(2, auto);
@@ -3369,7 +3369,7 @@
   padding-right: 10vw;
   padding-top: 5em;
 }
-.Immenble_Talles_B_container .project_display {
+.Residence_Manda_container .project_display {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3379,7 +3379,7 @@
   grid-template-columns: 1fr;
   padding-bottom: 2em;
 }
-.Immenble_Talles_B_container .project_display a {
+.Residence_Manda_container .project_display a {
   margin-bottom: 2em;
   font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
@@ -3394,37 +3394,37 @@
   text-decoration: none;
   color: var(--colorX);
 }
-.Immenble_Talles_B_container .project_display a:hover {
+.Residence_Manda_container .project_display a:hover {
   transform: scale(1.02);
 }
-.Immenble_Talles_B_container .project_display a ion-icon {
+.Residence_Manda_container .project_display a ion-icon {
   font-size: 1.2em;
 }
-.Immenble_Talles_B_container .project_display .the_video {
+.Residence_Manda_container .project_display .the_video {
   width: 60vw;
   height: 45vw;
   margin-bottom: 3em;
 }
-.Immenble_Talles_B_container .project_display .the_video iframe {
+.Residence_Manda_container .project_display .the_video iframe {
   border: none;
   border-radius: 1.5em;
 }
-.Immenble_Talles_B_container .project_display .the_video {
+.Residence_Manda_container .project_display .the_video {
   margin-bottom: 3em;
 }
-.Immenble_Talles_B_container .project_display .project_title {
+.Residence_Manda_container .project_display .project_title {
   font-family: "Montserrat", sans-serif;
   font-size: 2em;
   font-weight: 800;
   margin-bottom: 0.2em;
 }
-.Immenble_Talles_B_container .project_display .project_description {
+.Residence_Manda_container .project_display .project_description {
   margin-bottom: 2em;
   font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
   font-weight: 400;
 }
-.Immenble_Talles_B_container .project_display .TheImageContainer {
+.Residence_Manda_container .project_display .TheImageContainer {
   width: 60vw;
   height: auto;
   margin-bottom: 3em;
@@ -3432,15 +3432,15 @@
   display: flex;
   justify-content: space-between;
 }
-.Immenble_Talles_B_container .project_display .TheImageContainer img {
+.Residence_Manda_container .project_display .TheImageContainer img {
   transition-duration: 0.3s;
   transform: scale(1);
   border-radius: 1em;
 }
-.Immenble_Talles_B_container .project_display .TheImageContainer img:hover {
+.Residence_Manda_container .project_display .TheImageContainer img:hover {
   transform: scale(1.03);
 }
-.Immenble_Talles_B_container .project_display p {
+.Residence_Manda_container .project_display p {
   width: 60vw;
   margin-bottom: 2em;
   font-family: "Montserrat", sans-serif;
@@ -3449,30 +3449,30 @@
 }
 
 @media all and (max-width: 1000px) {
-  .Immenble_Talles_B_container {
+  .Residence_Manda_container {
     padding-left: 5vw;
     padding-right: 0vw;
   }
-  .Immenble_Talles_B_container .project_display .project_title {
+  .Residence_Manda_container .project_display .project_title {
     font-size: 1.5em;
   }
-  .Immenble_Talles_B_container .project_display .project_description {
+  .Residence_Manda_container .project_display .project_description {
     font-size: 0.7em;
   }
-  .Immenble_Talles_B_container .project_display .the_video {
+  .Residence_Manda_container .project_display .the_video {
     width: 90vw;
     height: 65vw;
     margin-bottom: 3em;
     display: none;
   }
-  .Immenble_Talles_B_container .project_display h2 {
+  .Residence_Manda_container .project_display h2 {
     display: none;
   }
-  .Immenble_Talles_B_container .project_display .TheImageContainer {
+  .Residence_Manda_container .project_display .TheImageContainer {
     width: 90vw;
     margin-bottom: 1em;
   }
-  .Immenble_Talles_B_container .project_display p {
+  .Residence_Manda_container .project_display p {
     width: 80vw;
   }
 }

@@ -45,7 +45,7 @@ function TheLoader() {
 //!###############################################################
 
 const ImmeubleTalles = React.lazy(() =>
-  import("./Pages/Projects/Immeuble_Talles")
+  import("./Pages/Projects/Résidence_Pierre_De_Lune")
 );
 const SmallHouse1 = React.lazy(() => import("./Pages/Projects/Villa_Onomo"));
 const AppartementBHome1 = React.lazy(() =>
@@ -56,19 +56,19 @@ const Façade_Immeuble = React.lazy(() =>
   import("./Pages/Projects/Façade_Immeuble")
 );
 const AppartementFA = React.lazy(() =>
-  import("./Pages/Projects/Appartement-F4-A")
+  import("./Pages/Projects/Appartement_Bamba_Ba")
 );
 const Gym = React.lazy(() => import("./Pages/Projects/Gym"));
-const City1 = React.lazy(() => import("./Pages/Projects/Cité"));
-const Villa = React.lazy(() => import("./Pages/Projects/Villa_A"));
+const Cité_El_Hadj_Amadou_Ba_El_Hadj_Amadou_Ba = React.lazy(() => import("./Pages/Projects/Cité_El_Hadj_Amadou_Ba"));
+const Villa = React.lazy(() => import("./Pages/Projects/Villa_Ndayane"));
 const Villa_Saly = React.lazy(() => import("./Pages/Projects/Residence_Alya"));
 const ImmenbleTallesB = React.lazy(() =>
-  import("./Pages/Projects/Immenble_Talles_B")
+  import("./Pages/Projects/Résidence_Manda")
 );
 const VillaSamb = React.lazy(() => import("./Pages/Projects/Villa_Samb"));
-const VillaSarr = React.lazy(() => import("./Pages/Projects/Villa_Sarr"));
+const Villa_Sarr = React.lazy(() => import("./Pages/Projects/Villa_Sarr"));
 const AppartementAlya = React.lazy(() =>
-  import("./Pages/Projects/Appartement-Alya")
+  import("./Pages/Projects/Appartement_Alya")
 );
 const Formation = React.lazy(() => import("./Pages/Projects/Formation"));
 
@@ -142,7 +142,7 @@ function App() {
 
             <Route
               exact
-              path="/Immeuble-Talles"
+              path="/Résidence_Pierre_De_Lune"
               element={
                 <Suspense fallback={<TheLoader />}>
                   <ImmeubleTalles />
@@ -187,7 +187,7 @@ function App() {
             />
             <Route
               exact
-              path="/Appartement-F4-A"
+              path="/Appartement_Bamba_Ba"
               element={
                 <Suspense fallback={<TheLoader />}>
                   <AppartementFA />
@@ -205,16 +205,16 @@ function App() {
             />
             <Route
               exact
-              path="/City1"
+              path="/Cité_El_Hadj_Amadou_Ba"
               element={
                 <Suspense fallback={<TheLoader />}>
-                  <City1 />
+                  <Cité_El_Hadj_Amadou_Ba_El_Hadj_Amadou_Ba />
                 </Suspense>
               }
             />
             <Route
               exact
-              path="/Villa-Ndayane"
+              path="/Villa_Ndayane"
               element={
                 <Suspense fallback={<TheLoader />}>
                   <Villa />
@@ -223,7 +223,7 @@ function App() {
             />
             <Route
               exact
-              path="/Residence-Alya"
+              path="/Residence_Alya"
               element={
                 <Suspense fallback={<TheLoader />}>
                   <Villa_Saly />
@@ -232,7 +232,7 @@ function App() {
             />
             <Route
               exact
-              path="/Résidence-MANDA"
+              path="/Résidence_Manda"
               element={
                 <Suspense fallback={<TheLoader />}>
                   <ImmenbleTallesB />
@@ -250,16 +250,16 @@ function App() {
             />
             <Route
               exact
-              path="/VillaSarr"
+              path="/Villa_Sarr"
               element={
                 <Suspense fallback={<TheLoader />}>
-                  <VillaSarr />
+                  <Villa_Sarr />
                 </Suspense>
               }
             />
             <Route
               exact
-              path="/Appartement-Alya"
+              path="/Appartement_Alya"
               element={
                 <Suspense fallback={<TheLoader />}>
                   <AppartementAlya />
