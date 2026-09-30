@@ -11,7 +11,6 @@ import ImageforIntro4 from "../Style/Images/Project/Pharmacie-3.jpg";
 
 import ImageProjectB1 from "../Style/Images/Project/City-8.jpg";
 import ImageProjectB2 from "../Style/Images/Project/City-1.jpg";
-import ImageProjectB9 from "../Style/Images/Project/City-9.jpg";
 
 import ImageProjectI3 from "../Style/Images/Project/Residence_Alya-4.jpg";
 import ImageProjectI4 from "../Style/Images/Project/Residence_Alya-2.jpg";
@@ -24,11 +23,9 @@ import ImageProjectL2 from "../Style/Images/Project/Résidence_Pierre_De_Lune-11
 import ImageProjectH1 from "../Style/Images/Project/Villa_Ndayane-1.jpg";
 import ImageProjectJ1 from "../Style/Images/Project/Appartement_Bamba_Ba-1.jpg";
 
-import ImageProjectS3 from "../Style/Images/Project/Villa_Samb-3.jpg";
-import ImageProjectS4 from "../Style/Images/Project/Villa_Samb-4.jpg";
+import ImageProjectS3 from "../Style/Images/Project/Villa_Samb-7.jpg";
 
-import ImageProjectS7 from "../Style/Images/Project/Villa_Samb-7.jpg";
-import ImageProjectS10 from "../Style/Images/Project/Villa_Samb-8.jpg";
+import ImageProjectS7 from "../Style/Images/Project/Villa_Samb-1.jpg";
 
 import ImageProjectT2 from "../Style/Images/Project/Villa-Onomo-2.jpg";
 import ImageProjectT4 from "../Style/Images/Project/Villa-Onomo-4.jpg";
@@ -375,21 +372,24 @@ function Accueil({ GetImageToApp }) {
           OneHash={hashProjectBB1}
         />
 
-        <OneBigProject
-          title={"Visualisation de projets immobiliers"}
-          image={ImageProjectS2}
-          description={
-            "Des designs Modernes, épurés, etc… nous mettons en œuvre différentes approches pour une optimisation de vos espaces extérieurs et intérieurs. Pour se faire nous utilisons différents logiciels avec les dernières innovations pour des rendus d’images à la fois réalistes et immersives."
-          }
-          color={"#F1F1F1"}
-          textcolor={"#222"}
-          The_Experience={true}
-          The_Experience_Link={"https://residence-Alya-f4-pm.netlify.app/"}
-          theKey={9}
-          side={"right"}
-          OneHash={hashProjectS2}
-          link={"/Appartement_Alya"}
-        />
+    
+
+          
+                <OneBigProject
+                  title={"Visualisation de projets immobiliers"}
+                  image={ImageProjectO1}
+                  description={
+                    "À l'aide des logiciels de dernière génération et de notre savoir-faire dans le domaine de l’architecture d’intérieur. Nous vous aidons dans l’aménagement de vos espaces."
+                  }
+                  color={"#F1F1F1"}
+                  textcolor={"#222"}
+                  The_Experience={false}
+                  link={"/Villa_Omaïs"}
+                  theKey={9}
+                  side={"right"}
+                  OneHash={hashProjectBB2}  
+                />
+                
       </section>
 
 
@@ -506,14 +506,15 @@ function TheGallery({ GetImageOnAccueil }) {
        title={"Villa Omaïs"}
         date={"25 Septembre, 2023"}
       />
-      <OneGalerieElement
+ <OneGalerieElement
         giveImageId={onClickOnImage}
-        oneHash={hashProjectB9}
-        link={"/Villa_Omaïs"}
-        image={ImageProjectO3}
-        title={"Villa Omaïs"}
-        date={"03 septembre, 2026"}
+        oneHash={hashProjectBB2}
+        link={"/Design_Bureau"}
+        image={ImageProjectBB2}
+        title={"Design Bureau"}
+        date={"12 Juin, 2024"}
       />
+
       {/*///######################################## */}
       <OneGalerieElement
         giveImageId={onClickOnImage}
@@ -632,14 +633,16 @@ function TheGallery({ GetImageOnAccueil }) {
         title={"Residence Alya"}
         date={"18 Avril, 2025"}
       />
+      
       <OneGalerieElement
         giveImageId={onClickOnImage}
-        oneHash={hashProjectBB2}
-        link={"/Design_Bureau"}
-        image={ImageProjectBB2}
-        title={"Design Bureau"}
-        date={"12 Juin, 2024"}
+        oneHash={hashProjectB9}
+        link={"/Villa_Omaïs"}
+        image={ImageProjectO3}
+        title={"Villa Omaïs"}
+        date={"03 septembre, 2026"}
       />
+     
     </div>
   );
 }
